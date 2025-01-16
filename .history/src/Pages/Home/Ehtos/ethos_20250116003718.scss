@@ -1,0 +1,49 @@
+.ethos-container {
+  position: relative;
+}
+
+.status-bar {
+  position: fixed;
+  //   left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.status-bar.show {
+  opacity: 1;
+}
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+  transition: background-color 0.3s;
+}
+
+.status-dot.active {
+  background-color: black;
+}
+
+.image-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.image-section.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image-item {
+  width: 80%;
+  max-height: 80vh;
+  object-fit: cover;
+}

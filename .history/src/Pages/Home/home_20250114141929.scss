@@ -1,0 +1,32 @@
+.home-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  img {
+    border-radius: 10px;
+  }
+  .left-wing {
+    margin-left: -80px;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .images-container {
+    // display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .video {
+    border-radius: 10px;
+    min-width: 100% !important;
+  }
+}

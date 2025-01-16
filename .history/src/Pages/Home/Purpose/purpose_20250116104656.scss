@@ -1,0 +1,34 @@
+.purpose {
+  border: solid 10px #000;
+  height: 370px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #000; // Default background color
+  transition: background 0.5s ease;
+
+  .purpose-inner {
+    height: 100%;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .faith {
+    background: url("../../../assets/images/faith.jpg") center/300px 250px
+      no-repeat;
+  }
+
+  .justice {
+    background: url("../../../assets/images/justice.jpg") center/300px 250px
+      no-repeat;
+  }
+
+  .service {
+    background: url("../../../assets/images/service.jpg") center/300px 250px
+      no-repeat;
+  }
+
+  // Remove background of all children when any is hovered
+  .purpose-inner:hover,
+  .purpose-inner:active {
+    background: transparent !important;
+  }
+}

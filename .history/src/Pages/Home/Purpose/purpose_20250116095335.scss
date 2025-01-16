@@ -1,0 +1,12 @@
+.purpose {
+  border: solid 10px #000;
+  height: 370px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #000;
+  .faith {
+    background: url("../../../assets/images/faith.jpg");
+    background-size: 300px 350px;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,95 @@
+.home-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  padding-top: 70px;
+  img {
+    border-radius: 10px;
+  }
+  h1 {
+    font-family: figtreeB;
+    font-size: 70px;
+    color: #002b5e;
+    margin-top: 50px;
+    span {
+      color: #2d79c5;
+      font-family: garamondI !important;
+    }
+  }
+  .left-wing {
+    margin-left: -160px;
+  }
+  .video-container {
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-top: 40px !important;
+  }
+
+  .images-container {
+    // display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .video {
+    border-radius: 10px;
+    min-width: 100% !important;
+  }
+}
+.main-intro {
+  font-family: garamondB;
+  span {
+    color: #f8c58b;
+    font-family: garamondI !important;
+  }
+}
+.inscription-inner {
+  background-image: url("../../assets/images/logo-head.svg");
+  background-repeat: no-repeat;
+  background-size: 350px 700px;
+  background-position: center;
+  height: 700px;
+  opacity: 0.04;
+}
+
+.shadow-logo {
+  position: relative;
+  padding-top: 100px;
+  h3 {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #b5d2fc !important;
+    font-family: garamondB;
+
+    left: 25%;
+    line-height: 58px;
+    color: #fff;
+    span {
+      color: #cccccc;
+    }
+  }
+}
+.heading-container {
+  text-align: center !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h1 {
+  }
+  .heading1 {
+    color: #00285e;
+    font-size: 48px;
+    font-family: figtreeB;
+  }
+  .heading2 {
+    color: #2d79c5;
+    font-size: 62px;
+    font-family: garamondI;
+  }
+}

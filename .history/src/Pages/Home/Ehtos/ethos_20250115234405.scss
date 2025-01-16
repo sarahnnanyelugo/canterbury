@@ -1,0 +1,43 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  //   height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.image-item {
+  width: 80%;
+  margin: 50px 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image-item.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.status-bar {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+  transition: background-color 0.3s;
+}
+
+.status-dot.active {
+  background-color: black;
+}
