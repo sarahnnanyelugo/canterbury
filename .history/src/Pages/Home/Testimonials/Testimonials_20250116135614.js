@@ -1,0 +1,95 @@
+import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import "./testimonia.scss";
+export const Testimonials = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      // Heading
+      if (headingRef.current) {
+        const rect = headingRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewHeading(true);
+        } else {
+          setInViewHeading(false);
+        }
+      }
+
+      // Paragraph text
+      if (textRef.current) {
+        const rect = textRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewText(true);
+        } else {
+          setInViewText(false);
+        }
+      }
+      if (paragraphRef.current) {
+        const rect = paragraphRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewParagraph(true);
+        } else {
+          setInViewParagraph(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run once on load to check initial position
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="culture-container " ref={headingRef3}>
+      <div className="d-flex offset-md-3">
+        {" "}
+        <h1
+          className="heading1"
+          style={{
+            transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
+            opacity: inViewHeading ? 1 : 0,
+            transition: "transform 2s ease, opacity 2s ease",
+          }}
+        >
+          A CULTURE OF
+        </h1>{" "}
+        {""}
+        <h1
+          className="heading2"
+          style={{
+            display: "inline-block",
+            transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
+            opacity: inViewHeading ? 1 : 0,
+            transition: "transform 2s ease, opacity 2s ease",
+            marginLeft: "10px",
+          }}
+        >
+          community
+        </h1>
+      </div>
+      <center>
+        <div className="col-md-6">
+          <p
+            ref={paragraphRef}
+            style={{
+              transform: inViewParagraph
+                ? "translateY(0)"
+                : "translateY(100px)",
+              opacity: inViewParagraph ? 1 : 0,
+              transition: "transform 1s ease, opacity 1s ease",
+
+              fontFamily: "figtree",
+            }}
+          >
+            From the moment you join our intentionally small school, you
+            experience a connection with peers and faculty, a curiosity about
+            the things that make us different, and comfort in a community that
+            celebrates you as an individual and bonds together like a family.
+          </p>
+        </div>
+      </center>
+    </div>
+  );
+};

@@ -40,6 +40,8 @@
   .video {
     border-radius: 10px;
     min-width: 100% !important;
+    height: 100%; /* Stretch to parent height */
+    object-fit: cover;
   }
 }
 .main-intro {
@@ -99,9 +101,33 @@
     font-family: garamondI;
   }
 }
+
 .discover {
   height: 1000px;
   padding-top: 100px;
   background: #00285e;
-  margin-top: -100px;
+  margin-top: -120px;
+  button {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background: transparent;
+    color: #f6f6f7;
+    border: solid 2px #fff;
+    transition: 0.5s ease;
+    width: fit-content;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    .icon {
+      display: none;
+    }
+    &:hover {
+      background: #b5d2ee;
+      color: #00285e;
+      .icon {
+        display: block;
+        margin-right: -5px;
+      }
+    }
+  }
 }

@@ -1,0 +1,74 @@
+.purpose {
+  height: 370px;
+  border-radius: 10px !important;
+  //   background: #000; // Default background color
+  padding: 12px;
+  transition: background 0.5s ease;
+  background: #fff;
+  .purpose-inner {
+    height: 100%;
+    transition: background 0.3s ease-in-out;
+    position: relative; // Ensures overlay is positioned correctly
+  }
+
+  .faith {
+    background: url("../../../assets/images/faith.jpg") center/100% 100%
+      no-repeat;
+    border-right: solid 1px #fff;
+  }
+
+  .justice {
+    background: url("../../../assets/images/justice.jpg") center/100% 100%
+      no-repeat;
+  }
+
+  .service {
+    background: url("../../../assets/images/service.jpg") center/100% 100%
+      no-repeat;
+    border-right: solid 1px #fff;
+  }
+
+  // Remove background of all children when any is hovered
+  .no-bg {
+    background: none !important;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0%; // Start from below the div
+    left: 0;
+    width: 100%;
+    height: 25%;
+    padding-left: 10px;
+    background: rgb(0, 40, 94);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 40, 94, 0) 6%,
+      rgba(0, 21, 48, 0.8) 33%
+    );
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5 {
+      font-family: figtreeB;
+      text-align: left;
+    }
+    p {
+      display: none;
+      text-align: left;
+      font-family: figtreeB;
+    }
+  }
+
+  .purpose-inner:hover .overlay {
+    bottom: 0; // Slide overlay in on hover
+    display: block;
+    height: 30%;
+    transition: bottom 3s ease-in-out;
+    border-bottom: solid 6px #de7c0d;
+    p {
+      display: block;
+    }
+  }
+}

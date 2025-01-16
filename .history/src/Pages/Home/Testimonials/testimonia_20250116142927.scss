@@ -1,0 +1,28 @@
+.culture-container {
+  text-align: center !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h1 {
+  }
+  .heading1 {
+    color: #fff;
+    font-size: 40px;
+    font-family: figtreeB;
+  }
+  .heading2 {
+    color: #2d79c5;
+    font-size: 55px;
+    font-family: garamondI;
+  }
+  p {
+    color: #fff;
+  }
+}
+.testimonial-videos {
+  height: 350px;
+  background: #000;
+  margin-top: 50px;
+}
+.video {
+  object-fit: cover; /* Ensures the media fills the height without distortion */
+}

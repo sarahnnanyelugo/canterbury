@@ -3,6 +3,7 @@ import MainVid from "../../assets/images/main-vid.mp4";
 import Img1 from "../../assets/images/img1.jpg";
 import Img2 from "../../assets/images/img2.jpg";
 import Img3 from "../../assets/images/img3.jpg";
+import { MdArrowRightAlt } from "react-icons/md";
 
 import Img4 from "../../assets/images/img4.jpg";
 import Img6 from "../../assets/images/img6.png";
@@ -10,6 +11,8 @@ import Img5 from "../../assets/images/img5.png";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
+import { WellBeing } from "./WellBeing/WellBeing";
+import { Testimonials } from "./Testimonials/Testimonials";
 
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
@@ -21,6 +24,7 @@ export const Home = () => {
 
   const [inViewText, setInViewText] = useState(false); //   const targetRef = useRef(null); // Correct initialization in JavaScript
   const headingRef = useRef(null); // Reference for the heading
+  const headingRef3 = useRef(null); // Reference for the heading
   const textRef = useRef(null); // Reference for the paragraph
   const paragraphRef = useRef(null); // Reference for the paragraph
 
@@ -366,7 +370,16 @@ export const Home = () => {
         </center>
       </div>
       <Purpose />
-      <div className="discover"></div>
+      <div className="discover">
+        <center>
+          <button>
+            HOW WILL YOU DISCOVER YOUR PURPOSE
+            <MdArrowRightAlt className="icon" />
+          </button>
+        </center>
+        <Testimonials />
+      </div>
+      <WellBeing />
     </>
   );
 };
