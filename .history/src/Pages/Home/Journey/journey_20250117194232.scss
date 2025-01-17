@@ -1,0 +1,64 @@
+.journey-div {
+  height: 800px;
+  position: relative;
+  margin-bottom: 0;
+  img {
+    object-fit: cover;
+  }
+  .journey-cova {
+    position: absolute;
+    height: 950px !important;
+    width: 100%;
+    background: rgba(13, 55, 108, 0.8);
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    color: #fff;
+    .slide-div {
+      height: 300px;
+      background: #587396;
+      filter: blur(58px);
+      -webkit-filter: blur(58px);
+
+      //   border: solid 1px #fff;
+      border-radius: 12px;
+      box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 82px 0px;
+    }
+    h2 {
+      font-family: figtreeB;
+      color: #fff;
+      font-size: 45px;
+      span {
+        color: rgb(181, 210, 238);
+        font-family: garamondI;
+        font-size: 55px;
+      }
+    }
+    p {
+      font-family: garamondB;
+    }
+    button {
+      background: transparent;
+      border: solid 1px #ccc;
+      font-family: garamondB;
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 15px;
+      border-radius: 5px;
+
+      .icon {
+        display: none;
+      }
+      &:hover {
+        background: #a5cafb;
+        transition: 1s ease;
+        border: solid 1px #a5cafb;
+        color: #00285e;
+        .icon {
+          display: inline;
+        }
+      }
+    }
+  }
+}

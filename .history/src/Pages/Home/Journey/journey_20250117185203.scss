@@ -1,0 +1,33 @@
+.journey-div {
+  height: 1000px;
+  position: relative;
+  margin-bottom: 0;
+  img {
+    object-fit: cover;
+  }
+  .journey-cova {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(79, 107, 144, 0.9);
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    color: #fff;
+    .slide-div {
+      height: 300px;
+      background: #587396;
+      border: solid 1px #fff;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #fff;
+      font-size: 45px;
+      span {
+        color: rgb(181, 210, 238);
+        font-family: garamondI;
+      }
+    }
+  }
+}
