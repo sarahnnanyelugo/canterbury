@@ -138,6 +138,7 @@ export const Home = () => {
         </center>
 
         <div className="col-md-12 d-flex ">
+          {/* Left images */}
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -157,7 +158,9 @@ export const Home = () => {
 
                   borderRadius: "10px",
                 }}
-              ></div>
+              >
+                {/* <img src={Img1} width="100%" /> */}
+              </div>
               <div
                 className="col-md-8 landing-imgs"
                 style={{ padding: "10px" }}
@@ -168,11 +171,12 @@ export const Home = () => {
             </div>
           )}
 
+          {/* Center video */}
           <div
             className="video-container"
             style={{
               width: `${calcScale(scale)}%`,
-
+              // height: `${scale * 100}vh`,
               transition: "width 0.2s ease, height 0.2s ease",
               marginTop: "0",
             }}
@@ -189,6 +193,7 @@ export const Home = () => {
             ></video>
           </div>
 
+          {/* Right images */}
           {!hideImages && (
             <div
               className="d-flex images-container"

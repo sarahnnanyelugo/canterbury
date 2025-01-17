@@ -58,14 +58,6 @@ export const Home = () => {
     return; // () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const calcScale = function (scale) {
-    console.log(scale);
-    if (scale <= 0.5) return scale * 100;
-    if (scale <= 0.54) return scale * 200;
-    if (scale <= 0.6) return scale * 300;
-    if (scale < 1) return scale * 6000;
-    return scale * 6000;
-  };
   const calcTranslate = function (shift) {
     console.log("scroll-Y: " + yScroll, "shift: " + shift);
     // return yScroll >= 190 ? -(yScroll - shift) : -Math.min(shift * 3, 50);
@@ -120,7 +112,7 @@ export const Home = () => {
     <>
       {" "}
       <div
-        className="home-div"
+        className="home-div col-md-12 col-12"
         style={{
           transform: `translateY(${calcTranslate(shift)}px)`,
           transition: "all 0.2s ease",

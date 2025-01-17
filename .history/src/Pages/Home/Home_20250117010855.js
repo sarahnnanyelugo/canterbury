@@ -118,7 +118,6 @@ export const Home = () => {
 
   return (
     <>
-      {" "}
       <div
         className="home-div"
         style={{
@@ -138,6 +137,7 @@ export const Home = () => {
         </center>
 
         <div className="col-md-12 d-flex ">
+          {/* Left images */}
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -157,7 +157,9 @@ export const Home = () => {
 
                   borderRadius: "10px",
                 }}
-              ></div>
+              >
+                {/* <img src={Img1} width="100%" /> */}
+              </div>
               <div
                 className="col-md-8 landing-imgs"
                 style={{ padding: "10px" }}
@@ -168,11 +170,12 @@ export const Home = () => {
             </div>
           )}
 
+          {/* Center video */}
           <div
             className="video-container"
             style={{
               width: `${calcScale(scale)}%`,
-
+              // height: `${scale * 100}vh`,
               transition: "width 0.2s ease, height 0.2s ease",
               marginTop: "0",
             }}
@@ -189,6 +192,7 @@ export const Home = () => {
             ></video>
           </div>
 
+          {/* Right images */}
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -220,7 +224,7 @@ export const Home = () => {
           )}
         </div>
       </div>
-      <div style={{ height: "1000px", background: "#fff", opacity: "0" }} />
+
       <div
         style={{
           height: "900px",
@@ -269,6 +273,58 @@ export const Home = () => {
         </center>
       </div>
       <br />
+      {/* <center> */}
+      {/* Heading with slide-in effect */}
+      {/* <div className="heading-container " ref={headingRef}>
+        <div className="d-flex offset-md-3">
+          {" "}
+          <h1
+            className="heading1"
+            style={{
+              transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+            }}
+          >
+            AN EDUCATION THAT'S
+          </h1>{" "}
+          {""}
+          <h1
+            className="heading2"
+            style={{
+              display: "inline-block",
+              transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+              marginLeft: "10px",
+            }}
+          >
+            personal
+          </h1>
+        </div>
+        <center>
+          <div className="col-md-6">
+            <p
+              ref={paragraphRef}
+              style={{
+                transform: inViewParagraph
+                  ? "translateY(0)"
+                  : "translateY(100px)",
+                opacity: inViewParagraph ? 1 : 0,
+                transition: "transform 1s ease, opacity 1s ease",
+                color: "#4d5e69",
+                fontFamily: "figtree",
+              }}
+            >
+              No two Canterbury educations are the same, because no two students
+              are alike. Here, every class you take doesn’t just check a box; it
+              is part of a learning journey that is uniquely yours and opens a
+              door to your incredible potential.
+            </p>
+          </div>
+        </center>
+      </div> */}
+
       <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
@@ -284,11 +340,13 @@ export const Home = () => {
           />
         </center>
       </div>
+
       {/* <div style={{ background: "#fff" }}>
         {" "}
         <Ethos />
       </div> */}
       {/*  */}
+
       <div className="heading-container " ref={headingRef}>
         <div className="d-flex offset-md-4">
           {" "}

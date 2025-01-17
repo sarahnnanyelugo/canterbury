@@ -120,9 +120,8 @@ export const Home = () => {
     <>
       {" "}
       <div
-        className="home-div"
+        className="home-div col-md-12 col-12"
         style={{
-          transform: `translateY(${calcTranslate(shift)}px)`,
           transition: "all 0.2s ease",
         }}
       >

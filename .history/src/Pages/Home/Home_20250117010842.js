@@ -118,108 +118,6 @@ export const Home = () => {
 
   return (
     <>
-      {" "}
-      <div
-        className="home-div"
-        style={{
-          transform: `translateY(${calcTranslate(shift)}px)`,
-          transition: "all 0.2s ease",
-        }}
-      >
-        <center>
-          <div className="col-md-6 offset-md-0 offset-1">
-            <SectionHeading
-              text1="THIS IS"
-              text2="your story"
-              color1="#00285e"
-              color2="#2d79c5"
-            />
-          </div>
-        </center>
-
-        <div className="col-md-12 d-flex ">
-          {!hideImages && (
-            <div
-              className="d-flex images-container"
-              style={{
-                marginTop: "70px",
-                width: "40%",
-                transform: `translateX(-${shift}px)`,
-              }}
-            >
-              <div
-                className="col-md-8 left-wing"
-                style={{
-                  height: `${(0.5 / scale) * 400}px`,
-                  background: "url(" + Img1 + ")",
-                  backgroundPosition: "center",
-                  marginTop: "70px",
-
-                  borderRadius: "10px",
-                }}
-              ></div>
-              <div
-                className="col-md-8 landing-imgs"
-                style={{ padding: "10px" }}
-              >
-                <img src={Img6} width="100%" />
-                <img src={Img5} width="100%" className="mt-3" />
-              </div>
-            </div>
-          )}
-
-          <div
-            className="video-container"
-            style={{
-              width: `${calcScale(scale)}%`,
-
-              transition: "width 0.2s ease, height 0.2s ease",
-              marginTop: "0",
-            }}
-          >
-            <video
-              className="video"
-              width="100%"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls
-              src={MainVid}
-            ></video>
-          </div>
-
-          {!hideImages && (
-            <div
-              className="d-flex images-container"
-              style={{
-                marginTop: "70px",
-                width: "40%",
-                transform: `translateX(${shift}px)`,
-              }}
-            >
-              <div
-                className="col-md-8 col-12 landing-imgs"
-                style={{ padding: "10px" }}
-              >
-                <img src={Img6} width="100%" />
-                <img src={Img5} width="100%" className="mt-3" />
-              </div>
-              <div
-                className="col-md-8 right-wing"
-                style={{
-                  height: `${(0.5 / scale) * 400}px`,
-                  background: "url(" + Img4 + ")",
-
-                  marginTop: "70px",
-
-                  borderRadius: "10px",
-                }}
-              ></div>
-            </div>
-          )}
-        </div>
-      </div>
       <div style={{ height: "1000px", background: "#fff", opacity: "0" }} />
       <div
         style={{
@@ -269,6 +167,58 @@ export const Home = () => {
         </center>
       </div>
       <br />
+      {/* <center> */}
+      {/* Heading with slide-in effect */}
+      {/* <div className="heading-container " ref={headingRef}>
+        <div className="d-flex offset-md-3">
+          {" "}
+          <h1
+            className="heading1"
+            style={{
+              transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+            }}
+          >
+            AN EDUCATION THAT'S
+          </h1>{" "}
+          {""}
+          <h1
+            className="heading2"
+            style={{
+              display: "inline-block",
+              transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+              marginLeft: "10px",
+            }}
+          >
+            personal
+          </h1>
+        </div>
+        <center>
+          <div className="col-md-6">
+            <p
+              ref={paragraphRef}
+              style={{
+                transform: inViewParagraph
+                  ? "translateY(0)"
+                  : "translateY(100px)",
+                opacity: inViewParagraph ? 1 : 0,
+                transition: "transform 1s ease, opacity 1s ease",
+                color: "#4d5e69",
+                fontFamily: "figtree",
+              }}
+            >
+              No two Canterbury educations are the same, because no two students
+              are alike. Here, every class you take doesn’t just check a box; it
+              is part of a learning journey that is uniquely yours and opens a
+              door to your incredible potential.
+            </p>
+          </div>
+        </center>
+      </div> */}
+
       <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
@@ -284,11 +234,13 @@ export const Home = () => {
           />
         </center>
       </div>
+
       {/* <div style={{ background: "#fff" }}>
         {" "}
         <Ethos />
       </div> */}
       {/*  */}
+
       <div className="heading-container " ref={headingRef}>
         <div className="d-flex offset-md-4">
           {" "}

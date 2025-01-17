@@ -118,7 +118,6 @@ export const Home = () => {
 
   return (
     <>
-      {" "}
       <div
         className="home-div"
         style={{
@@ -138,6 +137,7 @@ export const Home = () => {
         </center>
 
         <div className="col-md-12 d-flex ">
+          {/* Left images */}
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -157,7 +157,9 @@ export const Home = () => {
 
                   borderRadius: "10px",
                 }}
-              ></div>
+              >
+                {/* <img src={Img1} width="100%" /> */}
+              </div>
               <div
                 className="col-md-8 landing-imgs"
                 style={{ padding: "10px" }}
@@ -168,11 +170,12 @@ export const Home = () => {
             </div>
           )}
 
+          {/* Center video */}
           <div
             className="video-container"
             style={{
               width: `${calcScale(scale)}%`,
-
+              // height: `${scale * 100}vh`,
               transition: "width 0.2s ease, height 0.2s ease",
               marginTop: "0",
             }}
@@ -189,6 +192,7 @@ export const Home = () => {
             ></video>
           </div>
 
+          {/* Right images */}
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -220,6 +224,7 @@ export const Home = () => {
           )}
         </div>
       </div>
+
       <div style={{ height: "1000px", background: "#fff", opacity: "0" }} />
       <div
         style={{
@@ -269,6 +274,7 @@ export const Home = () => {
         </center>
       </div>
       <br />
+
       <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
@@ -284,61 +290,13 @@ export const Home = () => {
           />
         </center>
       </div>
+
       {/* <div style={{ background: "#fff" }}>
         {" "}
         <Ethos />
       </div> */}
       {/*  */}
-      <div className="heading-container " ref={headingRef}>
-        <div className="d-flex offset-md-4">
-          {" "}
-          <h1
-            className="heading1"
-            style={{
-              transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
-              opacity: inViewHeading ? 1 : 0,
-              transition: "transform 2s ease, opacity 2s ease",
-            }}
-          >
-            A PATH TO
-          </h1>{" "}
-          {""}
-          <h1
-            className="heading3"
-            style={{
-              display: "inline-block",
-              transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
-              opacity: inViewHeading ? 1 : 0,
-              transition: "transform 2s ease, opacity 2s ease",
-              marginLeft: "10px",
-            }}
-          >
-            purpose
-          </h1>
-        </div>
-        <center>
-          <div className="col-md-6">
-            <p
-              ref={paragraphRef}
-              style={{
-                transform: inViewParagraph
-                  ? "translateY(0)"
-                  : "translateY(100px)",
-                opacity: inViewParagraph ? 1 : 0,
-                transition: "transform 1s ease, opacity 1s ease",
-                color: "#4d5e69",
-                fontFamily: "figtree",
-              }}
-            >
-              Your purpose here goes beyond the amazing things you achieve. It’s
-              also about diving deep into self-discovery, valuing the
-              differences of others, and believing that you can—and will—make a
-              difference in the world. Toggle Description FAITH Toggle
-              Description
-            </p>
-          </div>
-        </center>
-      </div>
+
       <Purpose />
       <div className="discover col-md-12">
         <center>

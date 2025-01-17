@@ -119,7 +119,7 @@ export const Home = () => {
   return (
     <>
       {" "}
-      <div
+      {/* <div
         className="home-div"
         style={{
           transform: `translateY(${calcTranslate(shift)}px)`,
@@ -138,6 +138,7 @@ export const Home = () => {
         </center>
 
         <div className="col-md-12 d-flex ">
+        
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -157,7 +158,9 @@ export const Home = () => {
 
                   borderRadius: "10px",
                 }}
-              ></div>
+              >
+              
+              </div>
               <div
                 className="col-md-8 landing-imgs"
                 style={{ padding: "10px" }}
@@ -168,11 +171,12 @@ export const Home = () => {
             </div>
           )}
 
+          
           <div
             className="video-container"
             style={{
               width: `${calcScale(scale)}%`,
-
+              
               transition: "width 0.2s ease, height 0.2s ease",
               marginTop: "0",
             }}
@@ -189,6 +193,7 @@ export const Home = () => {
             ></video>
           </div>
 
+          
           {!hideImages && (
             <div
               className="d-flex images-container"
@@ -219,7 +224,7 @@ export const Home = () => {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
       <div style={{ height: "1000px", background: "#fff", opacity: "0" }} />
       <div
         style={{

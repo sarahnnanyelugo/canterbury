@@ -119,32 +119,59 @@ export const WellBeing = () => {
 
       <div className="business-pricing-tab ">
         {" "}
-        <div className="tabs offset-md-5">
-          <button
-            className={`tab ${checkActive2(1, "active2")}`}
-            onClick={() => handleClick(1)}
-          >
-            Business
-          </button>
-          <button
-            className={`tab ${checkActive2(2, "active2")}`}
-            onClick={() => handleClick(2)}
-            style={{ marginLeft: "20px" }}
-          >
-            School
-          </button>
-        </div>
+        <center>
+          <div className="tabs ">
+            <button
+              className={`tab ${checkActive2(1, "active2")}`}
+              onClick={() => handleClick(1)}
+            >
+              STUDENT LIFE
+            </button>
+            <button
+              className={`tab ${checkActive2(2, "active2")}`}
+              onClick={() => handleClick(2)}
+              style={{ marginLeft: "20px" }}
+            >
+              LEADERSHIP
+            </button>
+            <button
+              className={`tab ${checkActive2(3, "active2")}`}
+              onClick={() => handleClick(3)}
+              style={{ marginLeft: "20px" }}
+            >
+              ATHLETICS
+            </button>{" "}
+            <button
+              className={`tab ${checkActive2(4, "active2")}`}
+              onClick={() => handleClick(4)}
+              style={{ marginLeft: "20px" }}
+            >
+              ARTS
+            </button>{" "}
+            <button
+              className={`tab ${checkActive2(5, "active2")}`}
+              onClick={() => handleClick(5)}
+              style={{ marginLeft: "20px" }}
+            >
+              TRAVEL
+            </button>
+          </div>
+        </center>
         <div className="panels" ref={tabRef}>
           <div className={`panel ${activeIndex === 1 ? "active2" : ""}`}>
             <div
-              className="sample-con col-md-6 offset-md-3"
+              className="d-md-flex col-md-6 offset-md-3"
               style={{
                 transform:
                   tabInView && activeIndex === 1 ? "scale(1)" : "scale(0.1)",
                 opacity: tabInView && activeIndex === 1 ? 1 : 0,
                 transition: "transform 1.5s ease, opacity 1.5s ease",
               }}
-            ></div>
+            >
+              <div className="tab-img1 col-md-4"></div>
+              <div className="middle-img col-md-4 "></div>
+              <div className="tab-img2 col-md-4"></div>
+            </div>
           </div>
           <div className={`panel ${activeIndex === 2 ? "active2" : ""}`}>
             {" "}
