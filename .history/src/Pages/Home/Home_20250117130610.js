@@ -268,10 +268,7 @@ export const Home = () => {
           </h3>
         </center>
       </div>
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
-      >
+      <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
           <SectionHeading
@@ -291,10 +288,7 @@ export const Home = () => {
         <Ethos />
       </div> */}
       {/*  */}
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
-      >
+      <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
           <SectionHeading

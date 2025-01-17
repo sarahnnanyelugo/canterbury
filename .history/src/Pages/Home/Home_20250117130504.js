@@ -268,10 +268,7 @@ export const Home = () => {
           </h3>
         </center>
       </div>
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
-      >
+      <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
           <SectionHeading
@@ -291,23 +288,69 @@ export const Home = () => {
         <Ethos />
       </div> */}
       {/*  */}
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
-      >
+      <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
           <SectionHeading
             text1="  A PATH TO"
             text2="purpose"
             color1="#00285e"
-            color2="#de7c0d"
-            paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
+            color2="#2d79c5"
+            paragraph="No two Canterbury educations are the same, because no two students
+              are alike. Here, every class you take doesn’t just check a box; it
+              is part of a learning journey that is uniquely yours and opens a
+              door to your incredible potential."
+          />
+        </center>
+      </div>
+      <div className="heading-container " ref={headingRef}>
+        <div className="d-flex offset-md-4">
+          {" "}
+          <h1
+            className="heading1"
+            style={{
+              transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+            }}
+          >
+            A PATH TO
+          </h1>{" "}
+          {""}
+          <h1
+            className="heading3"
+            style={{
+              display: "inline-block",
+              transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
+              opacity: inViewHeading ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+              marginLeft: "10px",
+            }}
+          >
+            purpose
+          </h1>
+        </div>
+        <center>
+          <div className="col-md-6">
+            <p
+              ref={paragraphRef}
+              style={{
+                transform: inViewParagraph
+                  ? "translateY(0)"
+                  : "translateY(100px)",
+                opacity: inViewParagraph ? 1 : 0,
+                transition: "transform 1s ease, opacity 1s ease",
+                color: "#4d5e69",
+                fontFamily: "figtree",
+              }}
+            >
+              Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
               differences of others, and believing that you can—and will—make a
               difference in the world. Toggle Description FAITH Toggle
-              Description"
-          />
+              Description
+            </p>
+          </div>
         </center>
       </div>
       <Purpose />

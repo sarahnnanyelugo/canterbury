@@ -268,10 +268,7 @@ export const Home = () => {
           </h3>
         </center>
       </div>
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
-      >
+      <div className="col-md-12" style={{ background: "#fff" }}>
         <center className=" ">
           {" "}
           <SectionHeading
@@ -293,7 +290,7 @@ export const Home = () => {
       {/*  */}
       <div
         className="col-md-12"
-        style={{ background: "#fff", height: "300px" }}
+        style={{ background: "#fff", height: "200px" }}
       >
         <center className=" ">
           {" "}

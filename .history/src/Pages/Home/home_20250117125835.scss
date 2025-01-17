@@ -76,7 +76,7 @@
   padding-top: 100px;
   h3 {
     position: absolute;
-    top: 30%;
+    // top: 30%;
     text-align: center;
     color: #b5d2fc !important;
     font-family: garamondB;
@@ -93,38 +93,38 @@
     }
   }
 }
-
-// .heading-container {
-//   text-align: center !important;
-
-//   background: #fff;
-//   h1 {
-//   }
-//   .heading1 {
-//     color: #00285e;
-//     font-size: 40px;
-//     font-family: figtreeB;
-//     @media screen and (max-width: 820px) {
-//       font-size: 17px;
-//     }
-//   }
-//   .heading2 {
-//     color: #2d79c5;
-//     font-size: 55px;
-//     font-family: garamondI;
-//     @media screen and (max-width: 820px) {
-//       font-size: 20px;
-//     }
-//   }
-//   .heading3 {
-//     color: #de7c0d;
-//     font-size: 55px;
-//     font-family: garamondI;
-//     @media screen and (max-width: 820px) {
-//       font-size: 20px;
-//     }
-//   }
-// }
+.heading-container {
+  text-align: center !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+  h1 {
+  }
+  .heading1 {
+    color: #00285e;
+    font-size: 40px;
+    font-family: figtreeB;
+    @media screen and (max-width: 820px) {
+      font-size: 17px;
+    }
+  }
+  .heading2 {
+    color: #2d79c5;
+    font-size: 55px;
+    font-family: garamondI;
+    @media screen and (max-width: 820px) {
+      font-size: 20px;
+    }
+  }
+  .heading3 {
+    color: #de7c0d;
+    font-size: 55px;
+    font-family: garamondI;
+    @media screen and (max-width: 820px) {
+      font-size: 20px;
+    }
+  }
+}
 
 .discover {
   height: 1000px;
