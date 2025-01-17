@@ -21,7 +21,7 @@
       border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 20px;
       text-align: center;
-      padding: 30px;
+      padding-top: 30px;
       box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 
       backdrop-filter: blur(15px);
@@ -60,9 +60,9 @@
         display: none;
       }
       &:hover {
-        background: #b5d2ee;
+        background: #a5cafb;
         transition: 1s ease;
-        border: solid 1px #b5d2ee;
+        border: solid 1px #a5cafb;
         color: #00285e;
         .icon {
           display: inline;
@@ -87,15 +87,9 @@
 .carousel-indicators {
   // display: none;
   top: 50%;
-  left: -42%;
-  button {
-    height: 7px !important;
-    width: 7px !important;
-    border-radius: 100%;
-  }
+  left: -41%;
 }
-.carousel-indicators-button {
-}
+
 .carousel-control-prev {
   left: 10% !important;
 }

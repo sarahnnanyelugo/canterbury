@@ -39,9 +39,9 @@ export const Journey = () => {
                     <IoArrowForward className="icon" />
                   </button>
                 </div>
-              </div>{" "}
-              <PartnersSlider />
+              </div>
             </div>{" "}
+            <PartnersSlider />
           </div>
         </Carousel.Item>
         <Carousel.Item>
