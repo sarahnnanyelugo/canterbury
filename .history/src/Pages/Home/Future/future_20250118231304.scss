@@ -1,0 +1,28 @@
+.future-div {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1s ease-in-out, transform 1.2s ease-in-out;
+  will-change: background, transform; // Helps prevent flickering
+  overflow: hidden;
+  backface-visibility: hidden;
+  &.bg-white {
+    background: white;
+  }
+
+  &.bg-image {
+    background: url("../../../assets/images/future.jpg") center/cover no-repeat;
+    background-size: 110% auto;
+  }
+
+  &.zoom-in {
+    transform: scale(1.05);
+  }
+
+  &.zoom-out {
+    transform: scale(1.05);
+    // transform: scale(0.95);
+  }
+}
