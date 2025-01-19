@@ -1,0 +1,23 @@
+.site-content {
+  transition: margin-bottom 0.3s ease-in-out;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: -100px; /* Initially hide the footer */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.site-footer.show-footer {
+  bottom: 0; /* Show the footer when visible */
+}
+
+.site-footer.hide-footer {
+  bottom: -100px; /* Hide the footer when not visible */
+}

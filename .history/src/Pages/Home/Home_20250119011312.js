@@ -4,7 +4,6 @@ import Img1 from "../../assets/images/img1.jpg";
 import Img2 from "../../assets/images/img2.jpg";
 import Img3 from "../../assets/images/img3.jpg";
 import { IoArrowForward } from "react-icons/io5";
-import { Footer } from "../../components/Footer/Footer";
 
 import Img4 from "../../assets/images/img4.jpg";
 import Img6 from "../../assets/images/img6.png";
@@ -23,9 +22,6 @@ export const Home = () => {
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
   const [hideImages, setHideImages] = useState(false); // Control to hide images
   const [yScroll, setYScroll] = useState(0);
-  const [mxScroll, setMxScroll] = useState(
-    () => window.innerHeight * 0.2 // Faster effect, approx. 2
-  );
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
 
@@ -46,8 +42,8 @@ export const Home = () => {
       setShift(shiftValue);
 
       //   Hide images when video is close to full size
-      // if (scrollY >= maxScroll) setHideImages(true);
-      // else setHideImages(false);
+      if (scrollY >= maxScroll) setHideImages(true);
+      else setHideImages(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -75,14 +71,9 @@ export const Home = () => {
   const calcTranslate = function (shift) {
     console.log("scroll-Y: " + yScroll, "shift: " + shift);
     // return yScroll >= 190 ? -(yScroll - shift) : -Math.min(shift * 3, 50);
-
     return -Math.min(shift * 12, 270);
   };
 
-  useEffect(() => {
-    if (yScroll >= 5000) setHideImages(true);
-    else setHideImages(false);
-  }, [yScroll]);
   const calculateOpacity = function () {
     const sc = yScroll / 1000;
     console.log("sc: " + sc);
@@ -181,28 +172,27 @@ export const Home = () => {
             </div>
           )}
 
-          {!hideImages && (
-            <div
-              className="video-container"
-              style={{
-                width: `${calcScale(scale)}%`,
+          <div
+            className="video-container"
+            style={{
+              width: `${calcScale(scale)}%`,
 
-                transition: "width 0.2s ease, height 0.2s ease",
-                marginTop: "0",
-              }}
-            >
-              <video
-                className="video"
-                width="100%"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                src={MainVid}
-              ></video>
-            </div>
-          )}
+              transition: "width 0.2s ease, height 0.2s ease",
+              marginTop: "0",
+            }}
+          >
+            <video
+              className="video"
+              width="100%"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              src={MainVid}
+            ></video>
+            <Footer />
+          </div>
 
           {!hideImages && (
             <div

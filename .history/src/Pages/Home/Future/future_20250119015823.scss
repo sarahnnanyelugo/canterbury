@@ -1,0 +1,79 @@
+.future-div {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+  will-change: background, transform; // Helps prevent flickering
+  overflow: hidden !important;
+  backface-visibility: hidden;
+
+  &.bg-white {
+    background: white;
+  }
+
+  &.bg-image {
+    background: url("../../../assets/images/future.png") center/cover no-repeat;
+    background-size: 110% auto;
+    opacity: 1; // Fully visible when it's bg-image
+  }
+
+  &.zoom-in {
+    transform: scale(1);
+  }
+
+  &.zoom-out {
+    transform: scale(0.5); // Zoom out transition for background image
+  }
+
+  // Text color based on background
+  &.text-dark {
+    color: black; // Dark text for white background
+  }
+
+  &.text-light {
+    color: white; // Light text for image background
+  }
+  .blue {
+    color: #b5d2ee;
+  }
+  .gold {
+    color: #de7c0d;
+  }
+
+  span {
+    font-family: garamondI;
+  }
+  &.bg-white .col-md-4 h2,
+  &.bg-white .col-md-4 p {
+    transition: color 0.5s ease; // Smooth color transition for text
+  }
+  h2 {
+    font-size: 50px;
+    font-family: figtree;
+  }
+  button {
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: figtree;
+    background: #b5d2ee;
+    color: #00285e;
+    padding: 12px 30px;
+    font-size: 13px;
+    transition: 1s ease;
+    &:hover {
+      color: #b5d2ee;
+      background: #00285e;
+      .icon {
+        transition: 1s ease;
+        display: inline;
+      }
+    }
+    .icon {
+      transition: 1s ease;
+      display: none;
+    }
+  }
+}

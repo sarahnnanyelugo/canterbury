@@ -72,10 +72,9 @@ export const Future = () => {
           height: "1000px",
           background: "blue",
           position: "fixed",
-          bottom: 0,
-          zIndex: "-0",
+          zIndex: "2",
         }}
-      ></div>
+      />
     </>
   );
 };

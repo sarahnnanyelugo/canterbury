@@ -80,7 +80,7 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    if (yScroll >= 5000) setHideImages(true);
+    if (yScroll >= mxScroll) setHideImages(true);
     else setHideImages(false);
   }, [yScroll]);
   const calculateOpacity = function () {
@@ -181,28 +181,26 @@ export const Home = () => {
             </div>
           )}
 
-          {!hideImages && (
-            <div
-              className="video-container"
-              style={{
-                width: `${calcScale(scale)}%`,
+          <div
+            className="video-container"
+            style={{
+              width: `${calcScale(scale)}%`,
 
-                transition: "width 0.2s ease, height 0.2s ease",
-                marginTop: "0",
-              }}
-            >
-              <video
-                className="video"
-                width="100%"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                src={MainVid}
-              ></video>
-            </div>
-          )}
+              transition: "width 0.2s ease, height 0.2s ease",
+              marginTop: "0",
+            }}
+          >
+            <video
+              className="video"
+              width="100%"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              src={MainVid}
+            ></video>
+          </div>
 
           {!hideImages && (
             <div

@@ -68,14 +68,8 @@ export const Future = () => {
         </center>
       </div>
       <div
-        style={{
-          height: "1000px",
-          background: "blue",
-          position: "fixed",
-          bottom: 0,
-          zIndex: "-0",
-        }}
-      ></div>
+        style={{ height: "1000px", background: "blue", position: "fixed" }}
+      />
     </>
   );
 };

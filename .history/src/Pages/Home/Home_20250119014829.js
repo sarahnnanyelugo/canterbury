@@ -23,9 +23,7 @@ export const Home = () => {
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
   const [hideImages, setHideImages] = useState(false); // Control to hide images
   const [yScroll, setYScroll] = useState(0);
-  const [mxScroll, setMxScroll] = useState(
-    () => window.innerHeight * 0.2 // Faster effect, approx. 2
-  );
+  const [mxScroll, setMxScroll] = useState(0);
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
 
@@ -75,14 +73,11 @@ export const Home = () => {
   const calcTranslate = function (shift) {
     console.log("scroll-Y: " + yScroll, "shift: " + shift);
     // return yScroll >= 190 ? -(yScroll - shift) : -Math.min(shift * 3, 50);
-
+    if (yScroll >= maxScroll) setHideImages(true);
+    else setHideImages(false);
     return -Math.min(shift * 12, 270);
   };
 
-  useEffect(() => {
-    if (yScroll >= 5000) setHideImages(true);
-    else setHideImages(false);
-  }, [yScroll]);
   const calculateOpacity = function () {
     const sc = yScroll / 1000;
     console.log("sc: " + sc);
@@ -181,28 +176,26 @@ export const Home = () => {
             </div>
           )}
 
-          {!hideImages && (
-            <div
-              className="video-container"
-              style={{
-                width: `${calcScale(scale)}%`,
+          <div
+            className="video-container"
+            style={{
+              width: `${calcScale(scale)}%`,
 
-                transition: "width 0.2s ease, height 0.2s ease",
-                marginTop: "0",
-              }}
-            >
-              <video
-                className="video"
-                width="100%"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                src={MainVid}
-              ></video>
-            </div>
-          )}
+              transition: "width 0.2s ease, height 0.2s ease",
+              marginTop: "0",
+            }}
+          >
+            <video
+              className="video"
+              width="100%"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              src={MainVid}
+            ></video>
+          </div>
 
           {!hideImages && (
             <div

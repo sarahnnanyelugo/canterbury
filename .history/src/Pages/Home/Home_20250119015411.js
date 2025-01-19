@@ -80,7 +80,7 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    if (yScroll >= 5000) setHideImages(true);
+    if (yScroll >= mxScroll) setHideImages(true);
     else setHideImages(false);
   }, [yScroll]);
   const calculateOpacity = function () {
