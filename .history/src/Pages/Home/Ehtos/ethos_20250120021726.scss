@@ -1,0 +1,28 @@
+.slider-container {
+}
+.myCustomCarousel .slick-arrow {
+  color: #070606 !important;
+  border: none;
+  outline: none;
+  background: #242424 !important;
+}
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+.sleek-div {
+  background: red;
+  img {
+    object-fit: cover;
+  }
+  .main1 {
+    height: 700px !important;
+    object-fit: cover !important;
+    background-position: center;
+    background: url("../../../assets/images/broad.jpg");
+  }
+}

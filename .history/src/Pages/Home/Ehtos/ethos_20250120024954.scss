@@ -1,19 +1,17 @@
 .slider-container {
-  padding-bottom: 80px;
 }
 .myCustomCarousel .slick-arrow {
   color: #070606 !important;
   border: none;
   outline: none;
-  background: #000;
-  border-radius: 100%;
+  background: #242424 !important;
 }
 .slick-prev {
-  left: -3% !important;
+  left: 3% !important;
   z-index: 1;
 }
 .slick-next {
-  right: -3% !important;
+  right: 3% !important;
   z-index: 1;
 }
 .sleek-div {
@@ -29,7 +27,5 @@
     color: #fff;
     margin-left: 10px;
     background: rgba(0, 40, 94, 0.9);
-    padding: 40px;
-    font-family: figtreeB;
   }
 }

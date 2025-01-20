@@ -28,36 +28,24 @@ function Ethos() {
     <div className="slider-container col-md-8 offset-md-2">
       <Slider {...settings}>
         <div className="sleek-div d-md-flex">
-          <div className="col-md-7 ">
-            <img src={MainPic1} width="100%" />
-          </div>
-          <div className="inscription col-md-5">
-            <h5>Broad, Dynamic Curriculum</h5>
-            <p>
-              We offer a remarkable range of courses to build the strong
-              foundation that top colleges seek while giving you the freedom to
-              explore your intellectual passions—even ones you haven’t
-              discovered yet.
-            </p>
-          </div>
-        </div>
-        <div className="sleek-div d-flex">
-          <div className="col-md-7">
+          <div className="col-md-6">
             <img src={MainPic2} width="100%" />
           </div>
-          <div className="inscription col-md-5"></div>
         </div>
-        <div className="sleek-div d-flex">
-          <div className="col-md-7">
-            <img src={MainPic3} width="100%" />
-          </div>
-          <div className="inscription col-md-5"></div>
+        <div className="sleek-div">
+          <h3>2</h3>
         </div>
-        <div className="sleek-div d-flex">
-          <div className="col-md-7">
-            <img src={MainPic4} width="100%" />
-          </div>
-          <div className="inscription col-md-5"></div>
+        <div className="sleek-div">
+          <h3>3</h3>
+        </div>
+        <div className="sleek-div">
+          <h3>4</h3>
+        </div>
+        <div className="sleek-div">
+          <h3>5</h3>
+        </div>
+        <div className="sleek-div">
+          <h3>6</h3>
         </div>
       </Slider>
     </div>
