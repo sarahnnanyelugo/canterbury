@@ -1,0 +1,10 @@
+.story-banner {
+  position: relative;
+  img {
+    height: 700px;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+  }
+}

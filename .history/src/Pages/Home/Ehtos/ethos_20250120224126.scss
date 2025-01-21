@@ -1,0 +1,44 @@
+.slider-container {
+  padding-bottom: 100px;
+}
+.myCustomCarousel .slick-arrow {
+  color: #070606 !important;
+  border: none;
+  outline: none;
+  background: #000;
+  border-radius: 100%;
+  &:hover {
+    color: #070606 !important;
+    background: #000;
+  }
+}
+.slick-prev {
+  left: -3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: -3% !important;
+  z-index: 1;
+}
+
+.sleek-div {
+  height: 300px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+  .inscription {
+    height: 250px;
+    margin-top: 25px;
+    color: #fff;
+    margin-left: 10px;
+    background: rgba(0, 40, 94, 0.4);
+    padding: 40px;
+    font-family: figtreeB;
+    h4 {
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+  }
+}

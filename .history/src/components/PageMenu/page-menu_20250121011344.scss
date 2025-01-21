@@ -1,0 +1,51 @@
+.page-menu {
+  background: #fff;
+  padding: 30px 40px;
+  box-shadow: 0 0 5px 5px rgb(225, 224, 224);
+  border-radius: 5px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display menu items inline using flexbox */
+    flex-direction: row; /* Align items in a row */
+    justify-content: flex-start; /* Align items to the left */
+    background: #f8f8f8;
+  }
+
+  .menu-item {
+    padding: 12px 20px; /* Adjust padding for inline layout */
+    background: #eee;
+    border-right: 1px solid #ddd; /* Border between items */
+    transition: background 0.3s ease-in-out;
+  }
+
+  .menu-item:last-child {
+    border-right: none; /* Remove the border on the last item */
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .menu-item:hover {
+    background: #ddd;
+  }
+
+  /* Add vertical left border when hovering over any menu item */
+  .menu-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #007bff;
+    transition: background 0.3s ease-in-out;
+  }
+}

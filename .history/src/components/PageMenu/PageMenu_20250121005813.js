@@ -1,0 +1,17 @@
+import React from "react";
+
+export const PageMenu = () => {
+  return (
+    <div className="page-menu">
+      <ul className="menu list-inline list-unstyled">
+        {pageMenuData.map((item, index) => (
+          <li key={index} className="menu-item list-inline-item">
+            <Link to={item.link} className="menu-link">
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
