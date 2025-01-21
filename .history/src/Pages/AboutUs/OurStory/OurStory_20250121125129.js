@@ -218,21 +218,6 @@ export const OurStory = () => {
             </div>
           </div>
         </div>
-
-        <div className="graduates-profile">
-          <center>
-            <div className="col-md-6">
-              <h1>
-                PROFILE OF <span>our graduates</span>
-              </h1>
-              <p>
-                At Canterbury, our academic program shapes you to stand out and
-                make a difference. So start to imagine who you’ll become at the
-                end of your high school journey…
-              </p>
-            </div>
-          </center>
-        </div>
       </div>
     </>
   );

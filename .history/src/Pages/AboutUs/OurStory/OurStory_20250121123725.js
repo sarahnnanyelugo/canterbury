@@ -2,12 +2,10 @@ import React from "react";
 import "./our-story.scss";
 import Hero from "../../../assets/images/storyHero.jpg";
 import Chapel from "../../../assets/images/chapel.png";
-import Mentor from "../../../assets/images/mentor.png";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import { ImQuotesLeft } from "react-icons/im";
-import CountUp from "react-countup";
 
 export const OurStory = () => {
   return (
@@ -122,116 +120,18 @@ export const OurStory = () => {
         <div className="stats-div">
           <div className="col-md-8 offset-md-2 d-flex">
             <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={5000}
-                  duration={2}
-                  suffix="+"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
+              <h1>330</h1>
               <h5>AVERAGE ENROLLMENT</h5>
             </div>{" "}
             <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={150}
-                  duration={2}
-                  suffix="+"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
+              <h1>150</h1>
               <h5>HILTOP ACRES</h5>
             </div>{" "}
             <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={1.5}
-                  duration={2}
-                  suffix=""
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
+              <h1>1.5</h1>
               <h5>HOURS TO NYC</h5>
             </div>
           </div>
-        </div>
-
-        <div className="col-md-8 offset-md-2 d-flex chapel">
-          {" "}
-          <div className="col-md-6  first-div">
-            <img src={Mentor} width="100%" />
-          </div>
-          <div className="col-md-6">
-            <h3>
-              MENTORS IN
-              <span>life</span>
-            </h3>
-            <p>
-              Our teachers are not just educators; they are life mentors who
-              have chosen to immerse themselves in the lives of students. By
-              residing on campus, they make a profound commitment to be there
-              for every pivotal moment. Their dedication goes beyond the
-              classroom, shaping you into an empowered and insightful citizen.
-            </p>
-
-            <button>MEET OUR FACULTY</button>
-          </div>
-        </div>
-        <div className="stats-div2">
-          <div className="col-md-8 offset-md-2 d-flex">
-            <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={75}
-                  duration={2}
-                  suffix="%"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
-              <h5>FACULTY HOLD ADVANCED DEGREES</h5>
-            </div>{" "}
-            <div className="stats-digits col-4">
-              <h1>6:1</h1>
-              <h5>STUDENT-FACULTY RATIO</h5>
-            </div>{" "}
-            <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={70}
-                  duration={2}
-                  suffix="%"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
-              <h5>BOARDING STUDENTS</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="graduates-profile">
-          <center>
-            <div className="col-md-6">
-              <h1>
-                PROFILE OF <span>our graduates</span>
-              </h1>
-              <p>
-                At Canterbury, our academic program shapes you to stand out and
-                make a difference. So start to imagine who you’ll become at the
-                end of your high school journey…
-              </p>
-            </div>
-          </center>
         </div>
       </div>
     </>

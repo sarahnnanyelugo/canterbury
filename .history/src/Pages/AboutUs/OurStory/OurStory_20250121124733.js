@@ -184,55 +184,6 @@ export const OurStory = () => {
             <button>MEET OUR FACULTY</button>
           </div>
         </div>
-        <div className="stats-div2">
-          <div className="col-md-8 offset-md-2 d-flex">
-            <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={75}
-                  duration={2}
-                  suffix="%"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
-              <h5>FACULTY HOLD ADVANCED DEGREES</h5>
-            </div>{" "}
-            <div className="stats-digits col-4">
-              <h1>6:1</h1>
-              <h5>STUDENT-FACULTY RATIO</h5>
-            </div>{" "}
-            <div className="stats-digits col-4">
-              <h1>
-                {" "}
-                <CountUp
-                  start={0}
-                  end={70}
-                  duration={2}
-                  suffix="%"
-                  enableScrollSpy={true}
-                />{" "}
-              </h1>
-              <h5>BOARDING STUDENTS</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="graduates-profile">
-          <center>
-            <div className="col-md-6">
-              <h1>
-                PROFILE OF <span>our graduates</span>
-              </h1>
-              <p>
-                At Canterbury, our academic program shapes you to stand out and
-                make a difference. So start to imagine who you’ll become at the
-                end of your high school journey…
-              </p>
-            </div>
-          </center>
-        </div>
       </div>
     </>
   );

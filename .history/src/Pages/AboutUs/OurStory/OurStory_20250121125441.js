@@ -221,7 +221,7 @@ export const OurStory = () => {
 
         <div className="graduates-profile">
           <center>
-            <div className="col-md-6">
+            <div className="col-md-5">
               <h1>
                 PROFILE OF <span>our graduates</span>
               </h1>
