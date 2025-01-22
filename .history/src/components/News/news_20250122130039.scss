@@ -1,0 +1,43 @@
+.modal-body {
+  max-height: 800px;
+  margin-top: 0px !important;
+  overflow: scroll;
+  h5 {
+    font-family: garamondB;
+    color: #00285e;
+    font-weight: bold;
+  }
+}
+.story-time {
+  height: 500px;
+  margin-bottom: 300px;
+  cursor: pointer;
+  h4 {
+    padding: 30px;
+    font-family: garamondB;
+    color: #00285e;
+    font-weight: bold;
+  }
+
+  p {
+    padding-left: 30px;
+    font-family: figtreeB;
+  }
+}
+.modal-content {
+  max-height: 900px;
+  border: none !important;
+  img {
+    min-height: 300px;
+  }
+  p {
+    font-family: figtreeB;
+    color: rgb(94, 92, 92);
+    line-height: 30px;
+  }
+  small {
+    // color: red;
+    margin-bottom: 40px;
+    font-family: figtreeB;
+  }
+}

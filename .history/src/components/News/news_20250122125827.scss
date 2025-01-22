@@ -1,0 +1,38 @@
+.modal-body {
+  max-height: 800px;
+  margin-top: 0px !important;
+  overflow: scroll;
+  h5 {
+    font-family: garamondB;
+    color: #00285e;
+    font-weight: bold;
+  }
+  small {
+    margin-bottom: 30px;
+  }
+}
+.story-time {
+  height: 500px;
+  margin-bottom: 300px;
+  cursor: pointer;
+  h4 {
+    padding: 30px;
+    font-family: garamondB;
+    color: #00285e;
+    font-weight: bold;
+  }
+
+  p {
+    padding-left: 30px;
+    font-family: figtreeB;
+  }
+}
+.modal-content {
+  max-height: 900px;
+
+  p {
+    font-family: figtreeB;
+    color: rgb(94, 92, 92);
+    line-height: 30px;
+  }
+}

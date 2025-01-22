@@ -1,0 +1,34 @@
+.values-div {
+  background: #f2f4f6;
+  height: 430px;
+  margin-top: -154px;
+  margin-left: 10px;
+  h4 {
+    font-family: figtreeB;
+    color: #4e5150;
+    padding: 14px;
+  }
+  p {
+    font-family: figtree;
+    color: #4e5150;
+    padding-left: 14px;
+    font-size: 14px;
+  }
+  img {
+    border-radius: 0 !important;
+  }
+}
+.values-outline {
+  height: 165px;
+  background: #00285e;
+  padding: 10px;
+}
+.value-img {
+  border: solid 3px red;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  img {
+    object-fit: cover !important;
+  }
+}
