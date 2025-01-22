@@ -1,0 +1,83 @@
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import React, { useState } from "react";
+import "./news.scss";
+import { storyData } from "../../TestData/storyData";
+function NewsItem({ show, onHide, item, data, props }) {
+  if (!item) return null; // Ensure item exists before rendering
+
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <div className="modal-content ">
+          <div className="d-md-flex">
+            {" "}
+            <div className="col-md7">
+              <img width="100%" src={data.photo} />
+            </div>
+            <div className="col-md-5">
+              {" "}
+              <h3>{data.heading}</h3>
+              <small>{data.date}</small>
+              <p>{data.paragraph1}</p>
+              <p>{data.paragraph2}</p>
+              <p>{data.paragraph3}</p>
+            </div>
+          </div>
+          <p>{data.others}</p>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function News() {
+  const [modalShow, setModalShow] = React.useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleShowModal = (item) => {
+    setSelectedItem(item);
+    setModalShow(true);
+  };
+
+  return (
+    <>
+      <div className="col">
+        {" "}
+        {storyData.map((item) => (
+          <div
+            className="story-time"
+            key={item.id}
+            onClick={() => handleShowModal(item)}
+          >
+            <div>
+              <img src={item.photo} width="100%" alt="News Thumbnail" />
+            </div>
+            <h3>{item.title}</h3>
+            <p>{item.date}</p>
+          </div>
+        ))}
+        <NewsItem
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+          item={selectedItem}
+        />
+      </div>
+    </>
+  );
+}
+
+export default News;
