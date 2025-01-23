@@ -305,24 +305,30 @@
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1),
       0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    font-family: "Inter", sans-serif;
     font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #535062;
     animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
     p {
       font-size: 13px;
       line-height: 18px;
       margin-top: 0;
-      font-family: garamondB;
-      color: black;
-      opacity: 1;
     }
     h5 {
-      font-size: 18px;
-      font-family: figtreeB;
       margin-bottom: 0px;
-      color: #00285e;
     }
   }
 
+  .model-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #d02e51;
+    display: block;
+  }
   svg {
     position: absolute;
     top: 0;

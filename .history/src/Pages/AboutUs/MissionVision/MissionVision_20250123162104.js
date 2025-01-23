@@ -33,24 +33,24 @@ export const MissionVision = () => {
         "Demanding academic subjects are the heart of our program and are",
     },
     {
-      modelName: "Respect for All",
+      modelName: "Gretel-Tabular",
       description:
-        "We foster an environment where students learn the valuable social skills of cooperation and mutual respect.",
+        "A model designed for generating realistic tabular data from structured sources",
     },
     {
-      modelName: "Individual Potential",
+      modelName: "Gretel-LSTM",
       description:
-        "Our extremely devoted educators are able to see the individual potential of each child and guide hem to full bloom.",
+        "Sequence-based model for synthetic data generation using deep learning",
     },
     {
-      modelName: "Honesty Always",
+      modelName: "Gretel-DP",
       description:
-        "Each child who enrolls at Canterbury must sign, and live by, the Canterbury Honor Code.",
+        "A differentially private data model ensuring privacy-preserving synthetic data",
     },
     {
-      modelName: "Character Matters",
+      modelName: "Gretel-TGAN",
       description:
-        "We believe that each studen'ts moral and ethical strengths lie in their intentions and actions.",
+        "Generative model tailored for structured datasets with enhanced performance",
     },
   ];
   console.log(modelData);
@@ -222,37 +222,6 @@ export const MissionVision = () => {
             </div>
           </div>
         </div>
-        <div className="mission-words d-md-flex col-md-12">
-          <div className="col-md-7">
-            <div className="void" id="void">
-              <div className="crop">
-                <ul id="card-list">
-                  {modelData.map((model, index) => (
-                    <li key={index}>
-                      <div className="card">
-                        <span className="model-name">
-                          <h5>{model.modelName}</h5>
-                        </span>
-                        <span>
-                          <p>{model.description}</p>
-                        </span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <div className="last-circle"></div>
-                <div className="second-circle"></div>
-              </div>
-              <div className="mask"></div>
-              <div className="center-circle">
-                <h3>
-                  The Words <br />
-                  We Live By
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="remarkable">
           <center>
             <div className="col-md-5">
@@ -287,6 +256,37 @@ export const MissionVision = () => {
               <hr />
             </div>
           </center>
+        </div>
+        <div className="mission-words d-md-flex col-md-12">
+          <div className="col-md-6">
+            <div className="void" id="void">
+              <div className="crop">
+                <ul id="card-list">
+                  {modelData.map((model, index) => (
+                    <li key={index}>
+                      <div className="card">
+                        <span className="model-name">
+                          <h5>{model.modelName}</h5>
+                        </span>
+                        <span>
+                          <p>{model.description}</p>
+                        </span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <div className="last-circle"></div>
+                <div className="second-circle"></div>
+              </div>
+              <div className="mask"></div>
+              <div className="center-circle">
+                <h3>
+                  The Words <br />
+                  We Live By
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

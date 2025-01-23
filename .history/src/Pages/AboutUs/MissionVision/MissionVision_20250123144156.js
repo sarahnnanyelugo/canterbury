@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/justice.jpg";
 import Chapel from "../../../assets/images/chapel.png";
@@ -20,45 +20,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Values from "./Values/Values";
 
 export const MissionVision = () => {
-  const count = 6; // Define count to prevent errors
-  const modelData = [
-    {
-      modelName: "Leadership",
-      description:
-        "Our goal is to reach out to all students and help them discover and develop their emerging leadership skills",
-    },
-    {
-      modelName: "Academic Rigor",
-      description:
-        "Demanding academic subjects are the heart of our program and are",
-    },
-    {
-      modelName: "Respect for All",
-      description:
-        "We foster an environment where students learn the valuable social skills of cooperation and mutual respect.",
-    },
-    {
-      modelName: "Individual Potential",
-      description:
-        "Our extremely devoted educators are able to see the individual potential of each child and guide hem to full bloom.",
-    },
-    {
-      modelName: "Honesty Always",
-      description:
-        "Each child who enrolls at Canterbury must sign, and live by, the Canterbury Honor Code.",
-    },
-    {
-      modelName: "Character Matters",
-      description:
-        "We believe that each studen'ts moral and ethical strengths lie in their intentions and actions.",
-    },
-  ];
-  console.log(modelData);
-
-  useEffect(() => {
-    document.documentElement.style.setProperty("--count", count);
-  }, [count]);
-
   return (
     <>
       <div className="story-div col-md-12">
@@ -222,37 +183,6 @@ export const MissionVision = () => {
             </div>
           </div>
         </div>
-        <div className="mission-words d-md-flex col-md-12">
-          <div className="col-md-7">
-            <div className="void" id="void">
-              <div className="crop">
-                <ul id="card-list">
-                  {modelData.map((model, index) => (
-                    <li key={index}>
-                      <div className="card">
-                        <span className="model-name">
-                          <h5>{model.modelName}</h5>
-                        </span>
-                        <span>
-                          <p>{model.description}</p>
-                        </span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <div className="last-circle"></div>
-                <div className="second-circle"></div>
-              </div>
-              <div className="mask"></div>
-              <div className="center-circle">
-                <h3>
-                  The Words <br />
-                  We Live By
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="remarkable">
           <center>
             <div className="col-md-5">
@@ -288,7 +218,26 @@ export const MissionVision = () => {
             </div>
           </center>
         </div>
+        <div className="mission-words d-md-flex col-md-8 offset-md-2">
+          <div className="col-md-6"><div class="void" id="void">
+	<div class="crop">
+	<ul id="card-list" style="--count: 6;">
+		<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+		<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+		<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+		<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+		<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+				<li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+	</ul>
+	<div class="last-circle"></div>
+	<div class="second-circle"></div>
+	</div>
+	<div class="mask"></div>
+	<div class="center-circle"></div>
+<div></div>
+        </div>
       </div>
+      
     </>
   );
 };

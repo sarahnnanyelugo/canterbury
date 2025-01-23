@@ -306,20 +306,18 @@
       0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #535062;
     animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
     p {
       font-size: 13px;
       line-height: 18px;
       margin-top: 0;
-      font-family: garamondB;
-      color: black;
-      opacity: 1;
     }
     h5 {
-      font-size: 18px;
-      font-family: figtreeB;
       margin-bottom: 0px;
-      color: #00285e;
     }
   }
 

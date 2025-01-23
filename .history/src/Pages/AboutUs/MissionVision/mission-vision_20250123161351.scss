@@ -308,12 +308,10 @@
     font-style: normal;
     animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
     p {
-      font-size: 13px;
+      font-size: 15px;
       line-height: 18px;
       margin-top: 0;
       font-family: garamondB;
-      color: black;
-      opacity: 1;
     }
     h5 {
       font-size: 18px;
