@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/justice.jpg";
-import Honour from "../../../assets/images/honour.jpg";
+import Chapel from "../../../assets/images/chapel.png";
 import Mentor from "../../../assets/images/mentor.png";
 import Profile1 from "../../../assets/images/pro1.jpg";
 import Create from "../../../assets/images/create.jpg";
@@ -252,9 +252,6 @@ export const MissionVision = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 honour-div">
-            {/* <img src={Honour} width="100%" /> */}
-          </div>
         </div>
         <div className="remarkable">
           <center>
@@ -274,7 +271,7 @@ export const MissionVision = () => {
                   <hr />
                 </div>
               </div>
-              <p style={{ fontSize: "30px" }}>The Honor Code</p>
+              <h4>The Honor Code</h4>
               <p>
                 The Canterbury Honor Code has been the cornerstone of our values
                 since 1916

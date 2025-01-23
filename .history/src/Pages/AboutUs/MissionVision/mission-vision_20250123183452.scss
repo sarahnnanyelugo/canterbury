@@ -482,11 +482,14 @@
     );
   }
   .honour-div {
-    height: 500px;
-    background: url("../../../assets/images/honour.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 80px;
-    background-position: center;
+    height: 800px;
+    // background: url("../../../assets/images/honour.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    // background-position: center;
+  }
+  img {
+    object-fit: cover;
   }
 }

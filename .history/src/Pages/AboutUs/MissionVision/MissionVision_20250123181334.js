@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/justice.jpg";
-import Honour from "../../../assets/images/honour.jpg";
+import Chapel from "../../../assets/images/chapel.png";
 import Mentor from "../../../assets/images/mentor.png";
 import Profile1 from "../../../assets/images/pro1.jpg";
 import Create from "../../../assets/images/create.jpg";
@@ -252,9 +252,6 @@ export const MissionVision = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 honour-div">
-            {/* <img src={Honour} width="100%" /> */}
-          </div>
         </div>
         <div className="remarkable">
           <center>
@@ -274,19 +271,20 @@ export const MissionVision = () => {
                   <hr />
                 </div>
               </div>
-              <p style={{ fontSize: "30px" }}>The Honor Code</p>
+              <h4>The Honor Code</h4>
               <p>
-                The Canterbury Honor Code has been the cornerstone of our values
-                since 1916
+                The most remarkable and differentiating aspect of small boarding
+                schools is that they value the equal importance of academic
+                success, personal growth, and community engagement when it comes
+                to learning, living, and leading.
               </p>
               <p>
-                The code provides a structure within which students come to
-                appreciate honesty, mutual respect, and their word as their
-                bond, while helping them gain independence and responsibility.
-                To establish these expectations, each boy and girl who enrolls
-                at Baylor must sign, and live by, the Baylor Honor Code.
+                We believe that Canterbury is<em> the best</em> small boarding
+                school.
               </p>
-
+              <button>
+                THE CASE FOR SMALL BOARDING SCHOOLS, THE CASE FOR CANTERBURY
+              </button>
               <hr />
             </div>
           </center>

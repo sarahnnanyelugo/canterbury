@@ -252,8 +252,8 @@ export const MissionVision = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 honour-div">
-            {/* <img src={Honour} width="100%" /> */}
+          <div className="col-md-4">
+            <img src={Honour} width="100%" />
           </div>
         </div>
         <div className="remarkable">

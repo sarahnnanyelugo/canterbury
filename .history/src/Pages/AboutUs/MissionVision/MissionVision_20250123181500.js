@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/justice.jpg";
-import Honour from "../../../assets/images/honour.jpg";
+import Chapel from "../../../assets/images/chapel.png";
 import Mentor from "../../../assets/images/mentor.png";
 import Profile1 from "../../../assets/images/pro1.jpg";
 import Create from "../../../assets/images/create.jpg";
@@ -251,9 +251,6 @@ export const MissionVision = () => {
                 </h3>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 honour-div">
-            {/* <img src={Honour} width="100%" /> */}
           </div>
         </div>
         <div className="remarkable">
