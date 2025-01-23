@@ -118,7 +118,7 @@ export const MissionVision = () => {
           />
         </div>
         <center>
-          <h1 className="core-values">
+          <h1>
             OUR CORE <span>values</span>
           </h1>
         </center>

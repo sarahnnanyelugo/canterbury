@@ -122,26 +122,22 @@
     margin-top: 40px;
   }
 }
-.core-values {
-  margin-top: 100px;
-  color: #00285e;
-  margin-bottom: 30px;
-  font-family: figtreeB;
-  span {
-    font-family: garamondI;
-    color: #2d79c5;
-    font-size: 60px;
-  }
-}
+
 .val-acc {
   height: 400px;
-  @media screen and (max-width: 820px) {
-    height: 1600px;
-  }
+  margin-top: 100px;
   margin-bottom: 100px;
   box-shadow: -1px -1px 14px 8px rgba(238, 238, 238, 0.65);
   -webkit-box-shadow: -1px -1px 14px 8px rgba(238, 238, 238, 0.65);
   -moz-box-shadow: -1px -1px 14px 8px rgba(238, 238, 238, 0.65);
+  // Font Variables
+  $pathway: "Pathway Gothic One";
+  $primary-font: "PT Sans", helvetica, arial, sans-serif;
+  $secondary-font: "PT Serif", georgia, "times new roman";
+
+  // Color Variables
+  $black: #000;
+  $white: #fff;
 
   // Transition
   @mixin transition($properties...) {
@@ -169,24 +165,41 @@
         @include transition(width);
       }
     }
-    span {
-      border-bottom: solid 3px #de7c0d;
+    .instructions {
+      background: $black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1000;
+      height: 94px;
+      width: 94px;
+      border: 2px solid red;
+      border-radius: 47px;
+      text-align: center;
+      font-family: $pathway;
+      color: red;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin: -47px 0 0 -47px;
+      padding: 22px 0 0;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
+
     div {
       width: 25%;
       height: 400px;
-      padding: 20px 30px;
+      padding: 45px 40px;
       position: relative;
       overflow: hidden;
-      @media screen and (max-width: 820px) {
-        height: fit-content;
-      }
       @include transition(width);
       float: left;
 
       @media screen and (max-width: 800px) {
         width: 100% !important;
-        // height: 600px;
+        height: 100%;
         padding: 30px;
       }
 

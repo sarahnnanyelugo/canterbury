@@ -117,74 +117,7 @@ export const MissionVision = () => {
 "
           />
         </div>
-        <center>
-          <h1 className="core-values">
-            OUR CORE <span>values</span>
-          </h1>
-        </center>
-        <div className="col-md-8 offset-md-2 val-acc">
-          <div class="accordion container">
-            <div>
-              <h4>
-                Aca<span>dem</span>ics
-              </h4>
-
-              <p>
-                At Canterbury School, academic excellence is central to our
-                philosophy. We emphasize critical thinking, creativity, and
-                intellectual curiosity, preparing students to excel in their
-                studies and beyond. Our dedicated teachers and supportive
-                community inspire students to develop a lifelong passion for
-                learning and to make meaningful contributions to society.
-              </p>
-            </div>
-
-            <div>
-              <h4>
-                Inclu<span>siv</span>ity
-              </h4>
-
-              <p>
-                Inclusivity is fundamental at Canterbury School, where every
-                individual is valued. We celebrate diversity in all forms and
-                create an environment where students feel a sense of belonging.
-                Our commitment to inclusivity fosters empathy, open-mindedness,
-                and respect, empowering students to engage with the world
-                compassionately.
-              </p>
-            </div>
-
-            <div>
-              <h4>
-                Lea<span>der</span>ship
-              </h4>
-
-              <p>
-                Canterbury School nurtures the leaders of tomorrow by
-                encouraging initiative, collaboration, and effective
-                communication. We emphasize leading by example with integrity
-                and responsibility, providing opportunities for students to
-                develop confidence and inspire others in their communities with
-                vision and compassion.
-              </p>
-            </div>
-
-            <div>
-              <h4>
-                Ho<span>nou</span>r
-              </h4>
-
-              <p>
-                Honour is at the core of our values at Canterbury School,
-                guiding our actions with integrity, honesty, and fairness. We
-                encourage students to make ethical choices, take responsibility,
-                and build trust within the community. Through honour, we prepare
-                students to become individuals of character who positively
-                impact society.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div className="col-md-5 offset-md-2 val-acc"></div>
         <div className="remarkable">
           <center>
             <div className="col-md-5">

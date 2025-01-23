@@ -117,17 +117,12 @@ export const MissionVision = () => {
 "
           />
         </div>
-        <center>
-          <h1 className="core-values">
-            OUR CORE <span>values</span>
-          </h1>
-        </center>
         <div className="col-md-8 offset-md-2 val-acc">
           <div class="accordion container">
+            <span class="instructions">Mouse Over</span>
+
             <div>
-              <h4>
-                Aca<span>dem</span>ics
-              </h4>
+              <h5>Academics</h5>
 
               <p>
                 At Canterbury School, academic excellence is central to our
@@ -140,9 +135,7 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Inclu<span>siv</span>ity
-              </h4>
+              <h5>Inclusivity</h5>
 
               <p>
                 Inclusivity is fundamental at Canterbury School, where every
@@ -155,9 +148,7 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Lea<span>der</span>ship
-              </h4>
+              <h5>Leadership</h5>
 
               <p>
                 Canterbury School nurtures the leaders of tomorrow by
@@ -170,17 +161,15 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Ho<span>nou</span>r
-              </h4>
+              <h5>Honour</h5>
 
               <p>
-                Honour is at the core of our values at Canterbury School,
-                guiding our actions with integrity, honesty, and fairness. We
-                encourage students to make ethical choices, take responsibility,
-                and build trust within the community. Through honour, we prepare
-                students to become individuals of character who positively
-                impact society.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                est. Mauris placerat eleifend leo. Quisque sit amet est et
+                sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum
               </p>
             </div>
           </div>

@@ -117,11 +117,6 @@ export const MissionVision = () => {
 "
           />
         </div>
-        <center>
-          <h1 className="core-values">
-            OUR CORE <span>values</span>
-          </h1>
-        </center>
         <div className="col-md-8 offset-md-2 val-acc">
           <div class="accordion container">
             <div>
@@ -140,9 +135,7 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Inclu<span>siv</span>ity
-              </h4>
+              <h4>Inclusivity</h4>
 
               <p>
                 Inclusivity is fundamental at Canterbury School, where every
@@ -155,9 +148,7 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Lea<span>der</span>ship
-              </h4>
+              <h4>Leadership</h4>
 
               <p>
                 Canterbury School nurtures the leaders of tomorrow by
@@ -170,9 +161,7 @@ export const MissionVision = () => {
             </div>
 
             <div>
-              <h4>
-                Ho<span>nou</span>r
-              </h4>
+              <h4>Honour</h4>
 
               <p>
                 Honour is at the core of our values at Canterbury School,

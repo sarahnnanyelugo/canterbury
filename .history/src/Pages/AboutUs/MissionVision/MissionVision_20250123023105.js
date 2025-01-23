@@ -117,12 +117,10 @@ export const MissionVision = () => {
 "
           />
         </div>
-        <center>
-          <h1 className="core-values">
+        <div className="col-md-8 offset-md-2 val-acc">
+          <h1>
             OUR CORE <span>values</span>
           </h1>
-        </center>
-        <div className="col-md-8 offset-md-2 val-acc">
           <div class="accordion container">
             <div>
               <h4>
