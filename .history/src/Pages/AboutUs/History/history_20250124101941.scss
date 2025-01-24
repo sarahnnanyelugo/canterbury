@@ -1,0 +1,139 @@
+@import "../../../variables";
+
+.story-banner {
+  position: relative;
+  padding: 0 60px;
+  img {
+    height: 700px;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    color: #fff;
+    font-size: 72px;
+    font-family: garamondB;
+  }
+}
+.history-div {
+  img {
+    border-radius: 10px;
+  }
+  h2 {
+    color: #00285e;
+    font-family: garamondB;
+    font-size: 36px;
+  }
+  .first-para {
+    color: #4d5e69;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: figtree;
+    margin-bottom: 60px;
+  }
+  p {
+    color: #4d5e69;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: figtree;
+  }
+  .remarkable2 {
+    height: 800px;
+    background: url("../../../assets/images/abt-bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+
+    padding-top: 100px;
+    background-position: center;
+    h1 {
+      color: #fff;
+    }
+    .history-dates {
+      height: 500px;
+      border: solid 1px #fff;
+      padding: 50px 20px;
+      h1 {
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 25px;
+      line-height: 37px;
+      letter-spacing: normal;
+      font-family: garamondB;
+    }
+
+    .remarkable-logo {
+      margin-bottom: 30px;
+      hr {
+        border: solid 1px #fff;
+        opacity: 1;
+        border-color: #fff !important;
+      }
+      .quote {
+        color: #fff;
+        font-size: 30px;
+      }
+    }
+  }
+  .history-details {
+    box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    hr {
+      margin: 0;
+    }
+    h5 {
+      font-family: figtreeB;
+      color: #4e5f6a;
+    }
+  }
+  .history-img {
+    height: 450px;
+    background: url("../../../assets/images/old-img2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .history-img2 {
+    height: 450px;
+    background: url("../../../assets/images/storyHero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .accordion-button::after {
+    background-image: url("../../../assets/images/add-circle2.svg") !important;
+    content: "" !important;
+    background-position: center;
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../../../assets/images/blue-minus.svg") !important;
+
+    content: "" !important;
+  }
+}
+.history-quote {
+  height: 300px;
+  padding-top: 80px;
+  p {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 30px;
+    color: $appcolor;
+  }
+  .quote {
+    font-size: 40px;
+    color: #b5d2ee;
+  }
+}

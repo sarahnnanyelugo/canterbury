@@ -1,7 +1,7 @@
 export const about = [
   { label: "Our Story", link: "/our-story" },
   { label: "Mission and Values", link: "/mission" },
-  { label: "History", link: "/history" },
+  { label: "history", link: "/history" },
   { label: "Academics", link: "/academics" },
   { label: "Arts", link: "/arts" },
   { label: "Athletics", link: "/athletics" },
