@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.contact-banner {
+  position: relative;
+  padding: 0 60px;
+  img {
+    height: 700px;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    color: #fff;
+    font-size: 72px;
+    font-family: garamondB;
+  }
+}
+.general-information {
+  background: $appcolor;
+  color: #fff;
+  padding: 20px;
+}

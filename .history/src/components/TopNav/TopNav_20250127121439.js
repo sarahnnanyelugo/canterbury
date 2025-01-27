@@ -20,7 +20,6 @@ const menuItems = [
       { label: "Mission & Values", link: "mission" },
       { label: "Leadership", link: "/about/leadership" },
       { label: "History", link: "history" },
-      { label: "Spotlight on Staff", link: "staff" },
       { label: "Contact Us", link: "contact-us" },
     ],
   },
