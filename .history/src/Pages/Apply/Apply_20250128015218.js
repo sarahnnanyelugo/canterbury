@@ -220,15 +220,12 @@ export const Apply = () => {
             </div>
           </div>
           <hr />
-          <div className="sign-off">
+          <div>
             <center>
               <p>
                 If you have any additional questions along the way, please call
-                the admission office at +234 907 678 1199 or email us at
-                <a href="mailto:  admission@baylorschool.org.">
-                  {" "}
-                  admission@baylorschool.org.
-                </a>
+                the admission office at 423-267-5902 or email us at
+                admission@baylorschool.org.
               </p>
             </center>
           </div>

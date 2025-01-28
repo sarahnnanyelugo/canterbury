@@ -124,10 +124,12 @@ export const Apply = () => {
                       <a href={""} className="portal-link">
                         Admission & Enrollment (A & E) Portal.
                       </a>
+                      , where you can begin your application.
                     </p>
                     <p>
-                      Please note that Applications should be on file prior to
-                      this visit.
+                      If you are unsure about anything or have a question,
+                      please do not hesitate to reach out to us - we're here to
+                      help!{" "}
                     </p>
                   </div>
                   <Link className="col-md-3 offset-md-1" href={"contact-us"}>
@@ -136,7 +138,7 @@ export const Apply = () => {
                         {/* <img src={Girl} width="100%" /> */}
                         <center>
                           {" "}
-                          <h3>Create Portal</h3>
+                          <h3>Contact Us</h3>
                         </center>
                       </div>
                       <div className="overlay"></div>
@@ -146,93 +148,20 @@ export const Apply = () => {
               </div>{" "}
               <div className={`panel ${checkActive(3, "active2")}`}>
                 {" "}
-                <div className="col-md-12 steps-div d-md-flex">
+                <div className="col-md-12 steps-div">
                   {" "}
-                  <div className="col-md-8 ">
-                    {" "}
-                    <p>
-                      See our upcoming slate of admission events below for
-                      Middle School, Upper School Day, and Upper School Boarding
-                      applicants:
-                    </p>
-                    <p>
-                      <a href={""} className="portal-link">
-                        Middle School Admission Events
-                      </a>{" "}
-                      <br />
-                      <a href={""} className="portal-link">
-                        Upper School Day Admission Events
-                      </a>
-                      <br />
-                      <a href={""} className="portal-link">
-                        Upper School Boarding Admission Events
-                      </a>
-                    </p>
-                  </div>
-                  <Link className="col-md-3 offset-md-1" href={"contact-us"}>
-                    <div className="outer ">
-                      <div className="inner col-md-12">
-                        {/* <img src={Girl} width="100%" /> */}
-                        <center>
-                          {" "}
-                          <h5>Arrange Your Visit</h5>
-                        </center>
-                      </div>
-                      <div className="overlay"></div>
-                    </div>{" "}
-                  </Link>
+                  <p> </p>
                 </div>
               </div>{" "}
               <div className={`panel ${checkActive(4, "active2")}`}>
                 {" "}
-                <div className="col-md-12 steps-div d-md-flex">
+                <div className="col-md-12 steps-div">
                   {" "}
-                  <div className="col-md-8 ">
-                    {" "}
-                    <p>
-                      Your Application Checklist is accessed via your{" "}
-                      <Link href={""} className="portal-link">
-                        Portal
-                      </Link>{" "}
-                      and contains a list of documents and other pieces of
-                      information to submit.
-                    </p>
-                    <p>
-                      As always, please don't hesitate to reach out to the
-                      Baylor Admission team if you have any questions at all
-                      about any of the requested materials!
-                    </p>
-                  </div>
-                  <Link className="col-md-3 offset-md-1" href={"contact-us"}>
-                    <div className="outer ">
-                      <div className="inner col-md-12">
-                        {/* <img src={Girl} width="100%" /> */}
-                        <center>
-                          {" "}
-                          <h5>View application</h5>
-                        </center>
-                      </div>
-                      <div className="overlay"></div>
-                    </div>{" "}
-                  </Link>
+                  <p> </p>
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-          <div className="sign-off">
-            <center>
-              <p>
-                If you have any additional questions along the way, please call
-                the admission office at +234 907 678 1199 or email us at
-                <a href="mailto:  admission@baylorschool.org.">
-                  {" "}
-                  admission@baylorschool.org.
-                </a>
-              </p>
-            </center>
-          </div>
-          <hr />
         </div>
       </div>
     </>

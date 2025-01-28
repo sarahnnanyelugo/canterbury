@@ -191,11 +191,8 @@ export const Apply = () => {
                     {" "}
                     <p>
                       Your Application Checklist is accessed via your{" "}
-                      <Link href={""} className="portal-link">
-                        Portal
-                      </Link>{" "}
-                      and contains a list of documents and other pieces of
-                      information to submit.
+                      <a href={""}>Portal</a> and contains a list of documents
+                      and other pieces of information to submit.
                     </p>
                     <p>
                       As always, please don't hesitate to reach out to the
@@ -209,7 +206,7 @@ export const Apply = () => {
                         {/* <img src={Girl} width="100%" /> */}
                         <center>
                           {" "}
-                          <h5>View application</h5>
+                          <h5>Arrange Your Visit</h5>
                         </center>
                       </div>
                       <div className="overlay"></div>
@@ -219,20 +216,6 @@ export const Apply = () => {
               </div>
             </div>
           </div>
-          <hr />
-          <div className="sign-off">
-            <center>
-              <p>
-                If you have any additional questions along the way, please call
-                the admission office at +234 907 678 1199 or email us at
-                <a href="mailto:  admission@baylorschool.org.">
-                  {" "}
-                  admission@baylorschool.org.
-                </a>
-              </p>
-            </center>
-          </div>
-          <hr />
         </div>
       </div>
     </>

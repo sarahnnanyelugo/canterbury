@@ -84,14 +84,10 @@
   .panel {
     display: none;
     color: #161617;
+    font-family: rebondG;
     line-height: 40px;
     padding-top: 65px;
-    font-family: figtree;
     background: #fff;
-    .portal-link {
-      color: $appcolor !important;
-      text-decoration: underline !important;
-    }
   }
 
   @media screen and (max-width: 620px) {
@@ -104,50 +100,13 @@
   }
 
   .outer {
-    height: 150px;
-    background: transparent;
-    // display: none;
+    height: 200px;
+    background: $appcolor;
     // margin-left: -40px;
-    padding-top: 20px;
-    margin-left: 50px;
-    &:hover {
-      background: $appcolor;
-      transition: 0.5s ease;
-    }
   }
   .inner {
-    height: 150px;
-    background: url("../../assets/images/storyHero.jpg");
-    background-size: cover;
-    margin-left: -20px;
-    padding-top: 110px;
-  }
-  .overlay {
-    height: 150px;
-    width: 100%;
-    top: 20px;
-    background: transparent;
-    position: absolute;
-    margin-left: -20px;
-    width: 80%;
-    &:hover {
-      background: rgba(0, 40, 94, 0.5);
-    }
-  }
-  a {
-    color: #fff !important;
-    text-decoration: none;
-    position: relative;
-  }
-}
-.sign-off {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  p {
-    font-family: garamondB;
-    font-size: 22px;
-  }
-  a {
-    color: $appcolor;
+    height: 170px;
+    background: red;
+    margin-top: -170px;
   }
 }

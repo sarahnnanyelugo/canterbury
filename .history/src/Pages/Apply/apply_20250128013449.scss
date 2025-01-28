@@ -84,9 +84,9 @@
   .panel {
     display: none;
     color: #161617;
+    font-family: rebondG;
     line-height: 40px;
     padding-top: 65px;
-    font-family: figtree;
     background: #fff;
     .portal-link {
       color: $appcolor !important;
@@ -138,16 +138,5 @@
     color: #fff !important;
     text-decoration: none;
     position: relative;
-  }
-}
-.sign-off {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  p {
-    font-family: garamondB;
-    font-size: 22px;
-  }
-  a {
-    color: $appcolor;
   }
 }
