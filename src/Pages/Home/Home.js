@@ -16,6 +16,7 @@ import { Testimonials } from "./Testimonials/Testimonials";
 import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
+import { OurWords } from "../../components/OurWords/OurWords";
 
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
@@ -343,7 +344,9 @@ export const Home = () => {
           </center>
           <Testimonials />
         </div>
-        <WellBeing />
+        <div className="our-words">
+          <OurWords />
+        </div>
         <Journey />
         <Future />
       </Desktop>

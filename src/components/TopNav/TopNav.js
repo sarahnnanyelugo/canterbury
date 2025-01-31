@@ -78,7 +78,15 @@ export const TopNav = () => {
   return (
     <div className="top-nav">
       <div className="col-md-2">
-        <img src={Logo} width="80%" alt="Logo" />
+        <Link to={"/"}>
+          {" "}
+          <img
+            src={Logo}
+            width="70%"
+            alt="Logo"
+            style={{ marginBottom: "-10px", marginTop: "10px" }}
+          />
+        </Link>
       </div>
       <input type="checkbox" id="active" style={{ display: "none" }} />
       <label htmlFor="active" className="menu-btn">

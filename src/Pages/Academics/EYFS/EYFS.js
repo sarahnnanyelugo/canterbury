@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { academics } from "../../../TestData/pageMenuData";
-import Hero from "../../../assets/images/girl.png";
-import Eyfs from "../../../assets/images/honour.jpg";
+import Hero from "../../../assets/images/eyfs3.webp";
+// import Hero from "../../../assets/images/girl.png";
+import Eyfs from "../../../assets/images/eyfs.png";
+import Decor1 from "../../../assets/images/spiral.png";
+import Decor2 from "../../../assets/images/star.png";
+import Decor3 from "../../../assets/images/cube.png";
 import "./eyfs.scss";
 import { FaComputerMouse } from "react-icons/fa6";
 import { PiSneakerMove } from "react-icons/pi";
@@ -13,15 +17,53 @@ import { FaNotesMedical } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 
 export const EYFS = () => {
+  const [inViewHeading, setInViewHeading] = useState(false);
+  const headingRef = useRef(null); // Reference for the heading
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Heading
+      if (headingRef.current) {
+        const rect = headingRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewHeading(true);
+        } else {
+          setInViewHeading(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run once on load to check initial position
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <div className="eyfs-div">
-        <div className="eyfs-banner">
-          {" "}
-          <img src={Hero} width="100%" />
-          <center>
-            <h1>EYFS</h1>
-          </center>
+        <div className="eyfs-banner2 d-flex">
+          <div className="col-md-6 offset-md- heading" ref={headingRef}>
+            <img src={Decor1} width="34px" height="34px" />
+            <br />
+            <img src={Decor2} className="offset-md-11 star" />
+            <h1
+              style={{
+                transform: inViewHeading
+                  ? "translateX(0)"
+                  : "translateX(-100px)",
+                opacity: inViewHeading ? 1 : 0,
+                transition: "transform 2s ease, opacity 2s ease",
+              }}
+            >
+              Welcome to Canterbury <span> EYFS</span>
+            </h1>
+            <p>We Catch Them Young</p>
+          </div>
+          <div className="col-md-6">
+            {" "}
+            <img src={Hero} width="100%" />
+            <img src={Decor3} className="offset-md-11 cube" />
+          </div>
         </div>{" "}
         <PageMenu menuItems={academics} />
         <PageLogo />
