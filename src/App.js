@@ -11,7 +11,10 @@ import { MissionVision } from "./Pages/AboutUs/MissionVision/MissionVision";
 import { Welcome } from "./Pages/Admission/Welcome/Welcome";
 import { History } from "./Pages/AboutUs/History/History";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
-import { Apply } from "./Pages/Apply/Apply";
+import { Apply } from "./Pages/Admission/Apply/Apply";
+import { EYFS } from "./Pages/Academics/EYFS/EYFS";
+import { Secondary } from "./Pages/Academics/Secondary/Secondary";
+import { Primary } from "./Pages/Academics/Primary/Primary";
 function App() {
   return (
     <>
@@ -26,6 +29,9 @@ function App() {
         <Route path="history" element={<History />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="apply" element={<Apply />} />
+        <Route path="primary" element={<Primary />} />
+        <Route path="secondary" element={<Secondary />} />
+        <Route path="eyfs" element={<EYFS />} />
       </Routes>
       <Footer />
     </>

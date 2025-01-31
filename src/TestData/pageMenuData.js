@@ -7,4 +7,15 @@ export const about = [
   { label: "Athletics", link: "/athletics" },
   { label: "Student Life", link: "/student-life" },
 ];
-export const admission = [{ label: "welcome", link: "/welcome" }];
+export const admission = [
+  { label: "welcome", link: "/welcome" },
+  {
+    label: "Apply",
+    link: "/apply",
+  },
+];
+export const academics = [
+  { label: "EYFS", link: "eyfs" },
+  { label: "Primary", link: "primary" },
+  { label: "Secondary", link: "secondary" },
+];

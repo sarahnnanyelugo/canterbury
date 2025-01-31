@@ -1,0 +1,120 @@
+@import "../../../variables";
+
+.eyfs-banner {
+  position: relative;
+  padding: 0 60px;
+  img {
+    height: 700px;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    top: 80%;
+    left: 44%;
+    color: #fff;
+    font-size: 72px;
+    font-family: garamondB;
+  }
+}
+.eyfs-body {
+  padding-top: 100px;
+
+  h2 {
+    font-family: figtreeB;
+    margin-bottom: 30px;
+  }
+  h6 {
+    font-family: figtreeB;
+  }
+  h4 {
+    font-family: figtreeI;
+    font-weight: bold;
+    margin-top: 30px;
+    color: $appcolor;
+  }
+  p,
+  li {
+    font-family: figtree;
+  }
+  .declare {
+    padding: 30px;
+    margin-bottom: 50px;
+    border-left: 2px solid $highlight;
+    p {
+      color: rgb(161, 159, 159);
+      font-size: 20px;
+    }
+  }
+}
+.prowess {
+  padding-top: 120px;
+  p {
+    font-family: figtree;
+  }
+  .prowess-inner {
+    text-align: center;
+    padding: 10px;
+    .icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      color: $highlight;
+    }
+    h3,
+    p {
+      color: $appcolor;
+    }
+    h3 {
+      font-family: garamondB;
+      font-weight: bold;
+    }
+    p {
+      font-family: garamondI;
+    }
+  }
+}
+.rudiments {
+  padding-left: 20px;
+  @media screen and (max-width: 820px) {
+    padding-left: 0;
+  }
+}
+.elementary-details {
+  margin-top: 60px;
+  h2 {
+    font-family: figtreeB;
+  }
+  .accordion-button::after {
+    background-image: url("../../../assets/images/add-circle2.svg") !important;
+    content: "" !important;
+    background-position: center;
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../../../assets/images/blue-minus.svg") !important;
+
+    content: "" !important;
+  }
+  .accordion-button {
+    border-top: solid 1px #e7e7e7;
+    font-family: figtree;
+    color: rgb(46, 45, 45);
+    &:hover {
+      background: #e7e7e7;
+    }
+  }
+  .accordion-body {
+    ul li {
+      font-family: garamondB;
+    }
+    h5,
+    h6 {
+      font-family: figtreeB;
+      margin-top: 20px;
+    }
+    p {
+      font-family: garamondB;
+    }
+  }
+}

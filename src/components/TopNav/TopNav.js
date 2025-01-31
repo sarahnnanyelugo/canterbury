@@ -18,7 +18,7 @@ const menuItems = [
     submenu: [
       { label: "Our Story", link: "our-story" },
       { label: "Mission & Values", link: "mission" },
-    
+
       { label: "History", link: "history" },
       { label: "Spotlight on Staff", link: "staff" },
       { label: "Contact Us", link: "contact-us" },
@@ -36,11 +36,11 @@ const menuItems = [
   },
   {
     label: "Academics",
-    link: "/services",
+    link: "eyfs",
     submenu: [
-      { label: "Programs", link: "/academics/programs" },
-      { label: "Departments", link: "/academics/departments" },
-      { label: "Faculty", link: "/academics/faculty" },
+      { label: "EYFS", link: "eyfs" },
+      { label: "Primary", link: "primary" },
+      { label: "Secondary", link: "secondary" },
     ],
   },
   {
