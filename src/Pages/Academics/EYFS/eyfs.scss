@@ -126,7 +126,7 @@
   .accordion-button {
     border-top: solid 1px #e7e7e7;
     font-family: figtree;
-    color: rgb(46, 45, 45);
+    color: $appcolor;
     &:hover {
       background: #e7e7e7;
     }
@@ -139,6 +139,7 @@
     h6 {
       font-family: figtreeB;
       margin-top: 20px;
+      color: $appcolor;
     }
     p {
       font-family: garamondB;

@@ -242,11 +242,11 @@ export const Home = () => {
         <div
           style={{
             height: "900px",
-            background: "#00285E",
+            backgroundColor: "#54020a",
             color: "white",
-            opacity: "0.9",
+            opacity: "0.5",
           }}
-          className="d-flex justify-content-center align-items-center"
+          className="d-flex justify-content-center align-items-center "
         >
           <div
             style={{ opacity: "1" }}
@@ -269,8 +269,8 @@ export const Home = () => {
           </div>
         </div>
         <div
-          style={{ height: "1000px", backgroundColor: "#00285e" }}
-          className=" justify-content-center align-items-center col-md-12 shadow-logo col-12"
+          style={{ height: "1000px", backgroundColor: "#54020a" }}
+          className=" justify-content-center align-items-center col-md-12 shadow-logo col-12 "
           ref={textRef}
         >
           <center>
@@ -301,7 +301,7 @@ export const Home = () => {
             <SectionHeading
               text1=" AN EDUCATION THAT'S"
               text2="personal"
-              color1="#00285e"
+              color1="#54020a"
               color2="#2d79c5"
               paragraph="No two Canterbury educations are the same, because no two students
               are alike. Here, every class you take doesn’t just check a box; it
@@ -324,7 +324,7 @@ export const Home = () => {
             <SectionHeading
               text1="  A PATH TO"
               text2="purpose"
-              color1="#00285e"
+              color1="#54020a"
               color2="#de7c0d"
               paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
@@ -364,7 +364,7 @@ export const Home = () => {
                 <SectionHeading
                   text1="THIS IS"
                   text2="your story"
-                  color1="#00285e"
+                  color1="#54020a"
                   color2="#2d79c5"
                   size1="60px"
                   size2="7 0px"
@@ -465,7 +465,7 @@ export const Home = () => {
         <div
           style={{
             height: "500px",
-            background: "#00285E",
+            background: "#54020a",
             color: "white",
             opacity: "0.9",
           }}
@@ -492,7 +492,7 @@ export const Home = () => {
           </div>
         </div>{" "}
         <div
-          style={{ height: "600px", backgroundColor: "#00285e" }}
+          style={{ height: "600px", backgroundColor: "#54020a" }}
           className=" justify-content-center align-items-center col-md-12 shadow-logo col-12"
           ref={textRef}
         >
@@ -526,7 +526,7 @@ export const Home = () => {
             <SectionHeading
               text1=" AN EDUCATION THAT'S"
               text2="personal"
-              color1="#00285e"
+              color1="#54020a"
               color2="#2d79c5"
               paragraph="No two Canterbury educations are the same, because no two students
               are alike. Here, every class you take doesn’t just check a box; it
@@ -548,7 +548,7 @@ export const Home = () => {
             <SectionHeading
               text1="  A PATH TO"
               text2="purpose"
-              color1="#00285e"
+              color1="#54020a"
               color2="#de7c0d"
               paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
@@ -568,7 +568,9 @@ export const Home = () => {
           </center>
           <Testimonials />
         </div>
-        <WellBeing />
+        <div className="our-words">
+          <OurWords />
+        </div>
         <Journey />
         <Future />
       </TabletAndBelow>

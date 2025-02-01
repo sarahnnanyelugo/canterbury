@@ -2,7 +2,7 @@
 
 .footer-div {
   height: 800px;
-  background: #00285e;
+  background: $appcolor;
 
   margin-bottom: 0px;
   margin-top: 0px;
@@ -32,7 +32,7 @@
       transition: 0.6s ease;
       &:hover {
         a {
-          color: #00285e !important;
+          color: $appcolor !important;
         }
         background: #fff;
       }

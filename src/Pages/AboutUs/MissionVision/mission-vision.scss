@@ -27,7 +27,7 @@
     border-radius: 10px;
   }
   h2 {
-    color: #00285e;
+    color: $appcolor;
     font-family: garamondB;
     font-size: 36px;
   }
@@ -71,7 +71,7 @@
       &:hover {
         border: solid 2px #b5d2ee;
         background: #b5d2ee;
-        color: #00285e;
+        color: $appcolor;
         transition: 0.5s ease;
       }
     }
@@ -100,7 +100,7 @@
     -webkit-box-shadow: 3px 4px 19px 4px rgba(77, 94, 105, 0.75);
     -moz-box-shadow: 3px 4px 19px 4px rgba(77, 94, 105, 0.75);
     p {
-      color: #00285e;
+      color: $appcolor;
       font-family: figtreeB;
     }
   }
@@ -113,7 +113,7 @@
   //  m-right: 50px;
   h1 {
     font-family: garamondB;
-    color: #00285e;
+    color: $appcolor;
     span {
       border-bottom: solid 3px #2d79c5;
     }
@@ -126,7 +126,7 @@
 }
 .core-values {
   margin-top: 100px;
-  color: #00285e;
+  color: $appcolor;
   margin-bottom: 30px;
   font-family: figtreeB;
   span {
@@ -217,7 +217,7 @@
         }
       }
       &:nth-of-type(odd) {
-        background: #00285e;
+        background: $appcolor;
         p {
           color: #fff;
         }

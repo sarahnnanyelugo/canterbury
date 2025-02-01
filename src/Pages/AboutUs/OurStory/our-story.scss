@@ -21,7 +21,7 @@
     border-radius: 10px;
   }
   h2 {
-    color: #00285e;
+    color: $appcolor;
     font-family: garamondB;
     font-size: 36px;
   }
@@ -65,7 +65,7 @@
       &:hover {
         border: solid 2px #b5d2ee;
         background: #b5d2ee;
-        color: #00285e;
+        color: $appcolor;
         transition: 0.5s ease;
       }
     }
@@ -89,7 +89,7 @@
       padding-right: 40px;
     }
     h3 {
-      color: #00285e;
+      color: $appcolor;
       margin-top: 80px;
       font-family: figtreeB;
       margin-bottom: 50px;
@@ -99,14 +99,14 @@
       }
     }
     p {
-      color: #00285e;
+      color: $appcolor;
       font-size: 18px;
       line-height: 25px;
       font-family: figtree;
       margin-bottom: 30px;
     }
     button {
-      background: #00285e;
+      background: $appcolor;
       color: #fff;
       border: none;
       padding: 5px 15px;
@@ -122,7 +122,7 @@
   height: 400px;
   background: #dae9f7;
   padding-top: 100px;
-  color: #00285e;
+  color: $appcolor;
   .stats-digits {
     text-align: center;
     h1 {
@@ -141,7 +141,7 @@
   height: 400px;
   background: #f5f0e4;
   padding-top: 100px;
-  color: #00285e;
+  color: $appcolor;
   .stats-digits {
     text-align: center;
     h1 {
@@ -159,7 +159,7 @@
 .graduates-profile {
   padding-top: 100px;
   h1 {
-    color: #00285e;
+    color: $appcolor;
     margin-top: 80px;
     font-family: figtreeB;
     margin-bottom: 50px;
@@ -169,7 +169,7 @@
     }
   }
   p {
-    color: #00285e;
+    color: $appcolor;
     font-size: 20px;
     line-height: 28px;
     font-family: figtree;
@@ -189,7 +189,7 @@
     margin-top: 30px;
 
     h5 {
-      color: #00285e;
+      color: $appcolor;
       margin-bottom: 30px;
       font-family: garamondB;
       font-size: 22px;
@@ -220,7 +220,7 @@
     background-size: cover;
     // transform: rotate(180deg);
     // height: 20px;
-    background: #00285e;
+    background: $appcolor;
     opacity: 1 !important;
     border-radius: 100%;
     margin-right: -720%;
@@ -232,7 +232,7 @@
     background-image: "";
     // transform: rotate(180deg);
     // height: 20px;
-    background: #00285e;
+    background: $appcolor;
     opacity: 1 !important;
     border-radius: 100%;
     margin-right: -417%;
@@ -366,7 +366,7 @@
       padding: 5px 30px;
       &:hover {
         background: #fff;
-        color: #00285e;
+        color: $appcolor;
         font-weight: bold;
       }
     }

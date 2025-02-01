@@ -62,13 +62,13 @@
     border-radius: 5px;
     font-family: figtree;
     background: #b5d2ee;
-    color: #00285e;
+    color: $appcolor;
     padding: 12px 30px;
     font-size: 13px;
     transition: 1s ease;
     &:hover {
       color: #b5d2ee;
-      background: #00285e;
+      background: $appcolor;
       .icon {
         transition: 1s ease;
         display: inline;

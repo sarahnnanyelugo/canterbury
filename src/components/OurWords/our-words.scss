@@ -1,4 +1,7 @@
 /* */
+
+@import "../../variables";
+
 :root {
   --rotate-speed: 40;
   --count: 8; /* Default count, the DOM element should override this */
@@ -62,7 +65,7 @@
       font-size: 18px;
       font-family: figtreeB;
       margin-bottom: 0px;
-      color: #00285e;
+      color: $appcolor;
     }
   }
 

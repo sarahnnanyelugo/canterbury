@@ -1,13 +1,12 @@
 @import "../../variables";
 
-
 .modal-body {
   max-height: 800px;
   margin-top: 0px !important;
   overflow: scroll;
   h5 {
     font-family: garamondB;
-    color: #00285e;
+    color: $appcolor;
     font-weight: bold;
   }
   img {
@@ -21,7 +20,7 @@
   h5 {
     padding: 30px 20px;
     font-family: garamondB;
-    color: #00285e;
+    color: $appcolor;
     font-weight: bold;
     &:hover {
       color: #b5d2ee;

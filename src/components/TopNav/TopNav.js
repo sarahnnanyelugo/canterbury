@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./top-nav.scss";
 import { IoMenu } from "react-icons/io5";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/app-logo.png";
 import { GoInfo } from "react-icons/go";
 import { SlCalender } from "react-icons/sl";
 import { IoNewspaperOutline } from "react-icons/io5";
@@ -82,7 +82,7 @@ export const TopNav = () => {
           {" "}
           <img
             src={Logo}
-            width="70%"
+            width="22%"
             alt="Logo"
             style={{ marginBottom: "-10px", marginTop: "10px" }}
           />

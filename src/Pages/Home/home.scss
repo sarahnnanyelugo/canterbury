@@ -18,7 +18,7 @@
   h1 {
     font-family: figtreeB;
     font-size: 70px;
-    color: #002b5e;
+    color: $appcolor;
     margin-top: 120px;
     span {
       color: #2d79c5;
@@ -108,7 +108,7 @@
 .discover {
   height: 1000px;
   padding-top: 100px;
-  background: #00285e;
+  background: $appcolor;
   margin-top: -120px;
   button {
     margin-top: 50px;
@@ -127,7 +127,7 @@
     }
     &:hover {
       background: #b5d2ee;
-      color: #00285e;
+      color: $appcolor;
       .icon {
         display: inline;
       }

@@ -2,12 +2,12 @@ import React, { useEffect, useState, useRef } from "react";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { academics } from "../../../TestData/pageMenuData";
-import Hero from "../../../assets/images/eyfs3.webp";
+import Hero from "../../../assets/images/girl.png";
 // import Hero from "../../../assets/images/girl.png";
 import Eyfs from "../../../assets/images/honour.jpg";
 import Decor1 from "../../../assets/images/spiral.png";
 import Decor2 from "../../../assets/images/star.png";
-import Decor3 from "../../../assets/images/cube.png";
+import Decor3 from "../../../assets/images/star.png";
 import "./primary.scss";
 import { FaComputerMouse } from "react-icons/fa6";
 import { PiSneakerMove } from "react-icons/pi";
@@ -15,6 +15,7 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import { SiElectronbuilder } from "react-icons/si";
 import { FaNotesMedical } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
+import { BsFillTrophyFill } from "react-icons/bs";
 
 export const Primary = () => {
   const [inViewHeading, setInViewHeading] = useState(false);
@@ -40,12 +41,12 @@ export const Primary = () => {
   }, []);
   return (
     <>
-      <div className="eyfs-div">
-        <div className="eyfs-banner d-flex">
+      <div className="primary-div">
+        <div className="primary-banner d-flex">
           <div className="col-md-6 offset-md- heading" ref={headingRef}>
             <img src={Decor1} width="34px" height="34px" />
             <br />
-            <img src={Decor2} className="offset-md-11 star" />
+
             <h1
               style={{
                 transform: inViewHeading
@@ -55,9 +56,24 @@ export const Primary = () => {
                 transition: "transform 2s ease, opacity 2s ease",
               }}
             >
-              WELCOME TO CANTERBURY <span> PRIMARY</span>
+              WELCOME TO CANTERBURY{" "}
+              <span>
+                PRIMARY
+                <span
+                  style={{
+                    color: "grey",
+                    fontSize: "40px",
+                    marginLeft: "-20px",
+                  }}
+                >
+                  <BsFillTrophyFill />
+                </span>
+              </span>
             </h1>
-            <p>We Pursue Excellence</p>
+            <p>
+              Where Young Minds Blossom and Lifelong L
+              <span style={{ color: "#fff" }}>earning Begins</span>
+            </p>
           </div>
           <div className="col-md-6">
             {" "}
@@ -145,7 +161,7 @@ export const Primary = () => {
           <div className="col-md-6">
             <img src={Eyfs} width="100%" />
           </div>
-          <div className="col-md-6 rudiments">
+          <div className="col-md-6 rudiments2">
             <p>
               We will strive to create a school atmosphere in which every
               scholar can find success through hard work.

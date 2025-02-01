@@ -1,6 +1,6 @@
 import React from "react";
 import "./page-logo.scss";
-import Logo from "../../assets/images/logo-head.svg";
+import Logo from "../../assets/images/app-logo.png";
 
 export const PageLogo = () => {
   return (

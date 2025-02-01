@@ -72,7 +72,7 @@
     border-radius: 10px;
   }
   h2 {
-    color: #00285e;
+    color: $appcolor;
     font-family: garamondB;
     font-size: 36px;
     span {
@@ -115,7 +115,7 @@
       &:hover {
         border: solid 2px #b5d2ee;
         background: #b5d2ee;
-        color: #00285e;
+        color: $appcolor;
         transition: 0.5s ease;
       }
     }

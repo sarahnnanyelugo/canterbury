@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./footer.scss"; // You can add your custom CSS for styling
-import Logo from "../../assets/images/footer-logo.svg";
+import Logo from "../../assets/images/app-logo2.png";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";

@@ -14,7 +14,7 @@
   height: 100%;
   z-index: 10000;
   width: 100%;
-  background: rgb(25, 50, 85);
+  background: $appcolor;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
 }
@@ -93,7 +93,7 @@
     color: #fff;
     // padding-bottom: 10px;
     text-decoration: none;
-    margin-top: 30px;
+    // margin-top: 20px;
     font-family: figtreeB;
   }
   span {
@@ -118,6 +118,10 @@
 
 .menu-item {
   position: relative;
+
+  &:hover {
+    background: $app-color-secondary;
+  }
 }
 
 .submenu {
@@ -133,9 +137,9 @@
   transform: translateX(50px); /* Initially shifted left (off-screen) */
   transition: opacity 1s ease-out, transform 1s ease-out !important;
   pointer-events: none;
-  margin-left: 200px !important;
+  margin-left: 180px !important;
   text-align: left !important;
-  width: 300px !important;
+  width: 200px !important;
   a {
     font-size: 18px !important;
   }
@@ -149,4 +153,7 @@
 
 .submenu-item {
   transition: background 2s !important;
+  &:hover {
+    background: $app-color-secondary;
+  }
 }
