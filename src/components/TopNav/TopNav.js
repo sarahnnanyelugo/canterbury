@@ -43,22 +43,14 @@ const menuItems = [
       { label: "Secondary", link: "secondary" },
     ],
   },
+
   {
-    label: "Arts",
-    link: "/gallery",
+    label: "Facilities",
+    link: "/facilities",
     submenu: [
-      { label: "Performing Arts", link: "/arts/performing" },
-      { label: "Visual Arts", link: "/arts/visual" },
-      { label: "Music", link: "/arts/music" },
-    ],
-  },
-  {
-    label: "Athletics",
-    link: "/feedback",
-    submenu: [
-      { label: "Teams", link: "/athletics/teams" },
-      { label: "Schedule", link: "/athletics/schedule" },
-      { label: "Facilities", link: "/athletics/facilities" },
+      { label: "EYFS", link: "eyfs" },
+      { label: "Primary", link: "primary" },
+      { label: "Secondary", link: "secondary" },
     ],
   },
   {
@@ -66,15 +58,19 @@ const menuItems = [
     link: "/student-life",
     submenu: [
       { label: "Events", link: "/student-life/events" },
-      { label: "Clubs & Organizations", link: "/student-life/clubs" },
-      { label: "Housing", link: "/student-life/housing" },
+      { label: "Clubss", link: "/student-life/clubs" },
+      { label: "Boarding", link: "/student-life/housing" },
+      { label: "Athletics", link: "/feedback" },
+      { label: "Arts", link: "/gallery" },
     ],
   },
 ];
 
 export const TopNav = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
   return (
     <div className="top-nav">
       <div className="col-md-2">
@@ -89,7 +85,7 @@ export const TopNav = () => {
         </Link>
       </div>
       <input type="checkbox" id="active" style={{ display: "none" }} />
-      <label htmlFor="active" className="menu-btn">
+      <label htmlFor="active" className="menu-btn" onClick={toggleMenu}>
         <IoMenu />
       </label>
 
@@ -105,13 +101,23 @@ export const TopNav = () => {
               <Link to={item.link} className="menu-link">
                 {item.label}
               </Link>
+
+              {/* {isOpen && ( */}
               <ul className={`submenu ${hoveredIndex === index ? "show" : ""}`}>
                 {item.submenu.map((subItem, subIndex) => (
-                  <li key={subIndex} className="submenu-item">
-                    <Link to={subItem.link}> {subItem.label}</Link>
+                  <li
+                    key={subIndex}
+                    className="submenu-item"
+                    onClick={closeMenu}
+                  >
+                    <Link to={subItem.link} type="checkbox" id="active">
+                      {" "}
+                      {subItem.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
+              {/* )} */}
             </li>
           ))}
         </ul>
