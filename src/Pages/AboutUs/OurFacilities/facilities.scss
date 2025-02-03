@@ -65,9 +65,32 @@
 //   transform: scale(1.1);
 // }
 .facilities-modal {
+  padding: 20px 40px;
   h3 {
     span {
       border-bottom: solid 3px $highlight;
+    }
+  }
+  .carousel-control-next-icon {
+    background-image: url("../../../assets/images/arrow.png");
+    background-color: $highlight;
+    border-radius: 100%;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("../../../assets/images/arrow.png");
+    transform: rotate(180deg);
+    background-color: $highlight;
+    border-radius: 100%;
+  }
+  .carousel-indicators {
+    button {
+      height: 7px !important;
+      width: 7px !important;
+      border-radius: 100%;
+      background-color: grey;
+    }
+    .active {
+      background-color: $highlight;
     }
   }
 }

@@ -200,11 +200,9 @@ export const OurFacilities = () => {
         className="facilities-modal"
       >
         <Modal.Header closeButton>
-          <Modal.Title>
-            <h3>
-              More Photos from Our <span> {modalContent.heading}</span>
-            </h3>
-          </Modal.Title>
+          <h3>
+            More Photos from Our <span> {modalContent.heading}</span>
+          </h3>
         </Modal.Header>
         <Modal.Body>
           <div className="col-md-12" style={{ minHeight: "600px" }}>
