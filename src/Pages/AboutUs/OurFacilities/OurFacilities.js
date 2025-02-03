@@ -1,4 +1,14 @@
 import React, { useRef, useEffect } from "react";
+import Hero from "../../../assets/images/storyHero.jpg";
+import Lib from "../../../assets/images/lib2main.png";
+import Court from "../../../assets/images/slide6.jpg";
+import ScienceLab from "../../../assets/images/sci.avif";
+import Computer from "../../../assets/images/computer.jpg";
+import Playground from "../../../assets/images/playground.jpg";
+import { PageLogo } from "../../../components/PageLogo/PageLogo";
+import PageMenu from "../../../components/PageMenu/PageMenu";
+import { about } from "../../../TestData/pageMenuData";
+import "./facilities.scss";
 
 export const OurFacilities = () => {
   const sectionRef = useRef(null);
@@ -13,6 +23,7 @@ export const OurFacilities = () => {
       totalScrollWidth / scrollSpeedFactor + window.innerHeight; // Adjusted height
 
     section.style.height = `${sectionHeight}px`;
+    document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
 
     const handleScroll = () => {
       const sectionTop = section.getBoundingClientRect().top;
@@ -40,39 +51,59 @@ export const OurFacilities = () => {
 
   const content = [
     {
-      imgSrc: "https://via.placeholder.com/300",
-      heading: "Heading 1",
-      paragraph: "This is a sample paragraph for the first div.",
+      imgSrc: ScienceLab,
+      heading: "Science Laboratory",
+      paragraph:
+        "Get ready to spark your curiosity in our state-of-the-art science lab! With hands-on experiments and groundbreaking discoveries, this is where young scientists transform theories into practice and ignite their passion for exploration.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300",
-      heading: "Heading 2",
-      paragraph: "This is a sample paragraph for the second div.",
+      imgSrc: Court,
+      heading: "Basketball Court",
+      paragraph:
+        "Feel the rush of adrenaline on our basketball court! Whether you're shooting hoops with friends or perfecting your skills, it's the place for action, teamwork, and fun. Game on!",
     },
     {
-      imgSrc: "https://via.placeholder.com/300",
-      heading: "Heading 3",
-      paragraph: "This is a sample paragraph for the third div.",
+      heading: "Reading Room",
+      imgSrc: Lib,
+      paragraph:
+        "Escape into a peaceful haven in our reading room. Surrounded by shelves of captivating books, it's the ideal spot to relax, focus, and let your imagination take flight.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300",
-      heading: "Heading 4",
-      paragraph: "This is a sample paragraph for the fourth div.",
+      imgSrc: Hero,
+      heading: "School Building",
+      paragraph:
+        "Our school building is more than just walls and classrooms—it's a thriving community where creativity, learning, and growth come together. Every corner is designed to inspire students to dream big and achieve even bigger.",
+    },
+
+    {
+      imgSrc: Computer,
+      heading: "Computer Room",
+      paragraph:
+        "Step into the future in our computer room, where technology meets creativity. With top-notch equipment and endless learning possibilities, it's the ultimate place to sharpen your digital skills and innovate.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300",
-      heading: "Heading 5",
-      paragraph: "This is a sample paragraph for the fifth div.",
+      imgSrc: Playground,
+      heading: "Play Ground",
+      paragraph:
+        "Let the music play in our vibrant music room! From strumming guitars to mastering the piano, this is where every note resonates with passion, and every melody tells a story. Unleash your inner musician here.",
     },
   ];
 
   return (
-    <div>
-      <div style={{ height: "100vh", background: "#f0f0f0" }}>
-        Intro Section (Scroll Down)
+    <div className="col-md-12">
+      <div className="facilities-banner">
+        <img src={Hero} width="100%" alt="Hero" />
+        <center>
+          <h1>OUR FACILITIES</h1>
+        </center>
       </div>
-
+      <PageMenu menuItems={about} />
+      <PageLogo />
       <div ref={sectionRef} style={{ position: "relative" }}>
+        <center>
+          {" "}
+          <h1>EXPLORE OUR FACILITIES</h1>
+        </center>
         <div
           ref={scrollContainerRef}
           style={{
@@ -84,8 +115,9 @@ export const OurFacilities = () => {
             overflow: "hidden",
             transition: "transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)",
             willChange: "transform",
-            width: "500vw",
+            width: `${content.length * 100}vw`, // Dynamic width
           }}
+          className="vertical-scroll"
         >
           {content.map((item, index) => (
             <div
@@ -93,7 +125,7 @@ export const OurFacilities = () => {
               style={{
                 width: "100vw",
                 height: "100vh",
-                background: `hsl(${index * 60}, 70%, 70%)`,
+
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -105,17 +137,20 @@ export const OurFacilities = () => {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "20px" }}
               >
-                <img
-                  src={item.imgSrc}
-                  alt={`Image ${index + 1}`}
-                  style={{
-                    width: "300px",
-                    height: "300px",
-                    objectFit: "cover",
-                    borderRadius: "10px",
-                  }}
-                />
-                <div>
+                <div className="col-md-6 offset-md-1">
+                  {" "}
+                  <img
+                    src={item.imgSrc}
+                    alt={`Image ${index + 1}`}
+                    style={{
+                      width: "100%",
+
+                      objectFit: "cover",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
+                <div className="col-md-4">
                   <h2 style={{ margin: "0 0 10px 0" }}>{item.heading}</h2>
                   <p style={{ margin: 0 }}>{item.paragraph}</p>
                 </div>
@@ -125,7 +160,10 @@ export const OurFacilities = () => {
         </div>
       </div>
 
-      <div style={{ height: "100vh", background: "#d0d0d0" }}>
+      <div
+        style={{ height: "100vh", background: "#d0d0d0" }}
+        className="col-md-12"
+      >
         Continue Scrolling Vertically
       </div>
     </div>

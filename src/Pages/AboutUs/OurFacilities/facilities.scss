@@ -1,0 +1,25 @@
+.facilities-banner {
+  position: relative;
+  padding: 0 20px;
+  img {
+    height: 700px;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+
+    color: #fff;
+    font-size: 72px;
+    font-family: garamondB;
+  }
+}
+.vertical-scroll::-webkit-scrollbar {
+  display: none !important;
+  background: red;
+}
+.vertcal-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
