@@ -31,6 +31,13 @@
     color: $appcolor;
     font-family: figtreeB;
   }
+  h5 {
+    color: $highlight;
+    font-family: figtreeB;
+    margin-top: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   p {
     font-size: 20px;
   }
@@ -48,4 +55,19 @@
   background: $appcolor;
   margin-bottom: -180px;
   margin-left: 582px;
+}
+.zoom {
+  transition: transform 1.2s;
+}
+// .zoom:hover {
+//   -ms-transform: scale(1.1); /* IE 9 */
+//   -webkit-transform: scale(1.1); /* Safari 3-8 */
+//   transform: scale(1.1);
+// }
+.facilities-modal {
+  h3 {
+    span {
+      border-bottom: solid 3px $highlight;
+    }
+  }
 }
