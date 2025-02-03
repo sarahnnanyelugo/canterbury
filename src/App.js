@@ -15,6 +15,7 @@ import { Apply } from "./Pages/Admission/Apply/Apply";
 import { EYFS } from "./Pages/Academics/EYFS/EYFS";
 import { Secondary } from "./Pages/Academics/Secondary/Secondary";
 import { Primary } from "./Pages/Academics/Primary/Primary";
+import { OurFacilities } from "./Pages/AboutUs/OurFacilities/OurFacilities";
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
         <Route path="primary" element={<Primary />} />
         <Route path="secondary" element={<Secondary />} />
         <Route path="eyfs" element={<EYFS />} />
+        <Route path="our-facilities" element={<OurFacilities />} />
       </Routes>
       <Footer />
     </>
