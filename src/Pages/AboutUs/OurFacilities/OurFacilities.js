@@ -139,19 +139,23 @@ export const OurFacilities = () => {
               >
                 <div className="col-md-6 offset-md-1">
                   {" "}
-                  <img
-                    src={item.imgSrc}
-                    alt={`Image ${index + 1}`}
-                    style={{
-                      width: "100%",
+                  <div>
+                    <div className="img-border2 col-md-3 offset-md-10" />
+                    <img
+                      src={item.imgSrc}
+                      alt={`Image ${index + 1}`}
+                      style={{
+                        width: "100%",
 
-                      objectFit: "cover",
-                      borderRadius: "10px",
-                    }}
-                  />
+                        objectFit: "cover",
+                        borderRadius: "10px",
+                      }}
+                    />
+                    <div className="img-border col-md-3 offset-md-10" />
+                  </div>
                 </div>
-                <div className="col-md-4">
-                  <h2 style={{ margin: "0 0 10px 0" }}>{item.heading}</h2>
+                <div className="col-md-4 facility-details">
+                  <h1 style={{ margin: "0 0 10px 0" }}>{item.heading}</h1>
                   <p style={{ margin: 0 }}>{item.paragraph}</p>
                 </div>
               </div>

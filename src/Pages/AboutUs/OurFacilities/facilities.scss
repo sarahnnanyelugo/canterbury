@@ -1,3 +1,5 @@
+@import "../../../variables";
+
 .facilities-banner {
   position: relative;
   padding: 0 20px;
@@ -22,4 +24,28 @@
 .vertcal-scroll {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+}
+.facility-details {
+  padding-left: 40px;
+  h1 {
+    color: $appcolor;
+    font-family: figtreeB;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.img-border {
+  height: 200px;
+  background: $appcolor;
+  margin-top: -180px;
+  margin-left: -20px;
+}
+
+.img-border2 {
+  height: 200px;
+  background: $appcolor;
+  margin-bottom: -180px;
+  margin-left: 582px;
 }
