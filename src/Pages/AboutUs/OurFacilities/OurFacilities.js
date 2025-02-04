@@ -101,10 +101,12 @@ export const OurFacilities = () => {
   const openModal = (item) => {
     setModalContent(item);
     setModalShow(true); // Ensure modal is shown
+    document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
     setModalShow(false); // Properly close the modal
+    document.body.style.overflow = "auto";
   };
   // const handleShowModal = (images) => {
   //   setModalContent({ images });
@@ -121,7 +123,20 @@ export const OurFacilities = () => {
       </div>
       <PageMenu menuItems={about} />
       <PageLogo />
-
+      <center>
+        <div className="col-md-6">
+          <p>
+            At Canterbury International School, our state-of-the-art facilities
+            are designed to inspire, engage, and nurture the minds of tomorrow’s
+            leaders. From cutting-edge science laboratories and fully equipped
+            computer rooms to serene reading spaces, expansive playgrounds, and
+            world-class sports courts, every corner of our campus is crafted to
+            foster academic excellence, creativity, and holistic development.
+            Step inside and explore an environment where innovation meets
+            inspiration, and every student finds the perfect space to thrive.
+          </p>
+        </div>
+      </center>
       <div ref={sectionRef} style={{ position: "relative" }}>
         <center>
           <h1>EXPLORE OUR FACILITIES</h1>
@@ -185,11 +200,18 @@ export const OurFacilities = () => {
         </div>
       </div>
 
-      <div
-        style={{ height: "100vh", background: "#d0d0d0" }}
-        className="col-md-12"
-      >
-        Continue Scrolling Vertically
+      <div style={{ height: "100vh" }} className="col-md-12 facility-action">
+        <center>
+          <div className="col-md-7">
+            {" "}
+            <h1>
+              Are you ready to be a part of this amazing{" "}
+              <span>experience?</span>
+            </h1>
+            <p>We Welcome you onboard!</p>
+            <button>Start your journey today</button>
+          </div>
+        </center>
       </div>
 
       {/* React-Bootstrap Modal */}

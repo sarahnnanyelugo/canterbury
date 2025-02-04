@@ -1,10 +1,11 @@
 .page-menu {
   background: #fff;
-  padding: 30px 40px;
+  padding: 3px 40px;
   box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
   border-radius: 5px;
-  margin-top: -50px;
-  position: relative;
+  // margin-top: -50px;
+  position: sticky !important;
+  top: 0;
   z-index: 5;
   .menu {
     list-style: none;

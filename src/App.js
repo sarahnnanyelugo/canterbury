@@ -16,6 +16,7 @@ import { EYFS } from "./Pages/Academics/EYFS/EYFS";
 import { Secondary } from "./Pages/Academics/Secondary/Secondary";
 import { Primary } from "./Pages/Academics/Primary/Primary";
 import { OurFacilities } from "./Pages/AboutUs/OurFacilities/OurFacilities";
+import { OurStaff } from "./Pages/AboutUs/OurStaff/OurStaff";
 function App() {
   return (
     <>
@@ -27,13 +28,14 @@ function App() {
         <Route path="mission" element={<MissionVision />} />
         <Route path="welcome" element={<Welcome />} />
         <Route path="history" element={<History />} />
-        <Route path="history" element={<History />} />
+
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="apply" element={<Apply />} />
         <Route path="primary" element={<Primary />} />
         <Route path="secondary" element={<Secondary />} />
         <Route path="eyfs" element={<EYFS />} />
         <Route path="our-facilities" element={<OurFacilities />} />
+        <Route path="our-staff" element={<OurStaff />} />
       </Routes>
       <Footer />
     </>
