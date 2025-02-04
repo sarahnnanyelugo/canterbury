@@ -36,3 +36,22 @@
     }
   }
 }
+.profile-content {
+  img {
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+}
+.staff-socials {
+  li {
+    font-size: 20px;
+    margin: 30px 30px;
+    a {
+      color: $app-color-hover;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+}

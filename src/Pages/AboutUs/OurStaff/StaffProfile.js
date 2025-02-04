@@ -1,6 +1,11 @@
 import Modal from "react-bootstrap/Modal";
 import React, { useState } from "react";
 import { staffData } from "../../../TestData/staffData";
+import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 
 function Profile({ show, onHide, item }) {
   if (!item) return null; // Ensure item exists before rendering
@@ -14,7 +19,7 @@ function Profile({ show, onHide, item }) {
     >
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        <div className="modal-content">
+        <div className="modal-content profile-content">
           <div className="">
             <div className="col-md-12">
               <img width="100%" src={item.photo} alt="News" />
@@ -25,7 +30,29 @@ function Profile({ show, onHide, item }) {
                 <em>{item.portfolio}</em>
               </p>
               <p>{item.qualification}</p>
-              <p>{item.profile}</p>
+              <p>{item.profile}</p>{" "}
+              <ul className="list-unstyled list-inline staff-socials">
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaFacebook />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaSquareInstagram />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaLinkedin />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <IoMail />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -59,6 +86,28 @@ function StaffProfile() {
               <p>
                 <em>{item.portfolio}</em>
               </p>
+              <ul className="list-unstyled list-inline staff-socials">
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaFacebook />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaSquareInstagram />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <FaLinkedin />
+                  </Link>
+                </li>{" "}
+                <li className="list-inline-item">
+                  <Link to={"/"}>
+                    <IoMail />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         ))}

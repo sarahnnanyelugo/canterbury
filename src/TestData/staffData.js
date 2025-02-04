@@ -1,8 +1,13 @@
-import Greeting from "../assets/images/std1.webp";
+import Excursion from "../assets/images/staff/bose.png";
 
-import Door from "../assets/images/std2.webp";
-import Excursion from "../assets/images/vibrant.jpeg";
-import Classroom from "../assets/images/std3.webp";
+import Door from "../assets/images/staff/james.png";
+import Greeting from "../assets/images/staff/ifeco.png";
+import Classroom from "../assets/images/staff/sera.png";
+import Pat from "../assets/images/staff/pat.png";
+import Staff10 from "../assets/images/staff/staff3.jpg";
+import Staff11 from "../assets/images/staff/peter.png";
+import Staff12 from "../assets/images/staff/christian.jpeg";
+import Staff13 from "../assets/images/staff/staff4.jpg";
 
 export const staffData = [
   {
@@ -37,7 +42,7 @@ export const staffData = [
     photo: Excursion,
   },
   {
-    name: "Mr. Ibrahim Bello",
+    name: "Mrs. Aisha Bello",
     portfolio: "Mathematics Coordinator",
     qualification:
       " M.Sc. in Applied Mathematics, B.Ed. in Secondary Education",
@@ -48,14 +53,14 @@ export const staffData = [
     photo: Classroom,
   },
   {
-    name: "Ms. Sophia Martinez",
+    name: "Mr. Ade Martinez",
     portfolio: "Head of Arts and Humanities",
     qualification: "M.A. in Fine Arts, B.A. in Art History",
     profile:
       "A creative force at Canterbury, Ms. Martinez nurtures artistic expression and cultural appreciation. Her classes blend traditional techniques with contemporary art forms, encouraging student creativity..",
     id: 5,
 
-    photo: Classroom,
+    photo: Staff12,
   },
   {
     name: "Mr. Adekunle Adebayo",
@@ -65,7 +70,7 @@ export const staffData = [
       "Mr. Adebayo promotes physical fitness and healthy lifestyles through dynamic PE programs. His coaching fosters teamwork, discipline, and sportsmanship among students..",
     id: 6,
 
-    photo: Classroom,
+    photo: Staff10,
   },
   {
     name: "Mrs. Fatima Al-Sayed",
@@ -86,7 +91,7 @@ export const staffData = [
       "Mr. Nwosu integrates technology into the curriculum to enhance digital literacy. He encourages students to be innovators in the tech-driven world, focusing on coding, robotics, and cybersecurity.",
     id: 8,
 
-    photo: Classroom,
+    photo: Staff11,
   },
   {
     name: "Ms. Oluchi Eze",
@@ -96,7 +101,7 @@ export const staffData = [
       "Ms. Eze supports the emotional well-being and academic growth of students. Her compassionate approach helps students navigate personal challenges and develop resilience.",
     id: 9,
 
-    photo: Classroom,
+    photo: Staff13,
   },
   {
     name: "Mr. Samuel Okoye",
@@ -106,6 +111,6 @@ export const staffData = [
       "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
     id: 3,
 
-    photo: Classroom,
+    photo: Pat,
   },
 ];
