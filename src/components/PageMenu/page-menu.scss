@@ -7,6 +7,7 @@
   position: sticky !important;
   top: 0;
   z-index: 5;
+
   .menu {
     list-style: none;
     padding: 0;
@@ -56,5 +57,8 @@
   }
 
   .menu-item:hover {
+  }
+  @media screen and (max-width: 820px) {
+    display: none;
   }
 }

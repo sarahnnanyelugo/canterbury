@@ -23,8 +23,8 @@ import { OurWords } from "../../../components/OurWords/OurWords";
 export const MissionVision = () => {
   return (
     <>
-      <div className="story-div col-md-12">
-        <div className="mission-banner">
+      <div className="misson-div col-md-12">
+        <div className="mission-banner2">
           {" "}
           <img src={Hero} width="100%" />
           <div className="overlayed">
@@ -37,7 +37,7 @@ export const MissionVision = () => {
         <PageMenu menuItems={about} />
         <PageLogo />
         <center>
-          <div className="col-md-8">
+          <div className="col-md-8 col-12">
             <h2>Our Mission</h2>
             <p className="mission-statement">
               Founded in 1915 and guided by our Catholic heritage, Canterbury is
@@ -184,40 +184,6 @@ export const MissionVision = () => {
             </div>
           </div>
         </div>
-        {/* <div className="mission-words d-md-flex col-md-12">
-          <div className="col-md-7">
-            <div className="void" id="void">
-              <div className="crop">
-                <ul id="card-list">
-                  {modelData.map((model, index) => (
-                    <li key={index}>
-                      <div className="card">
-                        <span className="model-name">
-                          <h5>{model.modelName}</h5>
-                        </span>
-                        <span>
-                          <p>{model.description}</p>
-                        </span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <div className="last-circle"></div>
-                <div className="second-circle"></div>
-              </div>
-              <div className="mask"></div>
-              <div className="center-circle">
-                <h3>
-                  The Words <br />
-                  We Live By
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 honour-div">
-         
-          </div>
-        </div> */}
         <OurWords />
         <div className="remarkable">
           <center>

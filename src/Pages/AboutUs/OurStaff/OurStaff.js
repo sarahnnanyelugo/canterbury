@@ -36,7 +36,9 @@ export const OurStaff = () => {
           </p>
         </div>
       </center>
-      <StaffProfile />
+      <div className="mobile-pad">
+        <StaffProfile />
+      </div>
     </>
   );
 };

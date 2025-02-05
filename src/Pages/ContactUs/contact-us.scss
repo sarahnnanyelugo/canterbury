@@ -1,11 +1,17 @@
 @import "../../variables";
 
-.contact-banner {
+.contact-banner2 {
   position: relative;
   padding: 0 60px;
+  @media screen and (max-width: 820px) {
+    padding: 3px 5px;
+  }
   img {
     height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 820px) {
+      height: 400px;
+    }
   }
   h1 {
     position: absolute;
@@ -14,6 +20,9 @@
     color: #fff;
     font-size: 72px;
     font-family: garamondB;
+    @media screen and (max-width: 820px) {
+      font-size: 18px;
+    }
   }
 }
 h3 {
@@ -27,7 +36,10 @@ h3 {
   height: 350px;
   margin-top: 100px;
   font-family: figtree;
-
+  @media screen and (max-width: 820px) {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
   ul li {
     margin-top: 20px;
 

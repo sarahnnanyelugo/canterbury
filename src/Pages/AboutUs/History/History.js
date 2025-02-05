@@ -32,7 +32,7 @@ export const History = () => {
         <PageLogo />
 
         <center>
-          <div className="col-md-7">
+          <div className="col-md-7 mobile-pad">
             <h2>Nurturing Young Minds for More Than a Decade</h2>
             <p className="first-para">
               From the initial group of 18 students who began their journey in
@@ -132,7 +132,7 @@ export const History = () => {
           </div>
         </div>
         <center>
-          <div className="col-md-7 history-quote">
+          <div className="col-md-7 history-quote mobile-pad">
             <div className=" d-md-flex remarkable-logo">
               <div className="col-md-5">
                 <hr />
@@ -159,7 +159,7 @@ export const History = () => {
           </div>
         </center>
 
-        <div className="remarkable2">
+        <div className="remarkable2 mobile-pad">
           <center>
             <div className="col-md-7">
               <h1>HISTORICAL TIMELINE</h1>

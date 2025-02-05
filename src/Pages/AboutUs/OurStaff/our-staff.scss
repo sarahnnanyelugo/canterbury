@@ -3,9 +3,15 @@
 .staff-banner {
   position: relative;
   padding: 0 60px;
+  @media screen and (max-width: 820px) {
+    padding: 0 10px;
+  }
   img {
     height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 820px) {
+      height: 400px;
+    }
   }
   h1 {
     position: absolute;
@@ -14,6 +20,10 @@
     color: #fff;
     font-size: 72px;
     font-family: garamondB;
+    @media screen and (max-width: 820px) {
+      font-size: 25px;
+      left: 22%;
+    }
   }
 }
 .staff-profile {
@@ -24,6 +34,9 @@
     padding: 10px;
     border-radius: 10px;
     height: 420px;
+    @media screen and (max-width: 820px) {
+      height: 520px;
+    }
     h6 {
       padding: 10px;
       font-family: figtreeB;
@@ -45,8 +58,11 @@
 }
 .staff-socials {
   li {
-    font-size: 20px;
-    margin: 30px 30px;
+    font-size: 14px;
+    margin: 30px 35px;
+    @media screen and (max-width: 820px) {
+      margin-top: 80px;
+    }
     a {
       color: $app-color-hover;
       &:hover {

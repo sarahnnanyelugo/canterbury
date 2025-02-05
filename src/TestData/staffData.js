@@ -47,7 +47,7 @@ export const staffData = [
     qualification:
       " M.Sc. in Applied Mathematics, B.Ed. in Secondary Education",
     profile:
-      "Mr. Bello has a knack for making complex mathematical concepts accessible and engaging. His teaching philosophy revolves around problem-solving and real-world applications of mathematics.",
+      "Mrs. Bello has a knack for making complex mathematical concepts accessible and engaging. His teaching philosophy revolves around problem-solving and real-world applications of mathematics.",
     id: 4,
 
     photo: Classroom,

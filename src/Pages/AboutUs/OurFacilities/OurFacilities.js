@@ -26,7 +26,7 @@ export const OurFacilities = () => {
       totalScrollWidth / scrollSpeedFactor + window.innerHeight; // Adjusted height
 
     section.style.height = `${sectionHeight}px`;
-    document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
+    // document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
 
     const handleScroll = () => {
       const sectionTop = section.getBoundingClientRect().top;
@@ -124,7 +124,7 @@ export const OurFacilities = () => {
       <PageMenu menuItems={about} />
       <PageLogo />
       <center>
-        <div className="col-md-6">
+        <div className="col-md-6 mobile-pad">
           <p>
             At Canterbury International School, our state-of-the-art facilities
             are designed to inspire, engage, and nurture the minds of tomorrow’s
@@ -137,7 +137,7 @@ export const OurFacilities = () => {
           </p>
         </div>
       </center>
-      <div ref={sectionRef} style={{ position: "relative" }}>
+      <div ref={sectionRef} style={{ position: "relative" }} className="mdn">
         <center>
           <h1>EXPLORE OUR FACILITIES</h1>
         </center>

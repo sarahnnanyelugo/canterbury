@@ -41,8 +41,8 @@ export const OurStory = () => {
             </p>
           </div>
         </center>
-        <div className="col-md-8 offset-md-2 d-md-flex">
-          <div className="col-md-6" style={{ paddingRight: "10px" }}>
+        <div className="col-md-8 offset-md-2 d-md-flex mobile-pad">
+          <div className="col-md-6 right">
             <p>
               Founded in 1915 and set on a hilltop in New Milford, Connecticut,
               Canterbury combines a strong tradition of academic excellence with
@@ -53,7 +53,7 @@ export const OurStory = () => {
               inspired to create a more just and compassionate world.{" "}
             </p>
           </div>
-          <div className="col-md-6" style={{ paddingLeft: "10px" }}>
+          <div className="col-md-6 left">
             <p>
               With approximately 330 students, we are committed to the small
               boarding school experience as the most comprehensive form of high
@@ -69,18 +69,18 @@ export const OurStory = () => {
         <div className="remarkable">
           <center>
             <div className="col-md-5">
-              <div className=" d-md-flex remarkable-logo">
-                <div className="col-md-5">
+              <div className=" d-flex remarkable-logo">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-2 col-2">
                   <center>
                     {" "}
                     <ImQuotesLeft className="quote" />
                   </center>
                 </div>
 
-                <div className="col-md-5">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
               </div>
@@ -101,7 +101,7 @@ export const OurStory = () => {
             </div>
           </center>
         </div>
-        <div className="col-md-8 offset-md-2 d-flex chapel">
+        <div className="col-md-8 offset-md-2 d-md-flex chapel">
           <div className="col-md-6 first-div">
             <h3>
               A TRADITION OF{" "}
@@ -171,7 +171,7 @@ export const OurStory = () => {
           </div>
         </div>
 
-        <div className="col-md-8 offset-md-2 d-flex chapel">
+        <div className="col-md-8 offset-md-2 d-md-flex chapel">
           {" "}
           <div className="col-md-6  first-div">
             <img src={Mentor} width="100%" />

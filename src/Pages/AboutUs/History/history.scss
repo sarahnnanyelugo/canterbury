@@ -3,9 +3,15 @@
 .story-banner {
   position: relative;
   padding: 0 60px;
+  @media screen and (max-width: 820px) {
+    padding: 0 10px;
+  }
   img {
     height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 820px) {
+      height: 400px;
+    }
   }
   h1 {
     position: absolute;
@@ -14,6 +20,10 @@
     color: #fff;
     font-size: 72px;
     font-family: garamondB;
+    @media screen and (max-width: 820px) {
+      left: 29%;
+      font-size: 22px;
+    }
   }
 }
 .history-div {
@@ -24,6 +34,9 @@
     color: $appcolor;
     font-family: garamondB;
     font-size: 36px;
+    @media screen and (max-width: 820px) {
+      font-size: 22px;
+    }
   }
   .first-para {
     color: #4d5e69;
@@ -31,6 +44,9 @@
     line-height: 35px;
     font-family: figtree;
     margin-bottom: 60px;
+    @media screen and (max-width: 820px) {
+      font-size: 18px;
+    }
   }
   p {
     color: #4d5e69;
@@ -48,6 +64,9 @@
 
     padding-top: 100px;
     background-position: center;
+    @media screen and (max-width: 820px) {
+      height: 700px;
+    }
     h1 {
       color: #fff;
       font-family: garamondB;
@@ -133,6 +152,9 @@
 .history-quote {
   height: 300px;
   padding-top: 80px;
+  @media screen and (max-width: 820px) {
+    height: fit-content;
+  }
   p {
     font-size: 18px;
     margin-top: 30px;
