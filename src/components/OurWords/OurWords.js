@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import "./our-words.scss";
 export const OurWords = () => {
   const count = 6; // Define count to prevent errors
@@ -41,6 +42,7 @@ export const OurWords = () => {
   }, [count]);
   return (
     <>
+      {" "}
       <div className="mission-words d-md-flex col-md-12">
         <div className="col-md-7">
           <div className="void" id="void">

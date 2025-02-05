@@ -19,6 +19,7 @@ import News from "../../../components/News/News";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Values from "./Values/Values";
 import { OurWords } from "../../../components/OurWords/OurWords";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const MissionVision = () => {
   return (
@@ -37,9 +38,9 @@ export const MissionVision = () => {
         <PageMenu menuItems={about} />
         <PageLogo />
         <center>
-          <div className="col-md-8 col-12">
+          <div className="col-md-8 col-12 mission-quote mobile-pad">
             <h2>Our Mission</h2>
-            <p className="mission-statement">
+            <p className="mission-statement ">
               Founded in 1915 and guided by our Catholic heritage, Canterbury is
               a college preparatory, coeducational boarding and day school for
               students in grades 9–12. The School prides itself on creating a
@@ -64,22 +65,45 @@ export const MissionVision = () => {
             </p>
           </div>
         </center>
-        <div className="col-md-8 offset-md-2 d-flex mission-values">
-          <div className="mission-div col-md-4">
-            <hr />
-            <center>
-              <p>
-                "To foster in our students both the ability and the desire to
-                make a positive difference in the world."
-              </p>
+        <TabletAndBelow>
+          {" "}
+          <center>
+            {" "}
+            <div className="mission-div col-md-4">
+              <hr />
+              <center>
+                <p>
+                  "To foster in our students both the ability and the desire to
+                  make a positive difference in the world."
+                </p>
 
-              <h1>
-                Our <span>Mi</span>ssion
-              </h1>
-            </center>
-            <hr />
-          </div>
-          <div className="col-md-8 row row-cols-2 row-cols-lg-2 g-2 g-lg-5">
+                <h1>
+                  Our <span>Vi</span>sion
+                </h1>
+              </center>
+              <hr />
+            </div>
+          </center>
+        </TabletAndBelow>
+        <div className="col-md-8 offset-md-2 d-flex mission-values">
+          <Desktop>
+            {" "}
+            <div className="mission-div col-md-4">
+              <hr />
+              <center>
+                <p>
+                  "To foster in our students both the ability and the desire to
+                  make a positive difference in the world."
+                </p>
+
+                <h1>
+                  Our <span>Vi</span>sion
+                </h1>
+              </center>
+              <hr />
+            </div>
+          </Desktop>
+          <div className="col-md-8 row row-cols-2 row-cols-lg-2 g-2 g-lg-5 mobile-pad">
             <Values
               src={Res}
               heading="RESILIENCE"
@@ -92,7 +116,7 @@ export const MissionVision = () => {
             />
           </div>
         </div>{" "}
-        <div className="col-md-8 offset-md-2 row row-cols-2 row-cols-lg-3 g-2 g-lg-5 mt-1">
+        <div className="col-md-8 offset-md-2 row row-cols-2 row-cols-lg-3 g-2 g-lg-5 mt-1 mobile-pad">
           <Values
             src={Res}
             heading="POSITIVITY
@@ -118,7 +142,7 @@ export const MissionVision = () => {
 "
           />
         </div>
-        <h1 className="core-values offset-md-2">
+        <h1 className="core-values offset-md-2 mobile-pad">
           OUR CORE <span>values</span>
         </h1>
         <div className="col-md-8 offset-md-2 val-acc">
@@ -185,21 +209,21 @@ export const MissionVision = () => {
           </div>
         </div>
         <OurWords />
-        <div className="remarkable">
+        <div className="remarkable mobile-pad">
           <center>
-            <div className="col-md-5">
-              <div className=" d-md-flex remarkable-logo">
-                <div className="col-md-5">
+            <div className="col-md-5 ">
+              <div className=" d-flex remarkable-logo">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-2 col-2">
                   <center>
                     {" "}
                     <ImQuotesLeft className="quote" />
                   </center>
                 </div>
 
-                <div className="col-md-5">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
               </div>
