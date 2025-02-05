@@ -57,7 +57,7 @@
       font-size: 16px;
     }
   }
-  .remarkable {
+  .remarkable2 {
     height: 800px;
     background: url("../../../assets/images/abt-bg-1.png");
     background-repeat: no-repeat;
@@ -67,6 +67,10 @@
 
     padding-top: 200px;
     background-position: center;
+    @media screen and (max-width: 820px) {
+      height: 600px;
+      padding-top: 100px;
+    }
     p {
       color: #fff;
       font-size: 25px;
@@ -106,14 +110,25 @@
   .chapel {
     padding-top: 100px;
     padding-bottom: 100px;
+    @media screen and (max-width: 820px) {
+      padding-top: 0px;
+    }
     .first-div {
       padding-right: 40px;
+      @media screen and (max-width: 820px) {
+        margin-top: 40px;
+        padding-right: 0px;
+      }
     }
     h3 {
       color: $appcolor;
       margin-top: 80px;
       font-family: figtreeB;
       margin-bottom: 50px;
+      @media screen and (max-width: 820px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
       span {
         color: #de7c0d;
         font-family: garamondI;
@@ -133,6 +148,9 @@
       padding: 5px 15px;
       transition: 0.5s ease-in-out;
       border-radius: 5px;
+      @media screen and (max-width: 820px) {
+        margin-bottom: 20px;
+      }
       &:hover {
         background: #2d79c5;
       }
@@ -150,11 +168,17 @@
       font-size: 72px;
       margin-bottom: 30px;
       font-family: figtreeB;
+      @media screen and (max-width: 820px) {
+        font-size: 32px;
+      }
     }
     h5 {
       //   font-size: 18px;
       font-family: figtreeB;
       font-weight: bold;
+      @media screen and (max-width: 820px) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -169,16 +193,25 @@
       font-size: 72px;
       margin-bottom: 30px;
       font-family: figtreeB;
+      @media screen and (max-width: 820px) {
+        font-size: 32px;
+      }
     }
     h5 {
       //   font-size: 18px;
       font-family: figtreeB;
       font-weight: bold;
+      @media screen and (max-width: 820px) {
+        font-size: 16px;
+      }
     }
   }
 }
 .graduates-profile {
   padding-top: 100px;
+  @media screen and (max-width: 820px) {
+    padding-top: 0px;
+  }
   h1 {
     color: $appcolor;
     margin-top: 80px;
@@ -200,6 +233,10 @@
 .profile-caru {
   margin-top: 40px;
   margin-bottom: 40px;
+  @media screen and (max-width: 820px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .profile-details {
     background: #fff;
     height: 350px;
@@ -208,7 +245,10 @@
     box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
     border-bottom: solid 3px #de7c0d;
     margin-top: 30px;
-
+    @media screen and (max-width: 820px) {
+      padding-bottom: 120px;
+      margin-top: 0px;
+    }
     h5 {
       color: $appcolor;
       margin-bottom: 30px;
@@ -249,6 +289,9 @@
     width: 35px;
     height: 35px;
     opacity: 1 !important;
+    @media screen and (max-width: 820px) {
+      margin-left: 2%;
+    }
   }
   .carousel-control-prev-icon {
     background-image: "";
@@ -263,6 +306,9 @@
     width: 35px;
     height: 35px;
     opacity: 1 !important;
+    @media screen and (max-width: 820px) {
+      margin-right: -0%;
+    }
   }
   .carousel-indicators {
     display: none;
@@ -271,8 +317,15 @@
 .category-div {
   padding-top: 140px;
   padding-bottom: 100px;
+  @media screen and (max-width: 820px) {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
   .container {
     position: relative;
+    @media screen and (max-width: 820px) {
+      margin-bottom: 30px;
+    }
   }
   .img-holder {
     background-image: url("../../../assets/images/secondary.jpg");
@@ -466,11 +519,16 @@
     font-family: figtreeB;
   }
 }
-@media screen and (min-width: 820px) {
-  .right {
-    // padding-right: 10px;
+
+.right {
+  text-align: justify;
+  @media screen and (min-width: 820px) {
+    padding-right: 10px;
   }
-  .left {
-    // padding-left: 10px;
+}
+.left {
+  text-align: justify;
+  @media screen and (min-width: 820px) {
+    padding-left: 10px;
   }
 }

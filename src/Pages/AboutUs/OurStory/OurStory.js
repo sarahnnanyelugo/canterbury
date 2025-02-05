@@ -66,7 +66,7 @@ export const OurStory = () => {
             </p>
           </div>
         </div>
-        <div className="remarkable">
+        <div className="remarkable2 mobile-pad">
           <center>
             <div className="col-md-5">
               <div className=" d-flex remarkable-logo">
@@ -94,14 +94,14 @@ export const OurStory = () => {
                 We believe that Canterbury is<em> the best</em> small boarding
                 school.
               </p>
-              <button>
+              {/* <button>
                 THE CASE FOR SMALL BOARDING SCHOOLS, THE CASE FOR CANTERBURY
               </button>
-              <hr />
+              <hr /> */}
             </div>
           </center>
         </div>
-        <div className="col-md-8 offset-md-2 d-md-flex chapel">
+        <div className="col-md-8 offset-md-2 d-md-flex chapel mobile-pad">
           <div className="col-md-6 first-div">
             <h3>
               A TRADITION OF{" "}
@@ -171,7 +171,7 @@ export const OurStory = () => {
           </div>
         </div>
 
-        <div className="col-md-8 offset-md-2 d-md-flex chapel">
+        <div className="col-md-8 offset-md-2 d-md-flex chapel mobile-pad">
           {" "}
           <div className="col-md-6  first-div">
             <img src={Mentor} width="100%" />
@@ -227,7 +227,7 @@ export const OurStory = () => {
           </div>
         </div>
 
-        <div className="graduates-profile">
+        <div className="graduates-profile mobile-pad">
           <center>
             <div className="col-md-6">
               <h1>
@@ -241,7 +241,7 @@ export const OurStory = () => {
             </div>
           </center>
         </div>
-        <div className="profile-caru col-md-8 offset-md-2">
+        <div className="profile-caru col-md-8 offset-md-2 mobile-pad">
           <Carousel fade>
             <Carousel.Item interval={5000}>
               <div className="d-md-flex">
@@ -346,7 +346,7 @@ export const OurStory = () => {
               OUR <span>CATEGORIES</span>
             </h1>
           </center>
-          <div className="d-flex col-md-12">
+          <div className="d-md-flex col-md-12">
             <div className="col-md-4 container">
               <div className="img-holder">
                 <div className="small-intro">
