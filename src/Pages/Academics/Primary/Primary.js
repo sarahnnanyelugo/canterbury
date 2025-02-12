@@ -16,6 +16,7 @@ import { SiElectronbuilder } from "react-icons/si";
 import { FaNotesMedical } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 import { BsFillTrophyFill } from "react-icons/bs";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const Primary = () => {
   const [inViewHeading, setInViewHeading] = useState(false);
@@ -42,48 +43,61 @@ export const Primary = () => {
   return (
     <>
       <div className="primary-div">
-        <div className="primary-banner d-flex">
-          <div className="col-md-6 offset-md- heading" ref={headingRef}>
-            <img src={Decor1} width="34px" height="34px" />
-            <br />
+        <div className="primary-banner ">
+          <div className="d-flex">
+            {" "}
+            <div className="col-md-6 offset-md- heading" ref={headingRef}>
+              <img src={Decor1} width="34px" height="34px" />
+              <br />
 
-            <h1
-              style={{
-                transform: inViewHeading
-                  ? "translateX(0)"
-                  : "translateX(-100px)",
-                opacity: inViewHeading ? 1 : 0,
-                transition: "transform 2s ease, opacity 2s ease",
-              }}
-            >
-              WELCOME TO CANTERBURY{" "}
-              <span>
-                PRIMARY
-                <span
-                  style={{
-                    color: "grey",
-                    fontSize: "40px",
-                    marginLeft: "-20px",
-                  }}
-                >
-                  <BsFillTrophyFill />
+              <h1
+                style={{
+                  transform: inViewHeading
+                    ? "translateX(0)"
+                    : "translateX(-100px)",
+                  opacity: inViewHeading ? 1 : 0,
+                  transition: "transform 2s ease, opacity 2s ease",
+                }}
+              >
+                WELCOME TO CANTERBURY{" "}
+                <span>
+                  PRIMARY
+                  <span
+                    style={{
+                      color: "grey",
+                      fontSize: "40px",
+                      marginLeft: "-20px",
+                    }}
+                  >
+                    <BsFillTrophyFill className="trophy" />
+                  </span>
                 </span>
-              </span>
-            </h1>
+              </h1>
+              <Desktop>
+                {" "}
+                <p>
+                  Where Young Minds Blossom and Lifelong L
+                  <span style={{ color: "#fff" }}>earning Begins</span>
+                </p>
+              </Desktop>
+            </div>
+            <div className="col-md-6">
+              {" "}
+              <img src={Hero} width="100%" />
+              <img src={Decor3} className="offset-md-11 cube" />
+            </div>
+          </div>
+          <TabletAndBelow>
+            {" "}
             <p>
               Where Young Minds Blossom and Lifelong L
               <span style={{ color: "#fff" }}>earning Begins</span>
             </p>
-          </div>
-          <div className="col-md-6">
-            {" "}
-            <img src={Hero} width="100%" />
-            <img src={Decor3} className="offset-md-11 cube" />
-          </div>
+          </TabletAndBelow>
         </div>{" "}
         <PageMenu menuItems={academics} />
         <PageLogo />
-        <div className="col-md-8 eyfs-body offset-md-2 d-flex">
+        <div className="col-md-8 eyfs-body offset-md-2 d-md-flex mobile-pad">
           <div className="col-md-8">
             <h2>ELEMENTARY SCHOOL</h2>
             <h6>MESSAGE FROM THE ELEMENTARY PRINCIPAL</h6>
@@ -157,7 +171,7 @@ export const Primary = () => {
             </div>
           </div>
         </div>
-        <div className="d-md-flex col-md-8 offset-md-2">
+        <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
             <img src={Eyfs} width="100%" />
           </div>
@@ -182,7 +196,7 @@ export const Primary = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-8 offset-md-2 row row-cols-2 row-cols-lg-5 g-0 g-lg-0 prowess">
+        <div className="col-md-8 offset-md-2 row row-cols-3 row-cols-lg-5 g-0 g-lg-0 prowess">
           <div className="col">
             <div className="prowess-inner">
               <FaComputerMouse className="icon" />
@@ -224,7 +238,7 @@ export const Primary = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-8 offset-md-2 elementary-details">
+        <div className="col-md-8 offset-md-2 elementary-details mobile-pad">
           <h2>The Elementary Campus</h2>
           <Accordion defaultActiveKey="0" flush>
             <Accordion.Item eventKey="0">

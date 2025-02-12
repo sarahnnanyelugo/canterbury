@@ -25,7 +25,7 @@ export const Apply = () => {
         </div>
         <PageMenu menuItems={admission} />
         <PageLogo />
-        <div className="col-md-8 offset-md-2 ">
+        <div className="col-md-8 offset-md-2 apply-call mobile-pad">
           <h1>Let's do this!</h1>
           <p>
             Choosing Canterbury International means choosing a life-changing
@@ -129,7 +129,10 @@ export const Apply = () => {
                       this visit.
                     </p>
                   </div>
-                  <Link className="col-md-3 offset-md-1" href={"contact-us"}>
+                  <Link
+                    className="col-md-3 col-8 offset-md-1"
+                    href={"contact-us"}
+                  >
                     <div className="outer ">
                       <div className="inner col-md-12">
                         {/* <img src={Girl} width="100%" /> */}

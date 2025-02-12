@@ -14,6 +14,7 @@ import News from "../../../components/News/News";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Action } from "./Action/Action";
 import { Link } from "react-router-dom";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const Welcome = () => {
   return (
@@ -54,19 +55,35 @@ export const Welcome = () => {
         </div>
 
         <div className="col-md-10 offset-md-1 d-flex speech">
-          <div className="col-md-6">
-            <img src={Admin} width="100%" />
-            <div className="d-flex mt-2">
-              <div style={{ flexGrow: 1 }}>
-                <h6>Mrs Olamide Olaitan-Karunwi</h6>
-                <p>Canterbury Schools Administrator</p>
-              </div>
-              <Link to={"/"}>
-                View Profile <FaLongArrowAltRight />
-              </Link>
+          <div className="col-md-6 col-7 admin-profile">
+            <div className="d-flex">
+              {" "}
+              <img src={Admin} width="100%" />
+              <TabletAndBelow>
+                <div className="col-8 mt-2">
+                  <div style={{ flexGrow: 1 }}>
+                    <h6>Mrs Olamide Olaitan-Karunwi</h6>
+                    <p>Administrator; Canterbury International Schools </p>
+                  </div>
+                  <Link to={"/"}>
+                    View Profile <FaLongArrowAltRight />
+                  </Link>
+                </div>
+              </TabletAndBelow>
             </div>
+            <Desktop>
+              <div className="d-flex mt-2">
+                <div style={{ flexGrow: 1 }}>
+                  <h6>Mrs Olamide Olaitan-Karunwi</h6>
+                  <p>Canterbury Schools Administrator</p>
+                </div>
+                <Link to={"/"}>
+                  View Profile <FaLongArrowAltRight />
+                </Link>
+              </div>
+            </Desktop>
           </div>
-          <div className="col-md-7 message">
+          <div className="col-md-7 message col-8">
             <div className="message-heading col-md-12">
               {" "}
               <h2>
@@ -117,21 +134,21 @@ export const Welcome = () => {
           </div>
         </div>
 
-        <div className="remarkable">
+        <div className="remarkable mobile-pad">
           <center>
             <div className="col-md-5">
-              <div className=" d-md-flex remarkable-logo">
-                <div className="col-md-5">
+              <div className=" d-flex remarkable-logo">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-2 col-2">
                   <center>
                     {" "}
                     <ImQuotesLeft className="quote" />
                   </center>
                 </div>
 
-                <div className="col-md-5">
+                <div className="col-md-5 col-5">
                   <hr />
                 </div>
               </div>

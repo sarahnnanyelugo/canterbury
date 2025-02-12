@@ -51,7 +51,7 @@ export const SectionHeading = (props) => {
   return (
     <>
       <div className="heading-container " ref={headingRef}>
-        <div className="d-flex section-head offset-md-2">
+        <div className="d-flex section-head justify-content-center align-items-center">
           {" "}
           <h1
             className="head1 offset-md-"

@@ -200,7 +200,7 @@ export const OurFacilities = () => {
         </div>
       </div>
 
-      <div style={{ height: "100vh" }} className="col-md-12 facility-action">
+      <div className="col-md-12 facility-action ">
         <center>
           <div className="col-md-7">
             {" "}

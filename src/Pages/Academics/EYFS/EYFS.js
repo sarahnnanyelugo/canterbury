@@ -15,6 +15,7 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import { SiElectronbuilder } from "react-icons/si";
 import { FaNotesMedical } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const EYFS = () => {
   const [inViewHeading, setInViewHeading] = useState(false);
@@ -41,33 +42,43 @@ export const EYFS = () => {
   return (
     <>
       <div className="eyfs-div">
-        <div className="eyfs-banner2 d-flex">
-          <div className="col-md-6 offset-md- heading" ref={headingRef}>
-            <img src={Decor1} width="34px" height="34px" />
-            <br />
-            <img src={Decor2} className="offset-md-11 star" />
-            <h1
-              style={{
-                transform: inViewHeading
-                  ? "translateX(0)"
-                  : "translateX(-100px)",
-                opacity: inViewHeading ? 1 : 0,
-                transition: "transform 2s ease, opacity 2s ease",
-              }}
-            >
-              Welcome to Canterbury <span> EYFS</span>
-            </h1>
-            <p>Building Bright Futures, One Little Step at a Time.</p>
-          </div>
-          <div className="col-md-6">
+        <div className="eyfs-banner2 ">
+          <div className="d-flex">
             {" "}
-            <img src={Hero} width="100%" />
-            <img src={Decor3} className="offset-md-11 cube" />
+            <div className="col-md-6 offset-md- heading col-6" ref={headingRef}>
+              <img src={Decor1} width="34px" height="34px" />
+              <br />
+              <img src={Decor2} className="offset-md-11 star" />
+              <h1
+                style={{
+                  transform: inViewHeading
+                    ? "translateX(0)"
+                    : "translateX(-100px)",
+                  opacity: inViewHeading ? 1 : 0,
+                  transition: "transform 2s ease, opacity 2s ease",
+                }}
+              >
+                Welcome to Canterbury <span> EYFS</span>
+              </h1>
+              <Desktop>
+                {" "}
+                <p>Building Bright Futures, One Little Step at a Time.</p>
+              </Desktop>
+            </div>
+            <div className="col-md-6 col-6">
+              {" "}
+              <img src={Hero} width="100%" />
+              <img src={Decor3} className="offset-md-11 cube" />
+            </div>
           </div>
+          <TabletAndBelow>
+            {" "}
+            <p>Building Bright Futures, One Little Step at a Time.</p>
+          </TabletAndBelow>
         </div>{" "}
         <PageMenu menuItems={academics} />
         <PageLogo />
-        <div className="col-md-8 eyfs-body offset-md-2 d-flex">
+        <div className="col-md-8 eyfs-body offset-md-2 d-md-flex mobile-pad">
           <div className="col-md-8">
             <h2>ELEMENTARY SCHOOL</h2>
             <h6>MESSAGE FROM THE ELEMENTARY PRINCIPAL</h6>
@@ -141,7 +152,7 @@ export const EYFS = () => {
             </div>
           </div>
         </div>
-        <div className="d-md-flex col-md-8 offset-md-2">
+        <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
             <img src={Eyfs} width="100%" />
           </div>

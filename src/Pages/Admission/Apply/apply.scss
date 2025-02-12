@@ -3,9 +3,15 @@
 .contact-banner {
   position: relative;
   padding: 0 60px;
+  @media screen and (max-width: 820px) {
+    padding: 0 10px;
+  }
   img {
     height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 820px) {
+      height: 400px;
+    }
   }
   h1 {
     position: absolute;
@@ -14,9 +20,15 @@
     color: #fff;
     font-size: 72px;
     font-family: garamondB;
+    @media screen and (max-width: 820px) {
+      font-size: 22px;
+      left: 24%;
+    }
   }
 }
-
+.apply-call {
+  font-family: garamondB;
+}
 .admission-tab {
   .steps-div {
     // height: 300px;
@@ -34,16 +46,8 @@
     padding: 8px 3px;
 
     @media screen and (max-width: 620px) {
-      //   width: 40%;
-
-      //   margin-left: 0%;
-    }
-  }
-  @media screen and (max-width: 620px) {
-    .tabs {
-      button {
-        margin-left: 10px;
-      }
+      display: block;
+      text-align: left !important;
     }
   }
 
@@ -55,7 +59,7 @@
   .tab {
     // width: 100%;
     background: transparent;
-    margin: 10px 4px;
+    margin: 10px 0px;
 
     border: none;
     color: grey;
@@ -110,6 +114,9 @@
     // margin-left: -40px;
     padding-top: 20px;
     margin-left: 50px;
+    @media screen and (max-width: 820px) {
+      margin-left: 0;
+    }
     &:hover {
       background: $appcolor;
       transition: 0.5s ease;
@@ -130,6 +137,9 @@
     position: absolute;
     margin-left: -20px;
     width: 80%;
+    @media screen and (max-width: 820px) {
+      width: 106%;
+    }
     &:hover {
       background: rgba(0, 40, 94, 0.5);
     }

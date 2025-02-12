@@ -52,6 +52,9 @@
       border-bottom: solid 5px $highlight;
       border-radius: 6px;
       margin-left: -120px;
+      @media screen and (max-width: 820px) {
+        margin-top: 170px;
+      }
     }
 
     .message-heading {
@@ -75,10 +78,16 @@
     color: $appcolor;
     font-family: garamondB;
     font-size: 36px;
+    @media screen and (max-width: 820px) {
+      font-size: 16px;
+    }
     span {
       color: $highlight;
       font-size: 40px;
       font-family: garamondI;
+      @media screen and (max-width: 820px) {
+        font-size: 18px;
+      }
     }
   }
   .first-para {
@@ -96,7 +105,10 @@
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
-
+    @media screen and (max-width: 820px) {
+      height: 600px;
+      padding-top: 80px;
+    }
     padding-top: 200px;
     background-position: center;
     p {
@@ -105,6 +117,9 @@
       line-height: 37px;
       letter-spacing: normal;
       font-family: garamondB;
+      @media screen and (max-width: 820px) {
+        line-height: 25px;
+      }
     }
     button {
       background: transparent;
@@ -153,4 +168,13 @@
 /* Handle on hover */
 .message::-webkit-scrollbar-thumb:hover {
   background: $app-color-hover;
+}
+.admin-profile {
+  padding-left: 10px;
+  h6,
+  p,
+  a {
+    font-size: 13px;
+    padding-left: 10px;
+  }
 }

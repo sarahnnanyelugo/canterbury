@@ -85,7 +85,7 @@ export const Action = () => {
         </div>
       </Desktop>
       <TabletAndBelow>
-        <div className="" ref={textRef} style={{ padding: "0 10px" }}>
+        <div className="action" ref={textRef} style={{ padding: "0 10px" }}>
           <div
             className="mobile-version d-flex  purpose"
             style={{
