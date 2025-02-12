@@ -26,7 +26,7 @@ export const OurFacilities = () => {
       totalScrollWidth / scrollSpeedFactor + window.innerHeight; // Adjusted height
 
     section.style.height = `${sectionHeight}px`;
-    // document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
+    document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
 
     const handleScroll = () => {
       const sectionTop = section.getBoundingClientRect().top;
