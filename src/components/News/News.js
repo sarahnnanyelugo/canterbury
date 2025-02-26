@@ -84,6 +84,7 @@ function News() {
     dots: true,
     infinite: true,
     slidesToShow: 3,
+    speed: 500,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,

@@ -9,6 +9,7 @@ import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { Modal, Button, Carousel } from "react-bootstrap";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 import "./facilities.scss";
 export const OurFacilities = () => {
@@ -16,17 +17,57 @@ export const OurFacilities = () => {
   const scrollContainerRef = useRef(null);
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState({ images: [] });
+  // useEffect(() => {
+  //   const section = sectionRef.current;
+  //   const container = scrollContainerRef.current;
+  //   const scrollSpeedFactor = 2; // Speed multiplier
+  //   const totalScrollWidth = container.scrollWidth - window.innerWidth;
+  //   const sectionHeight =
+  //     totalScrollWidth / scrollSpeedFactor + window.innerHeight; // Adjusted height
+
+  //   section.style.height = `${sectionHeight}px`;
+  //   document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
+
+  //   const handleScroll = () => {
+  //     const sectionTop = section.getBoundingClientRect().top;
+
+  //     if (
+  //       sectionTop <= 0 &&
+  //       Math.abs(sectionTop) * scrollSpeedFactor <= totalScrollWidth
+  //     ) {
+  //       container.style.transform = `translateX(-${
+  //         Math.abs(sectionTop) * scrollSpeedFactor
+  //       }px)`;
+  //     } else if (Math.abs(sectionTop) * scrollSpeedFactor > totalScrollWidth) {
+  //       container.style.transform = `translateX(-${totalScrollWidth}px)`;
+  //     } else {
+  //       container.style.transform = `translateX(0px)`;
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
     const container = scrollContainerRef.current;
-    const scrollSpeedFactor = 2; // Speed multiplier
+
+    if (!section || !container) return;
+
+    const scrollSpeedFactor = 2; // Adjust this as you like
     const totalScrollWidth = container.scrollWidth - window.innerWidth;
     const sectionHeight =
-      totalScrollWidth / scrollSpeedFactor + window.innerHeight; // Adjusted height
+      totalScrollWidth / scrollSpeedFactor + window.innerHeight;
 
+    // Set the height of the section to allow vertical scrolling
     section.style.height = `${sectionHeight}px`;
-    document.body.style.overflowX = "hidden"; // Hide horizontal scrollbar
+
+    // Optional: Prevent horizontal scrollbar
+    document.body.style.overflowX = "hidden";
 
     const handleScroll = () => {
       const sectionTop = section.getBoundingClientRect().top;
@@ -108,13 +149,20 @@ export const OurFacilities = () => {
     setModalShow(false); // Properly close the modal
     document.body.style.overflow = "auto";
   };
-  // const handleShowModal = (images) => {
-  //   setModalContent({ images });
-  //   setModalShow(true);
-  // };
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <div className="col-md-12">
+    <div className="col-md-12 fac">
       <div className="facilities-banner">
         <img src={Hero} width="100%" alt="Hero" />
         <center>
@@ -137,68 +185,76 @@ export const OurFacilities = () => {
           </p>
         </div>
       </center>
-      <div ref={sectionRef} style={{ position: "relative" }} className="mdn">
-        <center>
-          <h1>EXPLORE OUR FACILITIES</h1>
-        </center>
+      <Desktop>
         <div
-          ref={scrollContainerRef}
-          style={{
-            display: "flex",
-            position: "sticky",
-            top: 0,
-            left: 0,
-            height: "100vh",
-            overflow: "hidden",
-            transition: "transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)",
-            willChange: "transform",
-            width: `${content.length * 100}vw`,
-          }}
-          className="vertical-scroll"
+          ref={sectionRef}
+          style={{ position: "relative" }}
+          className="our-facilities-div"
         >
-          {content.map((item, index) => (
-            <div
-              key={index}
-              style={{
-                width: "100vw",
-                height: "100vh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "20px",
-                boxSizing: "border-box",
-                transition: "transform 0.5s ease-in-out",
-              }}
-            >
+          <center>
+            <h1>EXPLORE OUR FACILITIES</h1>
+          </center>
+
+          <div
+            ref={scrollContainerRef}
+            className={`scroll-container ${isMobile ? "vertical-layout" : ""}`}
+            style={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              position: isMobile ? "static" : "sticky",
+              top: 0,
+              left: 0,
+              height: isMobile ? "auto" : "100vh",
+              overflow: isMobile ? "visible" : "hidden",
+              transition: "transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)",
+              willChange: "transform",
+              width: isMobile ? "100%" : `${content.length * 100}vw`,
+            }}
+          >
+            {content.map((item, index) => (
               <div
-                style={{ display: "flex", alignItems: "center", gap: "20px" }}
+                key={index}
+                style={{
+                  width: isMobile ? "100%" : `${window.innerWidth}px`,
+                  height: isMobile ? "auto" : "100vh",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "20px",
+                  boxSizing: "border-box",
+                }}
               >
-                <div className="col-md-6 offset-md-1">
-                  <div className="zoom">
-                    <div className="img-border2 col-md-3 offset-md-10" />
-                    <img
-                      src={item.imgSrc}
-                      alt={`Image ${index + 1}`}
-                      className="zoom"
-                      style={{
-                        width: "100%",
-                        objectFit: "cover",
-                        borderRadius: "10px",
-                      }}
-                    />
-                    <div className="img-border col-md-3 offset-md-10" />
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "20px" }}
+                >
+                  <div className="col-md-6 offset-md-1">
+                    <div className="zoom">
+                      <div className="img-border2 col-md-3 offset-md-10" />
+                      <img
+                        src={item.imgSrc}
+                        alt={`Image ${index + 1}`}
+                        className="zoom"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          objectFit: "cover",
+                          borderRadius: "10px",
+                        }}
+                      />
+                      <div className="img-border col-md-3 offset-md-10" />
+                    </div>
+                  </div>
+                  <div className="col-md-4 facility-details">
+                    <h1 style={{ margin: "0 0 10px 0" }}>{item.heading}</h1>
+                    <p style={{ margin: 0 }}>{item.paragraph}</p>
+                    <h5 onClick={() => openModal(item)}>View More Photos</h5>
                   </div>
                 </div>
-                <div className="col-md-4 facility-details">
-                  <h1 style={{ margin: "0 0 10px 0" }}>{item.heading}</h1>
-                  <p style={{ margin: 0 }}>{item.paragraph}</p>
-                  <h5 onClick={() => openModal(item)}>View More Photos</h5>
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </Desktop>
 
       <div className="col-md-12 facility-action ">
         <center>

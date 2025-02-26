@@ -242,9 +242,8 @@ export const Home = () => {
         <div
           style={{
             height: "900px",
-            backgroundColor: "#54020a",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
             color: "white",
-            opacity: "0.5",
           }}
           className="d-flex justify-content-center align-items-center "
         >

@@ -117,6 +117,7 @@
   @media screen and (max-width: 820px) {
     padding-right: 10px;
     padding-left: 10px;
+    height: 500px;
   }
   h1 {
     font-family: figtreeB;
@@ -151,30 +152,14 @@
   }
 }
 
-// .horizontal-scroll {
-//   display: flex;
-//   position: sticky;
-//   top: 0;
-//   overflow: hidden;
-// }
-// .stacked-content {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-// }
-// .facility-item {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 20px;
-// }
-// .facility-image img {
-//   width: 100%;
-//   border-radius: 10px;
-// }
+.scroll-container.vertical-layout {
+  flex-direction: column;
+  position: static;
+  height: auto;
+}
 
-// .modal-image {
-//   width: 100%;
-//   min-height: 500px;
-//   object-fit: cover;
-// }
+.vertical-layout > div {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}

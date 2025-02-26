@@ -1,19 +1,21 @@
 @import "../../variables";
 
 .top-nav {
-  padding: 0px 20px;
+  padding: 0px 40px;
   box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  z-index: 11110;
+  width: 100%;
 }
 
 .wrapper {
   position: fixed;
   top: 0;
-  left: 0;
+  // left: 0;
   height: 100%;
   z-index: 10000;
   width: 100%;
+  right: 20px;
   background: $appcolor;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
@@ -24,7 +26,7 @@
 .menu-btn {
   position: fixed;
   z-index: 100001;
-  right: 20px;
+  right: 40px;
   top: 20px;
   height: 50px;
   width: 50px;
@@ -155,5 +157,6 @@
   transition: background 2s !important;
   &:hover {
     background: $app-color-secondary;
+    color: #fff !important;
   }
 }
