@@ -54,7 +54,7 @@ export const staffData = [
   },
   {
     name: "Mr. Ade Martinez",
-    portfolio: "Head of Arts and Humanities",
+    portfolio: "Head of Arts ",
     qualification: "M.A. in Fine Arts, B.A. in Art History",
     profile:
       "A creative force at Canterbury, Ms. Martinez nurtures artistic expression and cultural appreciation. Her classes blend traditional techniques with contemporary art forms, encouraging student creativity..",
@@ -64,7 +64,7 @@ export const staffData = [
   },
   {
     name: "Mr. Adekunle Adebayo",
-    portfolio: "Physical Education Director",
+    portfolio: " Education Director",
     qualification: " B.Sc. in Sports Science, Certified Physical Trainer",
     profile:
       "Mr. Adebayo promotes physical fitness and healthy lifestyles through dynamic PE programs. His coaching fosters teamwork, discipline, and sportsmanship among students..",
@@ -74,7 +74,7 @@ export const staffData = [
   },
   {
     name: "Mrs. Fatima Al-Sayed",
-    portfolio: "Head of Languages Department",
+    portfolio: "Head of Languages",
     qualification: " M.A. in Linguistics, B.A. in Modern Languages",
     profile:
       " A linguist with a passion for cultural diversity, Mrs. Al-Sayed empowers students to become global citizens through language acquisition and cross-cultural communication.",

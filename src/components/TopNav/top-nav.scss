@@ -126,7 +126,7 @@
   position: relative;
 
   &:hover {
-    background: $app-color-secondary;
+    background: $greyed;
   }
 }
 
@@ -160,7 +160,7 @@
 .submenu-item {
   transition: background 2s !important;
   &:hover {
-    background: $app-color-secondary;
+    background: $greyed;
     color: #fff !important;
   }
 }
@@ -190,7 +190,7 @@
     border: none;
   }
   .accordion-body {
-    background: #929292;
+    background: $greyed;
     // height: 400px !important;
   }
   .accordion-button::after {

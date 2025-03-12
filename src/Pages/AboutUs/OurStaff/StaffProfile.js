@@ -73,7 +73,7 @@ function StaffProfile() {
   return (
     <>
       {" "}
-      <div className=" col-md-10 offset-md-1 row row-cols-1 row-cols-lg-4 g-2 g-lg-3  staff-profile ">
+      <div className=" col-md-12 row row-cols-2 row-cols-lg-6 g-2 g-lg-3  staff-profile ">
         {" "}
         {staffData.map((item) => (
           <div key={item.id} onClick={() => handleShowModal(item)} className="">

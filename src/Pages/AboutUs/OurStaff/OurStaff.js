@@ -15,7 +15,7 @@ export const OurStaff = () => {
           {" "}
           <img src={Hero} width="100%" />
           <center>
-            <h1>MEET OUR STAFF</h1>
+            <h1>MEET THE TEAM</h1>
           </center>
         </div>
       </div>{" "}
