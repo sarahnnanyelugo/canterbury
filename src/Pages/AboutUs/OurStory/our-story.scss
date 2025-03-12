@@ -1,6 +1,6 @@
 @import "../../../variables";
 
-.story-banner {
+.about-banner {
   position: relative;
   padding: 0 60px;
   @media screen and (max-width: 820px) {
@@ -16,7 +16,7 @@
   h1 {
     position: absolute;
     top: 80%;
-    left: 44%;
+    left: 42%;
     color: #fff;
     font-size: 72px;
     font-family: garamondB;

@@ -3,19 +3,20 @@
 .top-nav {
   padding: 0px 40px;
   box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
-  position: fixed;
-  z-index: 11110;
+  // position: fixed;
+  z-index: 110;
   width: 100%;
+  background: #fff;
+  margin-bottom: 30px;
 }
 
 .wrapper {
   position: fixed;
   top: 0;
-  // left: 0;
+  left: 0;
   height: 100%;
   z-index: 10000;
   width: 100%;
-  right: 20px;
   background: $appcolor;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
@@ -159,4 +160,9 @@
     background: $app-color-secondary;
     color: #fff !important;
   }
+}
+.app-logo {
+  position: fixed;
+  top: 0;
+  z-index: 1110;
 }

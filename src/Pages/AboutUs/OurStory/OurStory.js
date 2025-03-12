@@ -21,7 +21,7 @@ export const OurStory = () => {
   return (
     <>
       <div className="story-div col-md-12">
-        <div className="story-banner">
+        <div className="about-banner">
           {" "}
           <img src={Hero} width="100%" />
           <center>

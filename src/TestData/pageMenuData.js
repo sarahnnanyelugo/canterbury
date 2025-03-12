@@ -6,6 +6,7 @@ export const about = [
   { label: "Arts", link: "/arts" },
   { label: "Athletics", link: "/athletics" },
   { label: "Student Life", link: "/student-life" },
+  { label: "Our Facilities", link: "/our-facilities" },
 ];
 export const admission = [
   { label: "welcome", link: "/welcome" },

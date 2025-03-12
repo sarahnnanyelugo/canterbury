@@ -76,7 +76,7 @@ export const TopNav = () => {
     <>
       {" "}
       <div className="top-nav">
-        <div className="col-md-2 col-8">
+        <div className="col-md-2 col-8 app-logo">
           <Link to={"/"}>
             {" "}
             <img

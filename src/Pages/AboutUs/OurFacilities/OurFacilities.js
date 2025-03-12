@@ -256,6 +256,38 @@ export const OurFacilities = () => {
         </div>
       </Desktop>
 
+      <TabletAndBelow>
+        <div className="mobile-facility-carousel">
+          <Carousel>
+            {content.map((item, index) => (
+              <Carousel.Item key={index}>
+                <img
+                  src={item.imgSrc}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: "100%",
+
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                  }}
+                />{" "}
+                <div
+                  className="mobile-facility"
+                  onClick={() => openModal(item)}
+                >
+                  <center>
+                    <h2>{item.heading}</h2>
+                    <p>{item.paragraph}</p>
+
+                    <h5>View More Photos</h5>
+                  </center>{" "}
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+      </TabletAndBelow>
+
       <div className="col-md-12 facility-action ">
         <center>
           <div className="col-md-7">
@@ -270,7 +302,6 @@ export const OurFacilities = () => {
         </center>
       </div>
 
-      {/* React-Bootstrap Modal */}
       <Modal
         show={modalShow}
         onHide={closeModal}

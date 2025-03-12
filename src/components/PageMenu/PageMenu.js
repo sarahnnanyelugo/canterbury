@@ -8,9 +8,12 @@ const PageMenu = ({ menuItems }) => {
     <div className="page-menu offset-md-1 col-md-10">
       {" "}
       <nav className="menu  ">
-        <Link to={"/"}>
-          <MdHome />
-        </Link>
+        <div className="">
+          {" "}
+          <Link to={"/"} className="home-icon ">
+            <MdHome />
+          </Link>
+        </div>
         {menuItems.map((item, index) => (
           <div key={index} className="menu-item">
             <Link to={item.link} className="menu-link">

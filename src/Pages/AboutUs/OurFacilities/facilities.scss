@@ -76,6 +76,10 @@
 // }
 .facilities-modal {
   padding: 20px 40px;
+  @media screen and (max-width: 820px) {
+    padding: 0px;
+    margin-top: 90px;
+  }
   h3 {
     span {
       border-bottom: solid 3px $highlight;
@@ -162,4 +166,29 @@
   width: 100%;
   height: auto;
   padding: 10px;
+}
+.mobile-facility-carousel {
+  // height: 1000px;
+  padding-top: 30px;
+  img {
+    height: 300px;
+  }
+  h2 {
+    margin-top: 15px;
+    color: $appcolor;
+    font-family: figtreeB;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+  h5 {
+    color: $highlight;
+    font-family: figtreeB;
+    margin-top: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .mobile-facility {
+    height: 250px;
+  }
 }
