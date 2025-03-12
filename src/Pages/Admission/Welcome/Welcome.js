@@ -83,7 +83,7 @@ export const Welcome = () => {
               </div>
             </Desktop>
           </div>
-          <div className="col-md-7 message col-8">
+          <div className="col-md-7 message col-9">
             <div className="message-heading col-md-12">
               {" "}
               <h2>

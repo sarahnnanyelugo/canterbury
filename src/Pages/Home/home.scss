@@ -143,3 +143,26 @@
   background: #fff;
   padding-top: 180px;
 }
+
+.mobile-home {
+  padding: 0 10px;
+  .mobile-intro-heading {
+    margin-top: 120px;
+    h1 {
+      font-family: figtreeB;
+      font-size: 30px;
+      color: $appcolor;
+      margin-top: 120px;
+      span {
+        color: #2d79c5;
+        font-family: garamondI !important;
+      }
+    }
+  }
+  .video {
+    height: 400px; /* Stretch to parent height */
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}

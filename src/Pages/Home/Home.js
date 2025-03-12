@@ -129,227 +129,223 @@ export const Home = () => {
 
   return (
     <>
-      <Desktop>
-        {" "}
-        <div
-          className="home-div"
-          style={{
-            transform: `translateY(${calcTranslate(shift)}px)`,
-            transition: "all 0.2s ease",
-          }}
-        >
-          <div className=" ">
-            <center>
-              <div className=" section-head ">
-                {" "}
-                <h1>
-                  THIS IS <span>your story</span>
-                </h1>{" "}
-                {""}
-              </div>
-            </center>
-          </div>
-
-          <div className="col-md-12 d-flex ">
-            {!hideImages && (
-              <div
-                className="d-flex images-container"
-                style={{
-                  marginTop: "70px",
-                  width: "40%",
-                  transform: `translateX(-${shift}px)`,
-                }}
-              >
-                <div
-                  className="col-md-8 left-wing"
-                  style={{
-                    height: `${(0.5 / scale) * 400}px`,
-                    background: "url(" + Img1 + ")",
-                    backgroundPosition: "center",
-                    marginTop: "70px",
-
-                    borderRadius: "10px",
-                  }}
-                ></div>
-                <div
-                  className="col-md-8 landing-imgs"
-                  style={{ padding: "10px" }}
-                >
-                  <img src={Img6} width="100%" />
-                  <img src={Img5} width="100%" className="mt-3" />
-                </div>
-              </div>
-            )}
-
-            {!hideImages && (
-              <div
-                className="video-container"
-                style={{
-                  width: `${calcScale(scale)}%`,
-
-                  transition: "width 0.2s ease, height 0.2s ease",
-                  marginTop: "0",
-                }}
-              >
-                <video
-                  className="video"
-                  width="100%"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls
-                  src={MainVid}
-                ></video>
-              </div>
-            )}
-
-            {!hideImages && (
-              <div
-                className="d-flex images-container"
-                style={{
-                  marginTop: "70px",
-                  width: "40%",
-                  transform: `translateX(${shift}px)`,
-                }}
-              >
-                <div
-                  className="col-md-8 col-12 landing-imgs"
-                  style={{ padding: "10px" }}
-                >
-                  <img src={Img6} width="100%" />
-                  <img src={Img5} width="100%" className="mt-3" />
-                </div>
-                <div
-                  className="col-md-8 right-wing"
-                  style={{
-                    height: `${(0.5 / scale) * 400}px`,
-                    background: "url(" + Img4 + ")",
-
-                    marginTop: "70px",
-
-                    borderRadius: "10px",
-                  }}
-                ></div>
-              </div>
-            )}
-          </div>
-        </div>
-        <div
-          style={{ height: "1000px", background: "#fff", opacity: "0" }}
-          className="col-12"
-        />
-        <div
-          style={{
-            height: "900px",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            color: "white",
-          }}
-          className="d-flex justify-content-center align-items-center "
-        >
-          <div
-            style={{ opacity: "1" }}
-            className="d-flex justify-content-center"
-          >
-            <h2
-              className=" text-center main-intro"
-              style={{
-                opacity: calculateOpacity(),
-                transition: "all 0.2s ease",
-              }}
-            >
-              This is <span> your school.</span> This is{" "}
-              <span>
-                your journey. <br />
-              </span>
-              This is the extraordinary opportunity
-              <span> your story</span> deserves.
-            </h2>
-          </div>
-        </div>
-        <div
-          style={{ height: "1000px", backgroundColor: "#54020a" }}
-          className=" justify-content-center align-items-center col-md-12 shadow-logo col-12 "
-          ref={textRef}
-        >
+      {/* <Desktop> */}{" "}
+      <div
+        className="home-div"
+        style={{
+          transform: `translateY(${calcTranslate(shift)}px)`,
+          transition: "all 0.2s ease",
+        }}
+      >
+        <div className=" ">
           <center>
-            {" "}
-            <div className="inscription-inner col-md-6"> </div>
-            <h3
-              className="col-md-6"
-              style={{
-                transform: inViewText ? "scale(1)" : "scale(0.1)",
-                opacity: inViewText ? 1 : 0,
-                transition: "transform 2s ease, opacity 2s ease",
-              }}
-            >
-              At Canterbury, students embark on a transformational, personal
-              journey, where the combination of
-              <span> ambitious academics, purposeful growth,</span> and{" "}
-              <span>active community engagement</span> leads to a future greater
-              than you ever thought possible.{" "}
-            </h3>
+            <div className=" section-head ">
+              {" "}
+              <h1>
+                THIS IS <span>your story</span>
+              </h1>{" "}
+              {""}
+            </div>
           </center>
         </div>
-        <div
-          className="col-md-12"
-          style={{ background: "#fff", height: "300px", paddingTop: "80px" }}
-        >
-          <center className=" ">
-            {" "}
-            <SectionHeading
-              text1=" AN EDUCATION THAT'S"
-              text2="personal"
-              color1="#54020a"
-              color2="#2d79c5"
-              paragraph="No two Canterbury educations are the same, because no two students
+
+        <div className="col-md-12 d-flex ">
+          {!hideImages && (
+            <div
+              className="d-flex images-container"
+              style={{
+                marginTop: "70px",
+                width: "40%",
+                transform: `translateX(-${shift}px)`,
+              }}
+            >
+              <div
+                className="col-md-8 left-wing"
+                style={{
+                  height: `${(0.5 / scale) * 400}px`,
+                  background: "url(" + Img1 + ")",
+                  backgroundPosition: "center",
+                  marginTop: "70px",
+
+                  borderRadius: "10px",
+                }}
+              ></div>
+              <div
+                className="col-md-8 landing-imgs"
+                style={{ padding: "10px" }}
+              >
+                <img src={Img6} width="100%" />
+                <img src={Img5} width="100%" className="mt-3" />
+              </div>
+            </div>
+          )}
+
+          {!hideImages && (
+            <div
+              className="video-container"
+              style={{
+                width: `${calcScale(scale)}%`,
+
+                transition: "width 0.2s ease, height 0.2s ease",
+                marginTop: "0",
+              }}
+            >
+              <video
+                className="video"
+                width="100%"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                src={MainVid}
+              ></video>
+            </div>
+          )}
+
+          {!hideImages && (
+            <div
+              className="d-flex images-container"
+              style={{
+                marginTop: "70px",
+                width: "40%",
+                transform: `translateX(${shift}px)`,
+              }}
+            >
+              <div
+                className="col-md-8 col-12 landing-imgs"
+                style={{ padding: "10px" }}
+              >
+                <img src={Img6} width="100%" />
+                <img src={Img5} width="100%" className="mt-3" />
+              </div>
+              <div
+                className="col-md-8 right-wing"
+                style={{
+                  height: `${(0.5 / scale) * 400}px`,
+                  background: "url(" + Img4 + ")",
+
+                  marginTop: "70px",
+
+                  borderRadius: "10px",
+                }}
+              ></div>
+            </div>
+          )}
+        </div>
+      </div>
+      <div
+        style={{ height: "1000px", background: "#fff", opacity: "0" }}
+        className="col-12"
+      />
+      <div
+        style={{
+          height: "900px",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          color: "white",
+        }}
+        className="d-flex justify-content-center align-items-center "
+      >
+        <div style={{ opacity: "1" }} className="d-flex justify-content-center">
+          <h2
+            className=" text-center main-intro"
+            style={{
+              opacity: calculateOpacity(),
+              transition: "all 0.2s ease",
+            }}
+          >
+            This is <span> your school.</span> This is{" "}
+            <span>
+              your journey. <br />
+            </span>
+            This is the extraordinary opportunity
+            <span> your story</span> deserves.
+          </h2>
+        </div>
+      </div>
+      <div
+        style={{ height: "1000px", backgroundColor: "#54020a" }}
+        className=" justify-content-center align-items-center col-md-12 shadow-logo col-12 "
+        ref={textRef}
+      >
+        <center>
+          {" "}
+          <div className="inscription-inner col-md-6"> </div>
+          <h3
+            className="col-md-6"
+            style={{
+              transform: inViewText ? "scale(1)" : "scale(0.1)",
+              opacity: inViewText ? 1 : 0,
+              transition: "transform 2s ease, opacity 2s ease",
+            }}
+          >
+            At Canterbury, students embark on a transformational, personal
+            journey, where the combination of
+            <span> ambitious academics, purposeful growth,</span> and{" "}
+            <span>active community engagement</span> leads to a future greater
+            than you ever thought possible.{" "}
+          </h3>
+        </center>
+      </div>
+      <div
+        className="col-md-12"
+        style={{ background: "#fff", height: "300px", paddingTop: "80px" }}
+      >
+        <center className=" ">
+          {" "}
+          <SectionHeading
+            text1=" AN EDUCATION THAT'S"
+            text2="personal"
+            color1="#54020a"
+            color2="#2d79c5"
+            paragraph="No two Canterbury educations are the same, because no two students
               are alike. Here, every class you take doesn’t just check a box; it
               is part of a learning journey that is uniquely yours and opens a
               door to your incredible potential."
-            />
-          </center>
-        </div>
-        <div style={{ background: "#fff" }}>
+          />
+        </center>
+      </div>
+      <div style={{ background: "#fff" }}>
+        {" "}
+        <Ethos />
+      </div>
+      {/*  */}
+      <div
+        className="col-md-12"
+        style={{ background: "#fff", height: "250px" }}
+      >
+        <center className=" ">
           {" "}
-          <Ethos />
-        </div>
-        {/*  */}
-        <div
-          className="col-md-12"
-          style={{ background: "#fff", height: "250px" }}
-        >
-          <center className=" ">
-            {" "}
-            <SectionHeading
-              text1="  A PATH TO"
-              text2="purpose"
-              color1="#54020a"
-              color2="#de7c0d"
-              paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
+          <SectionHeading
+            text1="  A PATH TO"
+            text2="purpose"
+            color1="#54020a"
+            color2="#de7c0d"
+            paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
               differences of others, and believing that you can—and will—make a
               difference in the world. Toggle Description FAITH Toggle
               Description"
-            />
-          </center>
-        </div>
-        <Purpose />
-        <div className="discover col-md-12">
-          <center>
-            <button>
-              HOW WILL YOU DISCOVER YOUR PURPOSE
-              <IoArrowForward className="icon" />
-            </button>
-          </center>
-          <Testimonials />
-        </div>
-        <div className="our-words">
-          <OurWords />
-        </div>
-        <Journey />
-        <Future />
-      </Desktop>
-      <TabletAndBelow>
+          />
+        </center>
+      </div>
+      <Purpose />
+      <div className="discover col-md-12">
+        <center>
+          <button>
+            HOW WILL YOU DISCOVER YOUR PURPOSE
+            <IoArrowForward className="icon" />
+          </button>
+        </center>
+        <Testimonials />
+      </div>
+      <div className="our-words">
+        <OurWords />
+      </div>
+      <Journey />
+      <Future />
+      {/* </Desktop> */}
+      {/* <TabletAndBelow>
         <div className="mobile-contents">
           <div
             className="home-div"
@@ -572,7 +568,7 @@ export const Home = () => {
         </div>
         <Journey />
         <Future />
-      </TabletAndBelow>
+      </TabletAndBelow> */}
     </>
   );
 };
