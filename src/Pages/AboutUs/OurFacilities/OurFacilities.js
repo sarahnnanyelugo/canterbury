@@ -146,9 +146,19 @@ export const OurFacilities = () => {
   };
 
   const closeModal = () => {
-    setModalShow(false); // Properly close the modal
-    document.body.style.overflow = "auto";
+    setModalShow(false);
+
+    setTimeout(() => {
+      document.body.style.overflow = "";
+    }, 300);
   };
+  useEffect(() => {
+    if (!modalShow) {
+      setTimeout(() => {
+        document.body.style.overflow = "";
+      }, 300); // Ensure a delay before enabling scroll again
+    }
+  }, [modalShow]);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -184,6 +194,10 @@ export const OurFacilities = () => {
             inspiration, and every student finds the perfect space to thrive.
           </p>
         </div>
+      </center>{" "}
+      <br />
+      <center>
+        <h1>EXPLORE OUR FACILITIES</h1>
       </center>
       <Desktop>
         <div
@@ -191,10 +205,6 @@ export const OurFacilities = () => {
           style={{ position: "relative" }}
           className="our-facilities-div"
         >
-          <center>
-            <h1>EXPLORE OUR FACILITIES</h1>
-          </center>
-
           <div
             ref={scrollContainerRef}
             className={`scroll-container ${isMobile ? "vertical-layout" : ""}`}
@@ -255,7 +265,6 @@ export const OurFacilities = () => {
           </div>
         </div>
       </Desktop>
-
       <TabletAndBelow>
         <div className="mobile-facility-carousel">
           <Carousel>
@@ -287,7 +296,6 @@ export const OurFacilities = () => {
           </Carousel>
         </div>
       </TabletAndBelow>
-
       <div className="col-md-12 facility-action ">
         <center>
           <div className="col-md-7">
@@ -301,7 +309,6 @@ export const OurFacilities = () => {
           </div>
         </center>
       </div>
-
       <Modal
         show={modalShow}
         onHide={closeModal}

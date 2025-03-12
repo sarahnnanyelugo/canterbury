@@ -11,6 +11,9 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoStorefront } from "react-icons/io5";
 import { BsPersonCheckFill } from "react-icons/bs";
 import { TbReport } from "react-icons/tb";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
+import Accordion from "react-bootstrap/Accordion";
+
 const menuItems = [
   {
     label: "About",
@@ -93,43 +96,72 @@ export const TopNav = () => {
         </label>
 
         <div className="wrapper">
-          <ul className="menu">
-            {menuItems.map((item, index) => (
-              <li
-                key={index}
-                className="menu-item"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <Link to={item.link} className="menu-link">
-                  {item.label}
-                </Link>
-
-                {/* {isOpen && ( */}
-                <ul
-                  className={`submenu ${hoveredIndex === index ? "show" : ""}`}
+          <Desktop>
+            {" "}
+            <ul className="menu">
+              {menuItems.map((item, index) => (
+                <li
+                  key={index}
+                  className="menu-item"
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
                 >
-                  {item.submenu.map((subItem, subIndex) => (
-                    <li
-                      key={subIndex}
-                      className="submenu-item"
-                      onClick={closeMenu}
-                    >
-                      <Link to={subItem.link} type="checkbox" id="active">
+                  <Link to={item.link} className="menu-link">
+                    {item.label}
+                  </Link>
+
+                  {/* {isOpen && ( */}
+                  <ul
+                    className={`submenu ${
+                      hoveredIndex === index ? "show" : ""
+                    }`}
+                  >
+                    {item.submenu.map((subItem, subIndex) => (
+                      <li
+                        key={subIndex}
+                        className="submenu-item"
+                        onClick={closeMenu}
+                      >
+                        <Link to={subItem.link} type="checkbox" id="active">
+                          {" "}
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  {/* )} */}
+                </li>
+              ))}
+            </ul>
+          </Desktop>
+
+          <TabletAndBelow>
+            <div className="mobile-menu-accordion">
+              {" "}
+              <Accordion>
+                {menuItems.map((item, index) => (
+                  <Accordion.Item eventKey={index.toString()} key={index}>
+                    <Accordion.Header>{item.label}</Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-unstyled mobile-sub-menu">
                         {" "}
-                        {subItem.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                {/* )} */}
-              </li>
-            ))}
-          </ul>
-          <ul className="offset-md-7 offset-5 other-links col-md-4">
+                        {item.submenu.map((sub, subIndex) => (
+                          <li key={subIndex}>
+                            <Link to={sub.link}>{sub.label}</Link>
+                          </li>
+                        ))}
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                ))}
+              </Accordion>
+            </div>
+          </TabletAndBelow>
+
+          <ul className="offset-md-7  other-links col-md-4">
             <h6>QUICK LINKS</h6>
             <div className="d-flex">
-              <div className="col-md-6">
+              <div className="col-md-6 col-6" style={{ width: "70%" }}>
                 {" "}
                 <div className="other-links-item">
                   {" "}
@@ -160,17 +192,15 @@ export const TopNav = () => {
                     School News
                   </Link>{" "}
                 </div>
-                <div className="other-links-item">
-                  <Link to={"/inquire"}>
-                    <span>
-                      {" "}
-                      <ImUserTie />
-                    </span>
-                    Directory
-                  </Link>
-                </div>
               </div>
-              <div className="col-md-6 " style={{ marginLeft: "20px" }}>
+              <div
+                className="col-md-6 col-6 "
+                style={{
+                  marginLeft: "20px",
+
+                  width: "70%",
+                }}
+              >
                 {" "}
                 <div className="other-links-item">
                   {" "}
@@ -183,14 +213,13 @@ export const TopNav = () => {
                   </Link>
                 </div>
                 <div className="other-links-item">
-                  {" "}
                   <Link to={"/inquire"}>
                     <span>
                       {" "}
-                      <FaMapMarkerAlt />
+                      <ImUserTie />
                     </span>
-                    Campus Map
-                  </Link>{" "}
+                    Directory
+                  </Link>
                 </div>
                 <div className="other-links-item">
                   {" "}
@@ -201,16 +230,6 @@ export const TopNav = () => {
                     </span>
                     School Store
                   </Link>{" "}
-                </div>
-                <div className="other-links-item">
-                  {" "}
-                  <Link to={"/inquire"}>
-                    <span>
-                      {" "}
-                      <TbReport />
-                    </span>
-                    Reporting Resources
-                  </Link>
                 </div>
               </div>
             </div>

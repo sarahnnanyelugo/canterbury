@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .top-nav {
-  padding: 0px 40px;
+  padding: 0px 20px;
   box-shadow: rgba(0, 73, 146, 0.09) 0px 4px 32px 0px;
   // position: fixed;
   z-index: 110;
@@ -20,6 +20,9 @@
   background: $appcolor;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 820px) {
+    padding: 120px 40px;
+  }
 }
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
@@ -27,8 +30,8 @@
 .menu-btn {
   position: fixed;
   z-index: 100001;
-  right: 40px;
-  top: 20px;
+  right: 20px;
+  top: 19px;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -165,4 +168,51 @@
   position: fixed;
   top: 0;
   z-index: 1110;
+}
+.other-links {
+  @media screen and (max-width: 820px) {
+    margin-top: 200px;
+    margin-left: 40px;
+  }
+}
+.mobile-menu-accordion {
+  .accordion {
+    background: $appcolor;
+  }
+  .accordion-button {
+    background: $appcolor;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .accordion-item {
+    background: transparent;
+    border: none;
+  }
+  .accordion-body {
+    background: #929292;
+    // height: 400px !important;
+  }
+  .accordion-button::after {
+    background-image: url("../../assets/images/add-circle2.svg") !important;
+    content: "" !important;
+    background-position: center;
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../../assets/images/blue-minus.svg") !important;
+
+    content: "" !important;
+  }
+}
+.mobile-sub-menu {
+  a {
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: garamondB;
+  }
 }
