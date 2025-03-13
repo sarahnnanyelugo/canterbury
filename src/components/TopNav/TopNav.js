@@ -223,12 +223,12 @@ export const TopNav = () => {
                 </div>
                 <div className="other-links-item">
                   {" "}
-                  <Link to={"/inquire"}>
+                  <Link to={"gallery"}>
                     <span>
                       {" "}
                       <IoStorefront />
                     </span>
-                    School Store
+                    Photo Gallery
                   </Link>{" "}
                 </div>
               </div>

@@ -19,6 +19,7 @@ import { OurFacilities } from "./Pages/AboutUs/OurFacilities/OurFacilities";
 import { OurStaff } from "./Pages/AboutUs/OurStaff/OurStaff";
 import { Desktop, TabletAndBelow } from "./Utils/mediaQueries";
 import { MobileHome } from "./Pages/Home/MobileHome";
+import PhotoGallery from "./Pages/Gallery/Gallery";
 function App() {
   return (
     <>
@@ -40,6 +41,7 @@ function App() {
           <Route path="eyfs" element={<EYFS />} />
           <Route path="our-facilities" element={<OurFacilities />} />
           <Route path="our-staff" element={<OurStaff />} />
+          <Route path="gallery" element={<PhotoGallery />} />
         </Routes>
       </Desktop>
       <TabletAndBelow>
@@ -58,6 +60,7 @@ function App() {
           <Route path="eyfs" element={<EYFS />} />
           <Route path="our-facilities" element={<OurFacilities />} />
           <Route path="our-staff" element={<OurStaff />} />
+          <Route path="gallery" element={<PhotoGallery />} />
         </Routes>
       </TabletAndBelow>
       <Footer />
