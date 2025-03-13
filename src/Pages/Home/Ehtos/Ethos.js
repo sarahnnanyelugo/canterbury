@@ -15,6 +15,8 @@ function Ethos() {
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: true,
     className: "myCustomCarousel",
     beforeChange: function (currentSlide, nextSlide) {
@@ -41,7 +43,7 @@ function Ethos() {
             </p>
           </div>
         </div>
-        <div className="sleek-div d-flex">
+        <div className="sleek-div d-md-flex">
           <div className="col-md-7">
             <img src={MainPic2} width="100%" />
           </div>
@@ -54,7 +56,7 @@ function Ethos() {
             </p>
           </div>
         </div>
-        <div className="sleek-div d-flex">
+        <div className="sleek-div d-md-flex">
           <div className="col-md-7">
             <img src={MainPic3} width="100%" />
           </div>
@@ -68,7 +70,7 @@ function Ethos() {
             </p>
           </div>
         </div>
-        <div className="sleek-div d-flex">
+        <div className="sleek-div d-md-flex">
           <div className="col-md-7">
             <img src={MainPic4} width="100%" />
           </div>

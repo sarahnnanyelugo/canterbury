@@ -26,7 +26,9 @@
 .sleek-div {
   height: 300px;
   overflow: hidden;
-
+  @media screen and (max-width: 820px) {
+    // height: 500px;
+  }
   img {
     object-fit: cover;
   }
@@ -38,9 +40,20 @@
     background: rgba(0, 40, 94, 0.9);
     padding: 40px;
     font-family: figtreeB;
+    @media screen and (max-width: 820px) {
+      height: 500px;
+      padding: 10px;
+      margin-top: 0;
+      margin-left: 0;
+    }
     h4 {
       margin-bottom: 30px;
       text-decoration: underline;
+    }
+    p {
+      @media screen and (max-width: 820px) {
+        display: none;
+      }
     }
   }
 }

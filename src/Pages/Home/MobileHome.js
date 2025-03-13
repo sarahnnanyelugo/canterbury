@@ -3,6 +3,8 @@ import MainVid from "../../assets/images/main-vid.mp4";
 import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import Hero from "../../assets/images/college.webp";
 import { Link } from "react-router-dom";
+import Ethos from "./Ehtos/Ethos";
+import { Purpose } from "./Purpose/Purpose";
 
 export const MobileHome = () => {
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
@@ -53,7 +55,7 @@ export const MobileHome = () => {
     <>
       <div className="mobile-home">
         <div
-          className="mobile-intro-heading "
+          className="mobile-intro-heading col-12"
           style={{ position: "fixed", top: "0px", zIndex: "-1" }}
         >
           <center>
@@ -64,10 +66,10 @@ export const MobileHome = () => {
               </h1>{" "}
               {""}
             </div>
-          </center>
+          </center>{" "}
           <video
             className="video"
-            width="90%"
+            width="100%"
             autoPlay
             loop
             muted
@@ -175,6 +177,28 @@ export const MobileHome = () => {
               is part of a learning journey that is uniquely yours and opens a
               door to your incredible potential."
         />
+        <Ethos />
+
+        <div
+          className="col-md-12"
+          style={{ background: "#fff", height: "250px" }}
+        >
+          <center className=" ">
+            {" "}
+            <SectionHeading
+              text1="  A PATH TO"
+              text2="purpose"
+              color1="#54020a"
+              color2="#de7c0d"
+              paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
+              also about diving deep into self-discovery, valuing the
+              differences of others, and believing that you can—and will—make a
+              difference in the world. Toggle Description FAITH Toggle
+              Description"
+            />
+          </center>
+        </div>
+        <Purpose />
       </div>
     </>
   );

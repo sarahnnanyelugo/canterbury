@@ -7,18 +7,46 @@ export const Purpose = () => {
   const [bgImage, setBgImage] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const textRef = useRef(null);
-
+  const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
+  const headingRef = useRef(null); // Reference for the heading
+  const paragraphRef = useRef(null); // Reference for the paragrap
+  const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
   useEffect(() => {
     const handleScroll = () => {
+      // Heading
+      if (headingRef.current) {
+        const rect = headingRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewHeading(true);
+        } else {
+          setInViewHeading(false);
+        }
+      }
+
+      // Paragraph text
       if (textRef.current) {
         const rect = textRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-        setInViewText(rect.top <= windowHeight && rect.bottom >= 0);
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewText(true);
+        } else {
+          setInViewText(false);
+        }
+      }
+      if (paragraphRef.current) {
+        const rect = paragraphRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewParagraph(true);
+        } else {
+          setInViewParagraph(false);
+        }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    handleScroll(); // Run once on load to check initial position
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -85,20 +113,43 @@ export const Purpose = () => {
         </div>
       </Desktop>
       <TabletAndBelow>
-        <div className="" ref={textRef} style={{ padding: "0 10px" }}>
-          <div
-            className="mobile-version d-flex  purpose"
-            style={{
-              transform: inViewText ? "scale(1)" : "scale(0.1)",
-              opacity: inViewText ? 1 : 0,
-              transition:
-                "background 0.5s ease, transform 2s ease, opacity 2s ease",
-            }}
-          >
-            <div className="col-4 faith"></div>
-            <div className="col-4 justice"></div>
-            <div className="col-4 service"></div>
+        <div className="" style={{ padding: "0 10px" }} ref={textRef}>
+          <div className="col-12 ">
+            <div
+              className="eyfs sections"
+              style={{
+                transform: inViewText ? "scale(1)" : "scale(0.1)",
+                opacity: inViewText ? 1 : 0,
+                transition:
+                  "background 0.5s ease, transform 2s ease, opacity 2s ease",
+              }}
+            ></div>
           </div>
+          <div className="col-12 ">
+            <div
+              className="primary sections"
+              style={{
+                transform: inViewText ? "scale(1)" : "scale(0.1)",
+                opacity: inViewText ? 1 : 0,
+                transition:
+                  "background 0.5s ease, transform 2s ease, opacity 2s ease",
+              }}
+            ></div>
+          </div>{" "}
+        </div>
+        <div className="col-12 " ref={paragraphRef}>
+          <div
+            className="col-12 secondary sections"
+            style={{
+              transform: inViewParagraph
+                ? "translateY(0)"
+                : "translateY(100px)",
+              opacity: inViewParagraph ? 1 : 0,
+              transition: "transform 1s ease, opacity 1s ease",
+              color: "#4d5e69",
+              fontFamily: "figtree",
+            }}
+          ></div>
         </div>
       </TabletAndBelow>
     </>
