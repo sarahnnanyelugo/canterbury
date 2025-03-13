@@ -17,7 +17,8 @@ import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
 import { OurWords } from "../../components/OurWords/OurWords";
-
+import Hero from "../../assets/images/college.webp";
+import { Link } from "react-router-dom";
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
@@ -286,6 +287,49 @@ export const Home = () => {
             than you ever thought possible.{" "}
           </h3>
         </center>
+      </div>
+      <div className="who-we-are  ">
+        <SectionHeading
+          text1=" WHO WE"
+          text2="are"
+          color1="#54020a"
+          color2="#929292"
+        />
+        <div className="col-md-10 offset-md-1 d-md-flex">
+          <div className="col-md-6">
+            {" "}
+            <img src={Hero} width="100%" />
+          </div>
+          <div className="col-md-5 offset-md-1 para-div">
+            <p>
+              Canterbury International School is a premier institution dedicated
+              to academic excellence and holistic development. Our curriculum
+              blends international educational standards with a nurturing
+              environment, ensuring that every student receives a well-rounded
+              and enriching learning experience. With a focus on critical
+              thinking, creativity, and leadership, we empower students to excel
+              both in and beyond the classroom.
+            </p>
+            <p>
+              At Canterbury, we believe in fostering a dynamic and inclusive
+              community where students from diverse backgrounds thrive. Our
+              highly qualified educators use innovative teaching methods, modern
+              technology, and hands-on learning approaches to inspire curiosity
+              and a love for learning. Beyond academics, we offer a wide range
+              of extracurricular activities, including sports, arts, and coding
+              & robotics, to develop well-balanced individuals.
+            </p>
+            <p>
+              Our school campus provides a safe, stimulating, and well-equipped
+              environment designed to support academic and personal growth. From
+              state-of-the-art classrooms to dedicated STEM labs and sports
+              facilities, Canterbury International School ensures that students
+              have the resources they need to succeed. Join us on a journey of
+              discovery, excellence, and lifelong learning.
+            </p>
+            <Link to={"/our-story"}>Read More</Link>
+          </div>
+        </div>
       </div>
       <div
         className="col-md-12"

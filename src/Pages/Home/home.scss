@@ -66,7 +66,24 @@
     }
   }
 }
-
+.who-we-are {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .para-div {
+    margin-top: 100px;
+    @media screen and (max-width: 820px) {
+      margin-top: 40px;
+    }
+    p,
+    a {
+      font-family: figtreeI;
+    }
+    a {
+      color: $greyed;
+    }
+  }
+}
 .main-intro {
   font-family: garamondB;
   span {
@@ -146,13 +163,14 @@
 
 .mobile-home {
   padding: 0 10px;
+  background-color: #fff;
+  padding-bottom: 50px;
   .mobile-intro-heading {
-    margin-top: 120px;
     h1 {
       font-family: figtreeB;
       font-size: 30px;
       color: $appcolor;
-      margin-top: 120px;
+      margin-top: 90px;
       span {
         color: #2d79c5;
         font-family: garamondI !important;
@@ -164,5 +182,13 @@
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+  }
+  .inscription-inner2 {
+    background-image: url("../../assets/images/logo-head.svg");
+    background-repeat: no-repeat;
+    background-size: 250px 500px;
+    background-position: center;
+    height: 300px;
+    opacity: 0.04;
   }
 }

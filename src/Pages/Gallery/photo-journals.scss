@@ -31,6 +31,7 @@
 }
 .gallery-page {
   padding: 20px 30px;
+  margin-top: 140px;
   height: fit-content;
   .add-photo {
     background: #0098da;
@@ -101,13 +102,14 @@
     margin-right: 20px;
     border: solid 1px #e7e7e7;
     border-radius: 5px;
-    font-family: rebondG-Medium !important;
+    font-family: garamondB;
     background: #fff;
     padding: 0px 15px;
     font-size: 14px;
   }
   h5 {
     margin-top: 5px;
+    font-family: figtreeB;
   }
 }
 .tagged-posts {
@@ -252,4 +254,34 @@
   font-family: rebondBook;
   padding: 5px 20px;
   margin-left: 10px;
+}
+.vidd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 10;
+  transition: opacity 1s ease-in-out;
+}
+
+.vidd.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gallery-page {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.gallery-page.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
 }
