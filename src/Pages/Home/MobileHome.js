@@ -56,7 +56,7 @@ export const MobileHome = () => {
       <div className="mobile-home">
         <div
           className="mobile-intro-heading col-12"
-          style={{ position: "fixed", top: "0px", zIndex: "-1" }}
+          style={{ position: "", top: "0px", zIndex: "-1" }}
         >
           <center>
             <div className=" section-head ">
@@ -67,16 +67,19 @@ export const MobileHome = () => {
               {""}
             </div>
           </center>{" "}
-          <video
-            className="video"
-            width="100%"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-            src={MainVid}
-          ></video>
+          <div className="mobile-vid col-12">
+            {" "}
+            <video
+              className="video"
+              width="100%"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              src={MainVid}
+            ></video>
+          </div>
         </div>
 
         <div
@@ -84,7 +87,7 @@ export const MobileHome = () => {
             fontFamily: "figtree",
             height: "400px",
             backgroundColor: "rgba(0, 0, 0, 0.9)",
-            marginTop: "550px",
+            // marginTop: "550px",
           }}
           className="d-flex justify-content-center align-items-center "
         >
@@ -117,7 +120,7 @@ export const MobileHome = () => {
             height: "500px",
             backgroundColor: "#54020a",
             marginTop: "30px",
-            marginBottom: "100px",
+            // marginBottom: "100px",
           }}
           className=" justify-content-center align-items-center col-md-12 shadow-logo col-12 "
           ref={textRef}

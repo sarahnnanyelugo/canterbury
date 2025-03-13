@@ -73,7 +73,7 @@
   .para-div {
     margin-top: 100px;
     @media screen and (max-width: 820px) {
-      margin-top: 40px;
+      margin-top: 0px;
     }
     p,
     a {
@@ -165,6 +165,7 @@
   padding: 0 10px;
   background-color: #fff;
   padding-bottom: 50px;
+  overflow: hidden;
   .mobile-intro-heading {
     h1 {
       font-family: figtreeB;
@@ -191,4 +192,7 @@
     height: 300px;
     opacity: 0.04;
   }
+}
+.mobile-vid {
+  // width: 380px !important;
 }
