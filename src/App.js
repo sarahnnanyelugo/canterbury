@@ -20,9 +20,11 @@ import { OurStaff } from "./Pages/AboutUs/OurStaff/OurStaff";
 import { Desktop, TabletAndBelow } from "./Utils/mediaQueries";
 import { MobileHome } from "./Pages/Home/MobileHome";
 import PhotoGallery from "./Pages/Gallery/Gallery";
+import ScrollToTop from "./components/scrollToTop";
 function App() {
   return (
     <>
+      <ScrollToTop />
       <TopNav />
 
       <Desktop>
