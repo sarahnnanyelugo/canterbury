@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./future.scss";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const Future = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,38 +45,61 @@ export const Future = () => {
 
   return (
     <>
-      <div
-        ref={divRef}
-        className={`future-div ${scrolled ? "bg-image" : "bg-white"} ${
-          zoomIn ? "zoom-in" : "zoom-out"
-        } ${scrolled ? "text-light" : "text-dark"}`} // Conditional text color
-      >
-        <center>
-          <div className="col-md-7">
-            <h2>
-              Are you ready to see how{" "}
-              <span className={`${scrolled ? "gold" : "blue"}`}>
-                your story
-              </span>{" "}
-              unfolds?
-            </h2>
-            <p>LET'S MAKE IT LEGENDARY</p>
-          </div>
-          <button>
-            BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
-            <FaLongArrowAltRight className="icon" />
-          </button>
-        </center>
-      </div>
-      <div
-        style={{
-          height: "1000px",
-          background: "blue",
-          position: "fixed",
-          bottom: 0,
-          zIndex: "-0",
-        }}
-      ></div>
+      <Desktop>
+        <div
+          ref={divRef}
+          className={`future-div ${scrolled ? "bg-image" : "bg-white"} ${
+            zoomIn ? "zoom-in" : "zoom-out"
+          } ${scrolled ? "text-light" : "text-dark"}`} // Conditional text color
+        >
+          <center>
+            <div className="col-md-7">
+              <h2>
+                Are you ready to see how{" "}
+                <span className={`${scrolled ? "gold" : "blue"}`}>
+                  your story
+                </span>{" "}
+                unfolds?
+              </h2>
+              <p>LET'S MAKE IT LEGENDARY</p>
+            </div>
+            <button>
+              BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+              <FaLongArrowAltRight className="icon" />
+            </button>
+          </center>
+        </div>
+        <div
+          style={{
+            height: "1000px",
+            background: "blue",
+            position: "fixed",
+            bottom: 0,
+            zIndex: "-0",
+          }}
+        ></div>
+      </Desktop>
+      <TabletAndBelow>
+        <div className="future-div">
+          {" "}
+          <center>
+            <div className="col-md-7">
+              <h2>
+                Are you ready to see how{" "}
+                <span className={`${scrolled ? "gold" : "blue"}`}>
+                  your story
+                </span>{" "}
+                unfolds?
+              </h2>
+              <p>LET'S MAKE IT LEGENDARY</p>
+            </div>
+            <button>
+              BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+              <FaLongArrowAltRight className="icon" />
+            </button>
+          </center>
+        </div>
+      </TabletAndBelow>
     </>
   );
 };
