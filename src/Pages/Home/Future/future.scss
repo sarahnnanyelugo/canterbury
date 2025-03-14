@@ -12,6 +12,9 @@
   backface-visibility: hidden;
   position: relative !important;
   z-index: 10 !important;
+  @media screen and (max-width: 820px) {
+    height: 500px;
+  }
   &.bg-white {
     background: white;
   }

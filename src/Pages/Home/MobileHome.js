@@ -7,6 +7,9 @@ import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
 import { Testimonials } from "./Testimonials/Testimonials";
 import { IoArrowForward } from "react-icons/io5";
+import { OurWords } from "../../components/OurWords/OurWords";
+import { Journey } from "./Journey/Journey";
+import { Future } from "./Future/Future";
 
 export const MobileHome = () => {
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
@@ -219,6 +222,11 @@ export const MobileHome = () => {
           </center>
           <Testimonials />
         </div>
+        <div className="our-words">
+          <OurWords />
+        </div>
+        <Journey />
+        <Future />
       </div>
     </>
   );
