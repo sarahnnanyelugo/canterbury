@@ -7,12 +7,12 @@ export const OurWords = () => {
     {
       modelName: "Leadership",
       description:
-        "Our goal is to reach out to all students and help them discover and develop their emerging leadership skills",
+        "Our goal is to reach out to all students and help them discover and develop their emerging leadership skills.",
     },
     {
       modelName: "Academic Rigor",
       description:
-        "Demanding academic subjects are the heart of our program and are",
+        "Demanding academic subjects are the heart of our program.",
     },
     {
       modelName: "Respect for All",
@@ -32,10 +32,10 @@ export const OurWords = () => {
     {
       modelName: "Character Matters",
       description:
-        "We believe that each studen'ts moral and ethical strengths lie in their intentions and actions.",
+        "We believe that each student's moral and ethical strengths lie in their intentions and actions.",
     },
   ];
-  console.log(modelData);
+  // console.log(modelData);
 
   useEffect(() => {
     document.documentElement.style.setProperty("--count", count);

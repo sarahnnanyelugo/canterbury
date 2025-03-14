@@ -78,7 +78,7 @@ const PhotoGallery = () => {
         autoPlay
         muted
         playsInline
-        controls
+        controls={false}
         src={MainVid}
       ></video>
 

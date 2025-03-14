@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./top-nav.scss";
 import { IoMenu } from "react-icons/io5";
@@ -13,6 +13,7 @@ import { BsPersonCheckFill } from "react-icons/bs";
 import { TbReport } from "react-icons/tb";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Accordion from "react-bootstrap/Accordion";
+import { useLocation } from "react-router-dom";
 
 const menuItems = [
   {
@@ -70,11 +71,34 @@ const menuItems = [
   },
 ];
 
-export const TopNav = () => {
+export const TopNav = ({openNav}) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const [isOpen, setIsOpen] = useState(()=>{return openNav!=undefined?openNav:false});
+  const toggleMenu = () => setIsOpen(true);
   const closeMenu = () => setIsOpen(false);
+ const { pathname } = useLocation();
+
+  useEffect(() => {
+    setTimeout(() =>{
+      closeMenu()
+    }, 0);
+  }, [pathname]);
+  useEffect(()=>{
+    // Find the checkbox and update its checked state
+    const checkbox = document.getElementById("active");
+    if (checkbox) {
+      checkbox.checked = isOpen;
+      // alert('checking checkbox');
+    }
+  },[]) 
+   useEffect(()=>{
+    // Find the checkbox and update its checked state
+    const checkbox = document.getElementById("active");
+    if (checkbox) {
+      checkbox.checked = isOpen;
+      // alert('checking checkbox');
+    }
+  },[isOpen])
   return (
     <>
       {" "}
@@ -91,12 +115,12 @@ export const TopNav = () => {
           </Link>
         </div>
         <input type="checkbox" id="active" style={{ display: "none" }} />
-        <label htmlFor="active" className="menu-btn" onClick={toggleMenu}>
+        <label htmlFor="active" className="menu-btn" onMouseOver={toggleMenu}>
           <IoMenu />
         </label>
 
         <div className="wrapper">
-          <Desktop>
+          <Desktop >
             {" "}
             <ul className="menu">
               {menuItems.map((item, index) => (
@@ -120,7 +144,6 @@ export const TopNav = () => {
                       <li
                         key={subIndex}
                         className="submenu-item"
-                        onClick={closeMenu}
                       >
                         <Link to={subItem.link} type="checkbox" id="active">
                           {" "}

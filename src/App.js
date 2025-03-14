@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <TopNav />
+      <TopNav openNav={false}/>
 
       <Desktop>
         {" "}
