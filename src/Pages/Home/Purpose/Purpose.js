@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./purpose.scss";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
+import { Link } from "react-router-dom";
 
 export const Purpose = () => {
   const [inViewText, setInViewText] = useState(false);
@@ -114,7 +115,7 @@ export const Purpose = () => {
       </Desktop>
       <TabletAndBelow>
         <div className="" style={{ padding: "0 10px" }} ref={textRef}>
-          <div className="col-12 ">
+          <div className="col-12 outer-cova ">
             <div
               className="eyfs sections"
               style={{
@@ -123,9 +124,21 @@ export const Purpose = () => {
                 transition:
                   "background 0.5s ease, transform 2s ease, opacity 2s ease",
               }}
-            ></div>
+            >
+              {" "}
+              <div className="sections-overlay">
+                <div className="text">
+                  CANTERBURY EYFS
+                  <br />
+                  <center>
+                    {" "}
+                    <Link to={"/eyfs"}>LEARN MORE</Link>
+                  </center>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-12 ">
+          <div className="col-12 outer-cova">
             <div
               className="primary sections"
               style={{
@@ -134,10 +147,22 @@ export const Purpose = () => {
                 transition:
                   "background 0.5s ease, transform 2s ease, opacity 2s ease",
               }}
-            ></div>
+            >
+              {" "}
+              <div className="sections-overlay">
+                <div className="text">
+                  CANTERBURY PRIMARY
+                  <br />
+                  <center>
+                    {" "}
+                    <Link to={"/primary"}>LEARN MORE</Link>
+                  </center>
+                </div>
+              </div>
+            </div>
           </div>{" "}
         </div>
-        <div className="col-12 " ref={paragraphRef}>
+        <div className="col-12 outer-cova" ref={paragraphRef}>
           <div
             className="col-12 secondary sections"
             style={{
@@ -147,9 +172,20 @@ export const Purpose = () => {
               opacity: inViewParagraph ? 1 : 0,
               transition: "transform 1s ease, opacity 1s ease",
               color: "#4d5e69",
-              fontFamily: "figtree",
+              fontFamily: "figtreeB",
             }}
-          ></div>
+          >
+            <div className="sections-overlay">
+              <div className="text">
+                CANTERBURY SECONDARY
+                <br />
+                <center>
+                  {" "}
+                  <Link to={"/secondary"}>LEARN MORE</Link>
+                </center>
+              </div>
+            </div>
+          </div>
         </div>
       </TabletAndBelow>
     </>

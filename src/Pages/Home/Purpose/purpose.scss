@@ -92,6 +92,7 @@
   background: url("../../../assets/images/girl.png") no-repeat;
 }
 .secondary {
+  height: 300px;
   background: url("../../../assets/images/college.webp") no-repeat;
 }
 .sections {
@@ -99,4 +100,35 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+}
+.sections-overlay {
+  position: absolute !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 140%;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  a {
+    color: $highlight;
+  }
+}
+.outer-cova {
+  position: relative;
+}
+.outer-cova:hover .sections-overlay {
+  width: 100%;
+  left: 0;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }

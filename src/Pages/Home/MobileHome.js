@@ -81,7 +81,6 @@ export const MobileHome = () => {
             ></video>
           </div>
         </div>
-
         <div
           style={{
             fontFamily: "figtree",
@@ -181,7 +180,6 @@ export const MobileHome = () => {
               door to your incredible potential."
         />
         <Ethos />
-
         <div
           className="col-md-12"
           style={{ background: "#fff", height: "250px" }}
@@ -196,11 +194,19 @@ export const MobileHome = () => {
               paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
               differences of others, and believing that you can—and will—make a
-              difference in the world. Toggle Description FAITH Toggle
-              Description"
+              difference in the world. "
             />
           </center>
-        </div>
+        </div>{" "}
+        <center className=" ">
+          {" "}
+          <SectionHeading
+            text1=" INTRODUCING"
+            text2="our categories"
+            color1="#54020a"
+            color2="#2d79c5"
+          />
+        </center>
         <Purpose />
       </div>
     </>
