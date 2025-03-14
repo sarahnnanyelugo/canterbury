@@ -10,6 +10,7 @@ import { IoArrowForward } from "react-icons/io5";
 import { OurWords } from "../../components/OurWords/OurWords";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
+import News from "../../components/News/News";
 
 export const MobileHome = () => {
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
@@ -226,6 +227,16 @@ export const MobileHome = () => {
           <OurWords />
         </div>
         <Journey />
+        <div className="news-div">
+          <center>
+            <h2>
+              OUR <span>stories</span>
+            </h2>
+          </center>
+          <div className="col-md-8 offset-md-2 ">
+            <News />
+          </div>
+        </div>
         <Future />
       </div>
     </>

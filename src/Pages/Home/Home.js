@@ -19,6 +19,7 @@ import { Future } from "./Future/Future";
 import { OurWords } from "../../components/OurWords/OurWords";
 import Hero from "../../assets/images/college.webp";
 import { Link } from "react-router-dom";
+import News from "../../components/News/News";
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
@@ -130,7 +131,6 @@ export const Home = () => {
 
   return (
     <>
-  
       <div
         className="home-div"
         style={{
@@ -387,8 +387,18 @@ export const Home = () => {
         <OurWords />
       </div>
       <Journey />
+      <div className="news-div">
+        <center>
+          <h2>
+            OUR <span>stories</span>
+          </h2>
+        </center>
+        <div className="col-md-8 offset-md-2 ">
+          <News />
+        </div>
+      </div>
+
       <Future />
-    
     </>
   );
 };
