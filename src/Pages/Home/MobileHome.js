@@ -5,6 +5,8 @@ import Hero from "../../assets/images/college.webp";
 import { Link } from "react-router-dom";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
+import { Testimonials } from "./Testimonials/Testimonials";
+import { IoArrowForward } from "react-icons/io5";
 
 export const MobileHome = () => {
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
@@ -208,6 +210,15 @@ export const MobileHome = () => {
           />
         </center>
         <Purpose />
+        <div className="discover col-md-12">
+          <center>
+            <button>
+              HOW WILL YOU DISCOVER YOUR PURPOSE
+              <IoArrowForward className="icon" />
+            </button>
+          </center>
+          <Testimonials />
+        </div>
       </div>
     </>
   );

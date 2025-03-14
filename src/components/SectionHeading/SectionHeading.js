@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./section-heading.scss";
 export const SectionHeading = (props) => {
-  const { color1, color2, text1, text2, paragraph, size1, size2 } = props;
+  const { color1, color2, text1, text2, paragraph, size1, size2, color3 } =
+    props;
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
 
@@ -91,7 +92,7 @@ export const SectionHeading = (props) => {
             transform: inViewParagraph ? "translateY(0)" : "translateY(100px)",
             opacity: inViewParagraph ? 1 : 0,
             transition: "transform 1s ease, opacity 1s ease",
-            color: "#4d5e69",
+            // color: "#4d5e69",
             fontFamily: "figtree",
           }}
         >
