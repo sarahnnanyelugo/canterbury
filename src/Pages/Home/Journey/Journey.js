@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./journey.scss";
-import MainPic from "../../../assets/images/journey.jpg";
-import MainPic2 from "../../../assets/images/beerry.jpg";
-import MainPic3 from "../../../assets/images/run.png";
+import MainPic from "../../../assets/images/primary-boy3.jpg";
+import MainPic2 from "../../../assets/images/senior-boy3.jpg";
+import MainPic3 from "../../../assets/images/draw.jpg";
 import { IoArrowForward } from "react-icons/io5";
 import Carousel from "react-bootstrap/Carousel";
 import PartnersSlider from "../../../components/PartnersSlider/PartnersSlider";

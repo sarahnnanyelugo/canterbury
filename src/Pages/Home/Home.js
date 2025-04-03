@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import MainVid from "../../assets/images/main-vid.mp4";
-import Img1 from "../../assets/images/img1.jpg";
+import Img1 from "../../assets/images/primary-boy-main.jpg";
 
 import { IoArrowForward } from "react-icons/io5";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 
-import Img4 from "../../assets/images/img4.jpg";
-import Img6 from "../../assets/images/img6.png";
-import Img5 from "../../assets/images/img5.png";
+import Img4 from "../../assets/images/primary-girl-main.png";
+import Img6 from "../../assets/images/senior-boy.jpg";
+import Img66 from "../../assets/images/senior-girl2.jpg";
+import Img5 from "../../assets/images/eyfs3.jpg";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
@@ -17,7 +18,7 @@ import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
 import { OurWords } from "../../components/OurWords/OurWords";
-import Hero from "../../assets/images/college.webp";
+import Hero from "../../assets/images/asian.jpg";
 import { Link } from "react-router-dom";
 import News from "../../components/News/News";
 export const Home = () => {
@@ -155,27 +156,28 @@ export const Home = () => {
             <div
               className="d-flex images-container"
               style={{
-                marginTop: "70px",
+                marginTop: "40px",
                 width: "40%",
                 transform: `translateX(-${shift}px)`,
               }}
             >
               <div
-                className="col-md-8 left-wing"
+                className="col-md-6 left-wing"
                 style={{
                   height: `${(0.5 / scale) * 400}px`,
                   background: "url(" + Img1 + ")",
                   backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
                   marginTop: "70px",
-
                   borderRadius: "10px",
                 }}
               ></div>
               <div
-                className="col-md-8 landing-imgs"
-                style={{ padding: "10px" }}
+                className="col-md-7 landing-imgs"
+                style={{ marginLeft: "10px" }}
               >
-                <img src={Img6} width="100%" />
+                <img src={Img6} width="100%" className="img-adj" />
                 <img src={Img5} width="100%" className="mt-3" />
               </div>
             </div>
@@ -208,26 +210,27 @@ export const Home = () => {
             <div
               className="d-flex images-container"
               style={{
-                marginTop: "70px",
+                marginTop: "40px",
                 width: "40%",
                 transform: `translateX(${shift}px)`,
               }}
             >
               <div
-                className="col-md-8 col-12 landing-imgs"
-                style={{ padding: "10px" }}
+                className="col-md-7 col-12 landing-imgs"
+                style={{ marginLeft: "10px" }}
               >
-                <img src={Img6} width="100%" />
+                <img src={Img66} width="100%" />
                 <img src={Img5} width="100%" className="mt-3" />
               </div>
               <div
-                className="col-md-8 right-wing"
+                className="col-md-7 right-wing"
                 style={{
                   height: `${(0.5 / scale) * 400}px`,
                   background: "url(" + Img4 + ")",
-
+                  marginLeft: "10px",
                   marginTop: "70px",
-
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
                   borderRadius: "10px",
                 }}
               ></div>
@@ -295,12 +298,12 @@ export const Home = () => {
           color1="#54020a"
           color2="#929292"
         />
-        <div className="col-md-10 offset-md-1 d-md-flex">
+        <div className="col-md-10 offset-md-1 d-md-flex mt-5">
           <div className="col-md-6">
             {" "}
-            <img src={Hero} width="100%" />
+            <img src={Hero} width="100%" style={{}} />
           </div>
-          <div className="col-md-5 offset-md-1 para-div">
+          <div className="col-md-5 offset-md-1 ">
             <p>
               Canterbury International School is a premier institution dedicated
               to academic excellence and holistic development. Our curriculum

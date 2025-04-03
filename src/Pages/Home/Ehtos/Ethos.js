@@ -3,10 +3,10 @@ import "./ethos.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import MainPic1 from "../../../assets/images/broad.jpg";
-import MainPic2 from "../../../assets/images/challenge.jpg";
-import MainPic3 from "../../../assets/images/tradition.jpg";
-import MainPic4 from "../../../assets/images/adults.jpg";
+import MainPic1 from "../../../assets/images/asian.jpg";
+import MainPic2 from "../../../assets/images/chess.jpg";
+import MainPic3 from "../../../assets/images/comput.jpg";
+import MainPic4 from "../../../assets/images/pastoral2.jpg";
 function Ethos() {
   const settings = {
     dots: true,

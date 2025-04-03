@@ -1,6 +1,6 @@
 import Greeting from "../assets/images/std1.webp";
 
-import Door from "../assets/images/std2.webp";
+import Door from "../assets/images/bio-lab.jpg";
 import Excursion from "../assets/images/vibrant.jpeg";
 import Classroom from "../assets/images/std3.webp";
 

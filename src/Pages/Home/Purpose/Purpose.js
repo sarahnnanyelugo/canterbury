@@ -84,7 +84,7 @@ export const Purpose = () => {
                   "background 0.5s ease, transform 2s ease, opacity 2s ease",
               }}
             >
-              {["faith", "service", "justice"].map((type) => (
+              {["EYFS", "Primary", "Secondary"].map((type) => (
                 <div
                   key={type}
                   className={`col-md-4 purpose-inner ${type} ${
@@ -98,14 +98,21 @@ export const Purpose = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="overlay">
-                    <h5>{type.charAt(0).toUpperCase() + type.slice(1)}</h5>
+                    <h4>{type.charAt(0).toUpperCase() + type.slice(1)}</h4>
                     <p>
                       {type === "faith"
                         ? "Explore the role of faith in your life and the lives of others within an inclusive, interfaith community."
                         : type === "service"
                         ? "Develop empathy, leadership, and a sense of civic responsibility by giving generously of yourself for others."
                         : "Empower yourself to challenge inequalities, foster inclusivity, and advocate for meaningful change."}
-                    </p>
+                    </p>{" "}
+                    <Link to={""}>
+                      {type === "faith"
+                        ? "Learn more"
+                        : type === "service"
+                        ? "Learn More"
+                        : ""}
+                    </Link>
                   </div>
                 </div>
               ))}
