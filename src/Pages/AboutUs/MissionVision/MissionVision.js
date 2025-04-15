@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/justice.jpg";
 import Honour from "../../../assets/images/honour.jpg";
-import Mentor from "../../../assets/images/mentor.png";
 import Profile1 from "../../../assets/images/pro1.jpg";
 import Create from "../../../assets/images/create.jpg";
 import Profile2 from "../../../assets/images/pro2.jpg";

@@ -92,7 +92,7 @@ export const Purpose = () => {
                   }`}
                   onMouseEnter={() =>
                     handleMouseEnter(
-                      require(`../../../assets/images/${type}.jpg`)
+                      require(`../../../assets/images/${type}.png`)
                     )
                   }
                   onMouseLeave={handleMouseLeave}

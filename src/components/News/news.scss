@@ -33,7 +33,7 @@
   }
 }
 .modal-content {
-  max-height: 900px;
+  // max-height: 900px;
   border: none !important;
   img {
     // height: 200px !important;
@@ -58,3 +58,31 @@
     }
   }
 }
+.news-img-holder{
+  height:300px;
+  background-color:grey;
+  object-fit:cover;
+  img{
+   
+  }
+}
+
+.story-modal{
+ 
+ 
+}
+.modal{
+  background-color:#fff !important;
+}
+
+.modal-news-img{
+  height:350px;
+  object-fit:cover
+}
+.modal-title{ padding: 30px 20px;
+  font-family: figtreeB;
+  color: $appcolor;
+  font-weight: bold;
+  &:hover {
+    color: #b5d2ee;
+  }}

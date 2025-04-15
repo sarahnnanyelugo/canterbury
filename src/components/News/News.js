@@ -13,31 +13,33 @@ function NewsItem({ show, onHide, item }) {
   if (!item) return null; // Ensure item exists before rendering
 
   return (
-    <Modal
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      show={show}
-      onHide={onHide}
-    >
-      <Modal.Header closeButton></Modal.Header>
-      <Modal.Body>
-        <div className="modal-content">
-          <div className="d-md-flex">
-            <div className="col-md-6">
-              <img width="100%" src={item.photo} alt="News" />
-            </div>
-            <div className="col-md-6" style={{ paddingLeft: "20px" }}>
-              <h5>{item.title}</h5>
-              <small>{item.date}</small>
-              <p>{item.paragraph1}</p>
-              <p>{item.paragraph2}</p>
-              <p>{item.paragraph3}</p>
-            </div>
-          </div>
-          <p className="mt-3">{item.others}</p>
+  <div className="story-modal"> 
+ <Modal
+  size="lg"
+  aria-labelledby="contained-modal-title-vcenter"
+  show={show}
+  onHide={onHide}
+> <Modal.Header closeButton>
+  <Modal.Title><h5>{item.title}</h5></Modal.Title>
+</Modal.Header>
+  <Modal.Body>
+    <div className="modal-content">
+      <div className="d-md-flex">
+        <div className="col-md-6">
+          <img width="100%" src={item.photo} alt="News" className="modal-news-img"/>
         </div>
-      </Modal.Body>
-    </Modal>
+        <div className="col-md-6" style={{ paddingLeft: "20px" }}>
+          
+          <small>{item.date}</small>
+          <p>{item.paragraph1}</p>
+          <p>{item.paragraph2}</p>
+          <p>{item.paragraph3}</p>
+        </div>
+      </div>
+      <p className="mt-3">{item.others}</p>
+    </div>
+  </Modal.Body>
+</Modal></div>
   );
 }
 
@@ -129,8 +131,8 @@ function News() {
             >
               <div className="card  each-news">
                 {" "}
-                <div>
-                  <img src={item.photo} width="100%" alt="News Thumbnail" />
+                <div className="">
+                  <img src={item.photo} width="100%" alt="News Thumbnail" className="news-img-holder"/>
                 </div>
                 <h5>{item.title}</h5>
                 <p>{item.date}</p>

@@ -1,13 +1,12 @@
 import React from "react";
 import "./our-story.scss";
-import Hero from "../../../assets/images/storyHero.jpg";
-import Chapel from "../../../assets/images/chapel.png";
-import Mentor from "../../../assets/images/mentor.png";
-import Profile1 from "../../../assets/images/pro1.jpg";
-import Create from "../../../assets/images/create.jpg";
-import Profile2 from "../../../assets/images/pro2.jpg";
-import Secondary from "../../../assets/images/secondary.jpg";
-import Profile3 from "../../../assets/images/pro3.jpg";
+import Hero from "../../../assets/images/senior-group.png";
+import Chapel from "../../../assets/images/assembly.png";
+import Mentor from "../../../assets/images/pastoral.png";
+import Profile1 from "../../../assets/images/secondary-group.png";
+import Create from "../../../assets/images/chess.png";
+import Profile2 from "../../../assets/images/Primary.png";
+import Profile3 from "../../../assets/images/story-time.png";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
@@ -124,7 +123,7 @@ export const OurStory = () => {
             <button>EXPLORE</button>
           </div>
           <div className="col-md-6">
-            <img src={Chapel} width="100%" />
+            <img src={Chapel} width="100%" className="assembly"/>
           </div>
         </div>
         <div className="stats-div">

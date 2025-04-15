@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import MainVid from "../../assets/images/main-vid.mp4";
-import Img1 from "../../assets/images/primary-boy-main.jpg";
+import Img1 from "../../assets/images/primary-boy-main.png";
 
 import { IoArrowForward } from "react-icons/io5";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 
 import Img4 from "../../assets/images/primary-girl-main.png";
-import Img6 from "../../assets/images/senior-boy.jpg";
-import Img66 from "../../assets/images/senior-girl2.jpg";
-import Img5 from "../../assets/images/eyfs3.jpg";
+import Img6 from "../../assets/images/senior-boy.png";
+import Img66 from "../../assets/images/senior-girl2.png";
+import Img5 from "../../assets/images/eyfs3.png";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
@@ -18,7 +18,7 @@ import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
 import { OurWords } from "../../components/OurWords/OurWords";
-import Hero from "../../assets/images/asian.jpg";
+import Hero from "../../assets/images/asian-boy.png";
 import { Link } from "react-router-dom";
 import News from "../../components/News/News";
 export const Home = () => {

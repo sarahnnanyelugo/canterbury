@@ -1,12 +1,12 @@
-import Excursion from "../assets/images/staff/bose.png";
+import Excursion from "../assets/images/staff/peter.png";
 
-import Door from "../assets/images/staff/james.png";
-import Greeting from "../assets/images/staff/ifeco.png";
+import Door from "../assets/images/staff/peter.png";
+import Greeting from "../assets/images/staff/peter.png";
 import Classroom from "../assets/images/staff/sera.png";
 import Pat from "../assets/images/staff/pat.png";
 import Staff10 from "../assets/images/staff/staff3.jpg";
 import Staff11 from "../assets/images/staff/peter.png";
-import Staff12 from "../assets/images/staff/christian.jpeg";
+import Staff12 from "../assets/images/staff/peter.png";
 import Staff13 from "../assets/images/staff/staff4.jpg";
 
 export const staffData = [

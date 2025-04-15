@@ -1,8 +1,8 @@
-import Greeting from "../assets/images/std1.webp";
+import Greeting from "../assets/images/lab.png";
 
-import Door from "../assets/images/bio-lab.jpg";
-import Excursion from "../assets/images/vibrant.jpeg";
-import Classroom from "../assets/images/std3.webp";
+import Door from "../assets/images/bio-lab.png";
+import Excursion from "../assets/images/story-time.png";
+import Classroom from "../assets/images/assembly.png";
 
 export const storyData = [
   {
