@@ -16,7 +16,7 @@ export const admission = [
   },
 ];
 export const academics = [
-  { label: "EYFS", link: "eyfs" },
-  { label: "Primary", link: "primary" },
-  { label: "Secondary", link: "secondary" },
+  { label: "EYFS", link: "/eyfs" },
+  { label: "Primary", link: "/primary" },
+  { label: "Secondary", link: "/secondary" },
 ];
