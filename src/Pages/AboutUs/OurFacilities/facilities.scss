@@ -2,7 +2,7 @@
 
 .facilities-banner {
   position: relative;
-  padding: 0 20px;
+  padding: 0 0px;
   @media screen and (max-width: 820px) {
     padding: 0px;
   }
@@ -109,7 +109,7 @@
   }
 }
 .facility-action {
-  background: url("../../../assets/images/fac-bg.png") center/cover no-repeat;
+  background: url("../../../assets/images/side-view.png") center/cover no-repeat;
   background-size: cover;
   opacity: 1; // Fully visible when it's bg-image
   padding-top: 150px;

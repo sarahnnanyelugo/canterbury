@@ -1,7 +1,7 @@
 import React from "react";
 import "./welcome.scss";
-import Hero from "../../../assets/images/storyHero.jpg";
-import Admin from "../../../assets/images/admini.png";
+import Hero from "../../../assets/images/eyfs3.png";
+import Admin from "../../../assets/images/admin.png";
 import MainVid from "../../../assets/images/main-vid.mp4";
 
 import PageMenu from "../../../components/PageMenu/PageMenu";
@@ -15,6 +15,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { Action } from "./Action/Action";
 import { Link } from "react-router-dom";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
+import { Purpose } from "../../Home/Purpose/Purpose";
 
 export const Welcome = () => {
   return (
@@ -165,8 +166,9 @@ export const Welcome = () => {
             </div>
           </center>
         </div>
-
-        <Action />
+        <br /><br />
+<Purpose /><br /><br />
+       
       </div>
     </>
   );

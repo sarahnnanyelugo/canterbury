@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../../../assets/images/storyHero.jpg";
+import Hero from "../../../assets/images/draw.png";
 import OldImg from "../../../assets/images/old-img.webp";
 import OldImg2 from "../../../assets/images/old-img2.webp";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";

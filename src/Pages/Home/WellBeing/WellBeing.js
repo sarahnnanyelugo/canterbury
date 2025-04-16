@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./wellbeing.scss";
 import Health from "../../../assets/images/healthy.png";
-import New from "../../../assets/images/something-new.jpg";
+import New from "../../../assets/images/senior-group.png";
 import Vibrant from "../../../assets/images/vibrant.jpeg";
 import { IoArrowForward } from "react-icons/io5";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Hero from "../../../assets/images/girl.png";
+import Hero from "../../../assets/images/assembly2.png";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { admission } from "../../../TestData/pageMenuData";
@@ -91,7 +91,7 @@ export const Apply = () => {
                   </div>
                   <Link className="col-md-3 offset-md-1" href={"contact-us"}>
                     <div className="outer ">
-                      <div className="inner col-md-12">
+                      <div className="inner2 col-md-12">
                         {/* <img src={Girl} width="100%" /> */}
                         <center>
                           {" "}
@@ -134,7 +134,7 @@ export const Apply = () => {
                     href={"contact-us"}
                   >
                     <div className="outer ">
-                      <div className="inner col-md-12">
+                      <div className="inner3 col-md-12">
                         {/* <img src={Girl} width="100%" /> */}
                         <center>
                           {" "}
@@ -207,7 +207,7 @@ export const Apply = () => {
                   </div>
                   <Link className="col-md-3 offset-md-1" href={"contact-us"}>
                     <div className="outer ">
-                      <div className="inner col-md-12">
+                      <div className="inner4 col-md-12">
                         {/* <img src={Girl} width="100%" /> */}
                         <center>
                           {" "}

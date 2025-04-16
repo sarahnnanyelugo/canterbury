@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { academics } from "../../../TestData/pageMenuData";
-import Hero from "../../../assets/images/eyfs3.webp";
+import Hero from "../../../assets/images/EYFS.png";
 import Happy from "../../../assets/images/eyfs4.webp";
 import Eyfs from "../../../assets/images/eyfs.png";
 import Decor1 from "../../../assets/images/spiral.png";

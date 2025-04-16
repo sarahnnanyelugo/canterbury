@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import "./mission-vision.scss";
-import Hero from "../../../assets/images/justice.jpg";
-import Honour from "../../../assets/images/honour.jpg";
-import Profile1 from "../../../assets/images/pro1.jpg";
-import Create from "../../../assets/images/create.jpg";
-import Profile2 from "../../../assets/images/pro2.jpg";
-import Res from "../../../assets/images/res.jpg";
-import Empathy from "../../../assets/images/empathy.webp";
-import Curious from "../../../assets/images/curious.webp";
+import Hero from "../../../assets/images/primary-class.png";
+import Res from "../../../assets/images/chess2.png";
+import Empathy from "../../../assets/images/pastoral2.png";
+import Curious from "../../../assets/images/primary.png";
+import Honour from "../../../assets/images/primary-chess.png";
+import Positive from "../../../assets/images/primary-boy3.png";
+
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
@@ -109,7 +108,7 @@ export const MissionVision = () => {
               text="Canterbury students face challenges with determination, resilience, and perseverance."
             />{" "}
             <Values
-              src={Res}
+              src={Honour}
               heading="HONOR"
               text="Canterbury students act with honor, integrity, responsibility, and conviction of character in all aspects of their daily life."
             />
@@ -117,7 +116,7 @@ export const MissionVision = () => {
         </div>{" "}
         <div className="col-md-8 offset-md-2 row row-cols-2 row-cols-lg-3 g-2 g-lg-5 mt-1 mobile-pad">
           <Values
-            src={Res}
+            src={Positive}
             heading="POSITIVITY
 "
             text="Canterbury students embrace and create opportunities to make a positive difference in their communities and in the world.

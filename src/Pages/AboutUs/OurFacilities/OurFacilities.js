@@ -1,10 +1,20 @@
 import React, { useRef, useEffect, useState } from "react";
-import Hero from "../../../assets/images/storyHero.jpg";
-import Lib from "../../../assets/images/lib2main.png";
-import Court from "../../../assets/images/slide6.jpg";
-import ScienceLab from "../../../assets/images/sci.avif";
-import Computer from "../../../assets/images/computer.jpg";
-import Playground from "../../../assets/images/playground.jpg";
+import Hero from "../../../assets/images/building.png";
+import Lib from "../../../assets/images/asian-boy.png";
+
+import ChemistryLab from "../../../assets/images/chesmistry.png";
+import ChemistryLab2 from "../../../assets/images/lab.png";
+import Sickbay2 from "../../../assets/images/clinic.png";
+import Sickbay from "../../../assets/images/clinic2.png";
+
+import Bus2 from "../../../assets/images/school-bus2.png";
+import Ride from "../../../assets/images/bus-ride.png";
+import Bus from "../../../assets/images/sch-bus.png";
+
+import Computer2 from "../../../assets/images/comput.png";
+import ScienceLab from "../../../assets/images/lab.png";
+import Computer from "../../../assets/images/primary-class.png";
+import Playground from "../../../assets/images/playground.png";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
@@ -95,47 +105,47 @@ export const OurFacilities = () => {
 
   const content = [
     {
-      imgSrc: ScienceLab,
-      heading: "Science Laboratory",
+      imgSrc: ChemistryLab,
+      heading: "Science Laboratories",
       paragraph:
         "Get ready to spark your curiosity in our state-of-the-art science lab! With hands-on experiments and groundbreaking discoveries, this is where young scientists transform theories into practice and ignite their passion for exploration.",
-      images: [ScienceLab, Court],
+      images: [ChemistryLab2,ChemistryLab ],
     },
     {
-      imgSrc: Court,
-      heading: "Basketball Court",
+      imgSrc: Sickbay,
+      heading: "Sick Bay",
       paragraph:
         "Feel the rush of adrenaline on our basketball court! Whether you're shooting hoops with friends or perfecting your skills, it's the place for action, teamwork, and fun. Game on!",
-      images: [ScienceLab, Court],
+      images: [Sickbay, Sickbay2 ],
     },
     {
       heading: "Reading Room",
       imgSrc: Lib,
       paragraph:
         "Escape into a peaceful haven in our reading room. Surrounded by shelves of captivating books, it's the ideal spot to relax, focus, and let your imagination take flight.",
-      images: [Lib, ScienceLab, Court],
+      images: [Lib],
     },
     {
-      imgSrc: Hero,
-      heading: "School Building",
+      imgSrc: Bus,
+      heading: "Our Fleets",
       paragraph:
         "Our school building is more than just walls and classrooms—it's a thriving community where creativity, learning, and growth come together. Every corner is designed to inspire students to dream big and achieve even bigger.",
-      images: [Lib, ScienceLab, Hero],
+      images: [Bus2, Ride],
     },
 
     {
       imgSrc: Computer,
-      heading: "Computer Room",
+      heading: "ICT",
       paragraph:
         "Step into the future in our computer room, where technology meets creativity. With top-notch equipment and endless learning possibilities, it's the ultimate place to sharpen your digital skills and innovate.",
-      images: [Computer, Lib, ScienceLab, Hero],
+      images: [Computer, Computer2],
     },
     {
       imgSrc: Playground,
       heading: "Play Ground",
       paragraph:
         "Let the music play in our vibrant music room! From strumming guitars to mastering the piano, this is where every note resonates with passion, and every melody tells a story. Unleash your inner musician here.",
-      images: [Playground, Computer],
+      images: [Playground],
     },
   ];
 

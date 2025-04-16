@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact-us.scss";
-import Girl from "../../assets/images/storyHero.jpg";
-import Hero from "../../assets/images/girl.png";
+import Girl from "../../assets/images/primary-boy-main2.png";
+import Hero from "../../assets/images/word.jpg";
 import PageMenu from "../../components/PageMenu/PageMenu";
 import { PageLogo } from "../../components/PageLogo/PageLogo";
 import { about } from "../../TestData/pageMenuData";
