@@ -3,8 +3,8 @@ import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { academics } from "../../../TestData/pageMenuData";
 import Hero from "../../../assets/images/EYFS.png";
-import Happy from "../../../assets/images/eyfs4.webp";
-import Eyfs from "../../../assets/images/eyfs.png";
+import Happy from "../../../assets/images/eyfs.jpg";
+import Eyfs from "../../../assets/images/story-time.png";
 import Decor1 from "../../../assets/images/spiral.png";
 import Decor2 from "../../../assets/images/star.png";
 import Decor3 from "../../../assets/images/cube.png";
@@ -154,7 +154,7 @@ export const EYFS = () => {
         </div>
         <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
-            <img src={Eyfs} width="100%" />
+            <img src={Eyfs} width="100%" className="adj"/>
           </div>
           <div className="col-md-6 rudiments">
             <p>
@@ -429,7 +429,7 @@ export const EYFS = () => {
               </Accordion>{" "}
             </div>
             <div className="col-md-5">
-              <img src={Happy} width="100%" />
+              <img src={Happy} width="100%" className="adj"/>
             </div>
           </div>
         </div>
