@@ -397,7 +397,7 @@ export const Home = () => {
       <div className="news-div">
         <center>
           <h2>
-            OUR <span>stories</span>
+            OUR <span>updates</span>
           </h2>
         </center>
         <div className="col-md-8 offset-md-2 ">

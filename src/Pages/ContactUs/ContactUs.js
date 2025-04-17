@@ -58,7 +58,7 @@ export const ContactUs = () => {
               <li>
                 <FaPhoneAlt className="icons" />
                 <ol>
-                  <li> +234 907 678 1199 </li>
+                  <li> +234 818 868 9843 </li>
                   <li>+234 809 999 7816 </li>
                   <li>01 - 453 7303</li>
                 </ol>

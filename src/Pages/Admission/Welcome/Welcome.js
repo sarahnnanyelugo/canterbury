@@ -45,18 +45,18 @@ export const Welcome = () => {
           </div>
         </center>
 
-        <div className="col-md-8 offset-md-2">
-          <video
-            className="video"
-            width="100%"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-            src={MainVid}
-          ></video>
-        </div>
+        {/*<div className="col-md-8 offset-md-2">*/}
+        {/*  <video*/}
+        {/*    className="video"*/}
+        {/*    width="100%"*/}
+        {/*    autoPlay*/}
+        {/*    loop*/}
+        {/*    muted*/}
+        {/*    playsInline*/}
+        {/*    controls*/}
+        {/*    src={MainVid}*/}
+        {/*  ></video>*/}
+        {/*</div>*/}
 
         <div className="col-md-10 offset-md-1 d-flex speech">
           <div className="col-md-6 col-7 admin-profile">

@@ -54,7 +54,7 @@ export const Tuition = () => {
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    <h2>Junior Secondary</h2>
+                    <h2>Secondary School</h2>
                   </Accordion.Header>
                   <Accordion.Body>
                     <ul>
@@ -77,7 +77,41 @@ export const Tuition = () => {
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
                     {" "}
-                    <h2>Senior Secondary</h2>
+                    <h2>Primary School</h2>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      <li>
+                        SSS1: <span>00000</span>
+                      </li>
+                      <li>
+                        SSS2:<span>00000</span>
+                      </li>
+                      <li>
+                        SSS3:<span>00000</span>
+                      </li>
+                    </ul>
+                    <p>Other fees and registrations:</p>
+                    <ul>
+                      <li>
+                        Senior WAEC: <span>00000</span>
+                      </li>
+                      <li>
+                        NECO:<span>00000</span>
+                      </li>
+                      <li>
+                        JAMB:<span>00000</span>
+                      </li>
+                      <li>
+                        GCE<span>00000</span>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    {" "}
+                    <h2>EYFS</h2>
                   </Accordion.Header>
                   <Accordion.Body>
                     <ul>

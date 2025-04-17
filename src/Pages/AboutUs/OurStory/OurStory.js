@@ -120,7 +120,7 @@ export const OurStory = () => {
               environment, preparing students to thrive in a diverse and
               interconnected world.
             </p>
-            <button>EXPLORE</button>
+            <button>Apply</button>
           </div>
           <div className="col-md-6">
             <img src={Chapel} width="100%" className="assembly" />
@@ -165,7 +165,7 @@ export const OurStory = () => {
                   enableScrollSpy={true}
                 />{" "}
               </h1>
-              <h5>HOURS TO NYC</h5>
+              <h5>MINS Road Access</h5>
             </div>
           </div>
         </div>
@@ -360,7 +360,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5>SECONDARY</h5>
                   <p>(6-11 years)</p>
-                  <button>LEARN MORE</button>
+                  <Link to={'/secondary'}><button>LEARN MORE</button></Link>
                 </div>
               </div>
             </div>{" "}
@@ -375,7 +375,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5> PRIMARY</h5>
                   <p>(6-11 years)</p>
-                  <button>LEARN MORE</button>
+                  <Link to={"/primary"}><button>LEARN MORE</button></Link>
                 </div>
               </div>
             </div>{" "}
@@ -390,7 +390,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5> EYFS</h5>
                   <p>(6-11 years)</p>
-                  <button>LEARN MORE</button>
+                  <Link to={'/eyfs'}><button>LEARN MORE</button></Link>
                 </div>
               </div>
             </div>{" "}

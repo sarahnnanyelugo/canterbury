@@ -271,7 +271,7 @@ export const Apply = () => {
             <center>
               <p>
                 If you have any additional questions along the way, please call
-                the admission office at +234 907 678 1199 or email us at
+                the admission office at <br />+234 818 868 9843 or email us at
                 <a href="mailto:  admission@canterburyint.org">
                   {" "}
                   admission@canterburyint.org

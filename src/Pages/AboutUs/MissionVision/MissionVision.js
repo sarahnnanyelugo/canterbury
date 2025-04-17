@@ -220,7 +220,7 @@ export const MissionVision = () => {
             </div>{" "}
             <div>
               <h4>
-                Tea<span>mwo</span>or
+                Tea<span>mwo</span>rk
               </h4>
 
               <p>
