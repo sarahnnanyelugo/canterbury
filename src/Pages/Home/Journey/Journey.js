@@ -6,6 +6,7 @@ import MainPic3 from "../../../assets/images/draw.png";
 import { IoArrowForward } from "react-icons/io5";
 import Carousel from "react-bootstrap/Carousel";
 import PartnersSlider from "../../../components/PartnersSlider/PartnersSlider";
+import { Link } from "react-router-dom";
 
 export const Journey = () => {
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
@@ -76,10 +77,16 @@ export const Journey = () => {
                       far you want to go. But it’s not only about getting in;
                       it’s about thriving where you’re destined to be.
                     </p>
-                    <button>
-                      YOUR SUCCESS STORY STARTS HERE{" "}
-                      <IoArrowForward className="icon" />
-                    </button>
+                    <Link
+                      to={"/apply"}
+                      style={{ position: "relative", zIndex: "1000" }}
+                    >
+                      {" "}
+                      <button>
+                        YOUR SUCCESS STORY STARTS HERE{" "}
+                        <IoArrowForward className="icon" />
+                      </button>
+                    </Link>
                   </div>
                 </div>{" "}
                 <PartnersSlider />

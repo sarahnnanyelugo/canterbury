@@ -259,12 +259,13 @@ export const Home = () => {
               transition: "all 0.2s ease",
             }}
           >
-            This is <span> your school.</span> This is{" "}
+            A Place <span> TO LIVE</span> A Place{" "}
             <span>
-              your journey. <br />
+              TO LEARN
+              <br />
             </span>
-            This is the extraordinary opportunity
-            <span> your story</span> deserves.
+            A Place
+            <span> TO GROW</span>
           </h2>
         </div>
       </div>
@@ -379,10 +380,13 @@ export const Home = () => {
       <Purpose />
       <div className="discover col-md-12">
         <center>
-          <button>
-            HOW WILL YOU DISCOVER YOUR PURPOSE
-            <IoArrowForward className="icon" />
-          </button>
+          <Link to={"/apply"}>
+            {" "}
+            <button>
+              READY TO TAKE A STEP?
+              <IoArrowForward className="icon" />
+            </button>
+          </Link>
         </center>
         <Testimonials />
       </div>

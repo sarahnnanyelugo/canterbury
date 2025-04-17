@@ -94,7 +94,7 @@ export const Future = () => {
               </h2>
               <p>LET'S MAKE IT LEGENDARY</p>
             </div>
-            <Link to={"/apply"}>
+            <Link to={"/apply"} style={{ position: "relative", zIndex: 1000 }}>
               {" "}
               <button>
                 BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}

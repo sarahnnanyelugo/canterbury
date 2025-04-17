@@ -8,6 +8,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { SectionHeading } from "../../../components/SectionHeading/SectionHeading";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { admission } from "../../../TestData/pageMenuData";
+import { Link } from "react-router-dom";
 
 export const Tuition = () => {
   return (
@@ -386,7 +387,13 @@ export const Tuition = () => {
                 Begin <span style={{ color: "#de7c0d" }}>Your Journey</span>
               </h1>
               <p style={{ color: "#fff" }}>WE CAN'T WAIT TO HAVE YOU.</p>
-              <button>Apply Today </button>
+              <Link
+                to={"/apply"}
+                style={{ position: "relative", zIndex: 1000 }}
+              >
+                {" "}
+                <button>Apply Today </button>
+              </Link>
             </div>
           </center>
         </div>

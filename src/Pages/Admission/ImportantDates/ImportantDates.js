@@ -87,7 +87,7 @@ export const ImportantDates = () => {
           <ul>
             <li>
               Prep School assessment and interview day (Year 3 – Year 8) held at
-              Fettes College
+              Canterbury International School
             </li>
           </ul>
         </div>

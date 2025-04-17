@@ -15,6 +15,7 @@ import CountUp from "react-countup";
 import Carousel from "react-bootstrap/Carousel";
 import News from "../../../components/News/News";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const OurStory = () => {
   return (
@@ -33,14 +34,20 @@ export const OurStory = () => {
           <div className="col-md-6">
             <h2>This is Canterbury</h2>
             <p className="first-para">
-              Canterbury is an independent, coeducational boarding and day
-              school for grades 9–12 and postgraduates. Yet, it's more than a
-              school, more than a place. It's a promise grounded in our belief
-              in your extraordinary potential.
+              Canterbury International Schools runs a Pre-School, Kindergarten,
+              Primary and High School. The school is established to improve on
+              the standard of education in Nigeria in line with the school’s
+              vision and mission.
+            </p>
+            <p>
+              The school is continuously building a God fearing environment
+              where pupils are taught and prepared for the Kingdom of God.
+              Canterbury is a place of hardworking, determination and success.
+              Our students are loved and part of a family.
             </p>
           </div>
         </center>
-        <div className="col-md-8 offset-md-2 d-md-flex mobile-pad">
+        {/* <div className="col-md-8 offset-md-2 d-md-flex mobile-pad">
           <div className="col-md-6 right">
             <p>
               Founded in 1915 and set on a hilltop in New Milford, Connecticut,
@@ -64,7 +71,7 @@ export const OurStory = () => {
               become.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="remarkable2 mobile-pad">
           <center>
             <div className="col-md-5">
@@ -83,20 +90,9 @@ export const OurStory = () => {
                   <hr />
                 </div>
               </div>
-              <p>
-                The most remarkable and differentiating aspect of small boarding
-                schools is that they value the equal importance of academic
-                success, personal growth, and community engagement when it comes
-                to learning, living, and leading.
-              </p>
-              <p>
-                We believe that Canterbury is<em> the best</em> small boarding
-                school.
-              </p>
-              {/* <button>
-                THE CASE FOR SMALL BOARDING SCHOOLS, THE CASE FOR CANTERBURY
-              </button>
-              <hr /> */}
+              <p>To our students, we always urge them to:</p>
+              <h1>Dream It. Do it.</h1>
+              <p>Canterbury International !</p>
             </div>
           </center>
         </div>
@@ -110,15 +106,19 @@ export const OurStory = () => {
               </span>
             </h3>
             <p>
-              Canterbury first opened its doors in 1915 as a Catholic school for
-              boys. Today, while our foundation remains rooted in Catholic
-              values, we embrace the myriad faiths, beliefs, and cultures that
-              enrich our School.
+              At Canterbury International Secondary School, our legacy is built
+              upon unwavering values that guide every aspect of our community.
+              We foster an environment where respect, integrity, and empathy are
+              not just taught but lived daily, shaping students into
+              conscientious global citizens.
             </p>
             <p>
-              In our welcoming, interfaith community, you grow as a moral leader
-              and ethical citizen, finding your purpose and a desire to effect
-              positive change in our world.{" "}
+              Inclusion is at the heart of our ethos. We celebrate the rich
+              tapestry of cultures, backgrounds, and perspectives that each
+              student brings, ensuring that every individual feels seen, heard,
+              and valued. This commitment to inclusivity enriches our learning
+              environment, preparing students to thrive in a diverse and
+              interconnected world.
             </p>
             <button>EXPLORE</button>
           </div>
@@ -188,7 +188,10 @@ export const OurStory = () => {
               classroom, shaping you into an empowered and insightful citizen.
             </p>
 
-            <button>MEET OUR FACULTY</button>
+            <Link to={"/our-staff"}>
+              {" "}
+              <button>MEET OUR FACULTY</button>
+            </Link>
           </div>
         </div>
         <div className="stats-div2">
@@ -396,7 +399,7 @@ export const OurStory = () => {
         <div className="news-div">
           <center>
             <h2>
-              OUR <span>stories</span>
+              OUR <span>updates</span>
             </h2>
           </center>
           <div className="col-md-8 offset-md-2 ">
@@ -411,10 +414,12 @@ export const OurStory = () => {
                 That's <span>Our Story.</span>
               </h1>
               <p style={{ color: "#fff" }}>WE CAN'T WAIT TO LEARN YOURS.</p>
-              <button>
-                BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
-                <FaLongArrowAltRight className="icon" />
-              </button>
+              <Link to={"/apply"}>
+                <button>
+                  BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+                  <FaLongArrowAltRight className="icon" />
+                </button>
+              </Link>
             </div>
           </center>
         </div>

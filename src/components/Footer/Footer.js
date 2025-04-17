@@ -15,7 +15,10 @@ export const Footer = () => {
         <center>
           <div className="col-md-2">
             <img src={Logo} />
-            <p>101 Aspetuck Avenue New Milford, CT 06776 P: 860-210-3800</p>
+            <p>
+              5 Lapai Close, off Kemfat Street Thomas Estate, Ajah, Lekki,
+              Lagos.
+            </p>
             <ul className="list-inline list-unstyled socials">
               <li className="list-inline-item">
                 <Link to={"/"}>
@@ -60,21 +63,24 @@ export const Footer = () => {
               </li>
             </ul>
             <p>
-              Canterbury School is an independent, college preparatory,
-              coeducational boarding and day school for students in grades 9-12
-              and postgraduates.
+              At Canterbury International School, we are committed to fostering
+              academic excellence and nurturing the unique potential of each
+              student. Our holistic approach to education ensures that learners
+              are equipped with the knowledge, skills, and values necessary to
+              thrive in an ever-evolving world.
             </p>
             <small>
-              Canterbury School does not discriminate on the basis of gender,
-              race, color, religion, age, creed, national origin, sexual
-              orientation, or disability in admission, employment, or in its
-              programs and activities, including but not limited to the
-              administration of its educational policies, admissions policies,
-              scholarship and loan programs, and athletic and other
-              School-administered programs.
+              At Canterbury International Secondary School, we embrace a global
+              community, welcoming students from diverse cultural backgrounds.
+              Our inclusive environment ensures that every student feels valued
+              and supported, with tailored programs and resources designed to
+              ease the transition for foreign students. Through cultural
+              exchange initiatives and dedicated support systems, we foster a
+              sense of belonging, enabling all students to thrive academically
+              and socially in their new environment.​
             </small>
-            <div>
-              <small>POWERED BY HEXXONDIV GLOBAL SERVICES</small>
+            <div className="mt-5">
+              <h6>POWERED BY HEXXONDIV GLOBAL SERVICES</h6>
             </div>
           </div>
         </center>
