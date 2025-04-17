@@ -1,0 +1,40 @@
+@import "../../../variables";
+
+.important-dates {
+  //   .hero-img {
+  //     height: 800px;
+  //     object-fit: cover;
+  //   }
+  padding-bottom: 50px;
+  .dates-banner {
+    position: relative;
+  }
+  h1 {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    color: #fff;
+    font-size: 72px;
+    font-family: garamondB;
+    text-shadow: 2px 2px grey;
+  }
+  h3 {
+    margin-top: 40px;
+    color: $appcolor;
+    font-family: figtreeB;
+  }
+  li {
+    line-height: 35px;
+    font-size: 14px;
+    font-family: garamondB;
+  }
+
+  .inq-link {
+    background: $appcolor;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: figtreeB;
+    text-decoration: none;
+  }
+}

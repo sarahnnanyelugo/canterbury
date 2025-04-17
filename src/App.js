@@ -23,6 +23,7 @@ import PhotoGallery from "./Pages/Gallery/Gallery";
 import ScrollToTop from "./components/scrollToTop";
 import { Tuition } from "./Pages/Admission/Tuition/Tuition";
 import { Boarding } from "./Pages/StudentLife/Boarding/Boarding";
+import { ImportantDates } from "./Pages/Admission/ImportantDates/ImportantDates";
 function App() {
   return (
     <>
@@ -47,6 +48,7 @@ function App() {
           <Route path="our-staff" element={<OurStaff />} />
           <Route path="gallery" element={<PhotoGallery />} />
           <Route path="boarding" element={<Boarding />} />
+          <Route path="important-dates" element={<ImportantDates />} />
         </Routes>
       </Desktop>
       <TabletAndBelow>
@@ -68,6 +70,7 @@ function App() {
           <Route path="gallery" element={<PhotoGallery />} />
           <Route path="fees" element={<Tuition />} />
           <Route path="boarding" element={<Boarding />} />
+          <Route path="important-dates" element={<ImportantDates />} />
         </Routes>
       </TabletAndBelow>
       <Footer />

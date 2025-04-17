@@ -41,28 +41,35 @@ export const Apply = () => {
                 className={`tab ${checkActive2(1, "active2")}`}
                 onClick={() => handleClick2(1)}
               >
-                <span>STEP 1 |</span> SUBMIT APPLICATION
+                <span>STEP 1 |</span> Pick up Application form
               </button>
               <button
                 className={`tab ${checkActive2(2, "active2")}`}
                 onClick={() => handleClick2(2)}
                 style={{ marginLeft: "20px" }}
               >
-                <span> STEP 2 |</span> VISIT
+                <span> STEP 2 |</span> Submit Form
               </button>{" "}
               <button
                 className={`tab ${checkActive2(3, "active2")}`}
                 onClick={() => handleClick2(3)}
                 style={{ marginLeft: "20px" }}
               >
-                <span> STEP 3 |</span> REGISTER FOR ADMISSION EVENTS
+                <span> STEP 3 |</span> Assesment
               </button>{" "}
               <button
                 className={`tab ${checkActive2(4, "active2")}`}
                 onClick={() => handleClick2(4)}
                 style={{ marginLeft: "20px" }}
               >
-                <span>STEP 4 | </span>COMPLETE APPLICATION CHECKLIST
+                <span>STEP 4 | </span>Interview
+              </button>{" "}
+              <button
+                className={`tab ${checkActive2(5, "active2")}`}
+                onClick={() => handleClick2(5)}
+                style={{ marginLeft: "20px" }}
+              >
+                <span>STEP 5 | </span>Admission
               </button>
             </div>
             <div className="panels col-md-12">
@@ -222,20 +229,20 @@ export const Apply = () => {
             </div>
           </div>
           <hr />
-          <div className="sign-off">
-            <center>
-              <p>
-                If you have any additional questions along the way, please call
-                the admission office at +234 907 678 1199 or email us at
-                <a href="mailto:  admission@baylorschool.org.">
-                  {" "}
-                  admission@baylorschool.org.
-                </a>
-              </p>
-            </center>
-          </div>
-          <hr />
         </div>
+        <center>
+          {" "}
+          <h4
+            style={{
+              fontFamily: "figtreeB",
+              color: "#54020a",
+              marginTop: "40px",
+            }}
+          >
+            As you take this bold step, feel free to peruse through our hand
+            book below
+          </h4>
+        </center>
         <div className="col-md-8 offset-md-2">
           {" "}
           <div className=" col-md-12">
@@ -259,6 +266,21 @@ export const Apply = () => {
             ></script>
           </div>
         </div>{" "}
+        <center>
+          <div className="sign-off col-md-7">
+            <center>
+              <p>
+                If you have any additional questions along the way, please call
+                the admission office at +234 907 678 1199 or email us at
+                <a href="mailto:  admission@canterburyint.org">
+                  {" "}
+                  admission@canterburyint.org
+                </a>
+              </p>
+            </center>
+          </div>
+        </center>
+        <hr />
         <div className="sunset">
           <center>
             <div className="col-md-5">

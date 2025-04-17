@@ -115,7 +115,7 @@ export const OurFacilities = () => {
       imgSrc: Sickbay,
       heading: "Sick Bay",
       paragraph:
-        "Feel the rush of adrenaline on our basketball court! Whether you're shooting hoops with friends or perfecting your skills, it's the place for action, teamwork, and fun. Game on!",
+        "At Canterbury, student well-being is paramount. Our dedicated sick bay serves as a sanctuary of care and compassion, providing immediate attention to students who feel unwell or sustain minor injuries. Staffed by trained medical personnel and equipped with essential first aid supplies.",
       images: [Sickbay, Sickbay2],
     },
     {
@@ -129,7 +129,7 @@ export const OurFacilities = () => {
       imgSrc: Bus,
       heading: "Our Fleets",
       paragraph:
-        "Our school building is more than just walls and classrooms—it's a thriving community where creativity, learning, and growth come together. Every corner is designed to inspire students to dream big and achieve even bigger.",
+        "Recognizing the importance of safe and reliable transportation, Canterbury maintains a well-managed fleet of school buses. Operated by experienced drivers and adhering to stringent safety standards, our transportation services ensure that students commute comfortably and punctually. Regular maintenance and safety checks are integral to our operations, reflecting our dedication to providing a secure and efficient travel experience for our school community.",
       images: [Bus2, Ride],
     },
 
@@ -144,7 +144,7 @@ export const OurFacilities = () => {
       imgSrc: Playground,
       heading: "Play Ground",
       paragraph:
-        "Let the music play in our vibrant music room! From strumming guitars to mastering the piano, this is where every note resonates with passion, and every melody tells a story. Unleash your inner musician here.",
+        "Our expansive playground is more than just a recreational space; it's a vital component of student development at Canterbury. Designed to encourage physical activity, creativity, and social interaction, the playground offers students a dynamic environment to explore and grow. Through play, students develop essential life skills such as teamwork, problem-solving, and resilience, all while enjoying the benefits of outdoor activity in a safe and supervised setting.",
       images: [Playground],
     },
   ];

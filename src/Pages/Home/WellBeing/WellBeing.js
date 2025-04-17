@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./wellbeing.scss";
 import Health from "../../../assets/images/healthy.png";
 import New from "../../../assets/images/senior-group.png";
-import Vibrant from "../../../assets/images/vibrant.jpeg";
+import Vibrant from "../../../assets/images/senior-girl.png";
 import { IoArrowForward } from "react-icons/io5";
 
 export const WellBeing = () => {

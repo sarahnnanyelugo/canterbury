@@ -1,7 +1,7 @@
 import React from "react";
 import "./welcome.scss";
 import Hero from "../../../assets/images/eyfs3.png";
-import Admin from "../../../assets/images/admin.png";
+import Admin from "../../../assets/images/admin2.png";
 import MainVid from "../../../assets/images/main-vid.mp4";
 
 import PageMenu from "../../../components/PageMenu/PageMenu";
@@ -16,6 +16,9 @@ import { Action } from "./Action/Action";
 import { Link } from "react-router-dom";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 import { Purpose } from "../../Home/Purpose/Purpose";
+import { CiMail } from "react-icons/ci";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 export const Welcome = () => {
   return (
@@ -59,16 +62,30 @@ export const Welcome = () => {
           <div className="col-md-6 col-7 admin-profile">
             <div className="d-flex">
               {" "}
-              <img src={Admin} width="100%" />
+              <img src={Admin} width="100%" className="admin-photo" />
               <TabletAndBelow>
                 <div className="col-8 mt-2">
                   <div style={{ flexGrow: 1 }}>
                     <h6>Mrs Olamide Olaitan-Karunwi</h6>
                     <p>Administrator; Canterbury International Schools </p>
                   </div>
-                  <Link to={"/"}>
-                    View Profile <FaLongArrowAltRight />
-                  </Link>
+                  <ul className="list-unstyle list-inline">
+                    <li className="list-inline-item">
+                      <Link to={"/"} target="_blank">
+                        <CiMail />
+                      </Link>
+                    </li>{" "}
+                    <li className="list-inline-item">
+                      <Link to={"/"} target="_blank">
+                        <FaLinkedin />
+                      </Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to={"/"} target="_blank">
+                        <FaInstagramSquare />
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </TabletAndBelow>
             </div>
@@ -78,9 +95,23 @@ export const Welcome = () => {
                   <h6>Mrs Olamide Olaitan-Karunwi</h6>
                   <p>Canterbury Schools Administrator</p>
                 </div>
-                <Link to={"/"}>
-                  View Profile <FaLongArrowAltRight />
-                </Link>
+                <ul className="list-unstyle list-inline">
+                  <li className="list-inline-item">
+                    <Link to={"/"} target="_blank">
+                      <CiMail />
+                    </Link>
+                  </li>{" "}
+                  <li className="list-inline-item">
+                    <Link to={"/"} target="_blank">
+                      <FaLinkedin />
+                    </Link>
+                  </li>
+                  <li className="list-inline-item">
+                    <Link to={"/"} target="_blank">
+                      <FaInstagramSquare />
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </Desktop>
           </div>
@@ -154,21 +185,19 @@ export const Welcome = () => {
                 </div>
               </div>
               <p>
-                The most remarkable and differentiating aspect of small boarding
-                schools is that they value the equal importance of academic
-                success, personal growth, and community engagement when it comes
-                to learning, living, and leading.
-              </p>
-              <p>
-                We believe that Canterbury is<em> the best</em> small boarding
-                school.
+                Our students will be <span>bold</span> and{" "}
+                <span>visionary</span>, yet <span>compassionate</span>; they
+                possess a <span>global perspective </span>and will leave us
+                ready to embrace the<span> opportunities</span> of the future.
               </p>
             </div>
           </center>
         </div>
-        <br /><br />
-<Purpose /><br /><br />
-       
+        <br />
+        <br />
+        <Purpose />
+        <br />
+        <br />
       </div>
     </>
   );

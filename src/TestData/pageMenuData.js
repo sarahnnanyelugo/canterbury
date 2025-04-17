@@ -17,8 +17,8 @@ export const admission = [
     link: "/fees",
   },
   {
-    label: "Scholarships",
-    link: "/",
+    label: "Important Dates",
+    link: "/important-dates",
   },
 ];
 export const academics = [

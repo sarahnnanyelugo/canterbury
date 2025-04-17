@@ -36,7 +36,7 @@ const menuItems = [
       { label: "Welcome", link: "/welcome" },
       { label: "How to Apply", link: "/apply" },
       { label: "Tuition & Fees", link: "/fees" },
-      { label: "Scholarships", link: "/scholarships" },
+      { label: "Important Dates", link: "/important-dates" },
     ],
   },
   {

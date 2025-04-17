@@ -1,7 +1,5 @@
 import React from "react";
 import Hero from "../../../assets/images/draw.png";
-import OldImg from "../../../assets/images/old-img.webp";
-import OldImg2 from "../../../assets/images/old-img2.webp";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
@@ -55,33 +53,33 @@ export const History = () => {
               <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    <h5>Our Founding</h5>
+                    <h5>Our Founder..Mrs. Olusola Oluyinka Olaitan</h5>
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      In the fall of 1914, schoolmaster Dr. Nelson Hume and
-                      entrepreneur Henry Havemeyer began working together on a
-                      bold dream—to start a school operated by Catholic laymen
-                      who, independent of a religious order, would prepare boys
-                      for the best colleges and universities in the country
-                      while nurturing them in their faith.
+                      Mrs. Olusola Oluyinka Olaitan founded Canterbury Schools.
+                      She held a degree in Education with thirty-eight years
+                      work experience in teaching and school management.
                     </p>
                     <p>
-                      In seeking a location for the new boarding school, Dr.
-                      Hume wanted proximity to New York City, yet desired the
-                      allure of a rural backdrop. He discovered this in New
-                      Milford, Connecticut, atop a hill near Elkington Farm.
-                      With its three main buildings and vast playing field,
-                      shaded pathways, and striking elms, Dr. Hume instantly
-                      recognized it as the ideal spot.
+                      Mrs Olaitan worked at a number of schools in Lagos
+                      including in Lagos including State, Private and Foreign
+                      Schools. She was also the pioneering principal of a
+                      Redeemed School in Lagos.
                     </p>
                     <p>
-                      Dr. Hume would serve as Canterbury’s founding Headmaster
-                      until 1948 and as its initial Director of Admission. The
-                      first boy to officially enroll at Canterbury was Cyril
-                      Clemens, Mark Twain’s distant cousin, followed by Henry
-                      Havemeyer’s son, Henry. They and an additional 16 students
-                      in the School’s charter class started in the fall of 1915.
+                      With a vision from God, Mrs Olaitan was able to establish
+                      the Junior School in January 2003 and the Secondary School
+                      in September 2006.The schools have grown respectively and
+                      have continued to maintain the vision.
+                    </p>
+                    <p>
+                      Mrs Olusola Olaitan had the fear of God; she was a
+                      disciplinarian but a lover of children and a goal achiever
+                      by His grace. She was committed and dedicated to moulding
+                      and shaping the lives of Canterbury students academically
+                      and spiritually to allow them excel in their future
+                      endeavours.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

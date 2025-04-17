@@ -35,14 +35,15 @@ export const Tuition = () => {
             <div className="col-md-6 mt-5" style={{ paddingLeft: "20px" }}>
               <p>
                 When you look at the tuition numbers, don’t make the mistake of
-                assuming that Bancroft is out of reach for your family. Bancroft
-                is a diverse and inclusive community of families from a variety
-                of backgrounds.
+                assuming that Canterbury International School is out of reach
+                for your family. Canterbury International School is a diverse
+                and inclusive community of families from a variety of
+                backgrounds.
               </p>
               <p>
-                There are many ways to afford a Bancroft education, including
-                financial aid, and we are here to help every qualified applicant
-                find their way.
+                There are many ways to afford education at Canterbury
+                International School, including financial aid, and we are here
+                to help every qualified applicant find their way.
               </p>
             </div>
           </div>{" "}
