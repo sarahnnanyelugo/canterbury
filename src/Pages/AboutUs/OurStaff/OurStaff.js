@@ -1,6 +1,6 @@
 import React from "react";
 import "./our-staff.scss";
-import Hero from "../../../assets/images/senior-group.png";
+import Hero from "../../../assets/images/assembly2.png";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";

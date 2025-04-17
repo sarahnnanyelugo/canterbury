@@ -1,0 +1,31 @@
+@import "../../../variables";
+
+.tuition {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: figtreeB;
+  }
+  p,
+  li {
+    font-family: garamondB;
+  }
+  .tuition-div {
+    margin-top: 60px;
+  }
+  .bio {
+    height: 400px;
+    object-fit: cover;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+  }
+}
+.sunset {
+  button {
+    font-family: figtreeB;
+  }
+}

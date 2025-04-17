@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import MainVid from "../../assets/images/main-vid.mp4";
 import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
-import Hero from "../../assets/images/college.webp";
+import Hero from "../../assets/images/asian-boy.png";
 import { Link } from "react-router-dom";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";

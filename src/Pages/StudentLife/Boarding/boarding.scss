@@ -1,0 +1,48 @@
+@import "../../../variables";
+
+.comment {
+  height: 550px;
+  background: rgb(236, 159, 159);
+  text-align: center;
+  color: $appcolor;
+  padding-top: 30px;
+  line-height: 30px;
+  padding-left: 40px;
+  margin-top: 80px;
+  @media screen and (max-width: 820px) {
+    height: 350px;
+  }
+  p {
+    font-family: figtreeB;
+    padding-right: 40px;
+    @media screen and (max-width: 820px) {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font-family: figtreeI;
+  }
+  .quote-cona {
+    height: 70px;
+    width: 70px;
+    margin-top: 37px;
+    background: $appcolor;
+    padding-top: 10px;
+    border-top-left-radius: 100%;
+    h1 {
+      color: #fff;
+    }
+  }
+}
+.boarding-ethos {
+  padding-left: 30px;
+  margin-top: 80px;
+  p {
+    font-size: 14px;
+    line-height: 34px;
+  }
+  h3 {
+    font-family: figtreeB;
+    color: $appcolor;
+  }
+}

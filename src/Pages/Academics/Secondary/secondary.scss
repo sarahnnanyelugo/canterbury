@@ -2,7 +2,10 @@
 
 .secondary-banner {
   padding: 10px 60px;
-
+  .college-hero {
+    height: 700px;
+    object-fit: cover;
+  }
   @media screen and (max-width: 820px) {
     padding: 30px 8px;
   }

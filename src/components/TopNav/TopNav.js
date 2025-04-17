@@ -35,8 +35,8 @@ const menuItems = [
     submenu: [
       { label: "Welcome", link: "/welcome" },
       { label: "How to Apply", link: "/apply" },
-      { label: "Tuition & Fees", link: "/admission/tuition-fees" },
-      { label: "Scholarships", link: "/admission/scholarships" },
+      { label: "Tuition & Fees", link: "/fees" },
+      { label: "Scholarships", link: "/scholarships" },
     ],
   },
   {
@@ -50,55 +50,46 @@ const menuItems = [
   },
 
   {
-    label: "Facilities",
-    link: "/facilities",
-    submenu: [
-      { label: "EYFS", link: "eyfs" },
-      { label: "Primary", link: "primary" },
-      { label: "Secondary", link: "secondary" },
-    ],
-  },
-  {
     label: "Student Life",
     link: "/student-life",
     submenu: [
       { label: "Events", link: "/student-life/events" },
       { label: "Clubss", link: "/student-life/clubs" },
-      { label: "Boarding", link: "/student-life/housing" },
-      { label: "Athletics", link: "/feedback" },
-      { label: "Arts", link: "/gallery" },
+      { label: "Boarding", link: "/boarding" },
     ],
   },
 ];
 
-export const TopNav = ({openNav}) => {
+export const TopNav = ({ openNav }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [isOpen, setIsOpen] = useState(()=>{return openNav!=undefined?openNav:false});
+  const [isOpen, setIsOpen] = useState(() => {
+    return openNav != undefined ? openNav : false;
+  });
   const toggleMenu = () => setIsOpen(true);
   const closeMenu = () => setIsOpen(false);
- const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    setTimeout(() =>{
-      closeMenu()
+    setTimeout(() => {
+      closeMenu();
     }, 0);
   }, [pathname]);
-  useEffect(()=>{
+  useEffect(() => {
     // Find the checkbox and update its checked state
     const checkbox = document.getElementById("active");
     if (checkbox) {
       checkbox.checked = isOpen;
       // alert('checking checkbox');
     }
-  },[]) 
-   useEffect(()=>{
+  }, []);
+  useEffect(() => {
     // Find the checkbox and update its checked state
     const checkbox = document.getElementById("active");
     if (checkbox) {
       checkbox.checked = isOpen;
       // alert('checking checkbox');
     }
-  },[isOpen])
+  }, [isOpen]);
   return (
     <>
       {" "}
@@ -120,7 +111,7 @@ export const TopNav = ({openNav}) => {
         </label>
 
         <div className="wrapper">
-          <Desktop >
+          <Desktop>
             {" "}
             <ul className="menu">
               {menuItems.map((item, index) => (
@@ -141,10 +132,7 @@ export const TopNav = ({openNav}) => {
                     }`}
                   >
                     {item.submenu.map((subItem, subIndex) => (
-                      <li
-                        key={subIndex}
-                        className="submenu-item"
-                      >
+                      <li key={subIndex} className="submenu-item">
                         <Link to={subItem.link} type="checkbox" id="active">
                           {" "}
                           {subItem.label}

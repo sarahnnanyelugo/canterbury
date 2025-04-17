@@ -123,7 +123,7 @@ export const OurStory = () => {
             <button>EXPLORE</button>
           </div>
           <div className="col-md-6">
-            <img src={Chapel} width="100%" className="assembly"/>
+            <img src={Chapel} width="100%" className="assembly" />
           </div>
         </div>
         <div className="stats-div">
@@ -410,7 +410,7 @@ export const OurStory = () => {
               <h1>
                 That's <span>Our Story.</span>
               </h1>
-              <p>WE CAN'T WAIT TO LEARN YOURS.</p>
+              <p style={{ color: "#fff" }}>WE CAN'T WAIT TO LEARN YOURS.</p>
               <button>
                 BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
                 <FaLongArrowAltRight className="icon" />

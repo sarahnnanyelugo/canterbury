@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./future.scss";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
+import { Link } from "react-router-dom";
 
 export const Future = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -93,10 +94,13 @@ export const Future = () => {
               </h2>
               <p>LET'S MAKE IT LEGENDARY</p>
             </div>
-            <button>
-              BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
-              <FaLongArrowAltRight className="icon" />
-            </button>
+            <Link to={"/apply"}>
+              {" "}
+              <button>
+                BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+                <FaLongArrowAltRight className="icon" />
+              </button>
+            </Link>
           </center>
         </div>
       </TabletAndBelow>

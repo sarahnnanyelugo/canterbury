@@ -8,6 +8,7 @@ import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Img4 from "../../assets/images/primary-girl-main.png";
 import Img6 from "../../assets/images/senior-boy.png";
 import Img66 from "../../assets/images/senior-girl2.png";
+import Img55 from "../../assets/images/eyfs-boy.png";
 import Img5 from "../../assets/images/eyfs3.png";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
@@ -178,7 +179,7 @@ export const Home = () => {
                 style={{ marginLeft: "10px" }}
               >
                 <img src={Img6} width="100%" className="img-adj" />
-                <img src={Img5} width="100%" className="mt-3" />
+                <img src={Img55} width="100%" className="mt-3 eyfs-boy" />
               </div>
             </div>
           )}
@@ -364,15 +365,14 @@ export const Home = () => {
         <center className=" ">
           {" "}
           <SectionHeading
-            text1="  A PATH TO"
-            text2="purpose"
+            text1=" INTRODUCING OUR"
+            text2="categories"
             color1="#54020a"
             color2="#de7c0d"
             paragraph="Your purpose here goes beyond the amazing things you achieve. It’s
               also about diving deep into self-discovery, valuing the
               differences of others, and believing that you can—and will—make a
-              difference in the world. Toggle Description FAITH Toggle
-              Description"
+              difference in the world. "
           />
         </center>
       </div>

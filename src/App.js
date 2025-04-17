@@ -21,16 +21,18 @@ import { Desktop, TabletAndBelow } from "./Utils/mediaQueries";
 import { MobileHome } from "./Pages/Home/MobileHome";
 import PhotoGallery from "./Pages/Gallery/Gallery";
 import ScrollToTop from "./components/scrollToTop";
+import { Tuition } from "./Pages/Admission/Tuition/Tuition";
+import { Boarding } from "./Pages/StudentLife/Boarding/Boarding";
 function App() {
   return (
     <>
       <ScrollToTop />
-      <TopNav openNav={false}/>
+      <TopNav openNav={false} />
 
       <Desktop>
         {" "}
         <Routes>
-          {" "}
+          <Route path="fees" element={<Tuition />} />
           <Route path="/" element={<Home />} />
           <Route path="our-story" element={<OurStory />} />
           <Route path="mission" element={<MissionVision />} />
@@ -44,6 +46,7 @@ function App() {
           <Route path="our-facilities" element={<OurFacilities />} />
           <Route path="our-staff" element={<OurStaff />} />
           <Route path="gallery" element={<PhotoGallery />} />
+          <Route path="boarding" element={<Boarding />} />
         </Routes>
       </Desktop>
       <TabletAndBelow>
@@ -63,6 +66,8 @@ function App() {
           <Route path="our-facilities" element={<OurFacilities />} />
           <Route path="our-staff" element={<OurStaff />} />
           <Route path="gallery" element={<PhotoGallery />} />
+          <Route path="fees" element={<Tuition />} />
+          <Route path="boarding" element={<Boarding />} />
         </Routes>
       </TabletAndBelow>
       <Footer />

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Hero from "../../../assets/images/building.png";
+import Hero from "../../../assets/images/chess2.png";
 import Lib from "../../../assets/images/asian-boy.png";
 
 import ChemistryLab from "../../../assets/images/chesmistry.png";
@@ -109,14 +109,14 @@ export const OurFacilities = () => {
       heading: "Science Laboratories",
       paragraph:
         "Get ready to spark your curiosity in our state-of-the-art science lab! With hands-on experiments and groundbreaking discoveries, this is where young scientists transform theories into practice and ignite their passion for exploration.",
-      images: [ChemistryLab2,ChemistryLab ],
+      images: [ChemistryLab2, ChemistryLab],
     },
     {
       imgSrc: Sickbay,
       heading: "Sick Bay",
       paragraph:
         "Feel the rush of adrenaline on our basketball court! Whether you're shooting hoops with friends or perfecting your skills, it's the place for action, teamwork, and fun. Game on!",
-      images: [Sickbay, Sickbay2 ],
+      images: [Sickbay, Sickbay2],
     },
     {
       heading: "Reading Room",

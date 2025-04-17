@@ -236,6 +236,40 @@ export const Apply = () => {
           </div>
           <hr />
         </div>
+        <div className="col-md-8 offset-md-2">
+          {" "}
+          <div className=" col-md-12">
+            <a
+              href="https://online.flippingbook.com/view/744478846/"
+              class="fbo-embed"
+              data-fbo-id="7ff7898028"
+              data-fbo-ratio="3:2"
+              data-fbo-lightbox="yes"
+              data-fbo-width="100%"
+              data-fbo-height="auto"
+              data-fbo-version="1"
+              style={{ maxWidth: "100%" }}
+            >
+              Canterbury_Prospectus (Revised)-pages
+            </a>
+            <script
+              async
+              defer
+              src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=744478846"
+            ></script>
+          </div>
+        </div>{" "}
+        <div className="sunset">
+          <center>
+            <div className="col-md-5">
+              <h1>
+                Begin <span style={{ color: "#de7c0d" }}>Your Journey</span>
+              </h1>
+              <p style={{ color: "#fff" }}>WE CAN'T WAIT TO HAVE YOU.</p>
+              <button>Apply Today </button>
+            </div>
+          </center>
+        </div>
       </div>
     </>
   );
