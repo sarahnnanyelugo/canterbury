@@ -184,10 +184,13 @@ export const Journey = () => {
                       far you want to go. But it’s not only about getting in;
                       it’s about thriving where you’re destined to be.
                     </p>
-                    <button>
-                      YOUR SUCCESS STORY STARTS HERE{" "}
-                      <IoArrowForward className="icon" />
-                    </button>
+                    <Link to={"/apply"}>
+                      {" "}
+                      <button>
+                        YOUR SUCCESS STORY STARTS HERE{" "}
+                        <IoArrowForward className="icon" />
+                      </button>
+                    </Link>
                   </div>{" "}
                 </div>
                 <PartnersSlider />

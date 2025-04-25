@@ -38,8 +38,8 @@ export const OurStory = () => {
               Primary and High School. The school is established to improve on
               the standard of education in Nigeria in line with the school’s
               vision and mission.
-            </p>
-            <p>
+              <br />
+              <br />
               The school is continuously building a God fearing environment
               where pupils are taught and prepared for the Kingdom of God.
               Canterbury is a place of hardworking, determination and success.
@@ -120,7 +120,10 @@ export const OurStory = () => {
               environment, preparing students to thrive in a diverse and
               interconnected world.
             </p>
-            <button>Apply</button>
+            <Link to={"/mission"}>
+              {" "}
+              <button>EXPLORE</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <img src={Chapel} width="100%" className="assembly" />
@@ -165,7 +168,7 @@ export const OurStory = () => {
                   enableScrollSpy={true}
                 />{" "}
               </h1>
-              <h5>MINS Road Access</h5>
+              <h5>HOURS TO NYC</h5>
             </div>
           </div>
         </div>
@@ -360,7 +363,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5>SECONDARY</h5>
                   <p>(6-11 years)</p>
-                  <Link to={'/secondary'}><button>LEARN MORE</button></Link>
+                  <button>LEARN MORE</button>
                 </div>
               </div>
             </div>{" "}
@@ -375,7 +378,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5> PRIMARY</h5>
                   <p>(6-11 years)</p>
-                  <Link to={"/primary"}><button>LEARN MORE</button></Link>
+                  <button>LEARN MORE</button>
                 </div>
               </div>
             </div>{" "}
@@ -390,7 +393,7 @@ export const OurStory = () => {
                 <div class="text">
                   <h5> EYFS</h5>
                   <p>(6-11 years)</p>
-                  <Link to={'/eyfs'}><button>LEARN MORE</button></Link>
+                  <button>LEARN MORE</button>
                 </div>
               </div>
             </div>{" "}

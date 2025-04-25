@@ -16,6 +16,8 @@ import { SiElectronbuilder } from "react-icons/si";
 import { FaNotesMedical } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
+import CalModal from "../CalModal";
+import SubjectTab from "../SubjectTab/SubjectTab";
 
 export const EYFS = () => {
   const [inViewHeading, setInViewHeading] = useState(false);
@@ -432,6 +434,20 @@ export const EYFS = () => {
               <img src={Happy} width="100%" className="adj" />
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        className="col-md-10 offset-md-1 d-md-flex mt-5"
+        style={{ height: "fit-content" }}
+      >
+        <div className="col-md-4 ">
+          <h4>EYFS School Calendar</h4>
+          <CalModal />
+        </div>
+
+        <div className="col-md-7 offset-md-1">
+          {" "}
+          <SubjectTab />
         </div>
       </div>
     </>

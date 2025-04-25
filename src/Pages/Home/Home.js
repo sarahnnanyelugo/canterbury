@@ -259,13 +259,13 @@ export const Home = () => {
               transition: "all 0.2s ease",
             }}
           >
-            A Place <span> TO LIVE</span> A Place{" "}
+            We inspire<span> to empower and equip</span> our pupils to make
             <span>
-              TO LEARN
+              global impact
               <br />
             </span>
-            A Place
-            <span> TO GROW</span>
+            and attain
+            <span> academic excellence.</span>
           </h2>
         </div>
       </div>
@@ -285,11 +285,11 @@ export const Home = () => {
               transition: "transform 2s ease, opacity 2s ease",
             }}
           >
-            At Canterbury, students embark on a transformational, personal
-            journey, where the combination of
-            <span> ambitious academics, purposeful growth,</span> and{" "}
-            <span>active community engagement</span> leads to a future greater
-            than you ever thought possible.{" "}
+            At Canterbury, we are continuously building a{" "}
+            <span>God fearing environment </span>where pupils are taught and
+            prepared for the Kingdom of God. Canterbury is a place of
+            hardworking, determination and success.{" "}
+            <span>Our students are loved and part of a family.</span>
           </h3>
         </center>
       </div>
@@ -336,37 +336,37 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div
-        className="col-md-12"
-        style={{ background: "#fff", height: "300px", paddingTop: "80px" }}
-      >
-        <center className=" ">
-          {" "}
-          <SectionHeading
-            text1=" AN EDUCATION THAT'S"
-            text2="personal"
-            color1="#54020a"
-            color2="#2d79c5"
-            paragraph="No two Canterbury educations are the same, because no two students
+      <div className="ethos-sectioned">
+        {" "}
+        <div
+          className="col-md-12"
+          style={{ height: "300px", paddingTop: "80px" }}
+        >
+          <center className=" ">
+            {" "}
+            <SectionHeading
+              text1=" AN EDUCATION THAT'S"
+              text2="personal"
+              color1="#54020a"
+              color2="#2d79c5"
+              paragraph="No two Canterbury educations are the same, because no two students
               are alike. Here, every class you take doesn’t just check a box; it
               is part of a learning journey that is uniquely yours and opens a
               door to your incredible potential."
-          />
-        </center>
-      </div>
-      <div style={{ background: "#fff" }}>
-        {" "}
+            />
+          </center>
+        </div>{" "}
         <Ethos />
       </div>
-      {/*  */}
+
       <div
         className="col-md-12"
-        style={{ background: "#fff", height: "250px" }}
+        style={{ background: "#fff", height: "250px", paddingTop: "60px" }}
       >
         <center className=" ">
           {" "}
           <SectionHeading
-            text1=" INTRODUCING OUR"
+            text1="OUR"
             text2="categories"
             color1="#54020a"
             color2="#de7c0d"
