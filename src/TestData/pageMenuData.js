@@ -1,5 +1,5 @@
 export const about = [
-  { label: "Our Story", link: "our-story" },
+  { label: "Our Story", link: "/our-story" },
   { label: "Mission and Values", link: "/mission" },
   { label: "History", link: "/history" },
   { label: "Our Facilities", link: "/our-facilities" },

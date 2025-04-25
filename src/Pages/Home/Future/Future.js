@@ -64,10 +64,13 @@ export const Future = () => {
               </h2>
               <p>LET'S MAKE IT LEGENDARY</p>
             </div>
-            <button>
-              BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
-              <FaLongArrowAltRight className="icon" />
-            </button>
+            <Link to={"/apply"}>
+              {" "}
+              <button>
+                BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+                <FaLongArrowAltRight className="icon" />
+              </button>
+            </Link>
           </center>
         </div>
         <div
@@ -94,7 +97,7 @@ export const Future = () => {
               </h2>
               <p>LET'S MAKE IT LEGENDARY</p>
             </div>
-            <Link to={"/apply"} style={{ position: "relative", zIndex: 1000 }}>
+            <Link to={"/apply"}>
               {" "}
               <button>
                 BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}

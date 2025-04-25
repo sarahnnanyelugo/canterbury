@@ -50,13 +50,13 @@ export const Footer = () => {
           <div className="col-md-5 others">
             <ul className="list-unstyled list-inline-item">
               <li className="list-inline-item">
-                <Link to={"/"}>EMPLOYMENT</Link>
+                <Link to={"/apply"}>How to Apply</Link>
               </li>
               <li className="list-inline-item">
-                <Link to={"/"}>CALENDAR</Link>
+                <Link to={"/calendar"}>CALENDAR</Link>
               </li>
               <li className="list-inline-item">
-                <Link to={"/"}>TAKE A TOUR</Link>
+                <Link to={"/dates"}>IMPORTANT DATES</Link>
               </li>
               <li className="list-inline-item">
                 <Link to={"/"}>PRIVACY POLICY</Link>
@@ -79,9 +79,6 @@ export const Footer = () => {
               sense of belonging, enabling all students to thrive academically
               and socially in their new environment.​
             </small>
-            <div className="mt-5">
-              <h6>POWERED BY HEXXONDIV GLOBAL SERVICES</h6>
-            </div>
           </div>
         </center>
       </div>

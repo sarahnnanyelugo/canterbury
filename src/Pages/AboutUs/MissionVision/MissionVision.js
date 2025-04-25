@@ -20,6 +20,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Values from "./Values/Values";
 import { OurWords } from "../../../components/OurWords/OurWords";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
+import { Link } from "react-router-dom";
 
 export const MissionVision = () => {
   return (
@@ -266,6 +267,23 @@ export const MissionVision = () => {
             </div>
           </center>
         </div>
+      </div>
+
+      <div className="col-md-12 facility-action ">
+        <center>
+          <div className="col-md-7">
+            {" "}
+            <h1>
+              Are you ready to be a part of this amazing{" "}
+              <span>experience?</span>
+            </h1>
+            <p>We Welcome you onboard!</p>
+            <Link to={"/apply"}>
+              {" "}
+              <button>Start your journey today</button>
+            </Link>
+          </div>
+        </center>
       </div>
     </>
   );

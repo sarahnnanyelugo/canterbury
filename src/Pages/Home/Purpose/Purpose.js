@@ -100,18 +100,22 @@ export const Purpose = () => {
                   <div className="overlay">
                     <h4>{type.charAt(0).toUpperCase() + type.slice(1)}</h4>
                     <p>
-                      {type === "faith"
-                        ? "Explore the role of faith in your life and the lives of others within an inclusive, interfaith community."
-                        : type === "service"
-                        ? "Develop empathy, leadership, and a sense of civic responsibility by giving generously of yourself for others."
-                        : "Empower yourself to challenge inequalities, foster inclusivity, and advocate for meaningful change."}
+                      {type === "EYFS"
+                        ? "Building Bright Futures, One Little Step at a Time."
+                        : type === "Primary"
+                        ? "Where Young Minds Blossom and Lifelong Learning Begins"
+                        : "Empowering Young Minds, Shaping Bright Futures."}
                     </p>{" "}
-                    <Link to={""}>
-                      {type === "faith"
-                        ? "Learn more"
-                        : type === "service"
-                        ? "Learn More"
-                        : ""}
+                    <Link
+                      to={
+                        type === "EYFS"
+                          ? "/eyfs"
+                          : type === "Primary"
+                          ? "/primary"
+                          : "/secondary"
+                      }
+                    >
+                      VISIT PAGE
                     </Link>
                   </div>
                 </div>

@@ -38,8 +38,8 @@ export const OurStory = () => {
               Primary and High School. The school is established to improve on
               the standard of education in Nigeria in line with the school’s
               vision and mission.
-            </p>
-            <p>
+              <br />
+              <br />
               The school is continuously building a God fearing environment
               where pupils are taught and prepared for the Kingdom of God.
               Canterbury is a place of hardworking, determination and success.
@@ -120,7 +120,10 @@ export const OurStory = () => {
               environment, preparing students to thrive in a diverse and
               interconnected world.
             </p>
-            <button>EXPLORE</button>
+            <Link to={"/mission"}>
+              {" "}
+              <button>EXPLORE</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <img src={Chapel} width="100%" className="assembly" />

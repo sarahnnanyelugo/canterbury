@@ -22,6 +22,7 @@ import { Modal, Button, Carousel } from "react-bootstrap";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 import "./facilities.scss";
+import { Link } from "react-router-dom";
 export const OurFacilities = () => {
   const sectionRef = useRef(null);
   const scrollContainerRef = useRef(null);
@@ -315,7 +316,10 @@ export const OurFacilities = () => {
               <span>experience?</span>
             </h1>
             <p>We Welcome you onboard!</p>
-            <button>Start your journey today</button>
+            <Link to={"/apply"}>
+              {" "}
+              <button>Start your journey today</button>
+            </Link>
           </div>
         </center>
       </div>
@@ -340,8 +344,9 @@ export const OurFacilities = () => {
                     src={img}
                     alt={`Detail ${idx + 1}`}
                     style={{
-                      width: "100%",
-                      minHeight: "500px",
+                      width: "700px",
+                      maxHeight: "600px",
+                      aspectRation: "1/1",
                       objectFit: "cover",
                     }}
                   />

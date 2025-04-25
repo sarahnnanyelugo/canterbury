@@ -8,6 +8,11 @@
   height: 100%;
   z-index: -1;
   padding-top: 0px;
+  // background-color: rgb(247, 244, 244);
+  background-image: url("../../assets/images/bubbles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .img-adj {
     height: 356px;
     object-fit: cover;
@@ -219,4 +224,7 @@
 .eyfs-boy {
   height: 175px;
   object-fit: cover;
+}
+.ethos-sectioned {
+  background: rgb(231, 231, 231);
 }
