@@ -3,11 +3,10 @@ import MainVid from "../../assets/images/main-vid.mp4";
 import Img1 from "../../assets/images/primary-boy-main.png";
 
 import { IoArrowForward } from "react-icons/io5";
-import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 
 import Img4 from "../../assets/images/primary-girl-main.png";
-import Img6 from "../../assets/images/senior-boy.png";
-import Img66 from "../../assets/images/senior-girl2.png";
+import Img66 from "../../assets/images/senior-boy.png";
+import Img6 from "../../assets/images/senior-girl.png";
 import Img55 from "../../assets/images/eyfs-boy.png";
 import Img5 from "../../assets/images/eyfs3.png";
 import "./home.scss";
@@ -220,8 +219,8 @@ export const Home = () => {
                 className="col-md-7 col-12 landing-imgs"
                 style={{ marginLeft: "10px" }}
               >
-                <img src={Img66} width="100%" />
-                <img src={Img5} width="100%" className="mt-3" />
+                <img src={Img66} width="100%" className="img-adj" />
+                <img src={Img5} width="100%" className="mt-3 eyfs-boy" />
               </div>
               <div
                 className="col-md-7 right-wing"
