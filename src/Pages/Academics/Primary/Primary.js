@@ -241,71 +241,90 @@ export const Primary = () => {
         <div className="col-md-10 offset-md-1 elementary-details mobile-pad d-md-flex">
           <div className="col-md-7">
             {" "}
-            <h2>The Elementary Campus</h2>
+            <h2>Primary Division</h2>
             <Accordion defaultActiveKey="0" flush>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   <h5>Curriculum</h5>
                 </Accordion.Header>
                 <Accordion.Body>
-                  <h5>ELA- EXPEDITIONARY LEARNING & CKLA:</h5>
-                  <ul>
-                    <li>
-                      K-2: Core Module Lessons, Reading Foundations Block,
-                      Learning Labs (as applicable)
-                    </li>
-                    <li>
-                      3-4: Core Module Lessons, Additional Language Learning
-                      Block
-                    </li>
-                    <li>
-                      Personalized Learning: RAZ-Kids, IXL and Independent
-                      Reading
-                    </li>
-                    <li>
-                      Small-Group Intervention: Project Read, Wordflight and
-                      Reading Horizons.
-                    </li>
-                  </ul>
-                  <h5>MATH- EUREKA</h5>
-                  <ul>
-                    <li>
-                      Core Lessons including fact fluency, problem solving, math
-                      modeling including the use of manipulatives/pictures, and
-                      mathematical explanations
-                    </li>
-                    <li>Personalized Learning: IXL and Zearn</li>
-                    <li>
-                      Small-Group Intervention: Zearn, Manipulative Practice,
-                      Guided Math Approach
-                    </li>
-                  </ul>
-                  <ul>
+                  <h5>Toddler 2 - Kindergarten 2</h5>
+                  <div className="d-md-flex">
+                    <ul>
+                      <li>Number Work (Numeracy)</li>
+                      <li>Letter Work (Literacy)</li>
+                      <li>Social Habits</li>
+                      <li>Rhymes</li>
+                      <li>Bible Stories</li>
+                      <li>Phonics</li>
+                      <li>Health Habits</li>
+                    </ul>
+                    <ul>
+                      <li>Painting/Colouring</li>
+                      <li>ICT (Kindergarten 2)</li>
+                      <li>French</li>
+                      <li>Speech Transition</li>
+                      <li>Handwriting</li>
+                      <li>Structure Art</li>
+                      <li>Picture Reading</li>
+                    </ul>
+                  </div>
+                  <h5>Year 1 - 3</h5>
+                  <div className="d-flex">
                     {" "}
-                    <h5>INDEPENDENT WORK STATIONS</h5>
-                    <li>
-                      Independent work stations incorporating independent
-                      activities for core concepts that incorporate ELA
-                      standards and applications
-                    </li>
-                  </ul>
-                  <ul>
+                    <ul>
+                      <li>Mathematics</li>
+                      <li>
+                        English Language (Grammar, Comprehension,
+                        Phonics,Composition, Spelling)
+                      </li>
+                      <li>Science</li>
+                      <li>Quantitative Reasoning</li>
+                      <li>Verbal Aptitude</li>
+                      <li>Literature</li>
+                      <li>Music</li>
+                      <li>Fine Art</li>
+                    </ul>{" "}
+                    <ul>
+                      <li>Christian Religious Studies</li>
+                      <li>Civic Education</li>
+                      <li>Social Studies</li>
+                      <li>Information Technology (ICT)</li>
+                      <li>French Language</li>
+                      <li>Physical Education</li>
+                      <li>Writing</li>
+                      <li>Speech Transition</li>
+                      <li>Scrabble</li>
+                    </ul>
+                  </div>
+                  <h5>Year 4 - 6</h5>
+                  <div className="d-flex">
                     {" "}
-                    <h5>STEAM LAB</h5>
-                    <li>
-                      Provides hands on learning to connect classroom
-                      instruction to application
-                    </li>
-                  </ul>
-                  <ul>
-                    {" "}
-                    <h5>LIBRARY</h5>
-                    <li>
-                      Provides expansion upon Social Studies topics and
-                      additional research blocks for more in depth exploration
-                      of content topics
-                    </li>
-                  </ul>
+                    <ul>
+                      <li>Mathematics</li>
+                      <li>
+                        English Language (Grammar, Comprehension,
+                        Phonics,Composition, Spelling)
+                      </li>
+                      <li>Science</li>
+                      <li>Quantitative Reasoning</li>
+                      <li>Verbal Aptitude</li>
+                      <li>Literature</li>
+                      <li>Music</li>
+                      <li>Fine Art</li>
+                    </ul>{" "}
+                    <ul>
+                      <li>Christian Religious Studies</li>
+                      <li>Civic Education</li>
+                      <li>Social Studies</li>
+                      <li>Information Technology (ICT)</li>
+                      <li>French Language</li>
+                      <li>Physical Education</li>
+                      <li>Writing</li>
+                      <li>Speech Transition</li>
+                      <li>Scrabble</li>
+                    </ul>
+                  </div>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">

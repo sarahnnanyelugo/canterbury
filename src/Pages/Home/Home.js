@@ -252,7 +252,7 @@ export const Home = () => {
       >
         <div style={{ opacity: "1" }} className="d-flex justify-content-center">
           <h2
-            className=" text-center main-intro"
+            className=" text-center main-intro col-md-7"
             style={{
               opacity: calculateOpacity(),
               transition: "all 0.2s ease",
