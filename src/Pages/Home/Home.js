@@ -21,6 +21,11 @@ import { OurWords } from "../../components/OurWords/OurWords";
 import Hero from "../../assets/images/asian-boy.png";
 import { Link } from "react-router-dom";
 import News from "../../components/News/News";
+import FBSocials from "./FBSocials";
+import YouTube from "./Youtube";
+import TwitterHandle from "./TwitterHandle/TwitterHandle";
+import { GoDotFill } from "react-icons/go";
+
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
@@ -250,7 +255,11 @@ export const Home = () => {
         }}
         className="d-flex justify-content-center align-items-center "
       >
-        <div style={{ opacity: "1" }} className="d-flex justify-content-center">
+        <div
+          style={{ opacity: "1" }}
+          className="d-flex justify-content-center"
+          ref={headingRef3}
+        >
           <h2
             className=" text-center main-intro col-md-7"
             style={{
@@ -392,6 +401,50 @@ export const Home = () => {
       <div className="our-words">
         <OurWords />
       </div>
+
+      <div
+        style={{ background: "#d4d6e3" }}
+        className="social-media-div mobile-pad"
+      >
+        <SectionHeading
+          text1="OUR SOCIAL"
+          text2="media pages"
+          color1="#54020a"
+          color2="#2d79c5"
+        />
+        <br />
+        <div className="col-md-10 offset-md-1 d-md-flex">
+          <div className="col-md-4">
+            <small>
+              <span>
+                <GoDotFill />
+              </span>
+              Facebook
+            </small>
+            <FBSocials />
+          </div>
+          <div className="col-md-4">
+            {" "}
+            <small>
+              <span>
+                <GoDotFill />
+              </span>
+              Instagram
+            </small>
+            <TwitterHandle />
+          </div>{" "}
+          <div className="col-md-4">
+            <small>
+              <span>
+                <GoDotFill />
+              </span>
+              Youtube
+            </small>
+            <YouTube />
+          </div>
+        </div>
+      </div>
+
       <Journey />
       <div className="news-div">
         <center>

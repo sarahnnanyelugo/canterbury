@@ -46,44 +46,44 @@ export const Future = () => {
 
   return (
     <>
-      <Desktop>
-        <div
-          ref={divRef}
-          className={`future-div ${scrolled ? "bg-image" : "bg-white"} ${
-            zoomIn ? "zoom-in" : "zoom-out"
-          } ${scrolled ? "text-light" : "text-dark"}`} // Conditional text color
-        >
-          <center>
-            <div className="col-md-7">
-              <h2>
-                Are you ready to see how{" "}
-                <span className={`${scrolled ? "gold" : "blue"}`}>
-                  your story
-                </span>{" "}
-                unfolds?
-              </h2>
-              <p>LET'S MAKE IT LEGENDARY</p>
-            </div>
-            <Link to={"/apply"}>
-              {" "}
-              <button>
-                BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
-                <FaLongArrowAltRight className="icon" />
-              </button>
-            </Link>
-          </center>
-        </div>
-        <div
-          style={{
-            height: "1000px",
-            background: "blue",
-            position: "fixed",
-            bottom: 0,
-            zIndex: "-0",
-          }}
-        ></div>
-      </Desktop>
-      <TabletAndBelow>
+      {/* <Desktop> */}
+      <div
+        ref={divRef}
+        className={`future-div ${scrolled ? "bg-image" : "bg-white"} ${
+          zoomIn ? "zoom-in" : "zoom-out"
+        } ${scrolled ? "text-light" : "text-dark"}`} // Conditional text color
+      >
+        <center>
+          <div className="col-md-7">
+            <h2>
+              Are you ready to see how{" "}
+              <span className={`${scrolled ? "gold" : "blue"}`}>
+                your story
+              </span>{" "}
+              unfolds?
+            </h2>
+            <p style={{ color: "#fff" }}>LET'S MAKE IT LEGENDARY</p>
+          </div>
+          <Link to={"/apply"}>
+            {" "}
+            <button>
+              BEGIN YOUR CANTERBURY CHAPTER TODAY{" "}
+              <FaLongArrowAltRight className="icon" />
+            </button>
+          </Link>
+        </center>
+      </div>
+      <div
+        style={{
+          height: "1000px",
+          background: "blue",
+          position: "fixed",
+          bottom: 0,
+          zIndex: "-0",
+        }}
+      ></div>
+      {/* </Desktop> */}
+      {/* <TabletAndBelow>
         <div className="future-div">
           {" "}
           <center>
@@ -106,7 +106,7 @@ export const Future = () => {
             </Link>
           </center>
         </div>
-      </TabletAndBelow>
+      </TabletAndBelow> */}
     </>
   );
 };

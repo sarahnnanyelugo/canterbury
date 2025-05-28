@@ -11,7 +11,10 @@ import { OurWords } from "../../components/OurWords/OurWords";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
 import News from "../../components/News/News";
-
+import FBSocials from "./FBSocials";
+import YouTube from "./Youtube";
+import TwitterHandle from "./TwitterHandle/TwitterHandle";
+import { GoDotFill } from "react-icons/go";
 export const MobileHome = () => {
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
   const [inViewText, setInViewText] = useState(false); //   const targetRef = useRef(null); // Correct initialization in JavaScript
@@ -225,6 +228,48 @@ export const MobileHome = () => {
         </div>
         <div className="our-words">
           <OurWords />
+        </div>
+        <div
+          style={{ background: "#d4d6e3" }}
+          className="social-media-div mobile-pad"
+        >
+          <SectionHeading
+            text1="OUR SOCIAL"
+            text2="media pages"
+            color1="#54020a"
+            color2="#2d79c5"
+          />
+          <br />
+          <div className="col-md-10 offset-md-1 d-md-flex">
+            <div className="col-md-4">
+              <small>
+                <span>
+                  <GoDotFill />
+                </span>
+                Facebook
+              </small>
+              <FBSocials />
+            </div>
+            <div className="col-md-4">
+              {" "}
+              <small>
+                <span>
+                  <GoDotFill />
+                </span>
+                Instagram
+              </small>
+              <TwitterHandle />
+            </div>{" "}
+            <div className="col-md-4">
+              <small>
+                <span>
+                  <GoDotFill />
+                </span>
+                Youtube
+              </small>
+              <YouTube />
+            </div>
+          </div>
         </div>
         <Journey />
         <div className="news-div">

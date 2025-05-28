@@ -3,9 +3,9 @@ import "./ethos.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import MainPic1 from "../../../assets/images/asian-boy.png";
+import MainPic1 from "../../../assets/images/draw.png";
 import MainPic2 from "../../../assets/images/chess.png";
-import MainPic3 from "../../../assets/images/comput.png";
+import MainPic3 from "../../../assets/images/scrabble.png";
 import MainPic4 from "../../../assets/images/pastoral2.png";
 function Ethos() {
   const settings = {
@@ -75,9 +75,9 @@ function Ethos() {
             <img src={MainPic4} width="100%" />
           </div>
           <div className="inscription col-md-5">
-            <h4>Adults in Your Corner</h4>
+            <h4>Educators in Your Corner</h4>
             <p>
-              You are surrounded by a team of adults—ever-present teachers,
+              You are surrounded by a team of educators—ever-present teachers,
               advisors, coaches, and dorm parents—who see you as the
               multi-dimensional person you are and believe in everything you
               want to become.

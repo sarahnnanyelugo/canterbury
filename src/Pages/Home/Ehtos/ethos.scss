@@ -24,16 +24,17 @@
 }
 
 .sleek-div {
-  height: 300px;
+  height: 500px;
   overflow: hidden;
   @media screen and (max-width: 820px) {
     // height: 500px;
   }
   img {
+    height:500px;
     object-fit: cover;
   }
   .inscription {
-    height: 250px;
+    height: 450px;
     margin-top: 25px;
     color: #fff;
     margin-left: 10px;

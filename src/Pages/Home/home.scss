@@ -28,7 +28,7 @@
     font-family: figtreeB;
     font-size: 70px;
     color: $appcolor;
-    margin-top: 50px;
+    margin-top: 100px;
     span {
       color: #2d79c5;
       font-family: garamondI !important;
@@ -227,4 +227,18 @@
 }
 .ethos-sectioned {
   background: rgb(231, 231, 231);
+}
+.social-media-div{
+  padding-top:100px;
+  margin-top:70px; padding-bottom:50px;
+  margin-bottom:120px;
+  h1{font-family: figtreeB;}
+  small{
+    color:rgb(85, 84, 84);
+    margin-left:10px;
+    font-family: figtree;
+    span{color:$appcolor}
+  }
+}.description{
+  min-height:90px
 }

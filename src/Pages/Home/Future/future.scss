@@ -13,19 +13,26 @@
   position: relative !important;
   z-index: 10 !important;
   @media screen and (max-width: 820px) {
-    height: fit-content;
+    height:fit-content;
     padding-top: 50px;
     padding-bottom: 50px;
   }
   &.bg-white {
-    background: white;
+    background: url("../../../assets/images/building2.png") center/cover no-repeat;
+      background-size: 110% auto;
+      opacity: 1; // Fully visible when it's bg-image
+      @media screen and (max-width: 820px) {
+        background-size:cover}
   }
 
   &.bg-image {
-    background: url("../../../assets/images/building.png") center/cover
+    background: url("../../../assets/images/building2.png") center/cover
       no-repeat;
     background-size: 110% auto;
     opacity: 1; // Fully visible when it's bg-image
+    @media screen and (max-width: 820px) {
+        background-size: cover
+      }
   }
 
   &.zoom-in {
@@ -38,7 +45,7 @@
 
   // Text color based on background
   &.text-dark {
-    color: black; // Dark text for white background
+    color: #de7c0d !important // Dark text for white background
   }
 
   &.text-light {
@@ -61,6 +68,9 @@
   h2 {
     font-size: 50px;
     font-family: figtree;
+    @media screen and (max-width: 820px) {
+      font-size: 35px;
+      }
   }
   button {
     margin-top: 50px;
