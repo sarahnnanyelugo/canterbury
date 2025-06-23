@@ -36,7 +36,7 @@ export const OurStaff = () => {
           </p>
         </div>
       </center>
-      <div className="mobile-pad">
+      <div className="mobile-pad col-md-10 offset-md-1">
         <StaffProfile />
       </div>
     </>

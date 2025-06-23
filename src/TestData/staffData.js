@@ -1,13 +1,22 @@
-import Excursion from "../assets/images/staff/peter.png";
+import Staff5 from "../assets/images/staff/staff1.jpg";
 
-import Door from "../assets/images/staff/peter.png";
-import Greeting from "../assets/images/staff/peter.png";
-import Classroom from "../assets/images/staff/sera.png";
-import Pat from "../assets/images/staff/pat.png";
-import Staff10 from "../assets/images/staff/staff3.jpg";
-import Staff11 from "../assets/images/staff/peter.png";
-import Staff12 from "../assets/images/staff/peter.png";
-import Staff13 from "../assets/images/staff/staff4.jpg";
+import Staff1 from "../assets/images/staff/staff2.jpg";
+import Staff2 from "../assets/images/staff/staff3.jpg";
+import Staff3 from "../assets/images/staff/staff5.jpg";
+import Staff4 from "../assets/images/staff/staff4.jpg";
+import Staff6 from "../assets/images/staff/staff6.jpg";
+import Staff7 from "../assets/images/staff/staff7.jpg";
+import Staff8 from "../assets/images/staff/staff8.jpg";
+import Staff9 from "../assets/images/staff/staff9.jpg";
+import Staff10 from "../assets/images/staff/staff10.jpg";
+import Staff11 from "../assets/images/staff/staff11.jpg";
+import Staff12 from "../assets/images/staff/staff12.jpg";
+import Staff13 from "../assets/images/staff/staff13.jpg";
+import Staff14 from "../assets/images/staff/staff14.jpg";
+import Staff15 from "../assets/images/staff/staff15.jpg";
+import Staff16 from "../assets/images/staff/staff16.jpg";
+import Staff17 from "../assets/images/staff/staff17.jpg";
+import Staff18 from "../assets/images/staff/staff18.jpg";
 
 export const staffData = [
   {
@@ -19,7 +28,7 @@ export const staffData = [
       "Dr. Hastings is a dynamic educational leader with over 15 years of experience fostering academic excellence and holistic student development. Her visionary leadership style emphasizes innovation, inclusivity, and student-centered learning environments. ",
     id: 1,
 
-    photo: Door,
+    photo: Staff1,
   },
   {
     name: "Mr. Chinedu Okafor",
@@ -29,7 +38,7 @@ export const staffData = [
     profile:
       "Mr. Okafor is a dedicated administrator known for his strategic thinking and commitment to student success. His approach blends academic rigor with effective leadership and community engagement.",
 
-    photo: Greeting,
+    photo: Staff2,
   },
   {
     name: "Mrs. Amelia Grant",
@@ -39,7 +48,7 @@ export const staffData = [
       "Passionate about scientific discovery, Mrs. Grant inspires students to think critically and explore the wonders of the natural world through innovative experiments and inquiry-based learning",
     id: 3,
 
-    photo: Excursion,
+    photo: Staff5,
   },
   {
     name: "Mrs. Aisha Bello",
@@ -50,7 +59,7 @@ export const staffData = [
       "Mrs. Bello has a knack for making complex mathematical concepts accessible and engaging. His teaching philosophy revolves around problem-solving and real-world applications of mathematics.",
     id: 4,
 
-    photo: Classroom,
+    photo: Staff3,
   },
   {
     name: "Mr. Ade Martinez",
@@ -70,18 +79,9 @@ export const staffData = [
       "Mr. Adebayo promotes physical fitness and healthy lifestyles through dynamic PE programs. His coaching fosters teamwork, discipline, and sportsmanship among students..",
     id: 6,
 
-    photo: Staff10,
+    photo: Staff7,
   },
-  {
-    name: "Mrs. Fatima Al-Sayed",
-    portfolio: "Head of Languages",
-    qualification: " M.A. in Linguistics, B.A. in Modern Languages",
-    profile:
-      " A linguist with a passion for cultural diversity, Mrs. Al-Sayed empowers students to become global citizens through language acquisition and cross-cultural communication.",
-    id: 7,
 
-    photo: Classroom,
-  },
   {
     name: "Mr. Emeka Nwosu",
     portfolio: " ICT Coordinator",
@@ -91,15 +91,67 @@ export const staffData = [
       "Mr. Nwosu integrates technology into the curriculum to enhance digital literacy. He encourages students to be innovators in the tech-driven world, focusing on coding, robotics, and cybersecurity.",
     id: 8,
 
-    photo: Staff11,
+    photo: Staff6,
+  },
+
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff4,
   },
   {
-    name: "Ms. Oluchi Eze",
-    portfolio: "School Counselor",
-    qualification: " M.A. in Counseling Psychology, Certified School Counselor",
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
     profile:
-      "Ms. Eze supports the emotional well-being and academic growth of students. Her compassionate approach helps students navigate personal challenges and develop resilience.",
-    id: 9,
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff8,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff9,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff10,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff11,
+  },
+
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
 
     photo: Staff13,
   },
@@ -111,6 +163,46 @@ export const staffData = [
       "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
     id: 3,
 
-    photo: Pat,
+    photo: Staff14,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff15,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff16,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff17,
+  },
+  {
+    name: "Mr. Samuel Okoye",
+    portfolio: "Social Studies Teacher",
+    qualification: " M.A. in History, B.Ed. in Social Sciences",
+    profile:
+      "Mr. Okoye brings history to life with engaging storytelling and critical discussions. His classes encourage students to think deeply about historical events and their impact on the modern world. use a mixture of English and Nigerian names",
+    id: 3,
+
+    photo: Staff18,
   },
 ];
