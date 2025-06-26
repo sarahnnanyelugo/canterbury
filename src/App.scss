@@ -2,46 +2,57 @@
   font-family: garamond;
   src: url(./assets/fonts/garamond/garamond.ttf);
 }
+
 @font-face {
   font-family: garamondB;
   src: url(./assets/fonts/garamond/garamondB.ttf);
 }
+
 @font-face {
   font-family: garamondI;
   src: url(./assets/fonts/garamond/gbi.otf);
 }
+
 @font-face {
   font-family: figtreeI;
   src: url(./assets/fonts/figtree/Figtree-Italic.ttf);
 }
+
 @font-face {
   font-family: figtree;
   src: url(./assets/fonts/figtree/Figtree.ttf);
 }
+
 @font-face {
   font-family: figtreeB;
   src: url(./assets/fonts/figtree/Figtree-Bold.ttf);
 }
+
 h1 {
   // font-family: garamondB;
 }
+
 * {
   // background: #fff;
 }
+
 p {
   font-family: figtree;
 }
+
 @media screen and (max-width: 820px) {
   .mobile-pad {
     padding-left: 7px;
     padding-right: 7px;
   }
 }
+
 @media screen and (max-width: 820px) {
   .mdn {
     display: none;
   }
 }
+
 body::-webkit-scrollbar {
   display: none !important;
 }
