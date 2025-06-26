@@ -11,8 +11,7 @@ export const OurWords = () => {
     },
     {
       modelName: "Academic Rigor",
-      description:
-        "Demanding academic subjects are the heart of our program.",
+      description: "Demanding academic subjects are the heart of our program.",
     },
     {
       modelName: "Respect for All",
@@ -67,8 +66,8 @@ export const OurWords = () => {
             <div className="mask"></div>
             <div className="center-circle">
               <h3>
-                The Words <br />
-                We Live By
+                Our Core <br />
+                VALUES
               </h3>
             </div>
           </div>

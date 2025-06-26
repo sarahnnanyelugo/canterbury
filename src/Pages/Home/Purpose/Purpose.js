@@ -3,6 +3,13 @@ import "./purpose.scss";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 import { Link } from "react-router-dom";
 
+// Top of your file
+const imageMap = {
+  EYFS: require("../../../assets/images/EYFS.jpg"),
+  Primary: require("../../../assets/images/Primary.png"),
+  Secondary: require("../../../assets/images/Secondary.png"),
+};
+
 export const Purpose = () => {
   const [inViewText, setInViewText] = useState(false);
   const [bgImage, setBgImage] = useState(null);
@@ -90,11 +97,7 @@ export const Purpose = () => {
                   className={`col-md-4 purpose-inner ${type} ${
                     isHovered ? "no-bg" : ""
                   }`}
-                  onMouseEnter={() =>
-                    handleMouseEnter(
-                      require(`../../../assets/images/${type}.png`)
-                    )
-                  }
+                  onMouseEnter={() => handleMouseEnter(imageMap[type])}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="overlay">

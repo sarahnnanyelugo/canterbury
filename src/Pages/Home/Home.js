@@ -1,14 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
 import MainVid from "../../assets/images/main-vid.mp4";
-import Img1 from "../../assets/images/primary-boy-main.png";
-
+import Img1 from "../../assets/images/new-primary.jpg";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 import { IoArrowForward } from "react-icons/io5";
+import Carousel from "react-bootstrap/Carousel";
 
-import Img4 from "../../assets/images/primary-girl-main.png";
+import Img4 from "../../assets/images/new-primary-boy.jpg";
 import Img66 from "../../assets/images/senior-boy.png";
 import Img6 from "../../assets/images/senior-girl.png";
 import Img55 from "../../assets/images/eyfs-boy.png";
-import Img5 from "../../assets/images/eyfs3.png";
+import Img5 from "../../assets/images/new-eyfs-girl.jpg";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
@@ -172,7 +174,7 @@ export const Home = () => {
                   height: `${(0.5 / scale) * 400}px`,
                   background: "url(" + Img1 + ")",
                   backgroundPosition: "center",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                   marginTop: "70px",
                   borderRadius: "10px",
@@ -180,7 +182,7 @@ export const Home = () => {
               ></div>
               <div
                 className="col-md-7 landing-imgs"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "0px" }}
               >
                 <img src={Img6} width="100%" className="img-adj" />
                 <img src={Img55} width="100%" className="mt-3 eyfs-boy" />
@@ -234,7 +236,7 @@ export const Home = () => {
                   background: "url(" + Img4 + ")",
                   marginLeft: "10px",
                   marginTop: "70px",
-                  backgroundSize: "contain",
+                  backgroundSize: "cotain",
                   backgroundRepeat: "no-repeat",
                   borderRadius: "10px",
                 }}
@@ -396,7 +398,118 @@ export const Home = () => {
             </button>
           </Link>
         </center>
-        <Testimonials />
+        <div className="satisfied-parents">
+          {" "}
+          <center>
+            {" "}
+            <div className="col-md-6">
+              <h1>
+                Hear from our <span>Satisfied Parents</span>
+              </h1>
+
+              <Carousel>
+                <Carousel.Item>
+                  <p>
+                    {" "}
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    I've witnessed significant improvements in my children since
+                    they joined this school, Canterbury International is a
+                    well-coordinated school for the academic and moral growth of
+                    every child.
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em>- Mrs Elekwuba</em>
+                  </p>
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <p>
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    My experience with Canterbury International School has been
+                    wonderful. My daughter, who attended this school, was an
+                    exceptional student
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em>- Mr Okaro</em>
+                  </p>
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <p>
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    I appreciate the school's top-notch facilities. Comfort is
+                    essential for me when it comes to my child's boarding school
+                    experience.
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em>- Mr Judge</em>
+                  </p>
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <p>
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    The moral and academic values I witnessed in British Spring
+                    College is remarkable.
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em>- Engr. Dr. Anene</em>
+                  </p>
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <p>
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    "I commend Canterbury International School for its
+                    outstanding work in addressing the academic and moral needs
+                    of our children.
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em>- Mrs Okonkwo</em>
+                  </p>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <p>
+                    <span>
+                      <BiSolidQuoteAltLeft />
+                    </span>
+                    I am impressed with the performance of my children since
+                    they joined Canterbury International School, Awka; they have
+                    improved academically and morally.
+                    <span>
+                      <BiSolidQuoteAltRight />
+                    </span>
+                  </p>
+                  <p>
+                    <em> - Dr. Ezeobi Amara</em>
+                  </p>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+          </center>
+        </div>
+        {/* <Testimonials /> */}
       </div>
       <div className="our-words">
         <OurWords />
@@ -449,7 +562,7 @@ export const Home = () => {
       <div className="news-div">
         <center>
           <h2>
-            OUR <span>updates</span>
+            OUR <span>Activities</span>
           </h2>
         </center>
         <div className="col-md-8 offset-md-2 ">

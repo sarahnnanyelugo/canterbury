@@ -5,6 +5,7 @@
   border-radius: 10px !important;
   //   background: #000; // Default background color
   transition: background 0.5s ease;
+
   //   padding: 20px;
   .purpose-inner {
     height: 100%;
@@ -13,9 +14,10 @@
   }
 
   .EYFS {
-    background: url("../../../assets/images/EYFS.png") no-repeat;
+    background: url("../../../assets/images/EYFS.jpg") no-repeat;
     border-right: solid 1px #fff;
-    height: 100%; /* Stretch to parent height */
+    height: 100%;
+    /* Stretch to parent height */
     object-fit: contain;
     background-position: center;
     background-size: cover;
@@ -24,10 +26,12 @@
   .Primary {
     border-right: solid 1px #fff;
     background: url("../../../assets/images/Primary.png") no-repeat;
-    height: 100%; /* Stretch to parent height */
+    height: 100%;
+    /* Stretch to parent height */
     object-fit: contain;
     background-position: center;
-    height: 100%; /* Stretch to parent height */
+    height: 100%;
+    /* Stretch to parent height */
     object-fit: contain;
     background-position: center;
     background-size: cover;
@@ -36,7 +40,8 @@
   .Secondary {
     background: url("../../../assets/images/Secondary.png") no-repeat;
     border-right: solid 1px #fff;
-    height: 100%; /* Stretch to parent height */
+    height: 100%;
+    /* Stretch to parent height */
     object-fit: contain;
     background-position: center;
     background-size: cover;
@@ -55,19 +60,19 @@
     height: 25%;
     padding-left: 10px;
     background: rgb(0, 40, 94);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 40, 94, 0) 6%,
-      rgba(0, 21, 48, 0.8) 33%
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 40, 94, 0) 6%,
+        rgba(0, 21, 48, 0.8) 33%);
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h4 {
       font-family: figtreeB;
       text-align: left;
     }
+
     p,
     a {
       display: none;
@@ -83,34 +88,41 @@
     height: 30%;
     transition: bottom 3s ease-in-out;
     border-bottom: solid 6px #de7c0d;
+
     p,
     a {
       display: block;
     }
   }
 }
+
 .mobile-version {
   // height: 300px;
   // background: #000;
 }
-.first-ivew {
-}
+
+.first-ivew {}
+
 .eyfs {
   background: url("../../../assets/images/EYFS.png") no-repeat;
 }
+
 .primary {
   background: url("../../../assets/images/Primary.png") no-repeat;
 }
+
 .secondary {
   height: 300px;
   background: url("../../../assets/images/Secondary.png") no-repeat;
 }
+
 .sections {
   height: 400px;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
 }
+
 .sections-overlay {
   position: absolute !important;
   background-color: rgba(0, 0, 0, 0.5);
@@ -120,17 +132,21 @@
   width: 0;
   height: 100%;
   transition: 0.5s ease;
+
   a {
     color: $highlight;
   }
 }
+
 .outer-cova {
   position: relative;
 }
+
 .outer-cova:hover .sections-overlay {
   width: 100%;
   left: 0;
 }
+
 .text {
   color: white;
   font-size: 20px;
