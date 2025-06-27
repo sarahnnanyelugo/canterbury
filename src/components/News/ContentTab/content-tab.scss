@@ -1,0 +1,36 @@
+@import "../../../variables";
+
+.content-tab {
+    .tab-buttons {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #f0f0f0;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: figtreeB;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            &.active {
+                background-color: $appcolor;
+                color: white;
+                font-weight: 600;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    .tab-content {
+        // Optional: Add spacing or styling
+    }
+}

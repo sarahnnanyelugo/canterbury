@@ -3,14 +3,81 @@ import Modal from "react-bootstrap/Modal";
 import React, { useState } from "react";
 import "./news.scss";
 import { storyData } from "../../TestData/storyData";
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import ContentTab from "./ContentTab/ContentTab";
+import { Carousel } from "react-bootstrap";
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
+
 function NewsItem({ show, onHide, item }) {
   if (!item) return null; // Ensure item exists before rendering
+  // Now it's safe to use item
+  const dynamicTabData = item.tabLabels.map((label, index) => {
+    const galleryItems = item.tabGalleries?.[index] || [];
+
+    let content = (
+      <Carousel
+        prevIcon={
+          <span style={{ fontSize: "2rem", color: "#54020a" }}>
+            <FaArrowCircleLeft />
+          </span>
+        }
+        nextIcon={
+          <span style={{ fontSize: "2rem", color: "#54020a" }}>
+            <FaArrowCircleRight />
+          </span>
+        }
+        interval={null}
+      >
+        {galleryItems.map((item, idx) => (
+          <Carousel.Item key={idx}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  height: "400px",
+                  width: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  style={{
+                    width: "700px",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div
+                style={{
+                  marginTop: "0.5rem",
+                  textAlign: "center",
+                  fontWeight: "600",
+                  // marginTop: "50px",
+                }}
+              >
+                <h3> {item.title}</h3>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    );
+
+    return {
+      label,
+      content,
+    };
+  });
 
   return (
     <div className="story-modal">
@@ -22,29 +89,13 @@ function NewsItem({ show, onHide, item }) {
       >
         {" "}
         <Modal.Header closeButton>
-          <Modal.Title>
-            <h5>{item.title}</h5>
-          </Modal.Title>
+          <Modal.Title>{/* <h5>{item.title}</h5> */}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modal-content">
-            <div className="d-md-flex">
-              <div className="col-md-6">
-                <img
-                  width="100%"
-                  src={item.photo}
-                  alt="News"
-                  className="modal-news-img"
-                />
-              </div>
-              <div className="col-md-6" style={{ paddingLeft: "20px" }}>
-                <small>{item.date}</small>
-                <p>{item.paragraph1}</p>
-                <p>{item.paragraph2}</p>
-                <p>{item.paragraph3}</p>
-              </div>
-            </div>
-            <p className="mt-3">{item.others}</p>
+            <h3>{item.title2}</h3>
+            <br />
+            <ContentTab tabs={dynamicTabData} />
           </div>
         </Modal.Body>
       </Modal>

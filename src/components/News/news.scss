@@ -69,7 +69,7 @@
     border-bottom-right-radius: 30px;
 
     img {
-      max-height: 240px;
+      max-height: 300px;
       border-top-left-radius: 30px;
     }
   }
@@ -94,6 +94,7 @@
 .modal-body {
   background-color: #fff !important;
   min-height: 800px;
+  width:800px;
   margin-top: -50px !important;
 }
 
@@ -112,4 +113,11 @@
   &:hover {
     color: #b5d2ee;
   }
+}
+.carousel-indicators {
+  margin-bottom:50px;
+ button{
+  background: red;
+ }
+  
 }

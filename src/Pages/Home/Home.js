@@ -401,12 +401,10 @@ export const Home = () => {
         <div className="satisfied-parents">
           {" "}
           <center>
-            {" "}
+            <h1>
+              Hear from our <span>Satisfied Parents</span>
+            </h1>
             <div className="col-md-6">
-              <h1>
-                Hear from our <span>Satisfied Parents</span>
-              </h1>
-
               <Carousel>
                 <Carousel.Item>
                   <p>

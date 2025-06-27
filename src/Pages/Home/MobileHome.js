@@ -12,7 +12,11 @@ import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
 import News from "../../components/News/News";
 import FBSocials from "./FBSocials";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 import YouTube from "./Youtube";
+import Carousel from "react-bootstrap/Carousel";
+
 import TwitterHandle from "./TwitterHandle/TwitterHandle";
 import { GoDotFill } from "react-icons/go";
 export const MobileHome = () => {
@@ -224,7 +228,118 @@ export const MobileHome = () => {
               <IoArrowForward className="icon" />
             </button>
           </center>
-          <Testimonials />
+          <div className="satisfied-parents">
+            {" "}
+            <center>
+              {" "}
+              <div className="col-md-6">
+                <h1>
+                  Hear from our <span>Satisfied Parents</span>
+                </h1>
+
+                <Carousel>
+                  <Carousel.Item>
+                    <p>
+                      {" "}
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      I've witnessed significant improvements in my children
+                      since they joined this school, Canterbury International is
+                      a well-coordinated school for the academic and moral
+                      growth of every child.
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em>- Mrs Elekwuba</em>
+                    </p>
+                  </Carousel.Item>{" "}
+                  <Carousel.Item>
+                    <p>
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      My experience with Canterbury International School has
+                      been wonderful. My daughter, who attended this school, was
+                      an exceptional student
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em>- Mr Okaro</em>
+                    </p>
+                  </Carousel.Item>{" "}
+                  <Carousel.Item>
+                    <p>
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      I appreciate the school's top-notch facilities. Comfort is
+                      essential for me when it comes to my child's boarding
+                      school experience.
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em>- Mr Judge</em>
+                    </p>
+                  </Carousel.Item>{" "}
+                  <Carousel.Item>
+                    <p>
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      The moral and academic values I witnessed in British
+                      Spring College is remarkable.
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em>- Engr. Dr. Anene</em>
+                    </p>
+                  </Carousel.Item>{" "}
+                  <Carousel.Item>
+                    <p>
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      "I commend Canterbury International School for its
+                      outstanding work in addressing the academic and moral
+                      needs of our children.
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em>- Mrs Okonkwo</em>
+                    </p>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <p>
+                      <span>
+                        <BiSolidQuoteAltLeft />
+                      </span>
+                      I am impressed with the performance of my children since
+                      they joined Canterbury International School, Awka; they
+                      have improved academically and morally.
+                      <span>
+                        <BiSolidQuoteAltRight />
+                      </span>
+                    </p>
+                    <p>
+                      <em> - Dr. Ezeobi Amara</em>
+                    </p>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </center>
+          </div>
+          {/* <Testimonials /> */}
         </div>
         <div className="our-words">
           <OurWords />
@@ -275,7 +390,7 @@ export const MobileHome = () => {
         <div className="news-div">
           <center>
             <h2>
-              OUR <span>stories</span>
+              OUR <span>Activities</span>
             </h2>
           </center>
           <div className="col-md-8 offset-md-2 ">

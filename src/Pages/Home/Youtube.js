@@ -2,26 +2,28 @@ import { useState, useEffect, useRef } from "react";
 import { YoutubePosts } from "../../TestData/YoutubePosts";
 
 const YouTube = () => {
-  const [featuredIndex, setFeaturedIndex] = useState(0); // Index of the featured video
-  const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
-  const headingRef = useRef(null); // Reference for the heading
+  const [featuredIndex, setFeaturedIndex] = useState(0);
+  const [inViewHeading, setInViewHeading] = useState(false);
+  const headingRef = useRef(null);
 
   useEffect(() => {
-    // Calculate the current week number
-    const currentWeek = Math.floor(
-      (new Date().getTime() / (1000 * 60 * 60 * 24 * 7)) % YoutubePosts.length
+    // Get the last shown index from localStorage
+    const storedIndex = parseInt(
+      localStorage.getItem("featuredIndex") || "0",
+      10
     );
-    setFeaturedIndex(currentWeek); // Set the index of the featured video based on the week number
+
+    // Calculate the next index
+    const nextIndex = (storedIndex + 1) % YoutubePosts.length;
+
+    // Store the updated index
+    localStorage.setItem("featuredIndex", nextIndex.toString());
+
+    setFeaturedIndex(nextIndex);
   }, []);
-  //   useEffect(() => {
-  //     // TEMPORARY: Manually set the week number to simulate rotation
-  //     const testWeek = 1; // Change this number between 0 and 2 to test different videos (for example, 0 for first, 1 for second)
-  //     setFeaturedIndex(testWeek); // Set the index of the featured video based on the test week number
-  //   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Heading
       if (headingRef.current) {
         const rect = headingRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -34,7 +36,7 @@ const YouTube = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run once on load to check initial position
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -44,22 +46,19 @@ const YouTube = () => {
     return `https://www.youtube.com/embed/${videoId}`;
   };
 
-  const featuredPost = YoutubePosts[featuredIndex]; // Featured video based on current week
+  const featuredPost = YoutubePosts[featuredIndex];
 
   return (
     <div ref={headingRef}>
-      {" "}
       <div
         className="ig-social twitter"
         style={{
           width: "100%",
-
           transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
           opacity: inViewHeading ? 1 : 0,
           transition: "transform 2s ease, opacity 2s ease",
         }}
       >
-        {/* FEATURED Video */}
         {featuredPost && (
           <div>
             <iframe
@@ -71,7 +70,6 @@ const YouTube = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-
             <p>{featuredPost.caption}</p>
             <p style={{ fontSize: "12px" }} className="description">
               {featuredPost.description}
