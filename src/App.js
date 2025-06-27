@@ -27,7 +27,7 @@ import { ImportantDates } from "./Pages/Admission/ImportantDates/ImportantDates"
 function App() {
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <TopNav openNav={false} />
 
       <Desktop>
