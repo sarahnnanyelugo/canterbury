@@ -27,7 +27,14 @@ import FBSocials from "./FBSocials";
 import YouTube from "./Youtube";
 import TwitterHandle from "./TwitterHandle/TwitterHandle";
 import { GoDotFill } from "react-icons/go";
-
+import ISA3 from "../../assets/images/teaching1.jpg";
+import ISA7 from "../../assets/images/teaching5.jpg";
+import ISA44 from "../../assets/images/isa-44.jpg";
+import ISA55 from "../../assets/images/isa-55.jpg";
+import ISA6 from "../../assets/images/teaching4.jpg";
+import ISA8 from "../../assets/images/teaching3.jpg";
+import ISA9 from "../../assets/images/teaching2.jpg";
+import AwardVideo from "../AboutUs/Achievements/VidModal";
 export const Home = () => {
   const [scale, setScale] = useState(0.5); // Initial scale for the video (50%)
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
@@ -557,6 +564,64 @@ export const Home = () => {
       </div>
 
       <Journey />
+      <div className="awards-div home-awards">
+        {" "}
+        <SectionHeading
+          text1="OUR"
+          text2="Awards"
+          color1="#54020a"
+          color2="#de7c0d"
+          paragraph="At Canterbury International School, we celebrate excellence. Our Awards page highlights the remarkable achievements of our students, staff, and wider school community. From academic honours to artistic triumphs and sporting accolades, these awards reflect our commitment to nurturing talent, inspiring growth, and empowering individuals to reach their fullest potential. We invite you to explore the milestones that showcase our tradition of excellence and the spirit of Canterbury."
+        />
+        <div className="col-md-8 offset-md-2">
+          <div className="d-md-flex">
+            {" "}
+            <div className="col-md-6 mt-5">
+              <h1>
+                BREAKING BARRIERS;
+                <br />
+                <span>Education And Life in the Slum</span>
+              </h1>
+              <AwardVideo uri="https://www.youtube.com/embed/7neHtsBrvOY" />
+            </div>
+            <div className="col-md-6 mgb">
+              <Carousel>
+                <Carousel.Item>
+                  <img src={ISA3} width="100%" className="assembly" />{" "}
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <img src={ISA6} width="100%" className="assembly" />{" "}
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <img src={ISA7} width="100%" className="assembly" />{" "}
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <img src={ISA8} width="100%" className="assembly" />{" "}
+                </Carousel.Item>{" "}
+                <Carousel.Item>
+                  <img src={ISA9} width="100%" className="assembly" />{" "}
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={ISA44} width="100%" className="assembly" />{" "}
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={ISA55} width="100%" className="assembly" />{" "}
+                </Carousel.Item>
+              </Carousel>
+            </div>
+          </div>{" "}
+          <br />
+          <br />
+          <br />
+          <br />
+          <center>
+            <Link to={"awards"} className="awards-link">
+              Discover More
+            </Link>
+          </center>
+        </div>
+      </div>
+
       <div className="news-div">
         <center>
           <h2>

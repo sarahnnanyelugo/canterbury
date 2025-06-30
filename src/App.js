@@ -24,10 +24,11 @@ import ScrollToTop from "./components/scrollToTop";
 import { Tuition } from "./Pages/Admission/Tuition/Tuition";
 import { Boarding } from "./Pages/StudentLife/Boarding/Boarding";
 import { ImportantDates } from "./Pages/Admission/ImportantDates/ImportantDates";
+import { Awards } from "./Pages/AboutUs/Achievements/Achievements";
 function App() {
   return (
     <>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <TopNav openNav={false} />
 
       <Desktop>
@@ -49,6 +50,7 @@ function App() {
           <Route path="gallery" element={<PhotoGallery />} />
           <Route path="boarding" element={<Boarding />} />
           <Route path="important-dates" element={<ImportantDates />} />
+          <Route path="awards" element={<Awards />} />
         </Routes>
       </Desktop>
       <TabletAndBelow>
@@ -71,6 +73,7 @@ function App() {
           <Route path="fees" element={<Tuition />} />
           <Route path="boarding" element={<Boarding />} />
           <Route path="important-dates" element={<ImportantDates />} />
+          <Route path="awards" element={<Awards />} />
         </Routes>
       </TabletAndBelow>
       <Footer />

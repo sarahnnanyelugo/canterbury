@@ -26,6 +26,7 @@ const menuItems = [
 
       { label: "History", link: "history" },
       { label: "Our Facilities", link: "our-facilities" },
+      { label: "Our Awards", link: "awards" },
       { label: "Spotlight on Staff", link: "our-staff" },
       { label: "Contact Us", link: "contact-us" },
     ],

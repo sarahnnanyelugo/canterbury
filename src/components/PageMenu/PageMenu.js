@@ -35,7 +35,7 @@ const PageMenu = ({ menuItems }) => {
         {" "}
         <div className="mobile-menu col-10 offset-1">
           {" "}
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
               <Accordion.Header className="d-flex">
                 <h6 style={{ flexGrow: 1 }}> MENU </h6>
