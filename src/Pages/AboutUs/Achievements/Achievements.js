@@ -1,6 +1,6 @@
 import React from "react";
 import "./achievements.scss";
-import Hero from "../../../assets/images/senior-group.png";
+import Hero from "../../../assets/images/Image_fx.jpg";
 
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
@@ -45,6 +45,7 @@ import Sport3 from "../../../assets/images/sport3.jpg";
 import Sport4 from "../../../assets/images/sport4.jpg";
 // import Sport5 from "../../../assets/images/sport5";
 import AwardVideo from "./VidModal";
+import DriveModal from "./DriveModal";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 export const Awards = () => {
   return (
@@ -96,10 +97,11 @@ export const Awards = () => {
               <p>
                 To our students, we always urge them to:
                 <br />
+                <br />
                 <span>Dream It. Do it.</span>
               </p>
 
-              <p>Canterbury International !</p>
+              {/* <p>Canterbury International !</p> */}
             </div>
           </center>
         </div>
@@ -108,7 +110,7 @@ export const Awards = () => {
           {" "}
           <center>
             <h1>
-              Our <span>I.S.A </span>Awards
+              <span>International School Awards </span>
             </h1>
           </center>
         </div>
@@ -123,6 +125,7 @@ export const Awards = () => {
                 <span>Education And Life in the Slum</span>
               </h1>
               <AwardVideo uri="https://www.youtube.com/embed/7neHtsBrvOY" />
+              <DriveModal folderUrl="https://drive.google.com/drive/folders/11tyFqWzXzMB0fcIqT8p8GAMX-94IRtE8"/>
             </div>
             <div className="col-md-6 mgb">
               <Carousel>
