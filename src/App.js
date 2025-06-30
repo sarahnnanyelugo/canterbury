@@ -28,7 +28,7 @@ import { Awards } from "./Pages/AboutUs/Achievements/Achievements";
 function App() {
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <TopNav openNav={false} />
 
       <Desktop>

@@ -39,6 +39,11 @@ import Summit3 from "../../../assets/images/summit3.jpg";
 import Wonder1 from "../../../assets/images/wonder1.JPG";
 import Wonder2 from "../../../assets/images/wonder2.JPG";
 import Wonder3 from "../../../assets/images/wonder3.JPG";
+import Sport1 from "../../../assets/images/sport1.jpg";
+import Sport2 from "../../../assets/images/sport2.jpg";
+import Sport3 from "../../../assets/images/sport3.jpg";
+import Sport4 from "../../../assets/images/sport4.jpg";
+// import Sport5 from "../../../assets/images/sport5";
 import AwardVideo from "./VidModal";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 export const Awards = () => {
@@ -319,23 +324,23 @@ export const Awards = () => {
                 FOSTERING SOCIAL COHESION
                 <span>THROUGH SPORTS</span>
               </h1>
-              {/* <AwardVideo uri="https://www.youtube.com/embed/ES-G178HMOM" /> */}
+              <AwardVideo uri="https://www.youtube.com/embed/3OOcjc0JjQY" />
             </div>{" "}
             <div className="col-md-6 placeholder">
-              {/* <Carousel>
+              <Carousel>
                 <Carousel.Item>
-                  <img src={ISA10} width="100%" className="assembly" />{" "}
+                  <img src={Sport1} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA11} width="100%" className="assembly" />{" "}
+                  <img src={Sport2} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA111} width="100%" className="assembly" />{" "}
+                  <img src={Sport3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA111} width="100%" className="assembly" />{" "}
+                  <img src={Sport4} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
-              </Carousel> */}
+              </Carousel>
             </div>{" "}
           </div>
         </div>
