@@ -125,7 +125,8 @@ export const Awards = () => {
                 <span>Education And Life in the Slum</span>
               </h1>
               <AwardVideo uri="https://www.youtube.com/embed/7neHtsBrvOY" />
-              <DriveModal folderUrl="https://drive.google.com/drive/folders/11tyFqWzXzMB0fcIqT8p8GAMX-94IRtE8"/>
+              &nbsp;
+              <DriveModal folderUrl="https://drive.google.com/drive/folders/11tyFqWzXzMB0fcIqT8p8GAMX-94IRtE8" />
             </div>
             <div className="col-md-6 mgb">
               <Carousel>
@@ -166,6 +167,8 @@ export const Awards = () => {
                   <span>BUILDING INCLUSIVE AND JUST INSTITUTIONS</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/dADmWfETLMg" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/13vSQpUXNTAzdd8chBEofSE9rtenBWsj7" />
               </div>
             </TabletAndBelow>{" "}
             <div className="col-md-6">
@@ -190,6 +193,8 @@ export const Awards = () => {
                   <span>BUILDING INCLUSIVE AND JUST INSTITUTIONS</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/dADmWfETLMg" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/13vSQpUXNTAzdd8chBEofSE9rtenBWsj7" />
               </div>
             </Desktop>
           </div>
@@ -201,6 +206,7 @@ export const Awards = () => {
                 <span>TO WONDER</span>
               </h1>
               {/* <AwardVideo uri="https://www.youtube.com/embed/dADmWfETLMg" /> */}
+              <DriveModal folderUrl="https://drive.google.com/drive/folders/1SGH6i75cI8JoK9dbVGeBg43mpulIQa7Y" />
             </div>
             <div className="col-md-6">
               <Carousel>
@@ -225,6 +231,8 @@ export const Awards = () => {
                   <span>AND PROCESSING</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/6W3g3NzWkbc" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/1aUXrj9YdEawSjbZoXf3zhm6dbMio7DVk" />
               </div>
             </TabletAndBelow>
             <div className="col-md-6">
@@ -251,6 +259,8 @@ export const Awards = () => {
                   <span>AND PROCESSING</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/6W3g3NzWkbc" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/1aUXrj9YdEawSjbZoXf3zhm6dbMio7DVk" />
               </div>
             </Desktop>
           </div>{" "}
@@ -261,6 +271,8 @@ export const Awards = () => {
                 <span>PLANET</span>
               </h1>
               <AwardVideo uri="https://www.youtube.com/embed/jYfkZPS2cGU" />
+              &nbsp;
+              <DriveModal folderUrl="https://drive.google.com/drive/folders/1zw-NTBAVUMyIA-f5yz5lDtSLSy9fK-GM" />
             </div>
             <div className="col-md-6">
               <Carousel>
@@ -293,6 +305,8 @@ export const Awards = () => {
                   <span>THE AFRICAN CHILD</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/ES-G178HMOM" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/1hf4XBtypijDRdHQuRY8yMBRc3HfaRqfO" />
               </div>
             </TabletAndBelow>
             <div className="col-md-6">
@@ -318,6 +332,8 @@ export const Awards = () => {
                   <span>THE AFRICAN CHILD</span>
                 </h1>
                 <AwardVideo uri="https://www.youtube.com/embed/ES-G178HMOM" />
+                &nbsp;
+                <DriveModal folderUrl="https://drive.google.com/drive/folders/1hf4XBtypijDRdHQuRY8yMBRc3HfaRqfO" />
               </div>
             </Desktop>
           </div>{" "}
@@ -328,6 +344,8 @@ export const Awards = () => {
                 <span>THROUGH SPORTS</span>
               </h1>
               <AwardVideo uri="https://www.youtube.com/embed/3OOcjc0JjQY" />
+              &nbsp;
+              <DriveModal folderUrl="https://drive.google.com/drive/folders/17MvCSmEVfwT3FOznGOpwHadIkIaz4xvz" />
             </div>{" "}
             <div className="col-md-6 placeholder">
               <Carousel>

@@ -10,11 +10,11 @@ function DriveModal(props) {
 
   return (
     <>
-      <button variant="primary" onClick={handleShow}>
+      <button variant="warning" onClick={handleShow}>
         More Pictures
       </button>
 
-      <Modal show={show} onHide={handleClose} centered size="lg">
+      <Modal show={show} onHide={handleClose} centered size="sm">
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <DriveFolderSlider

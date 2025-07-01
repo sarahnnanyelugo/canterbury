@@ -36,6 +36,10 @@ const DriveFolderSlider = ({ folderUrl, apiKey }) => {
     fetchImages();
   }, [folderUrl, apiKey]);
 
+  // useEffect(()=>{
+  //   console.log(imageUrls)
+  // },[imageUrls])
+
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % imageUrls.length);
   };
@@ -48,7 +52,7 @@ const DriveFolderSlider = ({ folderUrl, apiKey }) => {
 
   return (
     <div className="flex flex-col items-center space-y-2">
-      <div className="w-full max-w-md aspect-video overflow-hidden rounded-xl border shadow relative">
+      {/* <div className="w-full max-w-md aspect-video overflow-hidden rounded-xl border shadow relative">
         <img
           src={imageUrls[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
@@ -61,12 +65,11 @@ const DriveFolderSlider = ({ folderUrl, apiKey }) => {
       </div>
       <div className="text-sm text-gray-500">
         {currentIndex + 1} / {imageUrls.length}
-      </div>
-
-      {/* <iframe 
+      </div> */}
+      <iframe 
   src={`https://drive.google.com/embeddedfolderview?id=${imgFolder}#grid`} 
   style={{"width":"100%", "height":"600px", "border":"0"}}>
-</iframe> */}
+</iframe>
     </div>
   );
 };
