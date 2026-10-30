@@ -5,7 +5,7 @@ import Chapel from "../../../assets/images/assembly.png";
 import Mentor from "../../../assets/images/pastoral.png";
 import Profile1 from "../../../assets/images/secondary-group.png";
 import Create from "../../../assets/images/chess.png";
-import Profile2 from "../../../assets/images/Primary.png";
+import Profile2 from "../../../assets/images/primary.png";
 import Profile3 from "../../../assets/images/story-time.png";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
