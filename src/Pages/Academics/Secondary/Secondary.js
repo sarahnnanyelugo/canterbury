@@ -76,8 +76,8 @@ export const Secondary = () => {
               </Desktop>
             </div>
             <div className="col-md-6 ">
-              <img src={Hero} width="100%" className="college-hero" />
-              <img src={Decor3} className="offset-md-11 cubed" />
+              <img alt="" src={Hero} width="100%" className="college-hero" />
+              <img alt="" src={Decor3} className="offset-md-11 cubed" />
             </div>
           </div>
           <TabletAndBelow>
@@ -163,7 +163,7 @@ export const Secondary = () => {
         </div>
         <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
-            <img src={Eyfs} width="100%" />
+            <img alt="" src={Eyfs} width="100%" />
           </div>
           <div className="col-md-6 rudiments2">
             <p>
@@ -432,7 +432,7 @@ export const Secondary = () => {
             </Accordion>{" "}
           </div>
           <div className="col-md-5">
-            <img src={SeniorGirl} width="100%" />
+            <img alt="" src={SeniorGirl} width="100%" />
           </div>
         </div>
       </div>

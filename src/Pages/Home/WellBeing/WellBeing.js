@@ -13,6 +13,7 @@ export const WellBeing = () => {
   const [inViewHeading, setInViewHeading] = useState(false);
   const [inViewParagraph, setInViewParagraph] = useState(false);
 
+  // eslint-disable-next-line no-unused-vars
   const [inViewText, setInViewText] = useState(false);
   const headingRef = useRef(null);
   const textRef = useRef(null); // Reference for the paragraph
@@ -61,6 +62,7 @@ export const WellBeing = () => {
     setTabInView(false);
     setTimeout(() => setTabInView(true), 10);
   };
+  // eslint-disable-next-line no-unused-vars
   const checkActive = (index, className) =>
     activeIndex === index ? className : "";
 
@@ -171,7 +173,7 @@ export const WellBeing = () => {
               }}
             >
               <div className="tab-img1 col-md-3 offset-md-2 col-5">
-                <img src={Health} width="100%" />{" "}
+                <img alt="" src={Health} width="100%" />{" "}
                 <div class="overlay2">
                   <p>
                     Healthy Connections <IoArrowForward className="icon" />
@@ -182,7 +184,7 @@ export const WellBeing = () => {
                 {" "}
                 <div className="middle-img col-md-10 offset-md-1 d-flex ">
                   {" "}
-                  <img src={Vibrant} width="100%" />
+                  <img alt="" src={Vibrant} width="100%" />
                   <div class="overlay">
                     {/* <div class="text2"> */}
                     <h5>A Vibrant Community</h5>
@@ -200,7 +202,7 @@ export const WellBeing = () => {
               </div>
               <div className="tab-img2 col-md-3 col-5">
                 {" "}
-                <img src={New} width="100%" />
+                <img alt="" src={New} width="100%" />
                 <div class="overlay2">
                   <p>
                     Try Something New <IoArrowForward className="icon" />

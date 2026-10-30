@@ -5,7 +5,6 @@ import Hero from "../../assets/images/asian-boy.png";
 import { Link } from "react-router-dom";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
-import { Testimonials } from "./Testimonials/Testimonials";
 import { IoArrowForward } from "react-icons/io5";
 import { OurWords } from "../../components/OurWords/OurWords";
 import { Journey } from "./Journey/Journey";
@@ -121,7 +120,9 @@ export const MobileHome = () => {
                 transform: inViewParagraph
                   ? "translateY(0)"
                   : "translateY(100px)",
+                // eslint-disable-next-line no-dupe-keys
                 opacity: inViewParagraph ? 1 : 0,
+                // eslint-disable-next-line no-dupe-keys
                 transition: "transform 1s ease, opacity 1s ease",
               }}
             >
@@ -173,7 +174,7 @@ export const MobileHome = () => {
           <div className="col-md-10 offset-md-1 d-md-flex">
             <div className="col-md-6">
               {" "}
-              <img src={Hero} width="100%" />
+              <img alt="" src={Hero} width="100%" />
             </div>
             <div className="col-md-5 offset-md-1 para-div">
               <p>
@@ -417,25 +418,25 @@ export const MobileHome = () => {
               <div className="col-md-6 mgb">
                 <Carousel>
                   <Carousel.Item>
-                    <img src={ISA3} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA3} width="100%" className="assembly" />{" "}
                   </Carousel.Item>{" "}
                   <Carousel.Item>
-                    <img src={ISA6} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA6} width="100%" className="assembly" />{" "}
                   </Carousel.Item>{" "}
                   <Carousel.Item>
-                    <img src={ISA7} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA7} width="100%" className="assembly" />{" "}
                   </Carousel.Item>{" "}
                   <Carousel.Item>
-                    <img src={ISA8} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA8} width="100%" className="assembly" />{" "}
                   </Carousel.Item>{" "}
                   <Carousel.Item>
-                    <img src={ISA9} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA9} width="100%" className="assembly" />{" "}
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={ISA44} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA44} width="100%" className="assembly" />{" "}
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={ISA55} width="100%" className="assembly" />{" "}
+                    <img alt="" src={ISA55} width="100%" className="assembly" />{" "}
                   </Carousel.Item>
                 </Carousel>
               </div>

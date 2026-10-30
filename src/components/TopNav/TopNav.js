@@ -7,14 +7,11 @@ import { GoInfo } from "react-icons/go";
 import { SlCalender } from "react-icons/sl";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { ImUserTie } from "react-icons/im";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoStorefront } from "react-icons/io5";
 import { BsPersonCheckFill } from "react-icons/bs";
-import { TbReport } from "react-icons/tb";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocation } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const menuItems = [
   {
@@ -65,7 +62,7 @@ const menuItems = [
 export const TopNav = ({ openNav }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isOpen, setIsOpen] = useState(() => {
-    return openNav != undefined ? openNav : false;
+    return openNav != null ? openNav : false;
   });
   const toggleMenu = () => setIsOpen(true);
   const closeMenu = () => setIsOpen(false);
@@ -83,6 +80,7 @@ export const TopNav = ({ openNav }) => {
       checkbox.checked = isOpen;
       // alert('checking checkbox');
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     // Find the checkbox and update its checked state

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { GoArrowLeft } from "react-icons/go";
-import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import { IoAdd } from "react-icons/io5";

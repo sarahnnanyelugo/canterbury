@@ -14,8 +14,6 @@ import Img5 from "../../assets/images/new-eyfs-girl.jpg";
 import "./home.scss";
 import Ethos from "./Ehtos/Ethos";
 import { Purpose } from "./Purpose/Purpose";
-import { WellBeing } from "./WellBeing/WellBeing";
-import { Testimonials } from "./Testimonials/Testimonials";
 import { SectionHeading } from "../../components/SectionHeading/SectionHeading";
 import { Journey } from "./Journey/Journey";
 import { Future } from "./Future/Future";
@@ -40,10 +38,13 @@ export const Home = () => {
   const [shift, setShift] = useState(0); // Initial shift for images (0px)
   const [hideImages, setHideImages] = useState(false); // Control to hide images
   const [yScroll, setYScroll] = useState(0);
+  // eslint-disable-next-line no-unused-vars
   const [mxScroll, setMxScroll] = useState(
     () => window.innerHeight * 0.2 // Faster effect, approx. 2
   );
+  // eslint-disable-next-line no-unused-vars
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
+  // eslint-disable-next-line no-unused-vars
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
 
   const [inViewText, setInViewText] = useState(false); //   const targetRef = useRef(null); // Correct initialization in JavaScript
@@ -191,8 +192,8 @@ export const Home = () => {
                 className="col-md-7 landing-imgs"
                 style={{ marginLeft: "0px" }}
               >
-                <img src={Img6} width="100%" className="img-adj" />
-                <img src={Img55} width="100%" className="mt-3 eyfs-boy" />
+                <img alt="" src={Img6} width="100%" className="img-adj" />
+                <img alt="" src={Img55} width="100%" className="mt-3 eyfs-boy" />
               </div>
             </div>
           )}
@@ -233,8 +234,8 @@ export const Home = () => {
                 className="col-md-7 col-12 landing-imgs"
                 style={{ marginLeft: "10px" }}
               >
-                <img src={Img66} width="100%" className="img-adj" />
-                <img src={Img5} width="100%" className="mt-3 eyfs-boy" />
+                <img alt="" src={Img66} width="100%" className="img-adj" />
+                <img alt="" src={Img5} width="100%" className="mt-3 eyfs-boy" />
               </div>
               <div
                 className="col-md-7 right-wing"
@@ -320,7 +321,7 @@ export const Home = () => {
         <div className="col-md-10 offset-md-1 d-md-flex mt-5">
           <div className="col-md-6">
             {" "}
-            <img src={Hero} width="100%" style={{}} />
+            <img alt="" src={Hero} width="100%" style={{}} />
           </div>
           <div className="col-md-5 offset-md-1 ">
             <p>
@@ -587,25 +588,25 @@ export const Home = () => {
             <div className="col-md-6 mgb">
               <Carousel>
                 <Carousel.Item>
-                  <img src={ISA3} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA6} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA6} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA7} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA7} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA8} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA8} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA9} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA9} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src={ISA44} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA44} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src={ISA55} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA55} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
               </Carousel>
             </div>

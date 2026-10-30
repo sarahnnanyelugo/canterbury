@@ -13,7 +13,7 @@ export const OurStaff = () => {
         {" "}
         <div className="staff-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>MEET THE TEAM</h1>
           </center>

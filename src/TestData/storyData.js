@@ -33,6 +33,7 @@ export const storyData = [
     id: 1,
 
     tab3: "They performed experiments involving chemical reactions, observations under magnification, and the application of scientific theories in real-world scenarios. The practical session helped them connect theoretical knowledge with hands-on experience, making science more engaging and accessible. The activity was part of the school’s STEM (Science, Technology, Engineering, and Mathematics) education program, designed to encourage students to explore scientific fields. “This kind of hands-on learning is essential for developing curiosity and problem-solving skills,” said the head of the science department. Several students expressed newfound interest in pursuing careers in science and technology, highlighting the impact of interactive learning. The school hopes to introduce more experimental workshops to inspire the next generation of scientists and innovators.",
+    // eslint-disable-next-line no-dupe-keys
     id: 1,
     photo: Door,
 
@@ -67,6 +68,7 @@ export const storyData = [
     paragraph2: "",
     others:
       "The discussion was part of the school’s initiative to promote intellectual engagement beyond traditional classroom learning. “We want to create an environment where students feel empowered to voice their thoughts and critically analyze different viewpoints,” said one of the facilitators. Many students expressed enthusiasm about the session, noting that it gave them a platform to share ideas, build self-confidence, and sharpen their reasoning skills. The school plans to organize more of these discussions regularly to foster a culture of dialogue and collaboration",
+    // eslint-disable-next-line no-dupe-keys
     id: 1,
     photo: Greeting,
     tabGalleries: [
@@ -87,6 +89,7 @@ export const storyData = [
     paragraph2: "",
     others:
       "The trip was part of the school’s experiential learning program, designed to complement textbook lessons with real-world applications. “Seeing students interact with nature and apply their knowledge in a practical setting is truly rewarding,” said one of the accompanying teachers. Many students expressed excitement about the trip, noting that it made learning more interesting and memorable. The school plans to organize similar excursions to historical sites, museums, and science centers, ensuring that students gain a well-rounded education through direct experiences.",
+    // eslint-disable-next-line no-dupe-keys
     id: 1,
     photo: Excursion,
     tabGalleries: [
@@ -107,6 +110,7 @@ export const storyData = [
     paragraph2: "",
     others:
       "The school administration has been implementing strategies to promote a more engaging and student-centered learning approach. “Encouraging students to take notes and actively engage in lessons significantly improves their retention and understanding of subjects,” said the school principal. Many students shared that structured note-taking helps them review materials effectively, especially when preparing for exams. The school plans to incorporate more interactive teaching methods to further enhance students’ academic performance and overall learning experience.",
+    // eslint-disable-next-line no-dupe-keys
     id: 1,
     photo: Classroom,
     tabGalleries: [
@@ -127,6 +131,7 @@ export const storyData = [
     paragraph2: "",
     others:
       "The school administration has been implementing strategies to promote a more engaging and student-centered learning approach. “Encouraging students to take notes and actively engage in lessons significantly improves their retention and understanding of subjects,” said the school principal. Many students shared that structured note-taking helps them review materials effectively, especially when preparing for exams. The school plans to incorporate more interactive teaching methods to further enhance students’ academic performance and overall learning experience.",
+    // eslint-disable-next-line no-dupe-keys
     id: 1,
     photo: ISA1,
     photoIntro: "ISA Fish Processing",

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./footer.scss"; // You can add your custom CSS for styling
 import Logo from "../../assets/images/app-logo2.png";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="footer-div">
         <center>
           <div className="col-md-2">
-            <img src={Logo} />
+            <img alt="" src={Logo} />
             <p>
               5 Lapai Close, off Kemfat Street Thomas Estate, Ajah, Lekki,
               Lagos.

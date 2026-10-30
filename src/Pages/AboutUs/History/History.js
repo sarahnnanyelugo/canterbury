@@ -21,7 +21,7 @@ export const History = () => {
       <div className="history-div">
         <div className="story-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>OUR HISTORY</h1>
           </center>

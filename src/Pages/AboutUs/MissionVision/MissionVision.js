@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./mission-vision.scss";
 import Hero from "../../../assets/images/primary-class.png";
 import Res from "../../../assets/images/chess2.png";
@@ -13,10 +13,6 @@ import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import { ImQuotesLeft } from "react-icons/im";
-import CountUp from "react-countup";
-import Carousel from "react-bootstrap/Carousel";
-import News from "../../../components/News/News";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import Values from "./Values/Values";
 import { OurWords } from "../../../components/OurWords/OurWords";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
@@ -28,7 +24,7 @@ export const MissionVision = () => {
       <div className="misson-div col-md-12">
         <div className="mission-banner2">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <div className="overlayed">
             <div className="text">
               {" "}

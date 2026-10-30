@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const DriveFolderSlider = ({ folderUrl, apiKey }) => {
   const [imageUrls, setImageUrls] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imgFolder,setImgFolder]=useState("");
 
@@ -40,10 +41,12 @@ const DriveFolderSlider = ({ folderUrl, apiKey }) => {
   //   console.log(imageUrls)
   // },[imageUrls])
 
+  // eslint-disable-next-line no-unused-vars
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % imageUrls.length);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + imageUrls.length) % imageUrls.length);
   };
@@ -66,7 +69,7 @@ const DriveFolderSlider = ({ folderUrl, apiKey }) => {
       <div className="text-sm text-gray-500">
         {currentIndex + 1} / {imageUrls.length}
       </div> */}
-      <iframe 
+      <iframe title="Drive folder gallery"
   src={`https://drive.google.com/embeddedfolderview?id=${imgFolder}#grid`} 
   style={{"width":"100%", "height":"600px", "border":"0"}}>
 </iframe>

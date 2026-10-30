@@ -15,6 +15,7 @@ export const Purpose = () => {
   const [bgImage, setBgImage] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const textRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
   const headingRef = useRef(null); // Reference for the heading
   const paragraphRef = useRef(null); // Reference for the paragrap

@@ -137,6 +137,7 @@ export function total(date, unit) {
   let ms = date.getTime(),
     div = 1;
 
+  // eslint-disable-next-line default-case
   switch (unit) {
     case "week":
       div *= 7;

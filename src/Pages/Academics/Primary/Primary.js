@@ -47,7 +47,7 @@ export const Primary = () => {
           <div className="d-md-flex">
             {" "}
             <div className="col-md-6 offset-md- heading" ref={headingRef}>
-              <img src={Decor1} width="34px" height="34px" />
+              <img alt="" src={Decor1} width="34px" height="34px" />
               <br />
 
               <h1
@@ -83,8 +83,8 @@ export const Primary = () => {
             </div>
             <div className="col-md-6">
               {" "}
-              <img src={Hero} width="100%" />
-              <img src={Decor3} className="offset-md-11 cube" />
+              <img alt="" src={Hero} width="100%" />
+              <img alt="" src={Decor3} className="offset-md-11 cube" />
             </div>
           </div>
           <TabletAndBelow>
@@ -173,7 +173,7 @@ export const Primary = () => {
         </div>
         <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
-            <img src={Eyfs} width="100%" />
+            <img alt="" src={Eyfs} width="100%" />
           </div>
           <div className="col-md-6 rudiments2">
             <p>
@@ -461,7 +461,7 @@ export const Primary = () => {
             </Accordion>{" "}
           </div>
           <div className="col-md-5">
-            <img src={Scrabble} width="100%" />
+            <img alt="" src={Scrabble} width="100%" />
           </div>
         </div>
       </div>

@@ -5,7 +5,6 @@ import { MdHome } from "react-icons/md";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Accordion from "react-bootstrap/Accordion";
 import { CiMenuKebab } from "react-icons/ci";
-import ListGroup from "react-bootstrap/ListGroup";
 
 const PageMenu = ({ menuItems }) => {
   return (

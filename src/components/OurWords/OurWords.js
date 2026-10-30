@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import "./our-words.scss";
 export const OurWords = () => {
   const count = 6; // Define count to prevent errors

@@ -38,7 +38,7 @@ export const Journey = () => {
         <Carousel fade>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic} width="100%" />
+              <img alt="" src={MainPic} width="100%" />
               <div className="journey-cova ">
                 <div className="d-md-flex" ref={headingRef}>
                   <div
@@ -95,7 +95,7 @@ export const Journey = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic2} width="100%" />
+              <img alt="" src={MainPic2} width="100%" />
               <div className="journey-cova ">
                 <div className="d-md-flex" ref={headingRef}>
                   {" "}
@@ -147,7 +147,7 @@ export const Journey = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic3} width="100%" />
+              <img alt="" src={MainPic3} width="100%" />
               <div className="journey-cova ">
                 <div className="d-md-flex" ref={headingRef}>
                   {" "}

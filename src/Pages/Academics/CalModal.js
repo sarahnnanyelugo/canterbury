@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Event from "../../components/Calendar/Calendar";
 import CalenderImg from "../../assets/images/calender.png";
@@ -21,7 +20,7 @@ function CalModal() {
           position: "relative",
         }}
       >
-        <img src={CalenderImg} width="100%" />
+        <img alt="" src={CalenderImg} width="100%" />
         <div className="cal-overlay text-light">
           <center>
             <h4>Expand Calender</h4>

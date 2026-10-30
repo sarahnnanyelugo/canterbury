@@ -2,17 +2,11 @@ import React from "react";
 import "./welcome.scss";
 import Hero from "../../../assets/images/eyfs3.png";
 import Admin from "../../../assets/images/admin2.png";
-import MainVid from "../../../assets/images/main-vid.mp4";
 
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { admission } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import { ImQuotesLeft } from "react-icons/im";
-import CountUp from "react-countup";
-import Carousel from "react-bootstrap/Carousel";
-import News from "../../../components/News/News";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { Action } from "./Action/Action";
 import { Link } from "react-router-dom";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 import { Purpose } from "../../Home/Purpose/Purpose";
@@ -26,7 +20,7 @@ export const Welcome = () => {
       <div className="welcome-div col-md-12">
         <div className="story-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>WELCOME</h1>
           </center>
@@ -62,7 +56,7 @@ export const Welcome = () => {
           <div className="col-md-6 col-7 admin-profile">
             <div className="d-flex">
               {" "}
-              <img src={Admin} width="100%" className="admin-photo" />
+              <img alt="" src={Admin} width="100%" className="admin-photo" />
               <TabletAndBelow>
                 <div className="col-8 mt-2">
                   <div style={{ flexGrow: 1 }}>
