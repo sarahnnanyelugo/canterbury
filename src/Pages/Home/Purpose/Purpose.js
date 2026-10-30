@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 // Top of your file
 const imageMap = {
-  EYFS: require("../../../assets/images/EYFS.jpg"),
-  Primary: require("../../../assets/images/Primary.png"),
+  EYFS: require("../../../assets/images/eyfs.jpg"),
+  Primary: require("../../../assets/images/primary.png"),
   Secondary: require("../../../assets/images/Secondary.png"),
 };
 
