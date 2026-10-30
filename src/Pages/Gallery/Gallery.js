@@ -3,7 +3,7 @@ import "./photo-journals.scss";
 import Modal from "react-bootstrap/Modal";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { GoArrowLeft } from "react-icons/go";
-import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
+import { TabletAndBelow } from "../../Utils/mediaQueries";
 import AddAlbum from "./AddPhoto";
 import MainVid from "../../assets/images/G_Loader.mp4";
 

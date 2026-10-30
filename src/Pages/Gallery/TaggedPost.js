@@ -1,25 +1,10 @@
 import React, { useState } from "react";
-import Kid1 from "../../../assets/images/kid1.png";
-import Kid2 from "../../../assets/images/kid2.jpeg";
-import Kid3 from "../../../assets/images/kid3.jpeg";
-import Kid4 from "../../../assets/images/kid4.jpg";
-import Kid5 from "../../../assets/images/kid5.jpg";
-import Kid6 from "../../../assets/images/girl1.png";
-import Kid7 from "../../../assets/images/cul4.png";
-import Kid8 from "../../../assets/images/cultural2.png";
-import Kid9 from "../../../assets/images/cul3.jpg";
-import Kid11 from "../../../assets/images/cul1.png";
-import Kid12 from "../../../assets/images/cultural3.png";
 import Kid13 from "../../../assets/images/gradu.png";
 import Kid16 from "../../../assets/images/Kid16.png";
 import Kid10 from "../../../assets/images/cul3.png";
 import Kid19 from "../../../assets/images/grad2.png";
 import Kid20 from "../../../assets/images/baloon.png";
 import SchLogo from "../../../assets/images/logo.png";
-import Kid14 from "../../../assets/images/gradu2.png";
-import Kid15 from "../../../assets/images/Kid15.jpg";
-import Kid17 from "../../../assets/images/baloon2.png";
-import Kid18 from "../../../assets/images/grad.png";
 
 import "./photo-journals.scss";
 import Modal from "react-bootstrap/Modal";
@@ -231,7 +216,7 @@ const TaggedPhoto = () => {
             </div>
             <div className="col-md-7 comment-section">
               <div className="d-flex post-track">
-                <img src={selectedPhoto?.Logo} height="30px" width="30px" />
+                <img alt="" src={selectedPhoto?.Logo} height="30px" width="30px" />
                 <div>
                   {" "}
                   <h6 className="mt-1"> {selectedPhoto?.schName}</h6>

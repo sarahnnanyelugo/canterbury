@@ -13,7 +13,7 @@ export const ImportantDates = () => {
         {" "}
         <div className="dates-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>Important Dates</h1>
           </center>

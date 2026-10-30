@@ -11,7 +11,7 @@ export const PageLogo = () => {
       <div className="col-md-2 col-2">
         <center>
           {" "}
-          <img src={Logo} width="30px" />
+          <img alt="" src={Logo} width="30px" />
         </center>
       </div>
 

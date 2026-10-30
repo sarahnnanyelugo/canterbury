@@ -13,7 +13,7 @@ export const Boarding = () => {
         {" "}
         <div className="story-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>Boarding</h1>
           </center>
@@ -71,16 +71,16 @@ export const Boarding = () => {
         </div>
         <div className="col-md-8 offset-md-2 row row-cols-2 row-cols-lg-4 g-2 g-lg-4 mt-5">
           <div className="col">
-            <img src={Img1} width="100%" />
+            <img alt="" src={Img1} width="100%" />
           </div>
           <div className="col">
-            <img src={Img1} width="100%" />
+            <img alt="" src={Img1} width="100%" />
           </div>
           <div className="col">
-            <img src={Img1} width="100%" />
+            <img alt="" src={Img1} width="100%" />
           </div>
           <div className="col">
-            <img src={Img1} width="100%" />
+            <img alt="" src={Img1} width="100%" />
           </div>
         </div>
       </div>

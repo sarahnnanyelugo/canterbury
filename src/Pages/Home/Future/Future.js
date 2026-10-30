@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./future.scss";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 import { Link } from "react-router-dom";
 
 export const Future = () => {

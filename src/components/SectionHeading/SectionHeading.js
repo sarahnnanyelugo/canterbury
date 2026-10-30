@@ -1,11 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./section-heading.scss";
 export const SectionHeading = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const { color1, color2, text1, text2, paragraph, size1, size2, color3 } =
     props;
   const [inViewHeading, setInViewHeading] = useState(false); // Track if the heading is in view
   const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
 
+  // eslint-disable-next-line no-unused-vars
   const [inViewText, setInViewText] = useState(false); //   const targetRef = useRef(null); // Correct initialization in JavaScript
   const headingRef = useRef(null); // Reference for the heading
   const paragraphRef = useRef(null); // Reference for the paragraph

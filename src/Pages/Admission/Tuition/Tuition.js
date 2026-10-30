@@ -15,7 +15,7 @@ export const Tuition = () => {
     <>
       <div className="tuition">
         <div className="banner">
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
         </div>
         <PageMenu menuItems={admission} />
         <div className="tuition-div col-md-8 offset-md-2">
@@ -31,7 +31,7 @@ export const Tuition = () => {
           </h6>
           <div className="d-md-flex mt-5">
             <div className="col-md-6">
-              <img src={Img3} width="100%" className="bio" />
+              <img alt="" src={Img3} width="100%" className="bio" />
             </div>
             <div className="col-md-6 mt-5" style={{ paddingLeft: "20px" }}>
               <p>
@@ -214,7 +214,7 @@ export const Tuition = () => {
           <div className="d-md-flex mt-5">
             <div className="col-md-6 mt-5">
               <h4> Bus Information</h4>
-              <img src={Bus} width="100%" />
+              <img alt="" src={Bus} width="100%" />
             </div>
             <div className="col-md-6 mt-5">
               {" "}
@@ -410,7 +410,7 @@ export const Tuition = () => {
               </Accordion>
             </div>
             <div className="col-md-6 mt-5">
-              <img src={Boarding} width="100%" />
+              <img alt="" src={Boarding} width="100%" />
             </div>
           </div>
         </div>

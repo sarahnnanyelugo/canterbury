@@ -18,7 +18,7 @@ export const Apply = () => {
         {" "}
         <div className="contact-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>Applying to Canterbury</h1>
           </center>
@@ -85,6 +85,7 @@ export const Apply = () => {
                     </p>
                     <p>
                       To start, create an account in your{" "}
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <a href={""} className="portal-link">
                         Canterbury Admission & Enrollment (A & E) Portal
                       </a>
@@ -127,6 +128,7 @@ export const Apply = () => {
                       To schedule a tour of campus, please contact the admission
                       office at 423-267-5902 or admission@baylorschool.org.
                       Alternatively, you may schedule a tour through the
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <a href={""} className="portal-link">
                         Admission & Enrollment (A & E) Portal.
                       </a>
@@ -165,14 +167,17 @@ export const Apply = () => {
                       applicants:
                     </p>
                     <p>
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <a href={""} className="portal-link">
                         Middle School Admission Events
                       </a>{" "}
                       <br />
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <a href={""} className="portal-link">
                         Upper School Day Admission Events
                       </a>
                       <br />
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <a href={""} className="portal-link">
                         Upper School Boarding Admission Events
                       </a>

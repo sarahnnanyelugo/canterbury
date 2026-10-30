@@ -8,7 +8,9 @@ import { SectionHeading } from "../../../components/SectionHeading/SectionHeadin
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 export const Testimonials = () => {
+  // eslint-disable-next-line no-unused-vars
   const [inViewHeading, setInViewHeading] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [inViewParagraph, setInViewParagraph] = useState(false);
 
   const [inViewText, setInViewText] = useState(false);
@@ -16,8 +18,10 @@ export const Testimonials = () => {
   const textRef = useRef(null); // Reference for the paragraph
   const paragraphRef = useRef(null); // Reference for the paragraph
   const videoRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const [showButton, setShowButton] = useState(true);
 
+  // eslint-disable-next-line no-unused-vars
   const handlePlay = () => {
     videoRef.current.play();
     setShowButton(false);

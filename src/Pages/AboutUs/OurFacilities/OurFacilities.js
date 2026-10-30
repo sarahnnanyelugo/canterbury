@@ -12,13 +12,12 @@ import Ride from "../../../assets/images/bus-ride.png";
 import Bus from "../../../assets/images/sch-bus.png";
 
 import Computer2 from "../../../assets/images/comput.png";
-import ScienceLab from "../../../assets/images/lab.png";
 import Computer from "../../../assets/images/primary-class.png";
 import Playground from "../../../assets/images/playground.png";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
-import { Modal, Button, Carousel } from "react-bootstrap";
+import { Modal, Carousel } from "react-bootstrap";
 import { Desktop, TabletAndBelow } from "../../../Utils/mediaQueries";
 
 import "./facilities.scss";
@@ -253,7 +252,7 @@ export const OurFacilities = () => {
                       <div className="img-border2 col-md-3 offset-md-10" />
                       <img
                         src={item.imgSrc}
-                        alt={`Image ${index + 1}`}
+                        alt={`Facility ${index + 1}`}
                         className="zoom"
                         style={{
                           width: "100%",
@@ -283,7 +282,7 @@ export const OurFacilities = () => {
               <Carousel.Item key={index}>
                 <img
                   src={item.imgSrc}
-                  alt={`Image ${index + 1}`}
+                  alt={`Facility ${index + 1}`}
                   style={{
                     width: "100%",
 

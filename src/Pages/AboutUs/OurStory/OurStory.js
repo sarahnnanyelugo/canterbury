@@ -23,7 +23,7 @@ export const OurStory = () => {
       <div className="story-div col-md-12">
         <div className="about-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>ABOUT</h1>
           </center>
@@ -126,7 +126,7 @@ export const OurStory = () => {
             </Link>
           </div>
           <div className="col-md-6">
-            <img src={Chapel} width="100%" className="assembly" />
+            <img alt="" src={Chapel} width="100%" className="assembly" />
           </div>
         </div>
         <div className="stats-div">
@@ -176,7 +176,7 @@ export const OurStory = () => {
         <div className="col-md-8 offset-md-2 d-md-flex chapel mobile-pad">
           {" "}
           <div className="col-md-6  first-div">
-            <img src={Mentor} width="100%" />
+            <img alt="" src={Mentor} width="100%" />
           </div>
           <div className="col-md-6">
             <h3>
@@ -251,7 +251,7 @@ export const OurStory = () => {
             <Carousel.Item interval={5000}>
               <div className="d-md-flex">
                 <div className="col-md-7 profile-img ">
-                  <img src={Create} width="100%" />
+                  <img alt="" src={Create} width="100%" />
                 </div>
                 <div className="col-md-6">
                   <div className="col-md-11  profile-details">
@@ -275,7 +275,7 @@ export const OurStory = () => {
             <Carousel.Item interval={5000}>
               <div className="d-md-flex">
                 <div className="col-md-7 profile-img ">
-                  <img src={Profile1} width="100%" />
+                  <img alt="" src={Profile1} width="100%" />
                 </div>
                 <div className="col-md-6">
                   <div className="col-md-11  profile-details">
@@ -300,7 +300,7 @@ export const OurStory = () => {
             <Carousel.Item interval={5000}>
               <div className="d-md-flex">
                 <div className="col-md-7 profile-img ">
-                  <img src={Profile2} width="100%" />
+                  <img alt="" src={Profile2} width="100%" />
                 </div>
                 <div className="col-md-6">
                   <div className="col-md-11  profile-details">
@@ -324,7 +324,7 @@ export const OurStory = () => {
             <Carousel.Item interval={5000}>
               <div className="d-md-flex">
                 <div className="col-md-7 profile-img ">
-                  <img src={Profile3} width="100%" />
+                  <img alt="" src={Profile3} width="100%" />
                 </div>
                 <div className="col-md-6">
                   <div className="col-md-11  profile-details">

@@ -3,6 +3,7 @@ import "./values.scss";
 import Logo from "../../../../assets/images/app-logo.png";
 
 export default function Values(props) {
+  // eslint-disable-next-line no-unused-vars
   const { photo, heading, text, src } = props;
   return (
     <>
@@ -22,7 +23,7 @@ export default function Values(props) {
          <div style={{height:"180px"}}> <h4>{heading}</h4>
          <p>{text}</p></div>
           <center>
-            <img src={Logo} width="15px" />
+            <img alt="" src={Logo} width="15px" />
           </center>
         </div>
       </div>

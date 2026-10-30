@@ -1,15 +1,8 @@
-import React, { Fragment, useMemo, useState } from "react";
-import PropTypes from "prop-types";
+import React, { useMemo, useState } from "react";
 import moment from "moment";
-import { HiOutlineDownload } from "react-icons/hi";
 
 import "./calendar.scss";
-import {
-  Calendar,
-  Views,
-  DateLocalizer,
-  momentLocalizer,
-} from "react-big-calendar";
+import { Calendar, momentLocalizer } from "react-big-calendar";
 import * as dates from "../../Utils/dates";
 // import { Search } from "../../../components/Search/Search";
 // import Select from "../../../components/Select/Select";
@@ -19,6 +12,7 @@ import CustomToolbar from "./CustomToolbar"; // Import custom toolbar
 // Initialize moment localizer
 const mLocalizer = momentLocalizer(moment);
 
+// eslint-disable-next-line no-unused-vars
 const ColoredDateCellWrapper = ({ children }) =>
   React.cloneElement(React.Children.only(children), {
     style: {
@@ -26,11 +20,13 @@ const ColoredDateCellWrapper = ({ children }) =>
     },
   });
 
+// eslint-disable-next-line no-unused-vars
 const terms = [
   { value: "first term", label: "First Term" },
   { value: "second term", label: "Second Term" },
   { value: "third term", label: "Third Term" },
 ];
+// eslint-disable-next-line no-unused-vars
 const sessions = [
   { value: "2020/2022", label: "2020/2022" },
   { value: "2021/2022", label: "2021/2022" },
@@ -39,7 +35,9 @@ const sessions = [
 ];
 
 export default function Event({ localizer = mLocalizer, ...props }) {
+  // eslint-disable-next-line no-unused-vars
   const [selectedTerm, setSelectedTerm] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [selectedSession, setSelectedSession] = useState("");
   const { defaultDate, max } = useMemo(
     () => ({

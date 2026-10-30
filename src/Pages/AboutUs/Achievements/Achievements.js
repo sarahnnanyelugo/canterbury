@@ -6,7 +6,6 @@ import PageMenu from "../../../components/PageMenu/PageMenu";
 import { about } from "../../../TestData/pageMenuData";
 import { PageLogo } from "../../../components/PageLogo/PageLogo";
 import { ImQuotesLeft } from "react-icons/im";
-import CountUp from "react-countup";
 import Carousel from "react-bootstrap/Carousel";
 import News from "../../../components/News/News";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -25,8 +24,6 @@ import ISA9 from "../../../assets/images/teaching2.jpg";
 import ISA10 from "../../../assets/images/drama1.jpg";
 import ISA11 from "../../../assets/images/drama2.jpg";
 import ISA111 from "../../../assets/images/drama3.jpg";
-import ISA1111 from "../../../assets/images/drama4.jpg";
-import ISA12 from "../../../assets/images/art.JPG";
 import ISA13 from "../../../assets/images/art1.jpg";
 import ISA14 from "../../../assets/images/art2.jpg";
 import ISA15 from "../../../assets/images/art3.jpg";
@@ -53,7 +50,7 @@ export const Awards = () => {
       <div className="story-div col-md-12">
         <div className="about-banner">
           {" "}
-          <img src={Hero} width="100%" />
+          <img alt="" src={Hero} width="100%" />
           <center>
             <h1>OUR AWARDS</h1>
           </center>
@@ -131,28 +128,28 @@ export const Awards = () => {
             <div className="col-md-6 mgb">
               <Carousel>
                 <Carousel.Item>
-                  <img src={ISA3} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 {/* <Carousel.Item>
                   <img src={ISA4} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "} */}
                 <Carousel.Item>
-                  <img src={ISA6} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA6} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA7} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA7} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA8} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA8} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA9} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA9} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src={ISA44} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA44} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src={ISA55} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA55} width="100%" className="assembly" />{" "}
                 </Carousel.Item>
               </Carousel>
             </div>
@@ -174,13 +171,13 @@ export const Awards = () => {
             <div className="col-md-6">
               <Carousel>
                 <Carousel.Item>
-                  <img src={Summit1} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Summit1} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Summit2} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Summit2} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Summit3} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Summit3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}
@@ -211,13 +208,13 @@ export const Awards = () => {
             <div className="col-md-6">
               <Carousel>
                 <Carousel.Item>
-                  <img src={Wonder1} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Wonder1} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Wonder2} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Wonder2} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Wonder3} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Wonder3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}
@@ -238,16 +235,16 @@ export const Awards = () => {
             <div className="col-md-6">
               <Carousel>
                 <Carousel.Item>
-                  <img src={ISA1} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA1} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA2} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA2} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA4} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA4} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA5} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA5} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}
@@ -277,22 +274,22 @@ export const Awards = () => {
             <div className="col-md-6">
               <Carousel>
                 <Carousel.Item>
-                  <img src={ISA13} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA13} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA14} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA14} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA15} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA15} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA16} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA16} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA17} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA17} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA18} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA18} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}
@@ -312,16 +309,16 @@ export const Awards = () => {
             <div className="col-md-6">
               <Carousel>
                 <Carousel.Item>
-                  <img src={ISA10} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA10} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA11} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA11} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA111} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA111} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={ISA111} width="100%" className="assembly" />{" "}
+                  <img alt="" src={ISA111} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}
@@ -350,16 +347,16 @@ export const Awards = () => {
             <div className="col-md-6 placeholder">
               <Carousel>
                 <Carousel.Item>
-                  <img src={Sport1} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Sport1} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Sport2} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Sport2} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Sport3} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Sport3} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
                 <Carousel.Item>
-                  <img src={Sport4} width="100%" className="assembly" />{" "}
+                  <img alt="" src={Sport4} width="100%" className="assembly" />{" "}
                 </Carousel.Item>{" "}
               </Carousel>
             </div>{" "}

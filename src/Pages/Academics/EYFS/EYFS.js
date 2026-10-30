@@ -48,9 +48,9 @@ export const EYFS = () => {
           <div className="d-md-flex">
             {" "}
             <div className="col-md-6 offset-md- heading " ref={headingRef}>
-              <img src={Decor1} width="34px" height="34px" />
+              <img alt="" src={Decor1} width="34px" height="34px" />
               <br />
-              <img src={Decor2} className="offset-md-11 star" />
+              <img alt="" src={Decor2} className="offset-md-11 star" />
               <h1
                 style={{
                   transform: inViewHeading
@@ -69,8 +69,8 @@ export const EYFS = () => {
             </div>
             <div className="col-md-6 ">
               {" "}
-              <img src={Hero} width="100%" className="hero-img" />
-              <img src={Decor3} className="offset-md-11 cube" />
+              <img alt="" src={Hero} width="100%" className="hero-img" />
+              <img alt="" src={Decor3} className="offset-md-11 cube" />
             </div>
           </div>
           <TabletAndBelow>
@@ -156,7 +156,7 @@ export const EYFS = () => {
         </div>
         <div className="d-md-flex col-md-8 offset-md-2 mobile-pad">
           <div className="col-md-6">
-            <img src={Eyfs} width="100%" className="adj" />
+            <img alt="" src={Eyfs} width="100%" className="adj" />
           </div>
           <div className="col-md-6 rudiments">
             <p>
@@ -431,7 +431,7 @@ export const EYFS = () => {
               </Accordion>{" "}
             </div>
             <div className="col-md-5">
-              <img src={Happy} width="100%" className="adj" />
+              <img alt="" src={Happy} width="100%" className="adj" />
             </div>
           </div>
         </div>
